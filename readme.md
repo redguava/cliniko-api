@@ -50,6 +50,11 @@ Data Responses
 
 We only support JSON for serialization of data. 
 
+Dates and Times
+---------------
+
+All dates and times are expected to be in UTC.
+
 Use HTTP caching
 ----------------
 
