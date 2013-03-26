@@ -77,7 +77,7 @@ You can perform up to 500 requests per minute for the same account. If you excee
 API Resources
 -----------------
 
-None Yet
+* [Appointments](https://github.com/redguava/cliniko-api/blob/master/sections/appointments.md)
 
 Get involved and help make our API better
 -----------------------------------------
