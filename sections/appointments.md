@@ -1,11 +1,27 @@
 Appointments
-========
+============
+* [Get Appointments](#get-appointments "This will return all appointments.")
+* [Get Appointment](#get-appointment "This will return a specified appointment.")
 
-Get appointments
-------------
+Get Appointments
+----------------
 
-* `GET /appointments` will return all appointments.
+This will return all appointments.
 
+**Resource**
+```
+GET /appointments
+```
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/appointments \
+  -u API_KEY: \
+  -H 'Content-Type: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+```
+
+**Example Response**
 ```json
 {
   "appointments": [
@@ -58,11 +74,25 @@ Get appointments
 }
 ```
 
-Get appointment
+Get Appointment
 ------------
 
-* `GET /appointment/1` will return the specified appointment.
+This will return the specified appointment.
 
+**Resource**
+```
+GET /appointments/1
+```
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/appointments/1 \
+  -u API_KEY: \
+  -H 'Content-Type: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+```
+
+**Example Response**
 ```json
 {
   "appointment_end": "2013-03-26T14:00:00Z",
