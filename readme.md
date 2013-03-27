@@ -49,9 +49,14 @@ All URLs start with `https://api.cliniko.com/v1/`. **SSL only**. The path is pre
 
 To make a request for all the appointments on a specific account, you'd append the appointments index path to the base url to form something like https://api.cliniko.com/api/v1/appointments. In curl, that looks like:
 
+**Example Request**
 ```shell
-curl -u API_KEY -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' -H 'Accept: application/json' https://api.cliniko.com/v1/appointments
+curl https://api.cliniko.com/v1/appointments \
+  -u API_KEY: \
+  -H 'Content-Type: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
 ```
+*Note: curl uses the -u flag to pass basic auth credentials (adding a colon after the API key will prevent it from asking for a password).*
 
 **API_KEY** is the API Key provided by the Cliniko user  
 **APP_VENDOR_NAME** is the name of your application that integrates with Cliniko  
