@@ -24,7 +24,7 @@ Get appointments
       "repeat_rule": {},
       "sms_reminder_sent": false,
       "updated_at": "2013-03-27T10:03:57Z",
-      "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
+      "links": {"self": "https://api.cliniko.com/v1/appointments/343589"},
       "patient": {
         "id": 12345,
         "title": "Mr",
