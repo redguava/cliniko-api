@@ -65,17 +65,6 @@ Dates and Times
 
 All dates and times are expected to be in UTC.
 
-Use HTTP caching
-----------------
-
-Todo
-
-Rate limiting
--------------
-
-You can perform up to 500 requests per minute for the same account. If you exceed this limit, you'll get a error response for subsequent requests.
-
-
 API Resources
 -----------------
 
