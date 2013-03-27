@@ -17,7 +17,6 @@ GET /appointments
 ```shell
 curl https://api.cliniko.com/v1/appointments \
   -u API_KEY: \
-  -H 'Content-Type: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
 ```
 
@@ -88,7 +87,6 @@ GET /appointments/1
 ```shell
 curl https://api.cliniko.com/v1/appointments/1 \
   -u API_KEY: \
-  -H 'Content-Type: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
 ```
 
