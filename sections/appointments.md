@@ -80,7 +80,7 @@ This will return the specified appointment.
 
 **Resource**
 ```
-GET /appointments/1
+GET /appointments/:id
 ```
 
 **Example Request**
