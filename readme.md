@@ -53,7 +53,7 @@ To make a request for all the appointments on a specific account, you'd append t
 ```shell
 curl https://api.cliniko.com/v1/appointments \
   -u API_KEY: \
-  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
 ```
 *Note: curl uses the -u flag to pass basic auth credentials (adding a colon after the API key will prevent it from asking for a password).*
