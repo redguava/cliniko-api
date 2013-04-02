@@ -38,7 +38,7 @@ curl https://api.cliniko.com/v1/appointments \
       "notes": null,
       "online_booking_policy_accepted": null,
       "patient_arrived": false,
-      "repeat_rule": {},
+      "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
       "sms_reminder_sent": false,
       "updated_at": "2013-03-27T10:03:57Z",
       "patient": {
