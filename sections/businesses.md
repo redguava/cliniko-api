@@ -52,11 +52,11 @@ Get Business
 ------------
 
 **Resources**
-* ```GET /business/:id``` get a specified business
+* ```GET /businesses/:id``` get a specified business
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/business/1 \
+curl https://api.cliniko.com/v1/businesses/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
