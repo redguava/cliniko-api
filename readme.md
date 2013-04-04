@@ -1,7 +1,7 @@
 The Cliniko API
 ===============
 
-**This is currently in Alpha version, so it will change significantly over the next few weeks**
+**The Cliniko API is currently in BETA, so there will still be some changes over the next few weeks**
 
 This is the offical API for Cliniko.  Cliniko is a practice management system for healthcare practitioners.
 
