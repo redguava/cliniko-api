@@ -52,11 +52,11 @@ Get Practitioner
 ------------
 
 **Resources**
-* ```GET /practitioner/:id``` get a specified practitioner
+* ```GET /practitioners/:id``` get a specified practitioner
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/practitioner/1 \
+curl https://api.cliniko.com/v1/practitioners/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
