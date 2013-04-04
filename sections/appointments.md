@@ -8,8 +8,8 @@ Get Appointments
 
 **Resources**
 * ```GET /appointments``` get all appointments
-* ```GET /businesses/:id/appointments``` get all appointments for a specified business **COMING SOON**
-* ```GET /practitioners/:id/appointments``` get all appointments for a specified practitioner **COMING SOON**
+* **COMING SOON:** ```GET /businesses/:id/appointments``` get all appointments for a specified business 
+* **COMING SOON:** ```GET /practitioners/:id/appointments``` get all appointments for a specified practitioner
 
 **Example Request**
 ```shell
