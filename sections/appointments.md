@@ -6,12 +6,10 @@ Appointments
 Get Appointments
 ----------------
 
-This will return all appointments.
-
-**Resource**
-```
-GET /appointments
-```
+**Resources**
+* ```GET /appointments``` get all appointments
+* ```GET /businesses/:id/appointments``` get all appointments for a specified business
+* ```GET /practitioners/:id/appointments``` get all appointments for a specified practitioner
 
 **Example Request**
 ```shell
@@ -77,12 +75,8 @@ curl https://api.cliniko.com/v1/appointments \
 Get Appointment
 ------------
 
-This will return the specified appointment.
-
-**Resource**
-```
-GET /appointments/:id
-```
+**Resources**
+* ```GET /appointments/:id``` get a specified appointment
 
 **Example Request**
 ```shell
