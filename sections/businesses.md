@@ -1,5 +1,9 @@
 Businesses (COMING SOON)
 ============
+> Businesses represent a business or location (eg. a clinic).  Each Cliniko account can have unlimited businesses.  
+>
+> These are typically used for each physical location if there is more than one.  Most Cliniko accounts have just one business.
+
 * [Get Businesses](#get-businesses "This will return all businesses.")
 * [Get Business](#get-business "This will return a specified business.")
 
