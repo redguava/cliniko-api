@@ -78,6 +78,7 @@ API Resources
 -----------------
 
 * [Appointments](https://github.com/redguava/cliniko-api/blob/master/sections/appointments.md)
+* [Businesses](https://github.com/redguava/cliniko-api/blob/master/sections/businesses.md)
 
 Get involved and help make our API better
 -----------------------------------------
