@@ -74,6 +74,38 @@ Dates and Times
 
 All dates and times are expected to be in UTC.
 
+Pagination
+---------------
+
+Requests that return multiple items will be paginated to 50 items by default. You can specify further pages with the `page` parameter. You can also set a custom page size up to 100 with the `per_page` parameter.
+
+All paginated requests will return the total number of entries that exist as total_entries in the response.
+
+The pagination info is included in the links object. It is recommended to follow these links instead of constructing your own URLs.
+
+```
+"appointments": {
+  ...
+},
+total_entries: 400,
+"links": {
+  "next": "https://api.cliniko.com/appointments?page=4&per_page=100",
+  "self": "https://api.cliniko.com/appointments?page=3&per_page=100",
+  "previous": "https://api.cliniko.com/appointments?page=2&per_page=100"
+}
+```
+
+The possible pagination links are:
+
+`next`
+Shows the URL of the immediate next page of results.
+
+`self`
+Shows the URL of the current page of results.
+
+`previous`
+Shows the URL of the immediate previous page of results.
+
 API Resources
 -----------------
 
