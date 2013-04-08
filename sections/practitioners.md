@@ -35,10 +35,6 @@ curl https://api.cliniko.com/v1/practitioners \
       "created_at": "2013-03-26T14:00:00Z",
       "updated_at": "2013-03-26T14:00:00Z",
       "default_appointment_type": {
-        "id": 1,
-        "name": "Initial Consultation",
-        "color": "#00FF00",
-        "category": "Osteopathy",
         "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
       },
       "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
@@ -74,10 +70,6 @@ curl https://api.cliniko.com/v1/practitioners/1 \
   "created_at": "2013-03-26T14:00:00Z",
   "updated_at": "2013-03-26T14:00:00Z",
   "default_appointment_type": {
-    "id": 1,
-    "name": "Initial Consultation",
-    "color": "#00FF00",
-    "category": "Osteopathy",
     "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
   },
   "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
