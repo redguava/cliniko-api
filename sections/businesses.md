@@ -26,21 +26,21 @@ curl https://api.cliniko.com/v1/businesses \
 {
   "businesses": [
     {
-      "business_name": "Healthy Times",
       "address_1": "20 Smith Street",
       "address_2": null,
-      "city": "Smithytown",
-      "state": "Victoria",
-      "post_code" : "3000",
-      "country": "Australia",
+      "business_name": "Healthy Times",
       "business_registration_name": "ABN",
       "business_registration_value": "1111111111",
-      "id": 1,
+      "city": "Smithytown",
+      "contact_information": "Phone: 99999 99999",
+      "country": "Australia",
       "created_at": "2013-03-26T14:00:00Z",
+      "id": 1,
+      "post_code" : "3000",
+      "show_in_online_bookings": true,
+      "state": "Victoria",
       "updated_at": "2013-03-26T14:00:00Z",
       "website_address": "http://www.healthytimes.com",
-      "contact_information": "Phone: 99999 99999",
-      "show_in_online_bookings": true,
       "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
     }
   ],
@@ -65,21 +65,21 @@ curl https://api.cliniko.com/v1/businesses/1 \
 **Example Response**
 ```json
 {
-  "business_name": "Healthy Times",
   "address_1": "20 Smith Street",
   "address_2": null,
-  "city": "Smithytown",
-  "state": "Victoria",
-  "post_code" : "3000",
-  "country": "Australia",
+  "business_name": "Healthy Times",
   "business_registration_name": "ABN",
   "business_registration_value": "1111111111",
-  "id": 1,
+  "city": "Smithytown",
+  "contact_information": "Phone: 99999 99999",
+  "country": "Australia",
   "created_at": "2013-03-26T14:00:00Z",
+  "id": 1,
+  "post_code" : "3000",
+  "show_in_online_bookings": true,
+  "state": "Victoria",
   "updated_at": "2013-03-26T14:00:00Z",
   "website_address": "http://www.healthytimes.com",
-  "contact_information": "Phone: 99999 99999",
-  "show_in_online_bookings": true,
   "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
 }
 ```
