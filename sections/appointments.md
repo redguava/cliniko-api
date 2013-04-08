@@ -39,6 +39,9 @@ curl https://api.cliniko.com/v1/appointments \
       "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
       "sms_reminder_sent": false,
       "updated_at": "2013-03-27T10:03:57Z",
+      "appointment_repeated_from" : {
+        "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
+      },
       "appointment_type": {
         "links": {"self": "https://api.cliniko.com/v1/appointment_types/12345"}
       },
@@ -90,6 +93,9 @@ curl https://api.cliniko.com/v1/appointments/1 \
   "repeat_rule": {},
   "sms_reminder_sent": false,
   "updated_at": "2013-03-27T10:03:57Z",
+  "appointment_repeated_from" : {
+    "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
+  },
   "appointment_type": {
     "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
   },
