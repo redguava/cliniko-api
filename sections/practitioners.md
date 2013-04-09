@@ -26,19 +26,15 @@ curl https://api.cliniko.com/v1/practitioners \
 {
   "practitioners": [
     {
-      "title": "Mr",
-      "first_name": "Randy",
-      "last_name": "Savage",
-      "designation": "Osteopath",
-      "show_in_online_bookings": true,
-      "id": 1,
       "created_at": "2013-03-26T14:00:00Z",
+      "designation": "Osteopath",
+      "first_name": "Randy",
+      "id": 1,
+      "last_name": "Savage",
+      "show_in_online_bookings": true,
+      "title": "Mr",
       "updated_at": "2013-03-26T14:00:00Z",
       "default_appointment_type": {
-        "id": 1,
-        "name": "Initial Consultation",
-        "color": "#00FF00",
-        "category": "Osteopathy",
         "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
       },
       "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
@@ -65,19 +61,15 @@ curl https://api.cliniko.com/v1/practitioners/1 \
 **Example Response**
 ```json
 {
-  "title": "Mr",
-  "first_name": "Randy",
-  "last_name": "Savage",
-  "designation": "Osteopath",
-  "show_in_online_bookings": true,
-  "id": 1,
   "created_at": "2013-03-26T14:00:00Z",
+  "designation": "Osteopath",
+  "first_name": "Randy",
+  "id": 1,
+  "last_name": "Savage",
+  "show_in_online_bookings": true,
+  "title": "Mr",
   "updated_at": "2013-03-26T14:00:00Z",
   "default_appointment_type": {
-    "id": 1,
-    "name": "Initial Consultation",
-    "color": "#00FF00",
-    "category": "Osteopathy",
     "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
   },
   "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
