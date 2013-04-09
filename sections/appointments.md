@@ -39,30 +39,19 @@ curl https://api.cliniko.com/v1/appointments \
       "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
       "sms_reminder_sent": false,
       "updated_at": "2013-03-27T10:03:57Z",
-      "patient": {
-        "id": 12345,
-        "title": "Mr",
-        "first_name": "Hulk",
-        "last_name": "Hogan",
-        "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
+      "appointment_repeated_from" : {
+        "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
       },
       "appointment_type": {
-        "id": 12345,
-        "name": "Initial Consultation",
-        "color": "#00FF00",
-        "category": "Osteopathy",
         "links": {"self": "https://api.cliniko.com/v1/appointment_types/12345"}
       },
       "business": {
-        "id": 45678,
-        "business_name": "Melbourne Osteopathy",
         "links": {"self": "https://api.cliniko.com/v1/businesses/45678"}
       },
+      "patient": {
+        "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
+      },
       "practitioner": {
-        "id": 1,
-        "title": "Mr",
-        "first_name": "Randy",
-        "last_name": "Savage",
         "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
       },
       "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
@@ -104,30 +93,19 @@ curl https://api.cliniko.com/v1/appointments/1 \
   "repeat_rule": {},
   "sms_reminder_sent": false,
   "updated_at": "2013-03-27T10:03:57Z",
-  "patient": {
-    "id": 1,
-    "title": "Mr",
-    "first_name": "Hulk",
-    "last_name": "Hogan",
-    "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+  "appointment_repeated_from" : {
+    "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
   },
   "appointment_type": {
-    "id": 1,
-    "name": "Initial Consultation",
-    "color": "#00FF00",
-    "category": "Osteopathy",
     "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
   },
   "business": {
-    "id": 1,
-    "business_name": "Melbourne Osteopathy",
     "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
   },
+  "patient": {
+    "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+  },
   "practitioner": {
-    "id": 1,
-    "title": "Mr",
-    "first_name": "Randy",
-    "last_name": "Savage",
     "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
   },
   "links": {"self": "https://api.cliniko.com/v1/appointments/1"}
