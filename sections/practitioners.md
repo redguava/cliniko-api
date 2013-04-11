@@ -1,4 +1,4 @@
-Practitioners (COMING SOON)
+Practitioners
 ============
 > All practitioners have an associated user account.  Not all users are practitioners (eg. receptionists wouldn't be).
 >
