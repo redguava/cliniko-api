@@ -1,4 +1,4 @@
-Businesses (COMING SOON)
+Businesses
 ============
 > Businesses represent a business or location (eg. a clinic).  Each Cliniko account can have unlimited businesses.  
 >
