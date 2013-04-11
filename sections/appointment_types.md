@@ -1,4 +1,4 @@
-Appointment Types (COMING SOON)
+Appointment Types
 ============
 > The different types of appointments the business offers.
 
