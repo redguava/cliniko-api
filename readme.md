@@ -29,6 +29,8 @@ Each Cliniko user will have their own API Key(s), this is used for authenticatio
 
 You should provide the Cliniko API Key as the basic auth username.  There is no need to provide a password.
 
+If you just need an API key for testing, sign up for a free trial and go to the "My Info" link in the top right corner within Cliniko.  You can create an API key there.  If you need your trial extended just let us know.
+
 Errors
 ------
 
