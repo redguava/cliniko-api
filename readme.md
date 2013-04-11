@@ -110,7 +110,7 @@ API Resources
 -----------------
 
 * [Appointments](https://github.com/redguava/cliniko-api/blob/master/sections/appointments.md)
-* [Appointment Types (coming soon)](https://github.com/redguava/cliniko-api/blob/master/sections/appointment_types.md)
+* [Appointment Types](https://github.com/redguava/cliniko-api/blob/master/sections/appointment_types.md)
 * [Businesses](https://github.com/redguava/cliniko-api/blob/master/sections/businesses.md)
 * [Practitioners](https://github.com/redguava/cliniko-api/blob/master/sections/practitioners.md)
 
