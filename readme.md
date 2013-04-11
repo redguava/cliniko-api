@@ -106,6 +106,8 @@ Shows the URL of the current page of results.
 `previous`
 Shows the URL of the immediate previous page of results.
 
+The pagination links will only be included if they are relevant (eg. there will be no `next` link if you are on the last page.
+
 API Resources
 -----------------
 
