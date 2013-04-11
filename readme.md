@@ -1,8 +1,6 @@
 The Cliniko API
 ===============
 
-**The Cliniko API is currently in BETA, so there will still be some changes over the next few weeks**
-
 This is the offical API for Cliniko.  Cliniko is a practice management system for healthcare practitioners.
 
 The Cliniko API is based on REST principles.  This means you can use any HTTP client and any programming language to interact with the API.
