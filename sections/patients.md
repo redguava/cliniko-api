@@ -6,6 +6,7 @@ Patients
 
 * [Get Patients](#get-patients "This will return all patients.")
 * [Get Patient](#get-patient "This will return a specified patient.")
+* [Post Patients](#post-patients "This will create a patient.")
 
 Get Patients
 ----------------
@@ -116,4 +117,42 @@ curl https://api.cliniko.com/v1/patients/1 \
   ],
   "links": {"self": "https://api.cliniko.com/v1/patients/1"}
 }
+```
+
+Post Patients
+----------------
+**Resources**
+
+* ```POST /patients``` create a patient
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/patients \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+  -d 'patient[first_name]=John&patient[last_name]=Snow'
+```
+**Example Response**
+```json
+Headers { Location: http://api.cliniko.com/patients/1 }
+```
+
+Put Patient
+----------------
+**Resources**
+
+* ```PUT /patients/:id``` update a patient
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/patients/1 \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+  -d 'patient[first_name]=John&patient[last_name]=Snow'
+```
+**Example Response**
+```
+Status: 
 ```
