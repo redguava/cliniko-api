@@ -10,6 +10,7 @@ Get Appointments
 * ```GET /appointments``` get all appointments
 * ```GET /businesses/:id/appointments``` get all appointments for a specified business 
 * ```GET /practitioners/:id/appointments``` get all appointments for a specified practitioner
+* ```GET /patients/:id/appointments``` get all appointments for a specified patient
 
 **Example Request**
 ```shell
