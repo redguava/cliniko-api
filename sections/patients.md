@@ -131,8 +131,9 @@ Create Patient
 curl https://api.cliniko.com/v1/patients \
   -u API_KEY: \
   -H 'Accept: application/json' \
-  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
-  -d 'first_name=John&last_name=Snow'
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -d 'first_name=John&last_name=Snow' \
+  -X POST
 ```
 **Example Response**  
 ```
@@ -177,8 +178,9 @@ Update Patient
 curl https://api.cliniko.com/v1/patients/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
-  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
-  -d 'first_name=John&last_name=Snow'
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -d 'first_name=John&last_name=Snow' \
+  -X PUT
 ```
 **Example Response**
 ```json
@@ -229,7 +231,8 @@ Delete Patient
 curl https://api.cliniko.com/v1/patients/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
-  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -X DELETE
 ```
 **Example Response**  
 A status code of `204 no content` will be returned if successful
