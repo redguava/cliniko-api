@@ -126,8 +126,9 @@ Create Appointment
 curl https://api.cliniko.com/v1/appointments \
   -u API_KEY: \
   -H 'Accept: application/json' \
-  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
-  -d 'appointment_start=2013-03-26T14:00:00Z&appointment_end=2013-03-26T15:00:00Z&patient_id=1&practitioner_id=1&appointment_type_id=1&business_id=1'
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -d 'appointment_start=2013-03-26T14:00:00Z&appointment_end=2013-03-26T15:00:00Z&patient_id=1&practitioner_id=1&appointment_type_id=1&business_id=1' \
+  -X POST
 ```
 **Example Response**  
 ```
@@ -179,8 +180,9 @@ Update Appointment
 curl https://api.cliniko.com/v1/appointments/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
-  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
-  -d 'appointment_end=2013-03-26T15:00:00Z'
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -d 'appointment_end=2013-03-26T15:00:00Z' \
+  -X PUT
 ```
 **Example Response**
 ```json
@@ -229,7 +231,8 @@ Delete Appointment
 curl https://api.cliniko.com/v1/appointments/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
-  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -X DELETE
 ```
 **Example Response**  
 A status code of `204 no content` will be returned if successful
