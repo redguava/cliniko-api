@@ -113,6 +113,8 @@ Updated Since
 
 Fetching a list of records that have been updated since a specific time is easy. A parameter called `updated_since` should be passed and only the records that have been updated since this time will be retrieved.
 
+This timestamp has to be in UTC if present – e.g. 2014-08-30T18:00:00Z.
+
 API Resources
 -----------------
 
