@@ -38,16 +38,16 @@ Conventional HTTP response codes are used to indicate API errors.
 
 General code rules apply:
 * 2xx range indicate success.
-* 4xx range indicate error resulted from the provided information (eg. missing a required parameter)
-* 5xx range indicate and error with our Cliniko servers
+* 4xx range indicate an error resulting from the provided information (eg. missing a required parameter)
+* 5xx range indicate an error with our Cliniko servers
 
 
 Making a request
 ----------------
 
-All URLs start with `https://api.cliniko.com/v1/`. **SSL only**. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.
+All URLs start with `https://api.cliniko.com/v1`. **SSL only**. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.
 
-To make a request for all the appointments on a specific account, you'd append the appointments index path to the base url to form something like https://api.cliniko.com/api/v1/appointments. In curl, that looks like:
+To make a request for all the appointments on a specific account, you'd append the appointments index path to the base url to form something like https://api.cliniko.com/v1/appointments. In curl, that looks like:
 
 **Example Request**
 ```shell
@@ -89,9 +89,9 @@ The pagination info is included in the links object. It is recommended to follow
 },
 total_entries: 400,
 "links": {
-  "next": "https://api.cliniko.com/appointments?page=4&per_page=100",
-  "self": "https://api.cliniko.com/appointments?page=3&per_page=100",
-  "previous": "https://api.cliniko.com/appointments?page=2&per_page=100"
+  "next": "https://api.cliniko.com/v1/appointments?page=4&per_page=100",
+  "self": "https://api.cliniko.com/v1/appointments?page=3&per_page=100",
+  "previous": "https://api.cliniko.com/v1/appointments?page=2&per_page=100"
 }
 ```
 
