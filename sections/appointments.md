@@ -1,7 +1,7 @@
 Appointments
 ============
 * [Get Appointments](#get-appointments "This will return all appointments.")
-* [Get Deleted Appointments](#get-deleted-appointments "This will return all deleted appointments ids.")
+* [Get Deleted Appointments](#get-deleted-appointments "This will return all deleted appointments ID's only")
 * [Get Cancelled Appointments](#get-cancelled-appointments "This will return all cancelled appointments.")
 * [Get Appointment](#get-appointment "This will return a specified appointment.")
 * [Create Appointment](#create-appointment "This will create an appointment.")
