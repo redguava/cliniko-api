@@ -32,9 +32,6 @@ curl https://api.cliniko.com/v1/appointments \
     {
       "appointment_end": "2013-03-26T14:00:00Z",
       "appointment_start": "2013-03-26T14:00:00Z",
-      "cancellation_note": null,    (REMOVED)
-      "cancellation_reason" :null,  (REMOVED)
-      "cancellation_time" :null,    (REMOVED)
       "created_at": "2013-03-27T10:03:57Z",
       "did_not_arrive": false,
       "email_reminder_sent": false,
