@@ -159,9 +159,8 @@ curl https://api.cliniko.com/v1/appointments/cancelled \
             }
         }
     ],
-    "total_entries": 8,
+    "total_entries": 1,
     "links": {
-        "next": "http://api.cliniko.com:3000/v1/businesses/1/appointments/cancelled?page=2",
         "self": "http://api.cliniko.com:3000/v1/businesses/1/appointments/cancelled?page=1"
     }
 }
