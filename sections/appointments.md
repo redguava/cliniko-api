@@ -69,8 +69,8 @@ Get Deleted Appointments
 
 **Resources**
 * ```GET /appointments/deleted``` get all deleted appointments
-* ```GET /businesses/:id/appointments/deleted``` get all deleted for a specified business
-* ```GET /practitioners/:id/appointments/deleted``` get all deleted for a specified practitioner
+* ```GET /businesses/:id/appointments/deleted``` get all deleted appointments for a specified business
+* ```GET /practitioners/:id/appointments/deleted``` get all deleted appointments for a specified practitioner
 * ```GET /patients/:id/appointments/deleted``` get all deleted appointments for a specified patient
 
 **Example Request**
