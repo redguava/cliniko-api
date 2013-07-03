@@ -127,6 +127,9 @@ API Resources
 Get involved and help make our API better
 -----------------------------------------
 
-Please give us feedback on how we can make the API better. For feature requests or bugs please use GitHub issues. You can also fork this project and send a pull request with any improvements.
+Please give us feedback on how we can make the API better.
+
+*  Join [Cliniko API User's Group](https://groups.google.com/a/redguava.com.au/d/forum/cliniko-api) to stay updated and exchange infromation with Cliniko API Developers.
+*  Alternatively for feature requests or bugs please use GitHub issues. You can also fork this project and send a pull request with any improvements.
 
 Want to talk to us? Send an email through to support@cliniko.com and we'll make sure it gets to the developers.
