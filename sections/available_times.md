@@ -14,12 +14,19 @@ Get Available Times
 ----------------
 
 **Resources**
-* ```GET /businesses/:business_id/practitioners/:practitioner_id/appointment_types/:appointment_type_id/available_times?from=DATETIME&to=DATETIME```
-get all available times for selected appointment type, practitioner and business within a specified time frame
+
+Get all available times for selected appointment type, practitioner and business within a specified time frame :
+```
+GET /businesses/:business_id/practitioners/:practitioner_id/ \    
+appointment_types/:appointment_type_id/available_times?from=DATETIME&to=DATETIME
+```
+
+
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/businesses/45678/practitioners/1/appointment_types/1/available_times?from=2012-05-11T08:00:00Z&to=2012-05-12T10:00:00Z \
+curl https://api.cliniko.com/v1/businesses/45678/practitioners/1/ \
+appointment_types/1/available_times?from=2012-05-11T08:00:00Z&to=2012-05-12T10:00:00Z \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
