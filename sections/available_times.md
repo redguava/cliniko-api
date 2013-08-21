@@ -39,7 +39,7 @@ appointment_types/1/available_times?from=2012-05-11T08:00:00Z&to=2012-05-12T10:0
   "available_times": [
     { "appointment_start" : "2012-05-11T08:45:00Z" }
   ],
-  "links": {"self": "/businesses/45678/practitioners/1/appointment_types/1/available_times?from=2012-05-11T08:00:00Z&to=2012-05-12T10:00:00Z"}
+  "links": {"self": "/businesses/1/practitioners/1/appointment_types/1/available_times?from=2012-05-11T08:00:00Z&to=2012-05-12T10:00:00Z"}
 }
 
 ```
