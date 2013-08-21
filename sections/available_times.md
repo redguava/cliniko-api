@@ -1,31 +1,32 @@
 Available Times
 ============
-> Available Times is array of DateTime objects that result from a search of available time slots using the following mandatory filters:
->
-* Appointment Type
-* Practitioner
-* Business
-* [Time Frame](#time-frame)*
->
+> Available Times are appointment start times that are currently available for the practitioner based on the parameters provided.
 
-* [Get Available Times](#get-available-times "This will return all future available times for which meet specified criteria")
+* [Get Available Times](#get-available-times "This will return all available times")
 
 Get Available Times
 ----------------
 
 **Resources**
 
-Get all available times for selected appointment type, practitioner and business within a specified time frame :
-```
-GET /businesses/:business_id/practitioners/:practitioner_id/ \    
-appointment_types/:appointment_type_id/available_times?from=DATETIME&to=DATETIME
+Get all available times
+``` 
+GET /businesses/:business_id/practitioners/:practitioner_id/appointment_types/:appointment_type_id/available_times?from=DATETIME&to=DATETIME 
 ```
 
+**Required Parameters**
 
+There are two parameters required, these form the time frame of available times requested:
+* `from` the start date/time of the time frame
+* `to` the end date/time of the time frame
+
+`from` and `to` cannot be more than 7 days apart (ie. the maximum time period you can request is 7 days).
+
+The time frame parameters have to be specified in UTC – e.g. 2014-08-30T18:00:00Z
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/businesses/45678/practitioners/1/ \
+curl https://api.cliniko.com/v1/businesses/1/practitioners/1/ \
 appointment_types/1/available_times?from=2012-05-11T08:00:00Z&to=2012-05-12T10:00:00Z \
   -u API_KEY: \
   -H 'Accept: application/json' \
@@ -43,11 +44,38 @@ appointment_types/1/available_times?from=2012-05-11T08:00:00Z&to=2012-05-12T10:0
 
 ```
 
-Time Frame*
-----------------
+**IMPORTANT EXTRA INFORMATION**
 
-Using 'from' and 'to' parameters you specify the beginning and end of a time frame.
+Cliniko users can configure how available times are displayed in our online bookings module.  
 
-The time difference between the 'from' and 'to' parameters should not be longer than 7 days.
+This API endpoint that retrieves available times will respect these settings.  The settings are:
 
-Time Frame parameters have to be specified in UTC – e.g. 2014-08-30T18:00:00Z
+* **Maximum number of appointments per day segment**
+
+    Day parts are morning (before Midday), afternoon (Midday to 5pm) and evening (5pm onwards).  
+
+    Possible settings are; 1, 2, 3, 4, 5 or unlimited.
+    
+* **Minimum advance time required for online bookings**
+
+    This is the minimum amount of time from now that a available time will be shown.
+
+    Possible settings are; Now, 1 Hour, 2 Hours, 4 Hours, Tomorrow or 2 Days.
+    
+* **Business to be displayed in online bookings**
+
+    Setting to choose which businesses can be displayed in our online bookings module. 
+    
+    The API will not return available times for businesses not enabled for online bookings.
+    
+* **Appointment Type to be displayed in online bookings**
+
+    Setting to choose which appointment types can be displayed in our online bookings module. 
+    
+    The API will not return available times for appointment types not enabled for online bookings.
+    
+* **Practitioner to be displayed in online bookings**
+
+    Setting to choose which practitioners can be displayed in our online bookings module. 
+    
+    The API will not return available times for practitioners not enabled for online bookings.
