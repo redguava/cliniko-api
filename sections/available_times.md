@@ -11,18 +11,17 @@ Get Available Times
 
 Get all available times
 ``` 
-GET /businesses/:business_id/practitioners/:practitioner_id/appointment_types/:appointment_type_id/available_times?from=DATETIME&to=DATETIME 
+GET /businesses/:business_id/practitioners/:practitioner_id/appointment_types/:appointment_type_id/available_times?from=DATE&to=DATE 
 ```
 
 **Required Parameters**
 
 There are two parameters required, these form the time frame of available times requested:
-* `from` the start date of the time frame
-* `to` the end date of the time frame
+* `from` the start date of the time frame (search starts from the beginning of the day in practitioner's time zone) 
+* `to` the end date of the time frame (search stops at the end of the day in practitioner's time zone)
 
 `from` and `to` cannot be more than 7 days apart (ie. the maximum time period you can request is 7 days).
 
-The time frame parameters have to be specified in UTC – e.g. 2014-08-30T18:00:00Z
 
 **Example Request**
 ```shell
@@ -39,7 +38,7 @@ appointment_types/1/available_times?from=2012-05-11&to=2012-05-12 \
   "available_times": [
     { "appointment_start" : "2012-05-11T08:45:00Z" }
   ],
-  "total_entries": 0,
+  "total_entries": 1,
   "links": {"self": "/businesses/1/practitioners/1/appointment_types/1/available_times?from=2012-05-11&to=2012-05-12&page=1"}
 }
 
