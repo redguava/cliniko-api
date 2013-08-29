@@ -17,16 +17,18 @@ GET /businesses/:business_id/practitioners/:practitioner_id/appointment_types/:a
 **Required Parameters**
 
 There are two parameters required, these form the time frame of available times requested:
-* `from` the start date of the time frame (search starts from the beginning of the day in practitioner's time zone) 
-* `to` the end date of the time frame (search stops at the end of the day in practitioner's time zone)
+* `from` the start date of the time frame (search starts from the beginning of that day in practitioner's time zone) 
+* `to`   the end date of the time frame (search ends at the end of that day in practitioner's time zone)
 
-`from` and `to` cannot be more than 7 days apart (ie. the maximum time period you can request is 7 days).
+`from` and `to` cannot be more than 7 days apart (ie. the maximum time period you can request is 7 days) 
+
+`from` and `to` cannot not be older than the current date in practitioner's time zone.
 
 
 **Example Request**
 ```shell
 curl https://api.cliniko.com/v1/businesses/1/practitioners/1/ \
-appointment_types/1/available_times?from=2012-05-11&to=2012-05-12 \
+appointment_types/1/available_times?from=2013-05-21&to=2013-05-22 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -36,10 +38,10 @@ appointment_types/1/available_times?from=2012-05-11&to=2012-05-12 \
 ```json
 {
   "available_times": [
-    { "appointment_start" : "2012-05-11T08:45:00Z" }
+    { "appointment_start" : "2013-05-21T08:45:00Z" }
   ],
   "total_entries": 1,
-  "links": {"self": "/businesses/1/practitioners/1/appointment_types/1/available_times?from=2012-05-11&to=2012-05-12&page=1"}
+  "links": {"self": "/businesses/1/practitioners/1/appointment_types/1/available_times?from=2013-05-21&to=2013-05-22&page=1"}
 }
 
 ```
