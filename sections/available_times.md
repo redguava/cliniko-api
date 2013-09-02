@@ -22,7 +22,7 @@ There are two parameters required, these form the time frame of available times 
 
 `from` and `to` cannot be more than 7 days apart (ie. the maximum time period you can request is 7 days) 
 
-`from` and `to` cannot not be older than the current date in practitioner's time zone.
+`from` and `to` cannot be older than the current date in practitioner's time zone.
 
 
 **Example Request**
