@@ -17,12 +17,12 @@ GET /businesses/:business_id/practitioners/:practitioner_id/appointment_types/:a
 **Required Parameters**
 
 There are two parameters required, these form the time frame of available times requested:
-* `from` the start date of the time frame (search starts from the beginning of that day in practitioner's time zone) 
-* `to`   the end date of the time frame (search ends at the end of that day in practitioner's time zone)
+* `from` the start date of the time frame (search starts from the beginning of that day in the cliniko account's time zone) 
+* `to`   the end date of the time frame (search ends at the end of that day in the cliniko account's time zone)
 
 `from` and `to` cannot be more than 7 days apart (ie. the maximum time period you can request is 7 days) 
 
-`from` and `to` cannot be older than the current date in practitioner's time zone.
+`from` and `to` cannot be older than the current date in the cliniko account's time zone.
 
 
 **Example Request**
