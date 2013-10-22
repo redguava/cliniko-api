@@ -3,6 +3,7 @@ Available Times
 > Available Times are appointment start times that are currently available for the practitioner based on the parameters provided.
 
 * [Get Available Times](#get-available-times "This will return all available times")
+* [Next Available Time](#next-available-time "This will return the next available time")
 
 Get Available Times
 ----------------
@@ -46,11 +47,39 @@ appointment_types/1/available_times?from=2013-05-21&to=2013-05-22 \
 
 ```
 
+Next Available Time
+----------------
+
+**Resources**
+
+Get next available time
+``` 
+GET /businesses/:business_id/practitioners/:practitioner_id/appointment_types/:appointment_type_id/next_available_time 
+```
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/businesses/1/practitioners/1/ \
+appointment_types/1/next_available_time \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+```
+
+**Example Response**
+```json
+{
+  "appointment_start" : "2013-05-21T08:45:00Z",
+  "links": {"self": "https://api.cliniko.com/v1/businesses/1/practitioners/1/appointment_types/1/next_available_time"}
+}
+
+```
+
 **IMPORTANT EXTRA INFORMATION**
 
 Cliniko users can configure how available times are displayed in our online bookings module.  
 
-This API endpoint that retrieves available times will respect these settings.  The settings are:
+These API endpoints that retrieve available times will respect these settings.  The settings are:
 
 * **Maximum number of appointments per day segment**
 
