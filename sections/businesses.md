@@ -41,7 +41,7 @@ curl https://api.cliniko.com/v1/businesses \
       "state": "Victoria",
       "updated_at": "2013-03-26T14:00:00Z",
       "website_address": "http://www.healthytimes.com",
-      "timz_zone": "Adelaide",
+      "time_zone": "Adelaide",
       "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
     }
   ],
@@ -81,7 +81,7 @@ curl https://api.cliniko.com/v1/businesses/1 \
   "state": "Victoria",
   "updated_at": "2013-03-26T14:00:00Z",
   "website_address": "http://www.healthytimes.com",
-  "timz_zone": "Adelaide",
+  "time_zone": "Adelaide",
   "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
 }
 ```
