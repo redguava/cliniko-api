@@ -25,7 +25,7 @@ There are two parameters required, these form the time frame of available times 
 
 `from` and `to` cannot be older than the current date in the cliniko account's time zone.
 
-If any of these parameters is missing or incorrect you will receive bad request error (code 400) with following message:
+If one of these parameters is missing or incorrect you will receive bad request error (code 400) with following message:
 
 ```shell
 Invalid time frame definition. Please check from/to param limitations.
