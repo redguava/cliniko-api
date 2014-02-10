@@ -60,7 +60,8 @@ curl https://api.cliniko.com/v1/appointments \
       "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
     }
   ],
-  "links": {"self": "https://api.cliniko.com/v1/appointments"}
+  "total_entries": 1,
+  "links": {"self": "https://api.cliniko.com/v1/appointments?page=1"}
 }
 ```
 
@@ -92,7 +93,7 @@ curl https://api.cliniko.com/v1/appointments/deleted \
     ],
     "total_entries": 1,
     "links": {
-        "self": "http://api.cliniko.com:3000/v1/businesses/1/appointments/deleted?page=1"
+        "self": "http://api.cliniko.com/v1/businesses/1/appointments/deleted?page=1"
     }
 }
 ```
@@ -136,29 +137,29 @@ curl https://api.cliniko.com/v1/appointments/cancelled \
             "updated_at": "2012-05-11T06:21:10Z",
             "appointment_type": {
                 "links": {
-                    "self": "http://api.cliniko.com:3000/v1/appointment_types/21"
+                    "self": "http://api.cliniko.com/v1/appointment_types/21"
                 }
             },
             "business": {
                 "links": {
-                    "self": "http://api.cliniko.com:3000/v1/businesses/11"
+                    "self": "http://api.cliniko.com/v1/businesses/11"
                 }
             },
             "patient": {
                 "links": {
-                    "self": "http://api.cliniko.com:3000/v1/patients/130"
+                    "self": "http://api.cliniko.com/v1/patients/130"
                 }
             },
             "practitioner": {
                 "links": {
-                    "self": "http://api.cliniko.com:3000/v1/practitioners/1"
+                    "self": "http://api.cliniko.com/v1/practitioners/1"
                 }
             }
         }
     ],
     "total_entries": 1,
     "links": {
-        "self": "http://api.cliniko.com:3000/v1/businesses/1/appointments/cancelled?page=1"
+        "self": "http://api.cliniko.com/v1/businesses/1/appointments/cancelled?page=1"
     }
 }
 ```
@@ -323,6 +324,6 @@ curl https://api.cliniko.com/v1/appointments/1 \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
   -X DELETE
 ```
-**Example Response**  
+**Example Response**
 A status code of `204 no content` will be returned if successful
 
