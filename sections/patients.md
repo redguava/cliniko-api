@@ -64,7 +64,8 @@ curl https://api.cliniko.com/v1/patients \
       "links": {"self": "https://api.cliniko.com/v1/patients/1"}
     }
   ],
-  "links": {"self": "https://api.cliniko.com/v1/patients"}
+  "total_entires": 1,
+  "links": {"self": "https://api.cliniko.com/v1/patients?page=1"}
 }
 ```
 
@@ -135,7 +136,7 @@ curl https://api.cliniko.com/v1/patients \
   -d 'first_name=John&last_name=Snow' \
   -X POST
 ```
-**Example Response**  
+**Example Response**
 ```
 Headers { Location: http://api.cliniko.com/patients/1 }
 ```
@@ -234,5 +235,5 @@ curl https://api.cliniko.com/v1/patients/1 \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
   -X DELETE
 ```
-**Example Response**  
+**Example Response**
 A status code of `204 no content` will be returned if successful

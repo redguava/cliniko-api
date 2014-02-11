@@ -1,6 +1,6 @@
 Businesses
 ============
-> Businesses represent a business or location (eg. a clinic).  Each Cliniko account can have unlimited businesses.  
+> Businesses represent a business or location (eg. a clinic).  Each Cliniko account can have unlimited businesses.
 >
 > These are typically used for each physical location if there is more than one.  Most Cliniko accounts have just one business.
 
@@ -44,7 +44,8 @@ curl https://api.cliniko.com/v1/businesses \
       "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
     }
   ],
-  "links": {"self": "https://api.cliniko.com/v1/businesses"}
+  "total_entires": 1,
+  "links": {"self": "https://api.cliniko.com/v1/businesses?page=1"}
 }
 ```
 

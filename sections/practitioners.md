@@ -40,7 +40,8 @@ curl https://api.cliniko.com/v1/practitioners \
       "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
     }
   ],
-  "links": {"self": "https://api.cliniko.com/v1/practitioners"}
+  "total_entries": 1,
+  "links": {"self": "https://api.cliniko.com/v1/practitioners?page=1"}
 }
 ```
 

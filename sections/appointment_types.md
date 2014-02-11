@@ -35,7 +35,8 @@ curl https://api.cliniko.com/v1/appointment_types \
       "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
     }
   ],
-  "links": {"self": "https://api.cliniko.com/v1/appointment_types"}
+  "total_entries": 1,
+  "links": {"self": "https://api.cliniko.com/v1/appointment_types?page=1"}
 }
 ```
 
