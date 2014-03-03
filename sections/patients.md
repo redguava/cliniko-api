@@ -133,7 +133,7 @@ curl https://api.cliniko.com/v1/patients \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d 'first_name=John&last_name=Snow' \
+  -d '{ "first_name": "John", "last_name": "Snow" }' \ 
   -X POST
 ```
 **Example Response**
@@ -180,7 +180,7 @@ curl https://api.cliniko.com/v1/patients/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d 'first_name=John&last_name=Snow' \
+  -d '{ "first_name": "John", "last_name": "Snow" }' \ 
   -X PUT
 ```
 **Example Response**
