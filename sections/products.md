@@ -83,7 +83,8 @@ curl https://api.cliniko.com/v1/products/1 \
     "links": {
         "self": "http://api.cliniko.com:3000/v1/products/1"
     }
-}```
+}
+```
 
 Create Product
 ----------------
@@ -121,7 +122,8 @@ Headers { Location: http://api.cliniko.com/products/2 }
     "links": {
         "self": "http://api.cliniko.com:3000/v1/products/2"
     }
-}```
+}
+```
 
 Update Product
 ----------------
@@ -156,7 +158,8 @@ curl https://api.cliniko.com/v1/products/1 \
     "links": {
         "self": "http://api.cliniko.com:3000/v1/products/1"
     }
-}```
+}
+```
 
 Delete Prodcut
 ----------------
