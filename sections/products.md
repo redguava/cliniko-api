@@ -161,7 +161,7 @@ curl https://api.cliniko.com/v1/products/1 \
 }
 ```
 
-Delete Prodcut
+Delete Product
 ----------------
 **Resources**
 * ```DELETE /products/:id``` delete a product
