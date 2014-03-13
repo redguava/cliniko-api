@@ -25,6 +25,7 @@ curl https://api.cliniko.com/v1/products \
 {
     "products": [
         {
+            "id": 1,
             "item_code": "0001",
             "name": "Product",
             "product_supplier_name": "Supplier",
@@ -67,6 +68,7 @@ curl https://api.cliniko.com/v1/products/1 \
 **Example Response**
 ```json
 {
+    "id": 1,
     "item_code": "0001",
     "name": "Product",
     "product_supplier_name": "Supplier",
@@ -106,6 +108,7 @@ Headers { Location: http://api.cliniko.com/products/2 }
 ```
 ```json
 {
+    "id": 2,
     "item_code": "0002",
     "name": "Product 2",
     "product_supplier_name": "Supplier",
@@ -142,6 +145,7 @@ curl https://api.cliniko.com/v1/products/1 \
 **Example Response**
 ```json
 {
+    "id": 1,
     "item_code": "0001",
     "name": "Product 1",
     "product_supplier_name": "Supplier",
