@@ -39,13 +39,13 @@ curl https://api.cliniko.com/v1/products \
             "created_at": "2014-03-04T19:11:30Z",
             "updated_at": "2014-03-04T19:11:30Z",
             "links": {
-                "self": "http://api.cliniko.com:3000/v1/products/1"
+                "self": "https://api.cliniko.com/v1/products/1"
             }
         }
     ],
     "total_entries": 1,
     "links": {
-        "self": "http://api.cliniko.com:3000/v1/products?page=1"
+        "self": "https://api.cliniko.com/v1/products?page=1"
     }
 }
 ```
@@ -81,7 +81,7 @@ curl https://api.cliniko.com/v1/products/1 \
     "created_at": "2014-03-04T19:11:30Z",
     "updated_at": "2014-03-04T19:11:30Z",
     "links": {
-        "self": "http://api.cliniko.com:3000/v1/products/1"
+        "self": "https://api.cliniko.com/v1/products/1"
     }
 }
 ```
@@ -120,7 +120,7 @@ Headers { Location: http://api.cliniko.com/products/2 }
     "created_at": "2014-03-11T19:11:30Z",
     "updated_at": "2014-03-11T19:11:30Z",
     "links": {
-        "self": "http://api.cliniko.com:3000/v1/products/2"
+        "self": "https://api.cliniko.com/v1/products/2"
     }
 }
 ```
@@ -156,7 +156,7 @@ curl https://api.cliniko.com/v1/products/1 \
     "created_at": "2014-03-04T19:11:30Z",
     "updated_at": "2014-03-04T19:11:30Z",
     "links": {
-        "self": "http://api.cliniko.com:3000/v1/products/1"
+        "self": "https://api.cliniko.com/v1/products/1"
     }
 }
 ```
