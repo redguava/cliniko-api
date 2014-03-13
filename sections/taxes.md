@@ -25,6 +25,7 @@ curl https://api.cliniko.com/v1/taxes \
 {
     "taxes": [
         {
+            "id": 1,
             "name": "GST",
             "amount": "10.0",
             "created_at": "2014-01-29T09:54:54Z",
@@ -58,6 +59,7 @@ curl https://api.cliniko.com/v1/taxes/1 \
 **Example Response**
 ```json
 {
+    "id": 1,
     "name": "GST",
     "amount": "10.0",
     "created_at": "2014-01-29T09:54:54Z",
@@ -88,6 +90,7 @@ Headers { Location: https://api.cliniko.com/taxes/2 }
 ```
 ```json
 {
+    "id": 2,
     "name": "VAT",
     "amount": "10.0",
     "created_at": "2014-03-03T09:54:54Z",
@@ -115,6 +118,7 @@ curl https://api.cliniko.com/v1/taxes/2 \
 **Example Response**
 ```json
 {
+    "id": 2,
     "name": "VAT",
     "amount": "22.0",
     "created_at": "2014-03-03T09:54:54Z",
