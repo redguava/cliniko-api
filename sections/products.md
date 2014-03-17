@@ -175,8 +175,8 @@ Adjust Stock Level
 **Required Parameters**
 
 There are two parameters required:
-* `quantity` defines a number of products you want to add/remove to/from a stock level (use negative value to remove)
-* `adjustment_type` describes the reason of stock level modification. Following adjustment types are defined in Cliniko:
+* `quantity` defines the amount of products you want to add/remove to/from a stock level (use a negative value to remove)
+* `adjustment_type` describes the reason for the stock level modification. Following adjustment types are defined in Cliniko:
   * Increase types: `"Stock Purchase", "Returned", "Other"`
   * Decrease types: `"Damaged", "Out of Date", "Item Sold", "Other"`
 
