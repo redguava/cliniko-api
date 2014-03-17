@@ -4,7 +4,9 @@ Products
 * [Get Product](#get-product "This will return a specified product.")
 * [Create Product](#create-product "This will create a product.")
 * [Update Product](#update-product "This will update a product.")
+* [Adjust Stock Level](#adjust-stock-level "This will modify product stock level.")
 * [Delete Product](#delete-product "This will delete a product.")
+
 
 Get Products
 ----------------
@@ -152,6 +154,43 @@ curl https://api.cliniko.com/v1/products/1 \
     "price": "10.0",
     "cost_price": "3.0",
     "stock_level": 10,
+    "notes": "",
+    "price_ex_tax": "10.0",
+    "tax": {
+      "links": { "self": "https://api.cliniko.com/v1/taxes/1" }
+    },
+    "created_at": "2014-03-04T19:11:30Z",
+    "updated_at": "2014-03-04T19:11:30Z",
+    "links": {
+        "self": "https://api.cliniko.com/v1/products/1"
+    }
+}
+```
+
+Adjust Stock Level
+----------------
+**Resources**
+* ```POST /products/:id/adjust_stock_level``` adjusting stock level of a product
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/products/1/adjust_stock_level \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -d '{ "quantity": -1, "adjustment_type": "Other" }' \
+  -X POST
+```
+**Example Response**
+```json
+{
+    "id": 1,
+    "item_code": "0001",
+    "name": "Product 1",
+    "product_supplier_name": "Supplier",
+    "price": "10.0",
+    "cost_price": "3.0",
+    "stock_level": 9,
     "notes": "",
     "price_ex_tax": "10.0",
     "tax": {
