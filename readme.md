@@ -171,12 +171,13 @@ curl https://api.cliniko.com/v1/patients?q=last_name:~~ja%on% \
 API Resources
 -----------------
 
-* [Appointments](https://github.com/redguava/cliniko-api/blob/master/sections/appointments.md)
-* [Appointment Types](https://github.com/redguava/cliniko-api/blob/master/sections/appointment_types.md)
-* [Businesses](https://github.com/redguava/cliniko-api/blob/master/sections/businesses.md)
-* [Practitioners](https://github.com/redguava/cliniko-api/blob/master/sections/practitioners.md)
-* [Patients](https://github.com/redguava/cliniko-api/blob/master/sections/patients.md)
 * [Available Times](https://github.com/redguava/cliniko-api/blob/master/sections/available_times.md)
+* [Appointment Types](https://github.com/redguava/cliniko-api/blob/master/sections/appointment_types.md)
+* [Appointments](https://github.com/redguava/cliniko-api/blob/master/sections/appointments.md)
+* [Businesses](https://github.com/redguava/cliniko-api/blob/master/sections/businesses.md)
+* [Patients](https://github.com/redguava/cliniko-api/blob/master/sections/patients.md)
+* [Practitioners](https://github.com/redguava/cliniko-api/blob/master/sections/practitioners.md)
+* [Products](https://github.com/redguava/cliniko-api/blob/master/sections/products.md)
 * [Taxes](https://github.com/redguava/cliniko-api/blob/master/sections/taxes.md)
 * [Users](https://github.com/redguava/cliniko-api/blob/master/sections/users.md)
 
