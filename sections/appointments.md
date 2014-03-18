@@ -21,7 +21,7 @@ Get Appointments
 You can filter the returned results by these fields:
 * ```appointment_start``` with ```'>=', '>', '<=', '<'```
 
-See Filtering Results for details on how to apply filters.
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
 
 
 **Example Request**
@@ -85,7 +85,7 @@ Get Deleted Appointments
 You can filter the returned results by these fields:
 * ```appointment_start``` with ```'>=', '>', '<=', '<'```
 
-See Filtering Results for details on how to apply filters.
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
 
 **Example Request**
 ```shell
@@ -124,7 +124,7 @@ Get Cancelled Appointments
 You can filter the returned results by these fields:
 * ```appointment_start``` with ```'>=', '>', '<=', '<'```
 
-See [Filtering Results](https://github.com/redguava/cliniko-api/readme.md#filtering-results) for details on how to apply filters.
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
 
 **Example Request**
 ```shell
