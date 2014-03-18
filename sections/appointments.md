@@ -17,6 +17,13 @@ Get Appointments
 * ```GET /practitioners/:id/appointments``` get all appointments for a specified practitioner
 * ```GET /patients/:id/appointments``` get all appointments for a specified patient
 
+**Filtering**
+You can filter the returned results by these fields:
+* ```appointment_start``` with ```'>=', '>', '<=', '<'```
+
+See Filtering Results for details on how to apply filters.
+
+
 **Example Request**
 ```shell
 curl https://api.cliniko.com/v1/appointments \
@@ -74,6 +81,12 @@ Get Deleted Appointments
 * ```GET /practitioners/:id/appointments/deleted``` get all deleted appointments for a specified practitioner
 * ```GET /patients/:id/appointments/deleted``` get all deleted appointments for a specified patient
 
+**Filtering**
+You can filter the returned results by these fields:
+* ```appointment_start``` with ```'>=', '>', '<=', '<'```
+
+See Filtering Results for details on how to apply filters.
+
 **Example Request**
 ```shell
 curl https://api.cliniko.com/v1/appointments/deleted \
@@ -106,6 +119,12 @@ Get Cancelled Appointments
 * ```GET /businesses/:id/appointments/cancelled``` get all cancelled appointments for a specified business
 * ```GET /practitioners/:id/appointments/cancelled``` get all cancelled appointments for a specified practitioner
 * ```GET /patients/:id/appointments/cancelled``` get all cancelled appointments for a specified patient
+
+**Filtering**
+You can filter the returned results by these fields:
+* ```appointment_start``` with ```'>=', '>', '<=', '<'```
+
+See Filtering Results for details on how to apply filters.
 
 **Example Request**
 ```shell
