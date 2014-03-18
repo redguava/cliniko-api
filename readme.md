@@ -122,7 +122,7 @@ Some resources allow the results to be filtered. This will be documented with th
 
 General filter options are:
 
-'>=', '>', '<=', '<', '=', '!='
+```>=``` ```>``` ```<=``` ```<``` ```=``` ```!=```
 
 To filter a resource, add a filter string to the 'q' parameter.
 
