@@ -126,7 +126,7 @@ General filter options are:
 
 To filter a resource, add a filter string to the 'q' parameter.
 
-The filter string format is [FIELDNAME]:[OPERATOR][VALUE]
+The filter string format is ```[FIELDNAME]:[OPERATOR][VALUE]```
 
 Example:
 
