@@ -18,8 +18,9 @@ Get Appointments
 * ```GET /patients/:id/appointments``` get all appointments for a specified patient
 
 **Filtering**
+
 You can filter the returned results by these fields:
-* ```appointment_start``` with ```'>=', '>', '<=', '<'```
+* ```appointment_start``` (DateTime) with ```>=``` ```>``` ```<=``` ```<```
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
 
@@ -82,8 +83,9 @@ Get Deleted Appointments
 * ```GET /patients/:id/appointments/deleted``` get all deleted appointments for a specified patient
 
 **Filtering**
+
 You can filter the returned results by these fields:
-* ```appointment_start``` with ```'>=', '>', '<=', '<'```
+* ```appointment_start``` (DateTime) with ```>=``` ```>``` ```<=``` ```<```
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
 
@@ -121,8 +123,9 @@ Get Cancelled Appointments
 * ```GET /patients/:id/appointments/cancelled``` get all cancelled appointments for a specified patient
 
 **Filtering**
+
 You can filter the returned results by these fields:
-* ```appointment_start``` with ```'>=', '>', '<=', '<'```
+* ```appointment_start``` (DateTime) with ```>=``` ```>``` ```<=``` ```<```
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
 
