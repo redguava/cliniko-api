@@ -115,6 +115,30 @@ Fetching a list of records that have been updated since a specific time is easy.
 
 This timestamp has to be in UTC if present – e.g. 2014-08-30T18:00:00Z.
 
+Filtering Results
+-----------------
+
+Some resources allow the results to be filtered. This will be documented with the resource if it is available.
+
+General filter options are:
+
+```>=``` ```>``` ```<=``` ```<``` ```=``` ```!=```
+
+To filter a resource, add a filter string to the 'q' parameter.
+
+The filter string format is ```[FIELDNAME]:[OPERATOR][VALUE]```
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/appointments?q=appointment_start:>2014-03-04T20:37:17Z \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+```
+
+**Format Rules**
+* ```DateTime``` has to be in UTC if present – e.g. 2014-08-30T18:00:00Z.
+
 API Resources
 -----------------
 
