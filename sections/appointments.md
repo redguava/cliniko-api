@@ -100,16 +100,14 @@ curl https://api.cliniko.com/v1/appointments/deleted \
 **Example Response**
 ```json
 {
-    "appointments": [
-        {
-            "id": 8282,
-            "deleted_at": "2013-06-05T14:38:48Z"
-        }
-    ],
-    "total_entries": 1,
-    "links": {
-        "self": "http://api.cliniko.com/v1/businesses/1/appointments/deleted?page=1"
+  "appointments": [
+    {
+      "id": 8282,
+      "deleted_at": "2013-06-05T14:38:48Z"
     }
+  ],
+  "total_entries": 1,
+  "links": {"self": "http://api.cliniko.com/v1/businesses/1/appointments/deleted?page=1"}
 }
 ```
 
@@ -140,49 +138,39 @@ curl https://api.cliniko.com/v1/appointments/cancelled \
 **Example Response**
 ```json
 {
-    "appointments": [
-        {
-            "cancellation_note": null,
-            "cancellation_reason": 10,
-            "did_not_arrive": null,
-            "email_reminder_sent": false,
-            "id": 452,
-            "notes": "",
-            "online_booking_policy_accepted": null,
-            "patient_arrived": false,
-            "repeat_rule": {},
-            "sms_reminder_sent": false,
-            "appointment_end": "2012-05-11T09:15:00Z",
-            "appointment_start": "2012-05-11T08:45:00Z",
-            "cancellation_time": "2012-05-11T06:21:10Z",
-            "created_at": "2012-05-11T04:29:51Z",
-            "updated_at": "2012-05-11T06:21:10Z",
-            "appointment_type": {
-                "links": {
-                    "self": "http://api.cliniko.com/v1/appointment_types/21"
-                }
-            },
-            "business": {
-                "links": {
-                    "self": "http://api.cliniko.com/v1/businesses/11"
-                }
-            },
-            "patient": {
-                "links": {
-                    "self": "http://api.cliniko.com/v1/patients/130"
-                }
-            },
-            "practitioner": {
-                "links": {
-                    "self": "http://api.cliniko.com/v1/practitioners/1"
-                }
-            }
-        }
-    ],
-    "total_entries": 1,
-    "links": {
-        "self": "http://api.cliniko.com/v1/businesses/1/appointments/cancelled?page=1"
+  "appointments": [
+    {
+      "cancellation_note": null,
+      "cancellation_reason": 10,
+      "did_not_arrive": null,
+      "email_reminder_sent": false,
+      "id": 452,
+      "notes": "",
+      "online_booking_policy_accepted": null,
+      "patient_arrived": false,
+      "repeat_rule": {},
+      "sms_reminder_sent": false,
+      "appointment_end": "2012-05-11T09:15:00Z",
+      "appointment_start": "2012-05-11T08:45:00Z",
+      "cancellation_time": "2012-05-11T06:21:10Z",
+      "created_at": "2012-05-11T04:29:51Z",
+      "updated_at": "2012-05-11T06:21:10Z",
+      "appointment_type": {
+        "links": {"self": "http://api.cliniko.com/v1/appointment_types/21"}
+      },
+      "business": {
+        "links": {"self": "http://api.cliniko.com/v1/businesses/11"}
+      },
+      "patient": {
+        "links": {"self": "http://api.cliniko.com/v1/patients/130"}
+      },
+      "practitioner": {
+        "links": {"self": "http://api.cliniko.com/v1/practitioners/1"}
+      }
     }
+  ],
+  "total_entries": 1,
+  "links": {"self": "http://api.cliniko.com/v1/businesses/1/appointments/cancelled?page=1"}
 }
 ```
 
