@@ -25,31 +25,27 @@ curl https://api.cliniko.com/v1/products \
 **Example Response**
 ```json
 {
-    "products": [
-        {
-            "id": 1,
-            "item_code": "0001",
-            "name": "Product",
-            "product_supplier_name": "Supplier",
-            "price": "10.0",
-            "cost_price": "3.0",
-            "stock_level": 10,
-            "notes": "",
-            "price_ex_tax": "10.0",
-            "tax": {
-              "links": { "self": "https://api.cliniko.com/v1/taxes/1" }
-            },
-            "created_at": "2014-03-04T19:11:30Z",
-            "updated_at": "2014-03-04T19:11:30Z",
-            "links": {
-                "self": "https://api.cliniko.com/v1/products/1"
-            }
-        }
-    ],
-    "total_entries": 1,
-    "links": {
-        "self": "https://api.cliniko.com/v1/products?page=1"
+  "products": [
+    {
+      "id": 1,
+      "item_code": "0001",
+      "name": "Product",
+      "product_supplier_name": "Supplier",
+      "price": "10.0",
+      "cost_price": "3.0",
+      "stock_level": 10,
+      "notes": "",
+      "price_ex_tax": "10.0",
+      "tax": {
+        "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+      },
+      "created_at": "2014-03-04T19:11:30Z",
+      "updated_at": "2014-03-04T19:11:30Z",
+      "links": {"self": "https://api.cliniko.com/v1/products/1"}
     }
+  ],
+  "total_entries": 1,
+  "links": {"self": "https://api.cliniko.com/v1/products?page=1"}
 }
 ```
 
@@ -70,23 +66,21 @@ curl https://api.cliniko.com/v1/products/1 \
 **Example Response**
 ```json
 {
-    "id": 1,
-    "item_code": "0001",
-    "name": "Product",
-    "product_supplier_name": "Supplier",
-    "price": "10.0",
-    "cost_price": "3.0",
-    "stock_level": 10,
-    "notes": "",
-    "price_ex_tax": "10.0",
-    "tax": {
-      "links": { "self": "https://api.cliniko.com/v1/taxes/1" }
-    },
-    "created_at": "2014-03-04T19:11:30Z",
-    "updated_at": "2014-03-04T19:11:30Z",
-    "links": {
-        "self": "https://api.cliniko.com/v1/products/1"
-    }
+  "id": 1,
+  "item_code": "0001",
+  "name": "Product",
+  "product_supplier_name": "Supplier",
+  "price": "10.0",
+  "cost_price": "3.0",
+  "stock_level": 10,
+  "notes": "",
+  "price_ex_tax": "10.0",
+  "tax": {
+    "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+  },
+  "created_at": "2014-03-04T19:11:30Z",
+  "updated_at": "2014-03-04T19:11:30Z",
+  "links": {"self": "https://api.cliniko.com/v1/products/1"}
 }
 ```
 
@@ -101,7 +95,7 @@ curl https://api.cliniko.com/v1/products \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "item_code": "0001", "name": "Product 2", "product_supplier_name": "Supplier", "price": 11, "cost_price": 8, "stock_level": 10 }' \
+  -d '{ "item_code": "0002", "name": "Product 2", "product_supplier_name": "Supplier", "price": 11, "cost_price": 8, "stock_level": 10 }' \
   -X POST
 ```
 **Example Response**
@@ -110,23 +104,21 @@ Headers { Location: http://api.cliniko.com/products/2 }
 ```
 ```json
 {
-    "id": 2,
-    "item_code": "0002",
-    "name": "Product 2",
-    "product_supplier_name": "Supplier",
-    "price": "11.0",
-    "cost_price": "8.0",
-    "stock_level": 10,
-    "notes": "",
-    "price_ex_tax": "11.0",
-    "tax": {
-      "links": { "self": "https://api.cliniko.com/v1/taxes/1" }
-    },
-    "created_at": "2014-03-11T19:11:30Z",
-    "updated_at": "2014-03-11T19:11:30Z",
-    "links": {
-        "self": "https://api.cliniko.com/v1/products/2"
-    }
+  "id": 2,
+  "item_code": "0002",
+  "name": "Product 2",
+  "product_supplier_name": "Supplier",
+  "price": "11.0",
+  "cost_price": "8.0",
+  "stock_level": 10,
+  "notes": "",
+  "price_ex_tax": "11.0",
+  "tax": {
+    "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+  },
+  "created_at": "2014-03-11T19:11:30Z",
+  "updated_at": "2014-03-11T19:11:30Z",
+  "links": {"self": "https://api.cliniko.com/v1/products/2"}
 }
 ```
 
@@ -147,23 +139,21 @@ curl https://api.cliniko.com/v1/products/1 \
 **Example Response**
 ```json
 {
-    "id": 1,
-    "item_code": "0001",
-    "name": "Product 1",
-    "product_supplier_name": "Supplier",
-    "price": "10.0",
-    "cost_price": "3.0",
-    "stock_level": 10,
-    "notes": "",
-    "price_ex_tax": "10.0",
-    "tax": {
-      "links": { "self": "https://api.cliniko.com/v1/taxes/1" }
-    },
-    "created_at": "2014-03-04T19:11:30Z",
-    "updated_at": "2014-03-04T19:11:30Z",
-    "links": {
-        "self": "https://api.cliniko.com/v1/products/1"
-    }
+  "id": 1,
+  "item_code": "0001",
+  "name": "Product 1",
+  "product_supplier_name": "Supplier",
+  "price": "10.0",
+  "cost_price": "3.0",
+  "stock_level": 10,
+  "notes": "",
+  "price_ex_tax": "10.0",
+  "tax": {
+    "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+  },
+  "created_at": "2014-03-04T19:11:30Z",
+  "updated_at": "2014-03-04T19:11:30Z",
+  "links": {"self": "https://api.cliniko.com/v1/products/1"}
 }
 ```
 
@@ -193,23 +183,21 @@ curl https://api.cliniko.com/v1/products/1/adjust_stock_level \
 **Example Response**
 ```json
 {
-    "id": 1,
-    "item_code": "0001",
-    "name": "Product 1",
-    "product_supplier_name": "Supplier",
-    "price": "10.0",
-    "cost_price": "3.0",
-    "stock_level": 9,
-    "notes": "",
-    "price_ex_tax": "10.0",
-    "tax": {
-      "links": { "self": "https://api.cliniko.com/v1/taxes/1" }
-    },
-    "created_at": "2014-03-04T19:11:30Z",
-    "updated_at": "2014-03-04T19:11:30Z",
-    "links": {
-        "self": "https://api.cliniko.com/v1/products/1"
-    }
+  "id": 1,
+  "item_code": "0001",
+  "name": "Product 1",
+  "product_supplier_name": "Supplier",
+  "price": "10.0",
+  "cost_price": "3.0",
+  "stock_level": 9,
+  "notes": "",
+  "price_ex_tax": "10.0",
+  "tax": {
+    "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+  },
+  "created_at": "2014-03-04T19:11:30Z",
+  "updated_at": "2014-03-04T19:11:30Z",
+  "links": {"self": "https://api.cliniko.com/v1/products/1"}
 }
 ```
 
