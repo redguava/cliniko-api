@@ -127,6 +127,8 @@ Update Product
 **Resources**
 * ```PUT /products/:id``` update a product
 
+**IMPORTANT:** Stock level cannot be updated with this request. Please use [adjust stock level](#adjust-stock-level "This will modify product stock level.") request to modify product stock level.
+
 **Example Request**
 ```shell
 curl https://api.cliniko.com/v1/products/1 \
