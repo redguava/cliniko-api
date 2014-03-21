@@ -30,15 +30,15 @@ curl https://api.cliniko.com/v1/taxes \
       "amount": 10,
       "created_at": "2014-01-29T09:54:54Z",
       "updated_at": "2014-01-29T09:54:54Z",
-      "links": { "self": "https://api.cliniko.com/v1/taxes/1" }
+      "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
     }
   ],
   "total_entries": 1,
-  "links": { "self": "https://api.cliniko.com/v1/taxes?page=1" }
+  "links": {"self": "https://api.cliniko.com/v1/taxes?page=1"}
 }
 ```
 
-Get Product
+Get Tax
 ------------
 
 **Resources**
@@ -60,7 +60,7 @@ curl https://api.cliniko.com/v1/taxes/1 \
   "amount": 10,
   "created_at": "2014-01-29T09:54:54Z",
   "updated_at": "2014-01-29T09:54:54Z",
-  "links": { "self": "https://api.cliniko.com/v1/taxes/1" }
+  "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
 }
 ```
 
@@ -89,7 +89,7 @@ Headers { Location: https://api.cliniko.com/taxes/2 }
   "amount": 23,
   "created_at": "2014-03-03T09:54:54Z",
   "updated_at": "2014-03-03T09:54:54Z",
-  "links": { "self": "https://api.cliniko.com/v1/taxes/2" }
+  "links": {"self": "https://api.cliniko.com/v1/taxes/2"}
 }
 ```
 
@@ -115,7 +115,7 @@ curl https://api.cliniko.com/v1/taxes/2 \
   "amount": 22,
   "created_at": "2014-03-03T09:54:54Z",
   "updated_at": "2014-03-03T09:55:24Z",
-  "links": { "self": "https://api.cliniko.com/v1/taxes/2" }
+  "links": {"self": "https://api.cliniko.com/v1/taxes/2"}
 }
 ```
 
