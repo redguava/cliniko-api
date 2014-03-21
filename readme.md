@@ -171,9 +171,9 @@ curl https://api.cliniko.com/v1/patients?q=last_name:~~ja%on% \
 API Resources
 -----------------
 
-* [Available Times](https://github.com/redguava/cliniko-api/blob/master/sections/available_times.md)
 * [Appointment Types](https://github.com/redguava/cliniko-api/blob/master/sections/appointment_types.md)
 * [Appointments](https://github.com/redguava/cliniko-api/blob/master/sections/appointments.md)
+* [Available Times](https://github.com/redguava/cliniko-api/blob/master/sections/available_times.md)
 * [Businesses](https://github.com/redguava/cliniko-api/blob/master/sections/businesses.md)
 * [Patients](https://github.com/redguava/cliniko-api/blob/master/sections/patients.md)
 * [Practitioners](https://github.com/redguava/cliniko-api/blob/master/sections/practitioners.md)
