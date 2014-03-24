@@ -148,6 +148,7 @@ API Resources
 * [Practitioners](https://github.com/redguava/cliniko-api/blob/master/sections/practitioners.md)
 * [Patients](https://github.com/redguava/cliniko-api/blob/master/sections/patients.md)
 * [Available Times](https://github.com/redguava/cliniko-api/blob/master/sections/available_times.md)
+* [Taxes](https://github.com/redguava/cliniko-api/blob/master/sections/taxes.md)
 
 Get involved and help make our API better
 -----------------------------------------
