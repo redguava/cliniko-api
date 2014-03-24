@@ -27,7 +27,7 @@ curl https://api.cliniko.com/v1/taxes \
     {
       "id": 1,
       "name": "GST",
-      "amount": 10,
+      "amount": "10.0",
       "created_at": "2014-01-29T09:54:54Z",
       "updated_at": "2014-01-29T09:54:54Z",
       "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
@@ -57,7 +57,7 @@ curl https://api.cliniko.com/v1/taxes/1 \
 {
   "id": 1,
   "name": "GST",
-  "amount": 10,
+  "amount": "10.0",
   "created_at": "2014-01-29T09:54:54Z",
   "updated_at": "2014-01-29T09:54:54Z",
   "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
@@ -75,7 +75,7 @@ curl https://api.cliniko.com/v1/taxes \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "name": "VAT", "amount": 23 }' \
+  -d '{ "name": "VAT", "amount": "23" }' \
   -X POST
 ```
 **Example Response**
@@ -86,7 +86,7 @@ Headers { Location: https://api.cliniko.com/taxes/2 }
 {
   "id": 2,
   "name": "VAT",
-  "amount": 23,
+  "amount": "23.0",
   "created_at": "2014-03-03T09:54:54Z",
   "updated_at": "2014-03-03T09:54:54Z",
   "links": {"self": "https://api.cliniko.com/v1/taxes/2"}
@@ -104,7 +104,7 @@ curl https://api.cliniko.com/v1/taxes/2 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "amount": 22 }' \
+  -d '{ "amount": "22.0"}' \
   -X PUT
 ```
 **Example Response**
@@ -112,7 +112,7 @@ curl https://api.cliniko.com/v1/taxes/2 \
 {
   "id": 2,
   "name": "VAT",
-  "amount": 22,
+  "amount": "22.0",
   "created_at": "2014-03-03T09:54:54Z",
   "updated_at": "2014-03-03T09:55:24Z",
   "links": {"self": "https://api.cliniko.com/v1/taxes/2"}
