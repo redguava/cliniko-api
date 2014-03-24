@@ -104,7 +104,7 @@ curl https://api.cliniko.com/v1/taxes/2 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "amount": "22.0"}' \
+  -d '{ "amount": "22"}' \
   -X PUT
 ```
 **Example Response**
