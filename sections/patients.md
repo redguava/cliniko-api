@@ -131,6 +131,7 @@ Create Patient
 ```shell
 curl https://api.cliniko.com/v1/patients \
   -u API_KEY: \
+  -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
   -d '{ "first_name": "John", "last_name": "Snow" }' \ 
@@ -179,6 +180,7 @@ Update Patient
 curl https://api.cliniko.com/v1/patients/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
   -d '{ "first_name": "John", "last_name": "Snow" }' \ 
   -X PUT
