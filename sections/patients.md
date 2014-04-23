@@ -16,6 +16,15 @@ Get Patients
 **Resources**
 * ```GET /patients``` get all patients
 
+**Filtering**
+
+You can filter the returned results by these fields:
+* ```first_name``` (String) with ```=``` ```!=```
+* ```last_name``` (String) with ```=``` ```!=```
+* ```email``` (String) with ```=``` ```!=```
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
+
 **Example Request**
 ```shell
 curl https://api.cliniko.com/v1/patients \
