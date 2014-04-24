@@ -167,7 +167,6 @@ curl https://api.cliniko.com/v1/patients?q=last_name:~~ja%on% \
 * ```%``` is the wildcard symbol for the **wildcard search** operator.
 * You can use multiple ```%```'s in a **wildcard search**.
 * The **contains** operator is the same as doing ```%value%``` with the **wildcard search**.
-* Each field can use specific operators based on it's data type. Details will be listed with the resource.
 
 API Resources
 -----------------
