@@ -120,13 +120,17 @@ Filtering Results
 
 Some resources allow the results to be filtered. This will be documented with the resource if it is available.
 
-DateTime Filter Operators
-===========================
-```>=``` Greater than or equal to, ```>``` Greater than, ```<=``` Less than or equal to, ```<``` Less than
+**DateTime Filter Operators**
+* ```>=``` Greater than or equal to
+* ```>``` Greater than
+* ```<=``` Less than or equal to
+* ```<``` Less than
 
-String Filter Operators
-===========================
-```=``` Equals, ```!=``` Not equal to, ```~``` Contains, ```~~``` Wildcard search (%)
+**String Filter Operators**
+* ```=``` Equals
+* ```!=``` Not equal to
+* ```~``` Contains
+* ```~~``` Wildcard search (%)
 
 To filter a resource, add a filter string to the 'q' parameter.
 
