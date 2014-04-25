@@ -58,16 +58,16 @@ curl https://api.cliniko.com/v1/appointments \
 ```
 *Note: curl uses the -u flag to pass basic auth credentials (adding a colon after the API key will prevent it from asking for a password).*
 
-**API_KEY** is the API Key provided by the Cliniko user  
-**APP_VENDOR_NAME** is the name of your application that integrates with Cliniko  
-**APP_VENDOR_EMAIL** is a contact email address for your company  
+**API_KEY** is the API Key provided by the Cliniko user
+**APP_VENDOR_NAME** is the name of your application that integrates with Cliniko
+**APP_VENDOR_EMAIL** is a contact email address for your company
 
 That's all!
 
 Data Responses
 --------------
 
-We only support JSON for serialization of data. 
+We only support JSON for serialization of data.
 
 Dates and Times
 ---------------
@@ -120,15 +120,23 @@ Filtering Results
 
 Some resources allow the results to be filtered. This will be documented with the resource if it is available.
 
-General filter options are:
+**DateTime Filter Operators**
+* ```>=``` Greater than or equal to
+* ```>``` Greater than
+* ```<=``` Less than or equal to
+* ```<``` Less than
 
-```>=``` ```>``` ```<=``` ```<``` ```=``` ```!=```
+**String Filter Operators**
+* ```=``` Equals
+* ```!=``` Not equal to
+* ```~``` Contains
+* ```~~``` Wildcard search (%)
 
 To filter a resource, add a filter string to the 'q' parameter.
 
 The filter string format is ```[FIELDNAME]:[OPERATOR][VALUE]```
 
-**Example Request**
+**Example Request (Greater than)**
 ```shell
 curl https://api.cliniko.com/v1/appointments?q=appointment_start:>2014-03-04T20:37:17Z \
   -u API_KEY: \
@@ -136,8 +144,29 @@ curl https://api.cliniko.com/v1/appointments?q=appointment_start:>2014-03-04T20:
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
 ```
 
+**Example Request (Contains)**
+```shell
+curl https://api.cliniko.com/v1/patients?q=last_name:~son \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+```
+
+**Example Request (Wildcard Search)**
+```shell
+curl https://api.cliniko.com/v1/patients?q=last_name:~~ja%on% \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+```
+
 **Format Rules**
 * ```DateTime``` has to be in UTC if present – e.g. 2014-08-30T18:00:00Z.
+
+**Filtering Tips**
+* ```%``` is the wildcard symbol for the **wildcard search** operator.
+* You can use multiple ```%```'s in a **wildcard search**.
+* The **contains** operator is the same as doing ```%value%``` with the **wildcard search**.
 
 API Resources
 -----------------
