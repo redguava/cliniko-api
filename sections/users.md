@@ -30,6 +30,7 @@ curl https://api.cliniko.com/v1/users \
       "email": "john@example.com",
       "role": "administrator",
       "time_zone": "Melbourne",
+      "user_active": true,
       "created_at": "2014-01-29T09:54:54Z",
       "updated_at": "2014-04-29T00:00:56Z",
       "links": {"self": "https://api.cliniko.com/v1/users/1"}
@@ -64,6 +65,7 @@ curl https://api.cliniko.com/v1/users/1 \
   "email": "john@example.com",
   "role": "administrator",
   "time_zone": "Melbourne",
+  "user_active": true,
   "created_at": "2014-01-29T09:54:54Z",
   "updated_at": "2014-04-29T00:00:56Z",
   "links": {"self": "https://api.cliniko.com/v1/users/1"}
