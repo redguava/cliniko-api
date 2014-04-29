@@ -98,7 +98,7 @@ Create Stock Adjustment
    * Increase types: `"Stock Purchase", "Returned", "Other"`
    * Decrease types: `"Damaged", "Out of Date", "Item Sold", "Other"`
 
- Negative value of quantity param is only allowed when decreasing adjustment type has been selected and vice versa. 
+**IMPORTANT:** Negative value of quantity param is only allowed when decreasing adjustment type has been selected and vice versa. 
 
 **Example Request**
 ```shell
@@ -132,6 +132,6 @@ Headers { Location: https://api.cliniko.com/stock_adjustments/2 }
       "self": "https://api.cliniko.com/v1/products/1"
     }
   },
-  "links": {"self": "https://api.cliniko.com/v1/stock_adjustments/1"}
+  "links": {"self": "https://api.cliniko.com/v1/stock_adjustments/2"}
 }
 ```
