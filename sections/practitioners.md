@@ -37,6 +37,9 @@ curl https://api.cliniko.com/v1/practitioners \
       "default_appointment_type": {
         "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
       },
+      "user": {
+        "links": {"self": "https://api.cliniko.com/v1/users/1"}
+      },
       "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
     }
   ],
@@ -72,6 +75,9 @@ curl https://api.cliniko.com/v1/practitioners/1 \
   "updated_at": "2013-03-26T14:00:00Z",
   "default_appointment_type": {
     "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+  },
+  "user": {
+    "links": {"self": "https://api.cliniko.com/v1/users/1"}
   },
   "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
 }
