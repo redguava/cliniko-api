@@ -4,7 +4,6 @@ Products
 * [Get Product](#get-product "This will return a specified product.")
 * [Create Product](#create-product "This will create a product.")
 * [Update Product](#update-product "This will update a product.")
-* [Adjust Stock Level](#adjust-stock-level "This will modify product stock level.")
 * [Delete Product](#delete-product "This will delete a product.")
 
 
