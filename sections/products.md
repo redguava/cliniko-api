@@ -126,7 +126,7 @@ Update Product
 **Resources**
 * ```PUT /products/:id``` update a product
 
-**IMPORTANT:** Stock level cannot be updated with this request. Please use create stock adjustments entry point to modify product stock level.
+**IMPORTANT:** Stock level cannot be updated with this request. Please use create stock adjustment to modify product stock level.
 
 **Example Request**
 ```shell
