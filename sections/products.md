@@ -95,7 +95,7 @@ curl https://api.cliniko.com/v1/products \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "item_code": "0002", "name": "Product 2", "product_supplier_name": "Supplier", "price": 11, "cost_price": 8, "stock_level": 10 }' \
+  -d '{ "item_code": "0002", "name": "Product 2", "product_supplier_name": "Supplier", "price": 11, "cost_price": 8, "stock_level": 10, "tax_id": 1 }' \
   -X POST
 ```
 **Example Response**
@@ -127,7 +127,7 @@ Update Product
 **Resources**
 * ```PUT /products/:id``` update a product
 
-**IMPORTANT:** Stock level cannot be updated with this request. Please use [adjust stock level](#adjust-stock-level "This will modify product stock level.") request to modify product stock level.
+**IMPORTANT:** Stock level cannot be updated with this request. Please use create stock adjustments entry point to modify product stock level.
 
 **Example Request**
 ```shell
@@ -148,50 +148,6 @@ curl https://api.cliniko.com/v1/products/1 \
   "price": "10.0",
   "cost_price": "3.0",
   "stock_level": 10,
-  "notes": "",
-  "price_ex_tax": "10.0",
-  "tax": {
-    "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
-  },
-  "created_at": "2014-03-04T19:11:30Z",
-  "updated_at": "2014-03-04T19:11:30Z",
-  "links": {"self": "https://api.cliniko.com/v1/products/1"}
-}
-```
-
-Adjust Stock Level
-----------------
-**Resources**
-* ```POST /products/:id/adjust_stock_level``` adjusting stock level of a product
-
-**Required Parameters**
-
-There are two parameters required:
-* `quantity` defines the amount of products you want to add/remove to/from a stock level (use a negative value to remove)
-* `adjustment_type` describes the reason for the stock level modification. Following adjustment types are defined in Cliniko:
-  * Increase types: `"Stock Purchase", "Returned", "Other"`
-  * Decrease types: `"Damaged", "Out of Date", "Item Sold", "Other"`
-
-
-**Example Request**
-```shell
-curl https://api.cliniko.com/v1/products/1/adjust_stock_level \
-  -u API_KEY: \
-  -H 'Accept: application/json' \
-  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "quantity": -1, "adjustment_type": "Other" }' \
-  -X POST
-```
-**Example Response**
-```json
-{
-  "id": 1,
-  "item_code": "0001",
-  "name": "Product 1",
-  "product_supplier_name": "Supplier",
-  "price": "10.0",
-  "cost_price": "3.0",
-  "stock_level": 9,
   "notes": "",
   "price_ex_tax": "10.0",
   "tax": {
