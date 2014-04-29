@@ -91,14 +91,14 @@ Create Stock Adjustment
 
 **Required Parameters**
 
- There are tree parameters required:
- * `product_id` indicating an existing product of which stock level you want to modify
- * `quantity` defines a number of products you want to add/remove to/from a stock level
- * `adjustment_type` describes the reason of stock level modification. Following adjustment types are defined in Cliniko:
+ There are three parameters required:
+ * `product_id` indicating the existing product you want to adjust the stock level of.
+ * `quantity` define the number of items you want to add or remove from the stock level.
+ * `adjustment_type` describes the reason for modifying the stock level. The following are acceptable adjustment types:
    * Increase types: `"Stock Purchase", "Returned", "Other"`
    * Decrease types: `"Damaged", "Out of Date", "Item Sold", "Other"`
 
-**IMPORTANT:** Negative value of quantity param is only allowed when decreasing adjustment type has been selected and vice versa. 
+**IMPORTANT:** A negative value of the quantity param is only allowed when a decreasing adjustment type has been selected and vice versa. 
 
 **Example Request**
 ```shell
