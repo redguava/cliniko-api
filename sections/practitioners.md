@@ -11,7 +11,7 @@ Get Practitioners
 ----------------
 
 **Resources**
-* ```GET /practitioners``` get all practitioners
+* ```GET /practitioners``` get all active practitioners
 
 **Example Request**
 ```shell
