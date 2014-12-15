@@ -50,6 +50,10 @@ curl https://api.cliniko.com/v1/appointments \
       "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
       "sms_reminder_sent": false,
       "updated_at": "2013-03-27T10:03:57Z",
+      "deleted_at": null,
+      "cancellation_time": null,
+      "cancellation_note": null,
+      "cancellation_reason": null,
       "appointment_repeated_from" : {
         "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
       },
@@ -102,8 +106,38 @@ curl https://api.cliniko.com/v1/appointments/deleted \
 {
   "appointments": [
     {
-      "id": 8282,
-      "deleted_at": "2013-06-05T14:38:48Z"
+      "appointment_end": "2013-03-26T14:00:00Z",
+      "appointment_start": "2013-03-26T14:00:00Z",
+      "created_at": "2013-03-27T10:03:57Z",
+      "did_not_arrive": false,
+      "email_reminder_sent": false,
+      "id": 343589,
+      "notes": null,
+      "online_booking_policy_accepted": null,
+      "patient_arrived": false,
+      "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
+      "sms_reminder_sent": false,
+      "updated_at": "2013-03-27T10:03:57Z",
+      "deleted_at": "2013-06-05T14:38:48Z",
+      "cancellation_time": null,
+      "cancellation_note": null,
+      "cancellation_reason": null,
+      "appointment_repeated_from" : {
+        "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
+      },
+      "appointment_type": {
+        "links": {"self": "https://api.cliniko.com/v1/appointment_types/12345"}
+      },
+      "business": {
+        "links": {"self": "https://api.cliniko.com/v1/businesses/45678"}
+      },
+      "patient": {
+        "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
+      },
+      "practitioner": {
+        "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
+      },
+      "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
     }
   ],
   "total_entries": 1,
@@ -140,33 +174,38 @@ curl https://api.cliniko.com/v1/appointments/cancelled \
 {
   "appointments": [
     {
-      "cancellation_note": null,
-      "cancellation_reason": 10,
-      "did_not_arrive": null,
+      "appointment_end": "2013-03-26T14:00:00Z",
+      "appointment_start": "2013-03-26T14:00:00Z",
+      "created_at": "2013-03-27T10:03:57Z",
+      "did_not_arrive": false,
       "email_reminder_sent": false,
-      "id": 452,
-      "notes": "",
+      "id": 343589,
+      "notes": null,
       "online_booking_policy_accepted": null,
       "patient_arrived": false,
-      "repeat_rule": {},
+      "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
       "sms_reminder_sent": false,
-      "appointment_end": "2012-05-11T09:15:00Z",
-      "appointment_start": "2012-05-11T08:45:00Z",
+      "updated_at": "2013-03-27T10:03:57Z",
+      "deleted_at": null,
       "cancellation_time": "2012-05-11T06:21:10Z",
-      "created_at": "2012-05-11T04:29:51Z",
-      "updated_at": "2012-05-11T06:21:10Z",
+      "cancellation_note": null,
+      "cancellation_reason": 10,
+      "appointment_repeated_from" : {
+        "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
+      },
       "appointment_type": {
-        "links": {"self": "http://api.cliniko.com/v1/appointment_types/21"}
+        "links": {"self": "https://api.cliniko.com/v1/appointment_types/12345"}
       },
       "business": {
-        "links": {"self": "http://api.cliniko.com/v1/businesses/11"}
+        "links": {"self": "https://api.cliniko.com/v1/businesses/45678"}
       },
       "patient": {
-        "links": {"self": "http://api.cliniko.com/v1/patients/130"}
+        "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
       },
       "practitioner": {
-        "links": {"self": "http://api.cliniko.com/v1/practitioners/1"}
-      }
+        "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
+      },
+      "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
     }
   ],
   "total_entries": 1,
@@ -196,29 +235,33 @@ curl https://api.cliniko.com/v1/appointments/1 \
   "created_at": "2013-03-27T10:03:57Z",
   "did_not_arrive": false,
   "email_reminder_sent": false,
-  "id": 1,
+  "id": 343589,
   "notes": null,
   "online_booking_policy_accepted": null,
   "patient_arrived": false,
-  "repeat_rule": {},
+  "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
   "sms_reminder_sent": false,
   "updated_at": "2013-03-27T10:03:57Z",
+  "deleted_at": null,
+  "cancellation_time": null,
+  "cancellation_note": null,
+  "cancellation_reason": null,
   "appointment_repeated_from" : {
     "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
   },
   "appointment_type": {
-    "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+    "links": {"self": "https://api.cliniko.com/v1/appointment_types/12345"}
   },
   "business": {
-    "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
+    "links": {"self": "https://api.cliniko.com/v1/businesses/45678"}
   },
   "patient": {
-    "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+    "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
   },
   "practitioner": {
     "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
   },
-  "links": {"self": "https://api.cliniko.com/v1/appointments/1"}
+  "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
 }
 ```
 
@@ -242,34 +285,38 @@ Headers { Location: http://api.cliniko.com/appointments/1 }
 ```
 ```json
 {
-  "appointment_end": "2013-03-26T15:00:00Z",
+  "appointment_end": "2013-03-26T14:00:00Z",
   "appointment_start": "2013-03-26T14:00:00Z",
   "created_at": "2013-03-27T10:03:57Z",
   "did_not_arrive": false,
   "email_reminder_sent": false,
-  "id": 1,
+  "id": 343589,
   "notes": null,
   "online_booking_policy_accepted": null,
   "patient_arrived": false,
-  "repeat_rule": {},
+  "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
   "sms_reminder_sent": false,
   "updated_at": "2013-03-27T10:03:57Z",
+  "deleted_at": null,
+  "cancellation_time": null,
+  "cancellation_note": null,
+  "cancellation_reason": null,
   "appointment_repeated_from" : {
     "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
   },
   "appointment_type": {
-    "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+    "links": {"self": "https://api.cliniko.com/v1/appointment_types/12345"}
   },
   "business": {
-    "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
+    "links": {"self": "https://api.cliniko.com/v1/businesses/45678"}
   },
   "patient": {
-    "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+    "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
   },
   "practitioner": {
     "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
   },
-  "links": {"self": "https://api.cliniko.com/v1/appointments/1"}
+  "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
 }
 ```
 
@@ -290,34 +337,38 @@ curl https://api.cliniko.com/v1/appointments/1 \
 **Example Response**
 ```json
 {
-  "appointment_end": "2013-03-26T15:00:00Z",
+  "appointment_end": "2013-03-26T14:00:00Z",
   "appointment_start": "2013-03-26T14:00:00Z",
   "created_at": "2013-03-27T10:03:57Z",
   "did_not_arrive": false,
   "email_reminder_sent": false,
-  "id": 1,
+  "id": 343589,
   "notes": null,
   "online_booking_policy_accepted": null,
   "patient_arrived": false,
-  "repeat_rule": {},
+  "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
   "sms_reminder_sent": false,
   "updated_at": "2013-03-27T10:03:57Z",
+  "deleted_at": null,
+  "cancellation_time": null,
+  "cancellation_note": null,
+  "cancellation_reason": null,
   "appointment_repeated_from" : {
     "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
   },
   "appointment_type": {
-    "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+    "links": {"self": "https://api.cliniko.com/v1/appointment_types/12345"}
   },
   "business": {
-    "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
+    "links": {"self": "https://api.cliniko.com/v1/businesses/45678"}
   },
   "patient": {
-    "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+    "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
   },
   "practitioner": {
     "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
   },
-  "links": {"self": "https://api.cliniko.com/v1/appointments/1"}
+  "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
 }
 ```
 
@@ -336,4 +387,3 @@ curl https://api.cliniko.com/v1/appointments/1 \
 ```
 **Example Response**
 A status code of `204 no content` will be returned if successful
-
