@@ -168,6 +168,11 @@ curl https://api.cliniko.com/v1/patients?q=last_name:~~ja%on% \
 * You can use multiple ```%```'s in a **wildcard search**.
 * The **contains** operator is the same as doing ```%value%``` with the **wildcard search**.
 
+Ordering
+-----------------
+
+API results are ordered by their `created_at` timestamps.
+
 API Resources
 -----------------
 
