@@ -132,7 +132,7 @@ Some resources allow the results to be filtered. This will be documented with th
 * ```~``` Contains
 * ```~~``` Wildcard search (%)
 
-To filter a resource, add a filter string to the 'q' parameter.
+To filter a resource, add a filter string to the 'q' parameter. To apply multiple filters, send multiple filter strings as an array with the `q[]` parameter.
 
 The filter string format is ```[FIELDNAME]:[OPERATOR][VALUE]```
 
@@ -155,6 +155,14 @@ curl https://api.cliniko.com/v1/patients?q=last_name:~son \
 **Example Request (Wildcard Search)**
 ```shell
 curl https://api.cliniko.com/v1/patients?q=last_name:~~ja%on% \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+```
+
+**Example Request (Multiple Filters)**
+```shell
+curl https://api.cliniko.com/v1/patients?q%5B%5D=first_name:~bri&q%5B%5D=last_name:~son \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
