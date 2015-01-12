@@ -132,9 +132,25 @@ Some resources allow the results to be filtered. This will be documented with th
 * ```~``` Contains
 * ```~~``` Wildcard search (%)
 
-To filter a resource, add a filter string to the 'q' parameter. To apply multiple filters, send multiple filter strings as an array with the `q[]` parameter.
+
+**Fitler String Format**
 
 The filter string format is ```[FIELDNAME]:[OPERATOR][VALUE]```
+
+**Sending Filter Parameters**
+
+To filter a resource, send a filter string as the `q` parameter:
+
+`https://api.cliniko.com/v1/appointments?q=appointment_start:>2014-03-04T20:37:17Z`
+
+To apply multiple filters, send multiple filter strings as an array with the `q[]` parameter:
+
+`https://api.cliniko.com/v1/appointments?q[]=appointment_start:>2014-03-04T20:37:17Z&q[]=appointment_start:<2014-04-04T20:37:17Z`
+
+The `q[]` method also works for a single filter string:
+
+`https://api.cliniko.com/v1/appointments?q[]=appointment_start:>2014-03-04T20:37:17Z`
+
 
 **Example Request (Greater than)**
 ```shell
@@ -167,6 +183,7 @@ curl https://api.cliniko.com/v1/patients?q%5B%5D=first_name:~bri&q%5B%5D=last_na
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
 ```
+In this example, `q[]` is encoded as `q%5B%5D` so this command works properly in a terminal.
 
 **Format Rules**
 * ```DateTime``` has to be in UTC if present – e.g. 2014-08-30T18:00:00Z.
