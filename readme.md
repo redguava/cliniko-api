@@ -133,7 +133,7 @@ Some resources allow the results to be filtered. This will be documented with th
 * ```~~``` Wildcard search (%)
 
 
-**Fitler String Format**
+**Filter String Format**
 
 The filter string format is ```[FIELDNAME]:[OPERATOR][VALUE]```
 
