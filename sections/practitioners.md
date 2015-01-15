@@ -12,6 +12,7 @@ Get Practitioners
 
 **Resources**
 * ```GET /practitioners``` get all active practitioners
+* ```GET /businesses/:id/practitioners``` get all active practitioners for a specified business
 
 **Example Request**
 ```shell
