@@ -274,9 +274,10 @@ Create Appointment
 ```shell
 curl https://api.cliniko.com/v1/appointments \
   -u API_KEY: \
+  -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d 'appointment_start=2013-03-26T14:00:00Z&appointment_end=2013-03-26T15:00:00Z&patient_id=1&practitioner_id=1&appointment_type_id=1&business_id=1' \
+  -d '{ "appointment_start": "2015-01-21T04:00:00Z", "patient_id": "1", "practitioner_id": "1", "appointment_type_id": "1", "business_id": "1" }' \
   -X POST
 ```
 **Example Response**
@@ -329,9 +330,10 @@ Update Appointment
 ```shell
 curl https://api.cliniko.com/v1/appointments/1 \
   -u API_KEY: \
+  -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d 'appointment_end=2013-03-26T15:00:00Z' \
+  -d '{ "appointment_end": "2015-01-21T05:00:00Z" }' \
   -X PUT
 ```
 **Example Response**
