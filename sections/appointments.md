@@ -270,6 +270,10 @@ Create Appointment
 **Resources**
 * ```POST /appointments``` create an appointment
 
+**Notes**
+
+If not provided, the appointment_end is automatically set based upon the duration of the appointment_type.
+
 **Example Request**
 ```shell
 curl https://api.cliniko.com/v1/appointments \
@@ -325,6 +329,10 @@ Update Appointment
 ----------------
 **Resources**
 * ```PUT /appointments/:id``` update an appointment
+
+**Notes**
+
+If not provided, the appointment_end is automatically set based upon the duration of the appointment_type.
 
 **Example Request**
 ```shell
