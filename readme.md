@@ -196,7 +196,7 @@ In this example, `q[]` is encoded as `q%5B%5D` so this command works properly in
 Ordering
 -----------------
 
-API results are ordered by their `created_at` timestamps.
+API results are ordered by their `created_at` timestamps. You can get results back in reverse chronological order by sending the `order` parameter set to `desc`.
 
 API Resources
 -----------------
