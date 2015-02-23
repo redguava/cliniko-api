@@ -198,6 +198,8 @@ Ordering
 
 API results are ordered by their `created_at` timestamps. You can get results back in reverse chronological order by sending the `order` parameter set to `desc`.
 
+Availability times do not follow this ordering scheme.
+
 API Resources
 -----------------
 
