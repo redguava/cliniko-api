@@ -5,6 +5,8 @@ Patients
 > When you're working with patient information, make sure you abide by the relevant regulations for security and privacy.
 
 * [Get Patients](#get-patients "This will return all patients.")
+* [Get Deleted Patients](#get-deleted-patients "This will return all deleted patients.")
+* [Get Archived Patients](#get-archived-patients "This will return all archived patients.")
 * [Get Patient](#get-patient "This will return a specified patient.")
 * [Create Patient](#create-patient "This will create a patient.")
 * [Update Patient](#update-patient "This will update a patient.")
@@ -76,6 +78,144 @@ curl https://api.cliniko.com/v1/patients \
   ],
   "total_entires": 1,
   "links": {"self": "https://api.cliniko.com/v1/patients?page=1"}
+}
+```
+
+Get Deleted Patients
+----------------
+
+**Resources**
+* ```GET /patients/deleted``` get all deleted patients
+
+**Filtering**
+
+You can filter the returned results by these fields:
+* ```first_name``` (String) with ```=``` ```!=``` ```~``` ```~~```
+* ```last_name``` (String) with ```=``` ```!=``` ```~``` ```~~```
+* ```email``` (String) with ```=``` ```!=``` ```~``` ```~~```
+* ```old_reference_id``` (String) with ```=``` ```!=``` ```~``` ```~~```
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/patients/deleted \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+```
+
+**Example Response**
+```json
+{
+  "patients": [
+    {
+      "address_1": "1 Smith Street",
+      "address_2": "",
+      "address_3": "",
+      "archived_at": "",
+      "city": "Melbourne",
+      "country": "Australia",
+      "created_at": "2013-03-26T14:00:00Z",
+      "date_of_birth": "2001-05-26",
+      "email": "peter@example.com",
+      "emergency_contact": "",
+      "first_name": "Peter",
+      "gender": "Male",
+      "id": 1,
+      "last_name": "Patientman",
+      "notes": "",
+      "occupation": "",
+      "old_reference_id": "",
+      "post_code": "3000",
+      "referral_source": "",
+      "state": "Victoria",
+      "title": "Mr",
+      "updated_at": "2013-03-26T14:00:00Z",
+      "patient_phone_numbers": [
+        {
+          "phone_type": "Mobile",
+          "number": "61444444444"
+        },
+        {
+          "phone_type": "Home",
+          "number": "61399999999"
+        }
+      ],
+      "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+    }
+  ],
+  "total_entires": 1,
+  "links": {"self": "https://api.cliniko.com/v1/patients/deleted?page=1"}
+}
+```
+
+Get Archived Patients
+----------------
+
+**Resources**
+* ```GET /patients/archived``` get all archived patients
+
+**Filtering**
+
+You can filter the returned results by these fields:
+* ```first_name``` (String) with ```=``` ```!=``` ```~``` ```~~```
+* ```last_name``` (String) with ```=``` ```!=``` ```~``` ```~~```
+* ```email``` (String) with ```=``` ```!=``` ```~``` ```~~```
+* ```old_reference_id``` (String) with ```=``` ```!=``` ```~``` ```~~```
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/patients/archived \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+```
+
+**Example Response**
+```json
+{
+  "patients": [
+    {
+      "address_1": "1 Smith Street",
+      "address_2": "",
+      "address_3": "",
+      "archived_at": "",
+      "city": "Melbourne",
+      "country": "Australia",
+      "created_at": "2013-03-26T14:00:00Z",
+      "date_of_birth": "2001-05-26",
+      "email": "peter@example.com",
+      "emergency_contact": "",
+      "first_name": "Peter",
+      "gender": "Male",
+      "id": 1,
+      "last_name": "Patientman",
+      "notes": "",
+      "occupation": "",
+      "old_reference_id": "",
+      "post_code": "3000",
+      "referral_source": "",
+      "state": "Victoria",
+      "title": "Mr",
+      "updated_at": "2013-03-26T14:00:00Z",
+      "patient_phone_numbers": [
+        {
+          "phone_type": "Mobile",
+          "number": "61444444444"
+        },
+        {
+          "phone_type": "Home",
+          "number": "61399999999"
+        }
+      ],
+      "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+    }
+  ],
+  "total_entires": 1,
+  "links": {"self": "https://api.cliniko.com/v1/patients/archived?page=1"}
 }
 ```
 
