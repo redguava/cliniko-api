@@ -29,6 +29,7 @@ curl https://api.cliniko.com/v1/practitioners \
     {
       "created_at": "2013-03-26T14:00:00Z",
       "designation": "Osteopath",
+      "description": null,
       "first_name": "Randy",
       "id": 1,
       "last_name": "Savage",
@@ -37,6 +38,9 @@ curl https://api.cliniko.com/v1/practitioners \
       "updated_at": "2013-03-26T14:00:00Z",
       "default_appointment_type": {
         "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+      },
+      "practitioner_reference_numbers": {
+        "links": {"self": "https://api.cliniko.com/v1/practitioners/1/practitioner_reference_numbers?page=1"}
       },
       "user": {
         "links": {"self": "https://api.cliniko.com/v1/users/1"}
@@ -68,6 +72,7 @@ curl https://api.cliniko.com/v1/practitioners/1 \
 {
   "created_at": "2013-03-26T14:00:00Z",
   "designation": "Osteopath",
+  "description": null,
   "first_name": "Randy",
   "id": 1,
   "last_name": "Savage",
@@ -76,6 +81,9 @@ curl https://api.cliniko.com/v1/practitioners/1 \
   "updated_at": "2013-03-26T14:00:00Z",
   "default_appointment_type": {
     "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+  },
+  "practitioner_reference_numbers": {
+        "links": {"self": "https://api.cliniko.com/v1/practitioners/1/practitioner_reference_numbers?page=1"}
   },
   "user": {
     "links": {"self": "https://api.cliniko.com/v1/users/1"}
