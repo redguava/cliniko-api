@@ -74,6 +74,9 @@ curl https://api.cliniko.com/v1/patients \
           "number": "61399999999"
         }
       ],
+      "medical_alerts": {
+        "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+      },
       "links": {"self": "https://api.cliniko.com/v1/patients/1"}
     }
   ],
@@ -144,6 +147,9 @@ curl https://api.cliniko.com/v1/patients/deleted \
           "number": "61399999999"
         }
       ],
+      "medical_alerts": {
+        "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+      },
       "links": {"self": "https://api.cliniko.com/v1/patients/1"}
     }
   ],
@@ -214,6 +220,9 @@ curl https://api.cliniko.com/v1/patients/archived \
           "number": "61399999999"
         }
       ],
+      "medical_alerts": {
+        "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+      },
       "links": {"self": "https://api.cliniko.com/v1/patients/1"}
     }
   ],
@@ -272,6 +281,9 @@ curl https://api.cliniko.com/v1/patients/1 \
       "number": "61399999999"
     }
   ],
+  "medical_alerts": {
+    "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+  },
   "links": {"self": "https://api.cliniko.com/v1/patients/1"}
 }
 ```
@@ -321,6 +333,9 @@ Headers { Location: http://api.cliniko.com/patients/1 }
   "title": "",
   "updated_at": "2013-03-26T14:00:00Z",
   "patient_phone_numbers": [],
+  "medical_alerts": {
+    "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+  },
   "links": {"self": "https://api.cliniko.com/v1/patients/1"}
 }
 ```
@@ -376,6 +391,9 @@ curl https://api.cliniko.com/v1/patients/1 \
       "number": "61399999999"
     }
   ],
+  "medical_alerts": {
+    "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+  },
   "links": {"self": "https://api.cliniko.com/v1/patients/1"}
 }
 ```
