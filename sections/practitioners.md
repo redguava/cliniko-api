@@ -6,6 +6,7 @@ Practitioners
 
 * [Get Practitioners](#get-practitioners "This will return all practitioners.")
 * [Get Practitioner](#get-practitioner "This will return a specified practitioner.")
+* [Get Inactive Practitioners](#get-inactive-practitioners "This will return all inactive practitioners.")
 
 Get Practitioners
 ----------------
@@ -83,3 +84,46 @@ curl https://api.cliniko.com/v1/practitioners/1 \
   "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
 }
 ```
+
+Get Inactive Practitioners
+----------------
+
+**Resources**
+* ```GET /practitioners/inactive``` get all inactive practitioners
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/practitioners/inactive \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+```
+
+**Example Response**
+```json
+{
+  "practitioners": [
+    {
+      "created_at": "2013-03-27T14:00:00Z",
+      "designation": "Osteopath",
+      "first_name": "Andy",
+      "id": 3,
+      "last_name": "Savage",
+      "show_in_online_bookings": true,
+      "title": "Mr",
+      "updated_at": "2013-03-27T14:00:00Z",
+      "default_appointment_type": {
+        "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+      },
+      "user": {
+        "links": {"self": "https://api.cliniko.com/v1/users/3"}
+      },
+      "links": {"self": "https://api.cliniko.com/v1/practitioners/3"}
+    }
+  ],
+  "total_entries": 1,
+  "links": {"self": "https://api.cliniko.com/v1/practitioners/inactive?page=1"}
+}
+```
+
+
