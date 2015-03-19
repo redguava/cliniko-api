@@ -90,6 +90,7 @@ Get Inactive Practitioners
 
 **Resources**
 * ```GET /practitioners/inactive``` get all inactive practitioners
+* ```GET /businesses/:id/practitioners/inactive``` get all inactive practitioners for a specified business
 
 **Example Request**
 ```shell
