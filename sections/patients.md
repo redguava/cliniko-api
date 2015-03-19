@@ -53,6 +53,9 @@ curl https://api.cliniko.com/v1/patients \
       "email": "peter@example.com",
       "emergency_contact": "",
       "first_name": "Peter",
+      "invoice_default_to": "Super Insurance",
+      "invoice_email": "super.insurance@example.com",
+      "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
       "gender": "Male",
       "id": 1,
       "last_name": "Patientman",
@@ -126,6 +129,9 @@ curl https://api.cliniko.com/v1/patients/deleted \
       "email": "peter@example.com",
       "emergency_contact": "",
       "first_name": "Peter",
+      "invoice_default_to": "Super Insurance",
+      "invoice_email": "super.insurance@example.com",
+      "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
       "gender": "Male",
       "id": 1,
       "last_name": "Patientman",
@@ -199,6 +205,9 @@ curl https://api.cliniko.com/v1/patients/archived \
       "email": "peter@example.com",
       "emergency_contact": "",
       "first_name": "Peter",
+      "invoice_default_to": "Super Insurance",
+      "invoice_email": "super.insurance@example.com",
+      "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
       "gender": "Male",
       "id": 1,
       "last_name": "Patientman",
@@ -260,6 +269,9 @@ curl https://api.cliniko.com/v1/patients/1 \
   "email": "peter@example.com",
   "emergency_contact": "",
   "first_name": "Peter",
+  "invoice_default_to": "Super Insurance",
+  "invoice_email": "super.insurance@example.com",
+  "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
   "gender": "Male",
   "id": 1,
   "last_name": "Patientman",
@@ -300,7 +312,7 @@ curl https://api.cliniko.com/v1/patients \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "first_name": "John", "last_name": "Snow" }' \ 
+  -d '{ "first_name": "John", "last_name": "Snow" }' \
   -X POST
 ```
 **Example Response**
@@ -321,6 +333,9 @@ Headers { Location: http://api.cliniko.com/patients/1 }
   "email": "",
   "emergency_contact": "",
   "first_name": "John",
+  "invoice_default_to": "",
+  "invoice_email": "",
+  "invoice_extra_information": "",
   "gender": "",
   "id": 1,
   "last_name": "Snow",
@@ -352,7 +367,7 @@ curl https://api.cliniko.com/v1/patients/1 \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "first_name": "John", "last_name": "Snow" }' \ 
+  -d '{ "first_name": "John", "last_name": "Snow" }' \
   -X PUT
 ```
 **Example Response**
@@ -370,6 +385,9 @@ curl https://api.cliniko.com/v1/patients/1 \
   "email": "peter@example.com",
   "emergency_contact": "",
   "first_name": "John",
+  "invoice_default_to": "Super Insurance",
+  "invoice_email": "super.insurance@example.com",
+  "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
   "gender": "Male",
   "id": 1,
   "last_name": "Snow",
