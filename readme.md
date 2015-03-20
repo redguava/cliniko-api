@@ -196,9 +196,13 @@ In this example, `q[]` is encoded as `q%5B%5D` so this command works properly in
 Ordering
 -----------------
 
-API results are ordered by their `created_at` timestamps. You can get results back in reverse chronological order by sending the `order` parameter set to `desc`.
+By default, API results are ordered in ascending direction by their `created_at` timestamps.
 
-Availability times do not follow this ordering scheme.
+You can specify a custom column to order by sending the 'sort' parameter as the column name (eg. sort=appointment_start).
+
+You can also specify the order direction by sending the 'order' parameter set to 'desc' or 'asc' (eg. order=desc).
+
+Availability times are not able to be custom ordered, they are always returned chronologically.
 
 API Resources
 -----------------
