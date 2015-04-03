@@ -215,6 +215,7 @@ API Resources
 * [Patients](https://github.com/redguava/cliniko-api/blob/master/sections/patients.md)
 * [Practitioners](https://github.com/redguava/cliniko-api/blob/master/sections/practitioners.md)
 * [Products](https://github.com/redguava/cliniko-api/blob/master/sections/products.md)
+* [Settings](https://github.com/redguava/cliniko-api/blob/master/sections/settings.md)
 * [Stock Adjustments](https://github.com/redguava/cliniko-api/blob/master/sections/stock_adjustments.md)
 * [Taxes](https://github.com/redguava/cliniko-api/blob/master/sections/taxes.md)
 * [Users](https://github.com/redguava/cliniko-api/blob/master/sections/users.md)
