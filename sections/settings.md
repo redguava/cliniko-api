@@ -30,7 +30,11 @@ curl https://api.cliniko.com/v1/settings \
     "time_zone": "Eastern Time (US & Canada)"
   },
   "calendar": {
-    "timeslot_size_in_minutes": 15
+    "start_hour": 0,
+    "end_hour": 24,
+    "timeslot_height_in_pixels": 15,
+    "timeslot_size_in_minutes": 15,
+    "show_current_time_indicator": true
   },
   "online_bookings": {
     "enabled": true,
@@ -66,7 +70,16 @@ curl https://api.cliniko.com/v1/settings/public \
     "time_zone": "Eastern Time (US & Canada)"
   },
   "calendar": {
-    "timeslot_size_in_minutes": 15
+    "start_hour": 0,
+    "end_hour": 24,
+    "timeslot_height_in_pixels": 15,
+    "timeslot_size_in_minutes": 15,
+    "show_current_time_indicator": true
+  },
+  "online_bookings": {
+    "enabled": true,
+    "policy": "be cool",
+    "calendar_info": "pick a time!"
   }
 }
 ```
