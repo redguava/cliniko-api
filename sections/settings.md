@@ -27,7 +27,13 @@ curl https://api.cliniko.com/v1/settings \
   "account": {
     "name": "Bins, Boehm and Baumbach",
     "country": "United States",
-    "time_zone": "Eastern Time (US & Canada)"
+    "time_zone": "Eastern Time (US & Canada)",
+    "email_from": "admin@example.com",
+    "admin": {
+      "email": "admin@example.com",
+      "first_name": "Tim",
+      "last_name": "Decker"
+    }
   },
   "calendar": {
     "start_hour": 0,
@@ -68,13 +74,7 @@ curl https://api.cliniko.com/v1/settings/public \
   "account": {
     "name": "Bins, Boehm and Baumbach",
     "country": "United States",
-    "time_zone": "Eastern Time (US & Canada)",
-    "email_from": "admin@example.com",
-    "admin": {
-      "email": "admin@example.com",
-      "first_name": "Tim",
-      "last_name": "Decker"
-    }
+    "time_zone": "Eastern Time (US & Canada)"
   },
   "calendar": {
     "start_hour": 0,
