@@ -54,32 +54,32 @@ curl https://api.cliniko.com/v1/invoices \
       "closed_at": null,
       "appointment": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/appointments/70644"
+          "self": "https://api.cliniko.com/v1/appointments/70644"
         }
       },
       "business": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/businesses/26"
+          "self": "https://api.cliniko.com/v1/businesses/26"
         }
       },
       "practitioner": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/practitioners/26"
+          "self": "https://api.cliniko.com/v1/practitioners/26"
         }
       },
       "patient": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/patients/1593"
+          "self": "https://api.cliniko.com/v1/patients/1593"
         }
       },
       "links": {
-        "self": "http://local.cliniko.dev:3000/v1/invoices/108"
+        "self": "https://api.cliniko.com/v1/invoices/108"
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "http://local.cliniko.dev:3000/v1/invoices?page=1"
+    "self": "https://api.cliniko.com/v1/invoices?page=1"
   }
 }
 ```
@@ -133,32 +133,32 @@ curl https://api.cliniko.com/v1/invoices/deleted \
       "closed_at": null,
       "appointment": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/appointments/70644"
+          "self": "https://api.cliniko.com/v1/appointments/70644"
         }
       },
       "business": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/businesses/26"
+          "self": "https://api.cliniko.com/v1/businesses/26"
         }
       },
       "practitioner": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/practitioners/26"
+          "self": "https://api.cliniko.com/v1/practitioners/26"
         }
       },
       "patient": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/patients/1593"
+          "self": "https://api.cliniko.com/v1/patients/1593"
         }
       },
       "links": {
-        "self": "http://local.cliniko.dev:3000/v1/invoices/108"
+        "self": "https://api.cliniko.com/v1/invoices/108"
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "http://local.cliniko.dev:3000/v1/appointments/70644/invoices?page=1"
+    "self": "https://api.cliniko.com/v1/appointments/70644/invoices?page=1"
   }
 }
 ```
@@ -199,16 +199,16 @@ curl https://api.cliniko.com/v1/invoices/3 \
   "closed_at": "2014-12-18T10:47:08Z",
   "business": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/businesses/26"
+      "self": "https://api.cliniko.com/v1/businesses/26"
     }
   },
   "patient": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/patients/380"
+      "self": "https://api.cliniko.com/v1/patients/380"
     }
   },
   "links": {
-    "self": "http://local.cliniko.dev:3000/v1/invoices/3"
+    "self": "https://api.cliniko.com/v1/invoices/3"
   }
 }
 ```
