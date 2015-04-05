@@ -48,7 +48,7 @@ curl https://api.cliniko.com/v1/businesses \
       },
       "appointments": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/businesses/1/appointments?page=1"
+          "self": "https://api.cliniko.com/v1/businesses/1/appointments?page=1"
         }
       },
       "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
@@ -98,7 +98,7 @@ curl https://api.cliniko.com/v1/businesses/1 \
   },
   "appointments": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/businesses/1/appointments?page=1"
+      "self": "https://api.cliniko.com/v1/businesses/1/appointments?page=1"
     }
   },
   "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
