@@ -42,6 +42,16 @@ curl https://api.cliniko.com/v1/practitioners \
       "user": {
         "links": {"self": "https://api.cliniko.com/v1/users/1"}
       },
+      "appointments": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/practitioners/1/appointments?page=1"
+        }
+      },
+      "invoices": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/practitioners/1/invoices?page=1"
+        }
+      },
       "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
     }
   ],
@@ -81,6 +91,16 @@ curl https://api.cliniko.com/v1/practitioners/1 \
   "user": {
     "links": {"self": "https://api.cliniko.com/v1/users/1"}
   },
+  "appointments": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/practitioners/1/appointments?page=1"
+    }
+  },
+  "invoices": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/practitioners/1/invoices?page=1"
+    }
+  },
   "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
 }
 ```
@@ -118,6 +138,16 @@ curl https://api.cliniko.com/v1/practitioners/inactive \
       },
       "user": {
         "links": {"self": "https://api.cliniko.com/v1/users/3"}
+      },
+      "appointments": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/practitioners/1/appointments?page=1"
+        }
+      },
+      "invoices": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/practitioners/1/invoices?page=1"
+        }
       },
       "links": {"self": "https://api.cliniko.com/v1/practitioners/3"}
     }

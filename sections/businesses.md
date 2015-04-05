@@ -46,6 +46,11 @@ curl https://api.cliniko.com/v1/businesses \
           "self": "https://api.cliniko.com/v1/businesses/1/practitioners"
         }
       },
+      "appointments": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/businesses/1/appointments?page=1"
+        }
+      },
       "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
     }
   ],
@@ -89,6 +94,11 @@ curl https://api.cliniko.com/v1/businesses/1 \
   "practitioners": {
     "links": {
       "self": "https://api.cliniko.com/v1/businesses/1/practitioners"
+    }
+  },
+  "appointments": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/businesses/1/appointments?page=1"
     }
   },
   "links": {"self": "https://api.cliniko.com/v1/businesses/1"}

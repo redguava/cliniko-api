@@ -69,6 +69,11 @@ curl https://api.cliniko.com/v1/appointments \
       "practitioner": {
         "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
       },
+      "invoices": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/appointments/343589/invoices?page=1"
+        }
+      },
       "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
     }
   ],
@@ -136,6 +141,11 @@ curl https://api.cliniko.com/v1/appointments/deleted \
       },
       "practitioner": {
         "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
+      },
+      "invoices": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/appointments/343589/invoices?page=1"
+        }
       },
       "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
     }
@@ -205,6 +215,11 @@ curl https://api.cliniko.com/v1/appointments/cancelled \
       "practitioner": {
         "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
       },
+      "invoices": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/appointments/343589/invoices?page=1"
+        }
+      },
       "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
     }
   ],
@@ -260,6 +275,11 @@ curl https://api.cliniko.com/v1/appointments/1 \
   },
   "practitioner": {
     "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
+  },
+  "invoices": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/appointments/343589/invoices?page=1"
+    }
   },
   "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
 }
@@ -321,6 +341,11 @@ Headers { Location: http://api.cliniko.com/appointments/1 }
   "practitioner": {
     "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
   },
+  "invoices": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/appointments/343589/invoices?page=1"
+    }
+  },
   "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
 }
 ```
@@ -377,6 +402,11 @@ curl https://api.cliniko.com/v1/appointments/1 \
   },
   "practitioner": {
     "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
+  },
+  "invoices": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/appointments/343589/invoices?page=1"
+    }
   },
   "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
 }
