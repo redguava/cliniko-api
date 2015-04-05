@@ -80,6 +80,16 @@ curl https://api.cliniko.com/v1/patients \
       "medical_alerts": {
         "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
       },
+      "invoices": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+        }
+      },
+      "appointments": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+        }
+      },
       "links": {"self": "https://api.cliniko.com/v1/patients/1"}
     }
   ],
@@ -155,6 +165,16 @@ curl https://api.cliniko.com/v1/patients/deleted \
       ],
       "medical_alerts": {
         "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+      },
+      "invoices": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+        }
+      },
+      "appointments": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+        }
       },
       "links": {"self": "https://api.cliniko.com/v1/patients/1"}
     }
@@ -232,6 +252,16 @@ curl https://api.cliniko.com/v1/patients/archived \
       "medical_alerts": {
         "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
       },
+      "invoices": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+        }
+      },
+      "appointments": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+        }
+      },
       "links": {"self": "https://api.cliniko.com/v1/patients/1"}
     }
   ],
@@ -296,6 +326,16 @@ curl https://api.cliniko.com/v1/patients/1 \
   "medical_alerts": {
     "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
   },
+  "invoices": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+    }
+  },
+  "appointments": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+    }
+  },
   "links": {"self": "https://api.cliniko.com/v1/patients/1"}
 }
 ```
@@ -350,6 +390,16 @@ Headers { Location: http://api.cliniko.com/patients/1 }
   "patient_phone_numbers": [],
   "medical_alerts": {
     "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+  },
+  "invoices": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+    }
+  },
+  "appointments": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+    }
   },
   "links": {"self": "https://api.cliniko.com/v1/patients/1"}
 }
@@ -411,6 +461,16 @@ curl https://api.cliniko.com/v1/patients/1 \
   ],
   "medical_alerts": {
     "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+  },
+  "invoices": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+    }
+  },
+  "appointments": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+    }
   },
   "links": {"self": "https://api.cliniko.com/v1/patients/1"}
 }
