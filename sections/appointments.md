@@ -71,7 +71,7 @@ curl https://api.cliniko.com/v1/appointments \
       },
       "invoices": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/appointments/343589/invoices?page=1"
+          "self": "https://api.cliniko.com/v1/appointments/343589/invoices?page=1"
         }
       },
       "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
@@ -144,7 +144,7 @@ curl https://api.cliniko.com/v1/appointments/deleted \
       },
       "invoices": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/appointments/343589/invoices?page=1"
+          "self": "https://api.cliniko.com/v1/appointments/343589/invoices?page=1"
         }
       },
       "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
@@ -217,7 +217,7 @@ curl https://api.cliniko.com/v1/appointments/cancelled \
       },
       "invoices": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/appointments/343589/invoices?page=1"
+          "self": "https://api.cliniko.com/v1/appointments/343589/invoices?page=1"
         }
       },
       "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
@@ -278,7 +278,7 @@ curl https://api.cliniko.com/v1/appointments/1 \
   },
   "invoices": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/appointments/343589/invoices?page=1"
+      "self": "https://api.cliniko.com/v1/appointments/343589/invoices?page=1"
     }
   },
   "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
@@ -343,7 +343,7 @@ Headers { Location: http://api.cliniko.com/appointments/1 }
   },
   "invoices": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/appointments/343589/invoices?page=1"
+      "self": "https://api.cliniko.com/v1/appointments/343589/invoices?page=1"
     }
   },
   "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
@@ -405,7 +405,7 @@ curl https://api.cliniko.com/v1/appointments/1 \
   },
   "invoices": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/appointments/343589/invoices?page=1"
+      "self": "https://api.cliniko.com/v1/appointments/343589/invoices?page=1"
     }
   },
   "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
