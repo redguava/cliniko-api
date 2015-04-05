@@ -35,6 +35,7 @@ curl https://api.cliniko.com/v1/practitioners \
       "last_name": "Savage",
       "show_in_online_bookings": true,
       "title": "Mr",
+      "label": "Randy Savage",
       "updated_at": "2013-03-26T14:00:00Z",
       "default_appointment_type": {
         "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
@@ -84,6 +85,7 @@ curl https://api.cliniko.com/v1/practitioners/1 \
   "last_name": "Savage",
   "show_in_online_bookings": true,
   "title": "Mr",
+  "label": "Randy Savage",
   "updated_at": "2013-03-26T14:00:00Z",
   "default_appointment_type": {
     "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
