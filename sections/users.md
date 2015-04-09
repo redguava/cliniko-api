@@ -71,3 +71,11 @@ curl https://api.cliniko.com/v1/users/1 \
   "links": {"self": "https://api.cliniko.com/v1/users/1"}
 }
 ```
+
+Filtering Users
+----------------
+
+You can filter users by:
+* ```id``` Integer
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
