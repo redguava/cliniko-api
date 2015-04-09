@@ -170,7 +170,7 @@ curl https://api.cliniko.com/v1/practitioners/inactive \
 Filtering Practitioners
 ----------------
 
-For any route that returns a set of appointment types, you can filter them by:
+For any route that returns a set of practitioners, you can filter them by:
 * ```id``` Integer
 * ```user_id``` Integer
 
