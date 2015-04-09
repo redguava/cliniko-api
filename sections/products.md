@@ -30,7 +30,6 @@ curl https://api.cliniko.com/v1/products \
       "item_code": "0001",
       "name": "Product",
       "product_supplier_name": "Supplier",
-      "price": "10.0",
       "cost_price": "3.0",
       "stock_level": 10,
       "notes": "",
@@ -69,7 +68,6 @@ curl https://api.cliniko.com/v1/products/1 \
   "item_code": "0001",
   "name": "Product",
   "product_supplier_name": "Supplier",
-  "price": "10.0",
   "cost_price": "3.0",
   "stock_level": 10,
   "notes": "",
@@ -107,7 +105,6 @@ Headers { Location: http://api.cliniko.com/products/2 }
   "item_code": "0002",
   "name": "Product 2",
   "product_supplier_name": "Supplier",
-  "price": "11.0",
   "cost_price": "8.0",
   "stock_level": 10,
   "notes": "",
@@ -144,7 +141,6 @@ curl https://api.cliniko.com/v1/products/1 \
   "item_code": "0001",
   "name": "Product 1",
   "product_supplier_name": "Supplier",
-  "price": "10.0",
   "cost_price": "3.0",
   "stock_level": 10,
   "notes": "",
@@ -174,3 +170,11 @@ curl https://api.cliniko.com/v1/products/1 \
 **Example Response**
 A status code of `204 no content` will be returned if successful
 
+Filtering Products
+----------------
+
+You can filter products by:
+* ```id``` Integer
+* ```tax_id``` Integer
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.

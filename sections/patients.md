@@ -18,15 +18,6 @@ Get Patients
 **Resources**
 * ```GET /patients``` get all patients
 
-**Filtering**
-
-You can filter the returned results by these fields:
-* ```first_name``` (String) with ```=``` ```!=``` ```~``` ```~~```
-* ```last_name``` (String) with ```=``` ```!=``` ```~``` ```~~```
-* ```email``` (String) with ```=``` ```!=``` ```~``` ```~~```
-* ```old_reference_id``` (String) with ```=``` ```!=``` ```~``` ```~~```
-
-See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
 
 **Example Request**
 ```shell
@@ -104,16 +95,6 @@ Get Deleted Patients
 **Resources**
 * ```GET /patients/deleted``` get all deleted patients
 
-**Filtering**
-
-You can filter the returned results by these fields:
-* ```first_name``` (String) with ```=``` ```!=``` ```~``` ```~~```
-* ```last_name``` (String) with ```=``` ```!=``` ```~``` ```~~```
-* ```email``` (String) with ```=``` ```!=``` ```~``` ```~~```
-* ```old_reference_id``` (String) with ```=``` ```!=``` ```~``` ```~~```
-
-See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
-
 **Example Request**
 ```shell
 curl https://api.cliniko.com/v1/patients/deleted \
@@ -189,16 +170,6 @@ Get Archived Patients
 
 **Resources**
 * ```GET /patients/archived``` get all archived patients
-
-**Filtering**
-
-You can filter the returned results by these fields:
-* ```first_name``` (String) with ```=``` ```!=``` ```~``` ```~~```
-* ```last_name``` (String) with ```=``` ```!=``` ```~``` ```~~```
-* ```email``` (String) with ```=``` ```!=``` ```~``` ```~~```
-* ```old_reference_id``` (String) with ```=``` ```!=``` ```~``` ```~~```
-
-See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
 
 **Example Request**
 ```shell
@@ -491,3 +462,15 @@ curl https://api.cliniko.com/v1/patients/1 \
 ```
 **Example Response**
 A status code of `204 no content` will be returned if successful
+
+Filtering Patients
+----------------
+
+For any route that returns a set of patients, you can filter them by:
+* ```first_name``` (String)
+* ```id``` integer
+* ```last_name``` (String)
+* ```email``` (String)
+* ```old_reference_id``` (String)
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.

@@ -167,4 +167,11 @@ curl https://api.cliniko.com/v1/practitioners/inactive \
 }
 ```
 
+Filtering Practitioners
+----------------
 
+For any route that returns a set of practitioners, you can filter them by:
+* ```id``` Integer
+* ```user_id``` Integer
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.

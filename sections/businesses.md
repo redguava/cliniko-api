@@ -104,3 +104,11 @@ curl https://api.cliniko.com/v1/businesses/1 \
   "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
 }
 ```
+
+Filtering Businesses
+----------------
+
+You can filter businesses by:
+* ```id``` integer
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.

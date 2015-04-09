@@ -137,4 +137,10 @@ curl https://api.cliniko.com/v1/taxes/2 \
 **Example Response**
 A status code of `204 no content` will be returned if successful
 
+Filtering Taxes
+----------------
 
+You can filter taxes by:
+* ```id``` Integer
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.

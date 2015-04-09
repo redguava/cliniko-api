@@ -120,7 +120,21 @@ Filtering Results
 
 Some resources allow the results to be filtered. This will be documented with the resource if it is available.
 
+**Date Filter Operators**
+* ```=``` Equal to
+* ```>=``` Greater than or equal to
+* ```>``` Greater than
+* ```<=``` Less than or equal to
+* ```<``` Less than
+
 **DateTime Filter Operators**
+* ```>=``` Greater than or equal to
+* ```>``` Greater than
+* ```<=``` Less than or equal to
+* ```<``` Less than
+
+**Integer Filter Operators**
+* ```=``` Equal to
 * ```>=``` Greater than or equal to
 * ```>``` Greater than
 * ```<=``` Less than or equal to
@@ -136,6 +150,8 @@ Some resources allow the results to be filtered. This will be documented with th
 **Filter String Format**
 
 The filter string format is ```[FIELDNAME]:[OPERATOR][VALUE]```
+
+The integer ```=``` operator also accepts a list of integers in the format: ```[FIELDNAME]:=[VALUE],[VALUE],[VALUE],[VALUE]```. For example, ```practitioner_id:=1,2,3```.
 
 **Sending Filter Parameters**
 
