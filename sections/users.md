@@ -82,7 +82,7 @@ Get Authenticated User
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/users/1 \
+curl https://api.cliniko.com/v1/user \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
