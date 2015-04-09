@@ -186,3 +186,12 @@ curl https://api.cliniko.com/v1/medical_alerts/1 \
 ```
 **Example Response**
 A status code of `204 no content` will be returned if successful
+
+Filtering Medical Alerts
+----------------
+
+For any route that returns a set of medical alerts, you can filter them by:
+* ```id``` Integer
+* ```patient_id``` Integer
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
