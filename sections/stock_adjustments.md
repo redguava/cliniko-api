@@ -136,7 +136,7 @@ Headers { Location: https://api.cliniko.com/stock_adjustments/2 }
 }
 ```
 
-Filtering Appointments
+Filtering Stock Adjustments
 ----------------
 
 You can filter stock adjustments by:
