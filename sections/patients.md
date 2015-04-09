@@ -472,5 +472,6 @@ For any route that returns a set of patients, you can filter them by:
 * ```last_name``` (String)
 * ```email``` (String)
 * ```old_reference_id``` (String)
+* ```updated_at``` DateTime
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
