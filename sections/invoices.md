@@ -212,3 +212,18 @@ curl https://api.cliniko.com/v1/invoices/3 \
   }
 }
 ```
+
+Filtering Invoices
+----------------
+
+For any route that returns a set of invoices, you can filter them by:
+* ```appointment_id``` Integer
+* ```business_id``` Integer
+* ```id``` Integer
+* ```issue_date``` Date
+* ```number``` Integer
+* ```patient_id``` Integer
+* ```practitioner_id``` Integer
+* ```status``` Integer
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
