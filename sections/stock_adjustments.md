@@ -135,3 +135,12 @@ Headers { Location: https://api.cliniko.com/stock_adjustments/2 }
   "links": {"self": "https://api.cliniko.com/v1/stock_adjustments/2"}
 }
 ```
+
+Filtering Appointments
+----------------
+
+You can filter stock adjustments by:
+* ```id``` integer
+* ```product_id``` integer
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
