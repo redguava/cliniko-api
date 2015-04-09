@@ -47,6 +47,9 @@ curl https://api.cliniko.com/v1/settings \
     "enabled": true,
     "policy": "be cool",
     "calendar_info": "pick a time!"
+  },
+  "links": {
+    "self": "http://local.cliniko.dev:3000/v1/settings"
   }
 }
 ```
@@ -88,6 +91,9 @@ curl https://api.cliniko.com/v1/settings/public \
     "enabled": true,
     "policy": "be cool",
     "calendar_info": "pick a time!"
+  },
+  "links": {
+    "self": "http://local.cliniko.dev:3000/v1/settings/public"
   }
 }
 ```
