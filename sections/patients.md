@@ -466,7 +466,11 @@ A status code of `204 no content` will be returned if successful
 Filtering Patients
 ----------------
 
-For any route that returns a set of appointment types, you can filter them by:
+For any route that returns a set of patients, you can filter them by:
+* ```first_name``` (String)
 * ```id``` integer
+* ```last_name``` (String)
+* ```email``` (String)
+* ```old_reference_id``` (String)
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
