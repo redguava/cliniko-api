@@ -68,3 +68,11 @@ curl https://api.cliniko.com/v1/appointment_types/1 \
   "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
 }
 ```
+
+Filtering Appointment Types
+----------------
+
+For any route that returns a set of appointment types, you can filter them by:
+* ```id``` integer
+
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
