@@ -201,7 +201,7 @@ In this example, `q[]` is encoded as `q%5B%5D` so this command works properly in
 * ```%``` is the wildcard symbol for the **wildcard search** operator. You may need to escape it (%25).
 * You can use multiple ```%```'s in a **wildcard search**.
 * The **contains** operator is the same as doing ```%value%``` with the **wildcard search**.
-* You can get only records that have been updated since a certain time by sending a filter for updated_at. Ex: `q=updated_at:>2014-08-30T18:00:00Z`
+* You can get records that have been updated since a certain time by sending a filter for updated_at. Ex: `q=updated_at:>2014-08-30T18:00:00Z`
 
 
 Ordering
