@@ -171,5 +171,6 @@ You can filter practitioner reference numbers by:
 * ```business_id``` Integer
 * ```id``` Integer
 * ```practitioner_id``` Integer
+* ```updated_at``` DateTime
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.

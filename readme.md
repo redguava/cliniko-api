@@ -108,13 +108,6 @@ Shows the URL of the immediate previous page of results.
 
 The pagination links will only be included if they are relevant (eg. there will be no `next` link if you are on the last page.
 
-Updated Since
----------------
-
-Fetching a list of records that have been updated since a specific time is easy. A parameter called `updated_since` should be passed and only the records that have been updated since this time will be retrieved.
-
-This timestamp has to be in UTC if present – e.g. 2014-08-30T18:00:00Z.
-
 Filtering Results
 -----------------
 
@@ -208,6 +201,8 @@ In this example, `q[]` is encoded as `q%5B%5D` so this command works properly in
 * ```%``` is the wildcard symbol for the **wildcard search** operator. You may need to escape it (%25).
 * You can use multiple ```%```'s in a **wildcard search**.
 * The **contains** operator is the same as doing ```%value%``` with the **wildcard search**.
+* You can get records that have been updated since a certain time by sending a filter for updated_at. Ex: `q=updated_at:>2014-08-30T18:00:00Z`
+
 
 Ordering
 -----------------

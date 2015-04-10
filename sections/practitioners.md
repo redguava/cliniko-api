@@ -172,6 +172,7 @@ Filtering Practitioners
 
 For any route that returns a set of practitioners, you can filter them by:
 * ```id``` Integer
+* ```updated_at``` DateTime
 * ```user_id``` Integer
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
