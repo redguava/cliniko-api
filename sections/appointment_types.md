@@ -10,6 +10,7 @@ Get Appointment Types
 
 **Resources**
 * ```GET /appointment_types``` get all appointment types
+* ```GET /practitioners/:id/appointment_types``` get all appointment types offered by the specified practitioner
 
 **Example Request**
 ```shell
