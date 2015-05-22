@@ -13,6 +13,7 @@ Get Practitioners
 
 **Resources**
 * ```GET /practitioners``` get all active practitioners
+* ```GET /appointment_types/:id/practitioners``` get all active practitioners that offer the specified appointment type
 * ```GET /businesses/:id/practitioners``` get all active practitioners for a specified business
 
 **Example Request**
@@ -120,6 +121,7 @@ Get Inactive Practitioners
 
 **Resources**
 * ```GET /practitioners/inactive``` get all inactive practitioners
+* ```GET /appointment_types/:id/practitioners``` get all inactive practitioners that offer the specified appointment type
 * ```GET /businesses/:id/practitioners/inactive``` get all inactive practitioners for a specified business
 
 **Example Request**
