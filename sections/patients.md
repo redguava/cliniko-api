@@ -58,6 +58,11 @@ curl https://api.cliniko.com/v1/patients \
       "state": "Victoria",
       "title": "Mr",
       "updated_at": "2013-03-26T14:00:00Z",
+      "concession_type": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/concession_types/123"
+        }
+      },
       "patient_phone_numbers": [
         {
           "phone_type": "Mobile",
@@ -134,6 +139,11 @@ curl https://api.cliniko.com/v1/patients/deleted \
       "state": "Victoria",
       "title": "Mr",
       "updated_at": "2013-03-26T14:00:00Z",
+      "concession_type": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/concession_types/123"
+        }
+      },
       "patient_phone_numbers": [
         {
           "phone_type": "Mobile",
@@ -210,6 +220,11 @@ curl https://api.cliniko.com/v1/patients/archived \
       "state": "Victoria",
       "title": "Mr",
       "updated_at": "2013-03-26T14:00:00Z",
+      "concession_type": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/concession_types/123"
+        }
+      },
       "patient_phone_numbers": [
         {
           "phone_type": "Mobile",
@@ -284,6 +299,11 @@ curl https://api.cliniko.com/v1/patients/1 \
   "state": "Victoria",
   "title": "Mr",
   "updated_at": "2013-03-26T14:00:00Z",
+  "concession_type": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/concession_types/123"
+    }
+  },
   "patient_phone_numbers": [
     {
       "phone_type": "Mobile",
