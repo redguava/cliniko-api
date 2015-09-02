@@ -209,9 +209,9 @@ Ordering
 
 By default, API results are ordered in ascending direction by their `created_at` timestamps.
 
-You can specify a custom column to order by sending the `sort` parameter as the column name (eg. `sort=appointment_start`).
+You can specify a custom column to order by sending the `sort` parameter as the column name (eg. `sort=appointment_start`). You can also send multiple columns to sort by (eg. `sort=appointment_start,created_at`).
 
-You can also specify the order direction by sending the `order` parameter set to `desc` or `asc` (eg. `order=desc`).
+You can also specify the order direction by sending the `order` parameter set to `desc` or `asc` (eg. `order=desc`). If you need to order a column in the other direction, you can specify the order in the `sort` parameter (eg. `sort=appointment_start,created_at:desc`).
 
 Availability times are not able to be custom ordered, they are always returned chronologically.
 
