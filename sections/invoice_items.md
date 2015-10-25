@@ -2,7 +2,7 @@ Invoice Items
 ===============
 * [Get Invoice Items](#get-invoice-items "This will return all invoice items.")
 * [Get Deleted Invoice Items](#get-deleted-invoice-items "This will return all deleted invoice items.")
-* [Get Invoice](#get-invoice "This will return a specified invoice item.")
+* [Get Invoice Item](#get-invoice-item "This will return a specified invoice item.")
 
 Get Invoice Items
 ----------------
