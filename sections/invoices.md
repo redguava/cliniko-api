@@ -1,7 +1,7 @@
 Invoices
 ============
 * [Get Invoices](#get-invoices "This will return all invoices.")
-* [Get Deleted Invoices](#get-deleted-invoices "This will return all deleted invoices")
+* [Get Deleted Invoices](#get-deleted-invoices "This will return all deleted invoices.")
 * [Get Invoice](#get-invoice "This will return a specified invoice.")
 
 Get Invoices
@@ -158,7 +158,7 @@ curl https://api.cliniko.com/v1/invoices/deleted \
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/appointments/70644/invoices?page=1"
+    "self": "https://api.cliniko.com/v1/appointments/70644/invoices/deleted?page=1"
   }
 }
 ```
