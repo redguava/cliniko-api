@@ -7,6 +7,7 @@ Appointments
 * [Create Appointment](#create-appointment "This will create an appointment.")
 * [Update Appointment](#update-appointment "This will update an appointment.")
 * [Delete Appointment](#delete-appointment "This will delete an appointment.")
+* [Cancel Appointment](#cancel-appointment "This will cancel an appointment.")
 
 Get Appointments
 ----------------
@@ -424,6 +425,38 @@ curl https://api.cliniko.com/v1/appointments/1 \
 ```
 **Example Response**
 A status code of `204 no content` will be returned if successful
+
+Cancel Appointment
+----------------
+**Resources**
+* ```PATCH /appointments/:id/cancel``` cancel an appointment
+
+**Notes**
+
+The `cancellation_reason` information is mandatory.
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/appointments/1/cancel \
+  -u API_KEY: \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -d '{ "cancellation_reason": 50, "cancellation_note": "A note" }' \
+  -X PATCH
+```
+
+**Example Response**
+A status code of `204 no content` will be returned if successful
+
+**Cancellation Reason Codes**
+* `10` Feeling better
+* `20` Condition worse
+* `30` Sick
+* `40` Away
+* `50` Other
+* `60` Work
+
 
 Filtering Appointments
 ----------------
