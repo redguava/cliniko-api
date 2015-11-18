@@ -4,6 +4,7 @@ Appointments
 * [Get Deleted Appointments](#get-deleted-appointments "This will return all deleted appointments ID's only")
 * [Get Cancelled Appointments](#get-cancelled-appointments "This will return all cancelled appointments.")
 * [Get Appointment](#get-appointment "This will return a specified appointment.")
+* [Get Conflicts](#get-conflicts "This will return if the specified appointment has conflicts.")
 * [Create Appointment](#create-appointment "This will create an appointment.")
 * [Update Appointment](#update-appointment "This will update an appointment.")
 * [Delete Appointment](#delete-appointment "This will delete an appointment.")
@@ -51,14 +52,17 @@ curl https://api.cliniko.com/v1/appointments \
       "cancellation_note": null,
       "cancellation_reason": null,
       "booking_ip_address": '123.456.78.90',
-      "appointment_repeated_from" : {
-        "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
-      },
       "appointment_type": {
         "links": {"self": "https://api.cliniko.com/v1/appointment_types/12345"}
       },
       "business": {
         "links": {"self": "https://api.cliniko.com/v1/businesses/45678"}
+      },
+      "conflicts": {
+        "links": { "self": "https://api.cliniko.com/v1/appointments/343589/conflicts" }
+      },
+      "repeats": {
+        "links": { "self": "https://jefiojefopj.staging.cliniko.com/v1/appointments?q=repeated_from_appointment_id:=343589" }
       },
       "patient": {
         "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
@@ -120,6 +124,7 @@ curl https://api.cliniko.com/v1/appointments/deleted \
       "cancellation_note": null,
       "cancellation_reason": null,
       "booking_ip_address": '123.456.78.90',
+      "repeats": null,
       "appointment_repeated_from" : {
         "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
       },
@@ -128,6 +133,9 @@ curl https://api.cliniko.com/v1/appointments/deleted \
       },
       "business": {
         "links": {"self": "https://api.cliniko.com/v1/businesses/45678"}
+      },
+      "conflicts": {
+        "links": { "self": "https://api.cliniko.com/v1/appointments/343589/conflicts" }
       },
       "patient": {
         "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
@@ -189,6 +197,7 @@ curl https://api.cliniko.com/v1/appointments/cancelled \
       "cancellation_note": null,
       "cancellation_reason": 10,
       "booking_ip_address": '123.456.78.90',
+      "repeats": null,
       "appointment_repeated_from" : {
         "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
       },
@@ -197,6 +206,9 @@ curl https://api.cliniko.com/v1/appointments/cancelled \
       },
       "business": {
         "links": {"self": "https://api.cliniko.com/v1/businesses/45678"}
+      },
+      "conflicts": {
+        "links": { "self": "https://api.cliniko.com/v1/appointments/343589/conflicts" }
       },
       "patient": {
         "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
@@ -253,6 +265,7 @@ curl https://api.cliniko.com/v1/appointments/1 \
   "cancellation_note": null,
   "cancellation_reason": null,
   "booking_ip_address": '123.456.78.90',
+  "repeats": null,
   "appointment_repeated_from" : {
     "links": {"self": "https://api.cliniko.com/v1/appointments/2"}
   },
@@ -261,6 +274,9 @@ curl https://api.cliniko.com/v1/appointments/1 \
   },
   "business": {
     "links": {"self": "https://api.cliniko.com/v1/businesses/45678"}
+  },
+  "conflicts": {
+    "links": { "self": "https://api.cliniko.com/v1/appointments/343589/conflicts" }
   },
   "patient": {
     "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
@@ -274,6 +290,29 @@ curl https://api.cliniko.com/v1/appointments/1 \
     }
   },
   "links": {"self": "https://api.cliniko.com/v1/appointments/343589"}
+}
+```
+
+Get Appointment
+------------
+
+**Resources**
+* ```GET /appointments/:id/conflicts``` get a specified appointment's conflicts
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/appointments/1/conflicts \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+```
+
+**Example Response**
+```json
+{
+  "conflicts" : {
+    "exist": true
+  }
 }
 ```
 
