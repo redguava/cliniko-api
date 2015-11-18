@@ -48,6 +48,9 @@ curl https://api.cliniko.com/v1/settings \
     "policy": "be cool",
     "calendar_info": "pick a time!"
   },
+  "reminders": {
+    "default_reminder_type": "SMS & Email"
+  },
   "links": {
     "self": "http://local.cliniko.dev:3000/v1/settings"
   }
@@ -91,6 +94,9 @@ curl https://api.cliniko.com/v1/settings/public \
     "enabled": true,
     "policy": "be cool",
     "calendar_info": "pick a time!"
+  },
+  "reminders": {
+    "default_reminder_type": "SMS & Email"
   },
   "links": {
     "self": "http://local.cliniko.dev:3000/v1/settings/public"
