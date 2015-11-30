@@ -391,7 +391,7 @@ Update Appointment
 
 **Notes**
 
-If not provided, the appointment_end is automatically set based upon the duration of the appointment_type.
+If appointment_end is specified and its value is null, it is automatically set based upon the duration of the appointment_type.
 
 **Example Request**
 ```shell
