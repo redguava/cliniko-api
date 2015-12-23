@@ -31,6 +31,7 @@ curl https://api.cliniko.com/v1/appointment_types \
       "duration_in_minutes": 60,
       "id": 1,
       "name": "Initial Consultation",
+      "max_attendees": 1,
       "show_in_online_bookings": true,
       "updated_at": "2013-03-26T14:00:00Z",
       "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
@@ -64,6 +65,7 @@ curl https://api.cliniko.com/v1/appointment_types/1 \
   "created_at": "2013-03-26T14:00:00Z",
   "duration_in_minutes": 60,
   "name": "Initial Consultation",
+  "max_attendees": 1,
   "show_in_online_bookings": true,
   "updated_at": "2013-03-26T14:00:00Z",
   "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
