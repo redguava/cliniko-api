@@ -221,6 +221,7 @@ API Resources
 * [Appointment Types](https://github.com/redguava/cliniko-api/blob/master/sections/appointment_types.md)
 * [Appointments](https://github.com/redguava/cliniko-api/blob/master/sections/appointments.md)
 * [Available Times](https://github.com/redguava/cliniko-api/blob/master/sections/available_times.md)
+* [Billable Items](https://github.com/redguava/cliniko-api/blob/master/sections/billable_items.md)
 * [Businesses](https://github.com/redguava/cliniko-api/blob/master/sections/businesses.md)
 * [Concession Types](https://github.com/redguava/cliniko-api/blob/master/sections/concession_types.md)
 * [Invoices](https://github.com/redguava/cliniko-api/blob/master/sections/invoices.md)
