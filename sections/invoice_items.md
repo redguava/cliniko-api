@@ -40,6 +40,11 @@ curl https://api.cliniko.com/v1/invoice_items \
       "total_including_tax": "90.0",
       "code": "2020",
       "deleted_at": null,
+      "billable_item": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/billable_items/1"
+        }
+      },
       "invoice": {
         "links": {
           "self": "https://api.cliniko.com/v1/invoices/1"
@@ -93,6 +98,11 @@ curl https://api.cliniko.com/v1/invoice_items/deleted \
       "total_including_tax": "90.0",
       "code": "2020",
       "deleted_at": 2015-10-26T05:34:34Z,
+      "billable_item": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/billable_items/1"
+        }
+      },
       "invoice": {
         "links": {
           "self": "https://api.cliniko.com/v1/invoices/1"
@@ -135,7 +145,7 @@ curl https://api.cliniko.com/v1/invoice_items/3 \
   "discount_percentage": "18.1818",
   "discounted_amount": "20.0",
   "is_monetary_discount": true,
-  "name": "Initial consultation and treatment",
+  "name": "Wooden Pants",
   "net_price": "81.818",
   "quantity": 1,
   "tax_amount": "10.0",
@@ -144,6 +154,11 @@ curl https://api.cliniko.com/v1/invoice_items/3 \
   "total_including_tax": "90.0",
   "code": "2020",
   "deleted_at": null,
+  "product": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/products/1"
+    }
+  },
   "invoice": {
     "links": {
       "self": "https://api.cliniko.com/v1/invoices/1"
