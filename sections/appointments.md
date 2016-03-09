@@ -42,6 +42,7 @@ curl https://api.cliniko.com/v1/appointments \
       "invoice_status": 10,
       "notes": null,
       "online_booking_policy_accepted": null,
+      "patient_name": "John Stuart",
       "patient_arrived": false,
       "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
       "sms_reminder_sent": false,
@@ -114,6 +115,7 @@ curl https://api.cliniko.com/v1/appointments/deleted \
       "invoice_status": 10,
       "notes": null,
       "online_booking_policy_accepted": null,
+      "patient_name": "John Stuart",
       "patient_arrived": false,
       "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
       "sms_reminder_sent": false,
@@ -187,6 +189,7 @@ curl https://api.cliniko.com/v1/appointments/cancelled \
       "invoice_status": 10,
       "notes": null,
       "online_booking_policy_accepted": null,
+      "patient_name": "John Stuart",
       "patient_arrived": false,
       "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
       "sms_reminder_sent": false,
@@ -255,6 +258,7 @@ curl https://api.cliniko.com/v1/appointments/1 \
   "invoice_status": 10,
   "notes": null,
   "online_booking_policy_accepted": null,
+  "patient_name": "John Stuart",
   "patient_arrived": false,
   "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
   "sms_reminder_sent": false,
@@ -293,7 +297,7 @@ curl https://api.cliniko.com/v1/appointments/1 \
 }
 ```
 
-Get Appointment
+Get Conflicts
 ------------
 
 **Resources**
@@ -350,6 +354,7 @@ Headers { Location: http://api.cliniko.com/appointments/1 }
   "invoice_status": 10,
   "notes": null,
   "online_booking_policy_accepted": null,
+  "patient_name": "John Stuart",
   "patient_arrived": false,
   "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
   "sms_reminder_sent": false,
@@ -415,6 +420,7 @@ curl https://api.cliniko.com/v1/appointments/1 \
   "invoice_status": 10,
   "notes": null,
   "online_booking_policy_accepted": null,
+  "patient_name": "John Stuart",
   "patient_arrived": false,
   "repeat_rule": {"repeat_type": "Daily", "number_of_repeats": 3, "repeating_interval": 3},
   "sms_reminder_sent": false,
