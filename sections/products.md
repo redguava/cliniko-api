@@ -33,6 +33,7 @@ curl https://api.cliniko.com/v1/products \
       "cost_price": "3.0",
       "stock_level": 10,
       "notes": "",
+      "serial_number": "123456",
       "price_ex_tax": "10.0",
       "tax": {
         "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
@@ -71,6 +72,7 @@ curl https://api.cliniko.com/v1/products/1 \
   "cost_price": "3.0",
   "stock_level": 10,
   "notes": "",
+  "serial_number": "123456",
   "price_ex_tax": "10.0",
   "tax": {
     "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
@@ -92,7 +94,7 @@ curl https://api.cliniko.com/v1/products \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "item_code": "0002", "name": "Product 2", "product_supplier_name": "Supplier", "price": 11, "cost_price": 8, "stock_level": 10, "tax_id": 1 }' \
+  -d '{ "item_code": "0002", "name": "Product 2", "product_supplier_name": "Supplier", "price": 11, "cost_price": 8, "stock_level": 10, "tax_id": 1, "serial_number": "123456" }' \
   -X POST
 ```
 **Example Response**
@@ -108,6 +110,7 @@ Headers { Location: http://api.cliniko.com/products/2 }
   "cost_price": "8.0",
   "stock_level": 10,
   "notes": "",
+  "serial_number": "123456",
   "price_ex_tax": "11.0",
   "tax": {
     "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
@@ -144,6 +147,7 @@ curl https://api.cliniko.com/v1/products/1 \
   "cost_price": "3.0",
   "stock_level": 10,
   "notes": "",
+  "serial_number": "123456",
   "price_ex_tax": "10.0",
   "tax": {
     "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
@@ -175,6 +179,7 @@ Filtering Products
 
 You can filter products by:
 * ```id``` Integer
+* ```name``` String
 * ```tax_id``` Integer
 * ```updated_at``` DateTime
 

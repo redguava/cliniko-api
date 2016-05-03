@@ -28,6 +28,8 @@ curl https://api.cliniko.com/v1/settings \
     "name": "Bins, Boehm and Baumbach",
     "country": "United States",
     "time_zone": "Eastern Time (US & Canada)",
+    "currency_symbol": "$",
+    "subdomain": "example",
     "email_from": "admin@example.com",
     "admin": {
       "email": "admin@example.com",
@@ -80,7 +82,9 @@ curl https://api.cliniko.com/v1/settings/public \
   "account": {
     "name": "Bins, Boehm and Baumbach",
     "country": "United States",
-    "time_zone": "Eastern Time (US & Canada)"
+    "time_zone": "Eastern Time (US & Canada)",
+    "currency_symbol": "$",
+    "subdomain": "example"
   },
   "calendar": {
     "start_hour": 0,
