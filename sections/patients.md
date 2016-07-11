@@ -11,6 +11,8 @@ Patients
 * [Create Patient](#create-patient "This will create a patient.")
 * [Update Patient](#update-patient "This will update a patient.")
 * [Delete Patient](#delete-patient "This will delete a patient.")
+* [Archive Patient](#archive-patient "This will archive a patient.")
+* [Unarchive Patient](#unarchive-patient "This will unarchive a patient.")
 
 Get Patients
 ----------------
@@ -488,6 +490,92 @@ curl https://api.cliniko.com/v1/patients/1 \
 ```
 **Example Response**
 A status code of `204 no content` will be returned if successful
+
+Archive Patient
+----------------
+**Resources**
+* ```POST /patients/:id/archive``` archive a patient
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/patients/1/archive \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -X POST
+```
+**Example Response**
+A status code of `204 no content` will be returned if successful
+
+Unarchive Patient
+----------------
+**Resources**
+* ```POST /patients/:id/unarchive``` unarchive a patient
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/patients/1/unarchive \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -X POST
+```
+**Example Response**
+```json
+{
+  "address_1": "1 Smith Street",
+  "address_2": "",
+  "address_3": "",
+  "archived_at": "",
+  "city": "Melbourne",
+  "country": "Australia",
+  "created_at": "2013-03-26T14:00:00Z",
+  "date_of_birth": "2001-05-26",
+  "deleted_at": "",
+  "email": "peter@example.com",
+  "emergency_contact": "",
+  "first_name": "John",
+  "invoice_default_to": "Super Insurance",
+  "invoice_email": "super.insurance@example.com",
+  "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
+  "gender": "Male",
+  "id": 1,
+  "last_name": "Snow",
+  "notes": "",
+  "occupation": "",
+  "old_reference_id": "",
+  "post_code": "3000",
+  "referral_source": "",
+  "reminder_type": "SMS & Email",
+  "state": "Victoria",
+  "title": "Mr",
+  "updated_at": "2013-03-26T14:00:00Z",
+  "patient_phone_numbers": [
+    {
+      "phone_type": "Mobile",
+      "number": "61444444444"
+    },
+    {
+      "phone_type": "Home",
+      "number": "61399999999"
+    }
+  ],
+  "medical_alerts": {
+    "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+  },
+  "invoices": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+    }
+  },
+  "appointments": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+    }
+  },
+  "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+}
+```
 
 Filtering Patients
 ----------------
