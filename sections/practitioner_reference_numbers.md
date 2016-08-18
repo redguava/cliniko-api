@@ -169,6 +169,7 @@ Filtering Appointments
 
 You can filter practitioner reference numbers by:
 * ```business_id``` Integer
+* ```created_at``` DateTime
 * ```id``` Integer
 * ```practitioner_id``` Integer
 * ```updated_at``` DateTime

@@ -76,6 +76,7 @@ Filtering Appointment Types
 ----------------
 
 For any route that returns a set of appointment types, you can filter them by:
+* ```created_at``` DateTime
 * ```id``` Integer
 * ```updated_at``` DateTime
 

@@ -174,6 +174,7 @@ Filtering Invoice Items
 ----------------
 
 For any route that returns a set of invoice items, you can filter them by:
+* ```created_at``` DateTime
 * ```id``` Integer
 * ```updated_at``` DateTime
 

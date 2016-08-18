@@ -140,6 +140,7 @@ Filtering Stock Adjustments
 ----------------
 
 You can filter stock adjustments by:
+* ```created_at``` DateTime
 * ```id``` integer
 * ```product_id``` integer
 * ```updated_at``` DateTime
