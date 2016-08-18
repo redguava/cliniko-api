@@ -191,6 +191,7 @@ Filtering Medical Alerts
 ----------------
 
 For any route that returns a set of medical alerts, you can filter them by:
+* ```created_at``` DateTime
 * ```id``` Integer
 * ```patient_id``` Integer
 * ```updated_at``` DateTime

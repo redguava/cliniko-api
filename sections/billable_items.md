@@ -160,6 +160,7 @@ Filtering Billable Items
 ----------------
 
 You can filter billable items by:
+* ```created_at``` DateTime
 * ```id``` Integer
 * ```tax_id``` Integer
 * ```updated_at``` DateTime

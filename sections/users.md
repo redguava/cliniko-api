@@ -109,6 +109,7 @@ Filtering Users
 ----------------
 
 You can filter users by:
+* ```created_at``` DateTime
 * ```id``` Integer
 * ```updated_at``` DateTime
 

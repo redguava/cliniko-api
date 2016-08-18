@@ -109,6 +109,7 @@ Filtering Businesses
 ----------------
 
 You can filter businesses by:
+* ```created_at``` DateTime
 * ```id``` integer
 * ```updated_at``` DateTime
 

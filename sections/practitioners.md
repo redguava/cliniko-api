@@ -173,6 +173,7 @@ Filtering Practitioners
 ----------------
 
 For any route that returns a set of practitioners, you can filter them by:
+* ```created_at``` DateTime
 * ```id``` Integer
 * ```updated_at``` DateTime
 * ```user_id``` Integer

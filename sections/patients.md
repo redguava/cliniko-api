@@ -581,6 +581,7 @@ Filtering Patients
 ----------------
 
 For any route that returns a set of patients, you can filter them by:
+* ```created_at``` DateTime
 * ```first_name``` (String)
 * ```id``` integer
 * ```last_name``` (String)

@@ -511,6 +511,7 @@ For any route that returns a set of appointments, you can filter them by:
 * ```appointment_start``` DateTime
 * ```appointment_type_id``` Integer
 * ```business_id``` Integer
+* ```created_at``` DateTime
 * ```id``` Integer
 * ```patient_id``` Integer
 * ```practitioner_id``` Integer

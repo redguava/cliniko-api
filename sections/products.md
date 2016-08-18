@@ -178,6 +178,7 @@ Filtering Products
 ----------------
 
 You can filter products by:
+* ```created_at``` DateTime
 * ```id``` Integer
 * ```name``` String
 * ```tax_id``` Integer

@@ -219,6 +219,7 @@ Filtering Invoices
 For any route that returns a set of invoices, you can filter them by:
 * ```appointment_id``` Integer
 * ```business_id``` Integer
+* ```created_at``` DateTime
 * ```id``` Integer
 * ```issue_date``` Date
 * ```number``` Integer

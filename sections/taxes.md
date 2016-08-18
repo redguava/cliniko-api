@@ -141,6 +141,7 @@ Filtering Taxes
 ----------------
 
 You can filter taxes by:
+* ```created_at``` DateTime
 * ```id``` Integer
 * ```updated_at``` DateTime
 
