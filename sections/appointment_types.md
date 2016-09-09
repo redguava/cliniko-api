@@ -34,6 +34,21 @@ curl https://api.cliniko.com/v1/appointment_types \
       "max_attendees": 1,
       "show_in_online_bookings": true,
       "updated_at": "2013-03-26T14:00:00Z",
+      "billable_item": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/billable_items/3"
+        }
+      },
+      "product": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/products/7"
+        }
+      },
+      "practitioners": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/appointment_types/1/practitioners"
+        }
+      },
       "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
     }
   ],
@@ -68,6 +83,21 @@ curl https://api.cliniko.com/v1/appointment_types/1 \
   "max_attendees": 1,
   "show_in_online_bookings": true,
   "updated_at": "2013-03-26T14:00:00Z",
+  "billable_item": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/billable_items/3"
+    }
+  },
+  "product": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/products/7"
+    }
+  },
+  "practitioners": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/appointment_types/1/practitioners"
+    }
+  },
   "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
 }
 ```
