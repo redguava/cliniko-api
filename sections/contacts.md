@@ -56,7 +56,7 @@ curl https://api.cliniko.com/v1/contacts \
       "country": "Estonia",
       "contact_type": "Doctor",
       "links": {
-        "self": "http://local.cliniko.dev:3000/v1/contacts/1"
+        "self": "http://api.cliniko.com/v1/contacts/1"
       }
     }
   ],
@@ -116,7 +116,7 @@ curl https://api.cliniko.com/v1/contacts/1 \
   "country": "Estonia",
   "contact_type": "Doctor",
   "links": {
-    "self": "http://local.cliniko.dev:3000/v1/contacts/1"
+    "self": "http://api.cliniko.com/v1/contacts/1"
   }
 }
 ```
