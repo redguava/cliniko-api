@@ -54,10 +54,10 @@ curl https://api.cliniko.com/v1/referral_source_types \
       "updated_at": "2016-10-27T00:11:24Z",
       "name": "internets",
       "subcategories": [
-        { "id":1, "name":"the google" },
-        { "id":2, "name":"myspace" },
-        { "id":3, "name":"friendster" },
-        { "id":5, "name": "ask jeeves" }
+        "the google",
+        "myspace",
+        "friendster",
+        "ask jeeves"
       ],
       "links": { "self": "https://api.cliniko.com/v1/referral_source_types/10" }
     }
@@ -89,10 +89,10 @@ curl https://api.cliniko.com/v1/referral_source_types/10 \
   "updated_at": "2016-10-27T00:11:24Z",
   "name": "internets",
   "subcategories": [
-    { "id":1, "name":"the google" },
-    { "id":2, "name":"myspace" },
-    { "id":3, "name":"friendster" },
-    { "id":5, "name": "ask jeeves" }
+    "the google",
+    "myspace",
+    "friendster",
+    "ask jeeves"
   ],
   "links": { "self": "https://api.cliniko.com/v1/referral_source_types/10" }
 }
