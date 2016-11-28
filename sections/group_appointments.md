@@ -1,7 +1,7 @@
 Group Appointments
 ============
 * [Get Group Appointments](#get-group-appointments "This will return all group appointments.")
-* [Get Deleted Group Appointments](#get-deleted-group-appointments "This will return all deleted group appointments ID's only")
+* [Get Deleted Group Appointments](#get-deleted-group-appointments "This will return all deleted group appointments")
 * [Get Group Appointment](#get-group-appointment "This will return a specified group appointment.")
 * [Get Conflicts](#get-conflicts "This will return if the specified group appointment has conflicts.")
 * [Create Group Appointment](#create-group-appointment "This will create a group appointment.")
