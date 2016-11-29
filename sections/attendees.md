@@ -1,5 +1,8 @@
 Attendees
 ============
+
+**Deprecation warning**: attendees return a deprecated link for `appointment`. You should instead use `booking`. The `appointment` link returns a 404 when linking to group bookings. The `appointment` link will be removed in February 2017.
+
 * [Get Attendees](#get-attendees "This will return all attendees.")
 * [Get Deleted Attendees](#get-deleted-attendees "This will return all deleted attendees")
 * [Get Cancelled Attendees](#get-cancelled-attendees "This will return all cancelled attendees")
