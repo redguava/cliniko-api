@@ -45,9 +45,9 @@ curl https://api.cliniko.com/v1/attendees \
       "treatment_note_status": null,
       "deleted_at": null,
       "cancelled_at": null,
-      "appointment": {
+      "booking": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/appointments/1"
+          "self": "http://local.cliniko.dev:3000/v1/bookings/1"
         }
       },
       "patient": {
@@ -109,9 +109,9 @@ curl https://api.cliniko.com/v1/attendees/deleted \
       "treatment_note_status": null,
       "deleted_at": "2016-06-28T21:33:26Z",
       "cancelled_at": null,
-      "appointment": {
+      "booking": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/appointments/1"
+          "self": "http://local.cliniko.dev:3000/v1/bookings/1"
         }
       },
       "patient": {
@@ -173,9 +173,9 @@ curl https://api.cliniko.com/v1/attendees/cancelled \
       "treatment_note_status": null,
       "deleted_at": null,
       "cancelled_at": null"2016-06-28T21:33:26Z",
-      "appointment": {
+      "booking": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/appointments/1"
+          "self": "http://local.cliniko.dev:3000/v1/bookings/1"
         }
       },
       "patient": {
@@ -233,9 +233,9 @@ curl https://api.cliniko.com/v1/attendees/1 \
   "treatment_note_status": null,
   "deleted_at": null,
   "cancelled_at": null,
-  "appointment": {
+  "booking": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/appointments/1"
+      "self": "http://local.cliniko.dev:3000/v1/bookings/1"
     }
   },
   "patient": {
@@ -290,9 +290,9 @@ Headers { Location: https://api.cliniko.com/attendees/1 }
   "treatment_note_status": null,
   "deleted_at": null,
   "cancelled_at": null,
-  "appointment": {
+  "booking": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/appointments/1"
+      "self": "http://local.cliniko.dev:3000/v1/bookings/1"
     }
   },
   "patient": {
@@ -344,9 +344,9 @@ curl https://api.cliniko.com/v1/attendees/1 \
   "treatment_note_status": null,
   "deleted_at": null,
   "cancelled_at": null,
-  "appointment": {
+  "booking": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/appointments/1"
+      "self": "http://local.cliniko.dev:3000/v1/bookings/1"
     }
   },
   "patient": {
@@ -385,7 +385,7 @@ Filtering Attendees
 ----------------
 
 For any route that returns a set of attendees, you can filter them by:
-* ```appointment_id``` Integer
+* ```booking_id``` Integer
 * ```created_at``` DateTime
 * ```id``` Integer
 * ```patient_id``` Integer
