@@ -385,7 +385,7 @@ For any route that returns a set of group appointments, you can filter them by:
 * ```ends_at``` DateTime
 * ```id``` Integer
 * ```practitioner_id``` Integer
-* ```repeaated_from_id``` Integer
+* ```repeated_from_id``` Integer
 * ```starts_at``` DateTime
 * ```updated_at``` DateTime
 
