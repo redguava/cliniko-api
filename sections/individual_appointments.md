@@ -579,7 +579,7 @@ For any route that returns a set of individual appointments, you can filter them
 * ```id``` Integer
 * ```patient_id``` Integer
 * ```practitioner_id``` Integer
-* ```repeaated_from_id``` Integer
+* ```repeated_from_id``` Integer
 * ```starts_at``` DateTime
 * ```updated_at``` DateTime
 
