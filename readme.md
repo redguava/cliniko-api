@@ -120,6 +120,8 @@ Some resources allow the results to be filtered. This will be documented with th
 * ```<=``` Less than or equal to
 * ```<``` Less than
 
+Dates must be in YYYY-MM-DD format. The date filter accepts wildcards in this format using `*`. Ex: `****-05-**` will return all patients born in May.
+
 **DateTime Filter Operators**
 * ```>=``` Greater than or equal to
 * ```>``` Greater than
