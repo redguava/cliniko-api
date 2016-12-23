@@ -92,7 +92,7 @@ curl https://api.cliniko.com/v1/patients \
       "links": {"self": "https://api.cliniko.com/v1/patients/1"}
     }
   ],
-  "total_entires": 1,
+  "total_entries": 1,
   "links": {"self": "https://api.cliniko.com/v1/patients?page=1"}
 }
 ```
@@ -174,7 +174,7 @@ curl https://api.cliniko.com/v1/patients/deleted \
       "links": {"self": "https://api.cliniko.com/v1/patients/1"}
     }
   ],
-  "total_entires": 1,
+  "total_entries": 1,
   "links": {"self": "https://api.cliniko.com/v1/patients/deleted?page=1"}
 }
 ```
@@ -256,7 +256,7 @@ curl https://api.cliniko.com/v1/patients/archived \
       "links": {"self": "https://api.cliniko.com/v1/patients/1"}
     }
   ],
-  "total_entires": 1,
+  "total_entries": 1,
   "links": {"self": "https://api.cliniko.com/v1/patients/archived?page=1"}
 }
 ```
