@@ -99,16 +99,3 @@ There are a few possible types of referral sources. Depending on the type, diffe
   }
 }
 ```
-
-**Example Response (no referral for this patient)**
-```json
-{
-  "links": {
-    "self": "https://api.cliniko.com/v1/patients/123/referral_source"
-  },
-  "referrer": null,
-  "referrer_type": null,
-  "subcategory": null,
-  "notes": null
-}
-```
