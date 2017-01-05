@@ -28,6 +28,12 @@ curl https://api.cliniko.com/v1/referral_source_types \
       "created_at": "2016-06-28T21:33:23Z",
       "updated_at": "2016-06-28T21:33:23Z",
       "name": "Client",
+      "referrers": {
+        "links": {
+          "self": "http://local.cliniko.dev:3000/v1/patients"
+        }
+      },
+      "referrer_type": "Patient",
       "subcategories": null,
       "links": { "self": "https://api.cliniko.com/v1/referral_source_types/1" }
     },
@@ -36,6 +42,12 @@ curl https://api.cliniko.com/v1/referral_source_types \
       "created_at": "2016-06-28T21:33:23Z",
       "updated_at": "2016-06-28T21:33:23Z",
       "name": "Contact",
+      "referrers": {
+        "links": {
+          "self": "http://local.cliniko.dev:3000/v1/contacts"
+        }
+      },
+      "referrer_type": "Contact",
       "subcategories": null,
       "links": { "self": "https://api.cliniko.com/v1/referral_source_types/2" }
     },
@@ -44,6 +56,8 @@ curl https://api.cliniko.com/v1/referral_source_types \
       "created_at": "2016-06-28T21:33:23Z",
       "updated_at": "2016-06-28T21:33:23Z",
       "name": "Other",
+      "referrers": null,
+      "referrer_type": null,
       "preset_type": "Other",
       "subcategories": null,
       "links": { "self": "https://api.cliniko.com/v1/referral_source_types/3" }
@@ -53,6 +67,8 @@ curl https://api.cliniko.com/v1/referral_source_types \
       "created_at": "2016-10-26T05:20:52Z",
       "updated_at": "2016-10-27T00:11:24Z",
       "name": "internets",
+      "referrers": null,
+      "referrer_type": null,
       "subcategories": [
         "the google",
         "myspace",
@@ -88,6 +104,8 @@ curl https://api.cliniko.com/v1/referral_source_types/10 \
   "created_at": "2016-10-26T05:20:52Z",
   "updated_at": "2016-10-27T00:11:24Z",
   "name": "internets",
+  "referrers": null,
+  "referrer_type": null,
   "subcategories": [
     "the google",
     "myspace",
