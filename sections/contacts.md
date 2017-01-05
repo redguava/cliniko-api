@@ -54,7 +54,7 @@ curl https://api.cliniko.com/v1/contacts \
       "state": "MN",
       "title": "Mr.",
       "country": "Estonia",
-      "contact_type": "Doctor",
+      "type": "Doctor",
       "links": {
         "self": "http://api.cliniko.com/v1/contacts/1"
       }
@@ -114,7 +114,7 @@ curl https://api.cliniko.com/v1/contacts/1 \
   "state": "MN",
   "title": "Mr.",
   "country": "Estonia",
-  "contact_type": "Doctor",
+  "type": "Doctor",
   "links": {
     "self": "http://api.cliniko.com/v1/contacts/1"
   }
