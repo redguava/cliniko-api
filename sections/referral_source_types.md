@@ -58,7 +58,6 @@ curl https://api.cliniko.com/v1/referral_source_types \
       "name": "Other",
       "referrers": null,
       "referrer_type": null,
-      "preset_type": "Other",
       "subcategories": null,
       "links": { "self": "https://api.cliniko.com/v1/referral_source_types/3" }
     },
