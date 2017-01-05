@@ -232,6 +232,7 @@ API Resources
 * [Practitioners](https://github.com/redguava/cliniko-api/blob/master/sections/practitioners.md)
 * [Practitioner Reference Numbers](https://github.com/redguava/cliniko-api/blob/master/sections/practitioner_reference_numbers.md)
 * [Products](https://github.com/redguava/cliniko-api/blob/master/sections/products.md)
+* [Referral Sources](https://github.com/redguava/cliniko-api/blob/master/sections/referral_sources.md)
 * [Referral Source Types](https://github.com/redguava/cliniko-api/blob/master/sections/referral_source_types.md)
 * [Settings](https://github.com/redguava/cliniko-api/blob/master/sections/settings.md)
 * [Stock Adjustments](https://github.com/redguava/cliniko-api/blob/master/sections/stock_adjustments.md)
