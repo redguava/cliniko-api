@@ -130,6 +130,7 @@ Dates must be in YYYY-MM-DD format. The date filter accepts wildcards in this fo
 
 **Integer Filter Operators**
 * ```=``` Equal to
+* ```!=``` Not equal to
 * ```>=``` Greater than or equal to
 * ```>``` Greater than
 * ```<=``` Less than or equal to
