@@ -269,7 +269,7 @@ curl https://api.cliniko.com/v1/attendees \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "appointment_id": "1", "patient_id": "1" }' \
+  -d '{ "booking_id": "1", "patient_id": "1" }' \
   -X POST
 ```
 **Example Response**
