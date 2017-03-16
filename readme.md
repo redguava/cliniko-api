@@ -241,6 +241,7 @@ API Resources
 * [Stock Adjustments](https://github.com/redguava/cliniko-api/blob/master/sections/stock_adjustments.md)
 * [Taxes](https://github.com/redguava/cliniko-api/blob/master/sections/taxes.md)
 * [Users](https://github.com/redguava/cliniko-api/blob/master/sections/users.md)
+* [Weekday Availabilities](https://github.com/redguava/cliniko-api/blob/master/sections/weekday_availabilities.md)
 
 Get involved and help make our API better
 -----------------------------------------
