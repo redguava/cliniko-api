@@ -9,6 +9,7 @@ Get Daily Availabilities
 ----------------
 
 **Resources**
+* ```GET /daily_availabilities``` get all daily availabilities
 * ```GET /businesses/:id/daily_availabilities``` get all daily availabilities of the specified business
 * ```GET /practitioners/:id/daily_availabilities``` get all daily availabilities of the specified practitioner
 
