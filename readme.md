@@ -12,6 +12,8 @@ Security
 
 The Cliniko API is served over HTTPS to ensure data security and privacy.  HTTP is not supported.
 
+Ensure that the HTTP client is up-to-date and has the latest TLS and cipher suites available. It's recommended that the client uses the cipher offered by the Cliniko API. It's _not recommended_ to hard-code TLS versions or ciphers.
+
 Base URL
 --------
 
