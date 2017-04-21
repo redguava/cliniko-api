@@ -1,10 +1,10 @@
 Billable Items
 ============
-* [Get Billable Items](#get-billable items "This will return all billable items.")
-* [Get Billable Item](#get-billable item "This will return a specified billable item.")
-* [Create Billable Item](#create-billable item "This will create a billable item.")
-* [Update Billable Item](#update-billable item "This will update a billable item.")
-* [Delete Billable Item](#delete-billable item "This will delete a billable item.")
+* [Get Billable Items](#get-billable-items "This will return all billable items.")
+* [Get Billable Item](#get-billable-item "This will return a specified billable item.")
+* [Create Billable Item](#create-billable-item "This will create a billable item.")
+* [Update Billable Item](#update-billable-item "This will update a billable item.")
+* [Delete Billable Item](#delete-billable-item "This will delete a billable item.")
 
 
 Get Billable Items
