@@ -11,7 +11,7 @@ Get Billable Items
 ----------------
 
 **Resources**
-* ```GET /billable items``` get all billable items
+* ```GET /billable_items``` get all billable items
 
 **Example Request**
 ```shell
@@ -24,7 +24,7 @@ curl https://api.cliniko.com/v1/billable_items \
 **Example Response**
 ```json
 {
-  "billable items": [
+  "billable_items": [
     {
       "id": 1,
       "item_code": "0001",
