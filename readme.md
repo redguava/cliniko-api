@@ -240,6 +240,7 @@ API Resources
 * [Products](https://github.com/redguava/cliniko-api/blob/master/sections/products.md)
 * [Referral Sources](https://github.com/redguava/cliniko-api/blob/master/sections/referral_sources.md)
 * [Referral Source Types](https://github.com/redguava/cliniko-api/blob/master/sections/referral_source_types.md)
+* [Services](https://github.com/redguava/cliniko-api/blob/master/sections/services.md)
 * [Settings](https://github.com/redguava/cliniko-api/blob/master/sections/settings.md)
 * [Stock Adjustments](https://github.com/redguava/cliniko-api/blob/master/sections/stock_adjustments.md)
 * [Taxes](https://github.com/redguava/cliniko-api/blob/master/sections/taxes.md)
