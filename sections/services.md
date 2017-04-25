@@ -8,7 +8,7 @@ Get Services
 
 **Resources**
 * ```GET /services``` Get all services.
-* ```GET /business/:id/services``` Get all services of the specified business.
+* ```GET /businesses/:id/services``` Get all services of the specified business.
 
 **Example Request**
 ```shell
