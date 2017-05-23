@@ -2,7 +2,58 @@ Referral Source
 ============
 > Referral source of a patient
 
+* [Get Referral Sources](#get-referral-sources "This will return all referral sources.")
 * [Get Referral Source](#get-referral-source "This will return a patient's referral source.")
+
+Get Referral Sources
+------------
+
+**Resources**
+* ```GET /referral_sources``` get all referral sources
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/referral_sources \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
+```
+
+**Example Response
+```json
+{
+  "referral_sources": [
+    {
+      "links": {
+        "self": "https://api.cliniko.com/v1/patients/123/referral_source"
+      },
+      "referrer": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/patients/456"
+        }
+      },
+      "referrer_type": "Patient",
+      "subcategory": null,
+      "notes": "note written about this referral",
+      "patient": {
+        "links": {
+          "self": "http://local.cliniko.dev:3000/v1/patients/123"
+        }
+      },
+      "referral_source_type": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/referral_source_types/1"
+        }
+      }
+    }
+  ],
+  "total_entries": 1,
+  "links": {
+    "self": "http://api.cliniko.com/v1/referral_sources?page=1"
+  }
+}
+```
+
 
 Get Referral Source
 ------------
@@ -34,6 +85,11 @@ There are a few possible types of referral sources. Depending on the type, diffe
   "referrer_type": "Patient",
   "subcategory": null,
   "notes": "note written about this referral",
+  "patient": {
+    "links": {
+      "self": "http://local.cliniko.dev:3000/v1/patients/123"
+    }
+  },
   "referral_source_type": {
     "links": {
       "self": "https://api.cliniko.com/v1/referral_source_types/1"
@@ -56,6 +112,11 @@ There are a few possible types of referral sources. Depending on the type, diffe
   "referrer_type": "Contact",
   "subcategory": null,
   "notes": "note written about this referral",
+  "patient": {
+    "links": {
+      "self": "http://local.cliniko.dev:3000/v1/patients/123"
+    }
+  },
   "referral_source_type": {
     "links": {
       "self": "https://api.cliniko.com/v1/referral_source_types/2"
@@ -74,6 +135,11 @@ There are a few possible types of referral sources. Depending on the type, diffe
   "referrer_type": null,
   "subcategory": null,
   "notes": "note written about this referral",
+  "patient": {
+    "links": {
+      "self": "http://local.cliniko.dev:3000/v1/patients/123"
+    }
+  },
   "referral_source_type": {
     "links": {
       "self": "https://api.cliniko.com/v1/referral_source_types/3"
@@ -92,6 +158,11 @@ There are a few possible types of referral sources. Depending on the type, diffe
   "referrer_type": null,
   "subcategory": "the subcategory name",
   "notes": "note written about this referral",
+  "patient": {
+    "links": {
+      "self": "http://local.cliniko.dev:3000/v1/patients/123"
+    }
+  },
   "referral_source_type": {
     "links": {
       "self": "https://api.cliniko.com/v1/referral_source_types/4"
