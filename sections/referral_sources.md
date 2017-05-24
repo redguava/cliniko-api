@@ -37,7 +37,7 @@ curl https://api.cliniko.com/v1/referral_sources \
       "notes": "note written about this referral",
       "patient": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/patients/123"
+          "self": "https://api.cliniko.com/v1/patients/123"
         }
       },
       "referral_source_type": {
@@ -49,7 +49,7 @@ curl https://api.cliniko.com/v1/referral_sources \
   ],
   "total_entries": 1,
   "links": {
-    "self": "http://api.cliniko.com/v1/referral_sources?page=1"
+    "self": "https://api.cliniko.com/v1/referral_sources?page=1"
   }
 }
 ```
@@ -87,7 +87,7 @@ There are a few possible types of referral sources. Depending on the type, diffe
   "notes": "note written about this referral",
   "patient": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/patients/123"
+      "self": "https://api.cliniko.com/v1/patients/123"
     }
   },
   "referral_source_type": {
@@ -114,7 +114,7 @@ There are a few possible types of referral sources. Depending on the type, diffe
   "notes": "note written about this referral",
   "patient": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/patients/123"
+      "self": "https://api.cliniko.com/v1/patients/123"
     }
   },
   "referral_source_type": {
@@ -137,7 +137,7 @@ There are a few possible types of referral sources. Depending on the type, diffe
   "notes": "note written about this referral",
   "patient": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/patients/123"
+      "self": "https://api.cliniko.com/v1/patients/123"
     }
   },
   "referral_source_type": {
@@ -160,7 +160,7 @@ There are a few possible types of referral sources. Depending on the type, diffe
   "notes": "note written about this referral",
   "patient": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/patients/123"
+      "self": "https://api.cliniko.com/v1/patients/123"
     }
   },
   "referral_source_type": {
