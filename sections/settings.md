@@ -46,9 +46,25 @@ curl https://api.cliniko.com/v1/settings \
     "multiple_appointments_gap": false
   },
   "online_bookings": {
+    "adroll": {
+      "advertiser_id": "XXXXXY",
+      "pixel_id": "YYYYYYX"
+    },
+    "calendar_info": "pick a time!",
     "enabled": true,
+    "google_analytics": {
+      "tracking_id": "UA-XXXXXXX-Y"
+    },
+    "logo_url": null,
+    "max_appointments_per_day_segment": 5,
+    "min_hours_advance_required_to_book": 2,
+    "min_hours_notice_for_patient_cancellation": 0,
+    "notify_practitioner_by_email": true,
+    "notify_practitioner_by_sms": true,
     "policy": "be cool",
-    "calendar_info": "pick a time!"
+    "require_patient_address": false,
+    "show_appointment_duration": true,
+    "show_prices": false
   },
   "reminders": {
     "default_reminder_type": "SMS & Email"
@@ -95,9 +111,18 @@ curl https://api.cliniko.com/v1/settings/public \
     "multiple_appointments_gap": false
   },
   "online_bookings": {
+    "calendar_info": "pick a time!",
     "enabled": true,
+    "logo_url": null,
+    "max_appointments_per_day_segment": 5,
+    "min_hours_advance_required_to_book": 2,
+    "min_hours_notice_for_patient_cancellation": 0,
+    "notify_practitioner_by_email": true,
+    "notify_practitioner_by_sms": true,
     "policy": "be cool",
-    "calendar_info": "pick a time!"
+    "require_patient_address": false,
+    "show_appointment_duration": true,
+    "show_prices": false
   },
   "reminders": {
     "default_reminder_type": "SMS & Email"
