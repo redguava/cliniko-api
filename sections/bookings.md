@@ -3,8 +3,6 @@ Bookings
 
 The bookings endpoint is a convenience endpoint that can return group and individual appointments. The properties of the response objects depends on the type of booking. You can find the specifics of each type on their documentation page: [group appointments](https://github.com/redguava/cliniko-api/blob/master/sections/group_appointments.md), [individual appointments](https://github.com/redguava/cliniko-api/blob/master/sections/individual_appointments.md).
 
-**Deprecation warning**: individual appointments return a deprecated field `cancellation_time`. You should instead use `cancelled_at`. `cancellation_time` will be removed in February 2017.
-
 * [Get Booking](#get-booking "This will return a specified booking.")
 
 Get Booking

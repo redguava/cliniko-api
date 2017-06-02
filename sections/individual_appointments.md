@@ -1,8 +1,6 @@
 Individual Appointments
 ============
 
-**Deprecation warning**: individual appointments return a deprecated field `cancellation_time`. You should instead use `cancelled_at`. `cancellation_time` will be removed in February 2017.
-
 * [Get Individual Appointments](#get-individual-appointments "This will return all individual appointments.")
 * [Get Deleted Individual Appointments](#get-deleted-individual-appointments "This will return all deleted individual appointments ID's only")
 * [Get Cancelled Individual Appointments](#get-cancelled-individual-appointments "This will return all cancelled individual appointments.")
