@@ -61,7 +61,7 @@ curl https://api.cliniko.com/v1/appointments/1 \
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/group_appointments/1"
+    "self": "https://api.cliniko.com/v1/bookings/1"
   }
 }
 ```
