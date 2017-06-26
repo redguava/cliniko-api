@@ -244,6 +244,8 @@ API Resources
 * [Settings](https://github.com/redguava/cliniko-api/blob/master/sections/settings.md)
 * [Stock Adjustments](https://github.com/redguava/cliniko-api/blob/master/sections/stock_adjustments.md)
 * [Taxes](https://github.com/redguava/cliniko-api/blob/master/sections/taxes.md)
+* [Treatment Note Templates](https://github.com/redguava/cliniko-api/blob/master/sections/treatment-note-templates.md)
+* [Treatment Notes](https://github.com/redguava/cliniko-api/blob/master/sections/treatment-notes.md)
 * [Users](https://github.com/redguava/cliniko-api/blob/master/sections/users.md)
 
 Get involved and help make our API better
