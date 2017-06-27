@@ -26,6 +26,73 @@ curl https://api.cliniko.com/v1/treatment_note_templates \
 
 **Example Response**
 ```json
+{
+  "treatment_note_templates": [
+    {
+      "id": 1,
+      "created_at": "2017-06-12T16:03:42Z",
+      "updated_at": "2017-06-12T16:03:42Z",
+      "content": {
+        "sections": [
+          {
+            "name": "Section 1",
+            "questions": [
+              {
+                "name": "Patient progress report",
+                "type": "paragraph",
+                "answer": "<div>Default answers to paragraph questions support basic HTML!</div>"
+              },
+              {
+                "name": "Assessment",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "Section 2",
+            "questions": [
+              {
+                "name": "Choose just one",
+                "type": "radiobuttons",
+                "answers": [
+                  { "value": "Choice 1" },
+                  { "value": "Choice 2" },
+                  { "value": "Choice 3" }
+                ]
+              },
+              {
+                "name": "Choose one or more",
+                "type": "checkboxes",
+                "answers": [
+                  { "value": "Choice 1" },
+                  { "value": "Choice 2" },
+                  { "value": "Choice 3" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "name": "Standard Consultation",
+      "print_settings": {
+        "include_patient_address": true,
+        "include_patient_dob": null,
+        "include_patient_medicare": null,
+        "include_patient_occupation": null,
+        "include_patient_reference_number": null,
+        "title": null
+      },
+      "deleted_at": null,
+      "links": {
+        "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+      }
+    }
+  ],
+  "total_entries": 1,
+  "links": {
+    "self": "https://api.cliniko.com/v1/treatment_note_templates?page=1"
+  }
+}
 ```
 
 Get Deleted Treatment Note Templates
@@ -44,9 +111,76 @@ curl https://api.cliniko.com/v1/treatment_note_templates/deleted \
 
 **Example Response**
 ```json
+{
+  "treatment_note_templates": [
+    {
+      "id": 1,
+      "created_at": "2017-06-12T16:03:42Z",
+      "updated_at": "2017-06-12T16:03:42Z",
+      "content": {
+        "sections": [
+          {
+            "name": "Section 1",
+            "questions": [
+              {
+                "name": "Patient progress report",
+                "type": "paragraph",
+                "answer": "<div>Default answers to paragraph questions support basic HTML!</div>"
+              },
+              {
+                "name": "Assessment",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "Section 2",
+            "questions": [
+              {
+                "name": "Choose just one",
+                "type": "radiobuttons",
+                "answers": [
+                  { "value": "Choice 1" },
+                  { "value": "Choice 2" },
+                  { "value": "Choice 3" }
+                ]
+              },
+              {
+                "name": "Choose one or more",
+                "type": "checkboxes",
+                "answers": [
+                  { "value": "Choice 1" },
+                  { "value": "Choice 2" },
+                  { "value": "Choice 3" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "name": "Standard Consultation",
+      "print_settings": {
+        "include_patient_address": true,
+        "include_patient_dob": null,
+        "include_patient_medicare": null,
+        "include_patient_occupation": null,
+        "include_patient_reference_number": null,
+        "title": null
+      },
+      "deleted_at": "2017-06-23T02:10:25Z",
+      "links": {
+        "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+      }
+    }
+  ],
+  "total_entries": 1,
+  "links": {
+    "self": "https://api.cliniko.com/v1/treatment_note_templates/deleted?page=1"
+  }
+}
 ```
 
-Get Treatment Note
+Get Treatment Note Template
 ------------
 
 **Resources**
@@ -62,6 +196,65 @@ curl https://api.cliniko.com/v1/treatment_note_templates/1 \
 
 **Example Response**
 ```json
+{
+  "id": 1,
+  "created_at": "2017-06-12T16:03:42Z",
+  "updated_at": "2017-06-12T16:03:42Z",
+  "content": {
+    "sections": [
+      {
+        "name": "Section 1",
+        "questions": [
+          {
+            "name": "Patient progress report",
+            "type": "paragraph",
+            "answer": "<div>Default answers to paragraph questions support basic HTML!</div>"
+          },
+          {
+            "name": "Assessment",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Section 2",
+        "questions": [
+          {
+            "name": "Choose just one",
+            "type": "radiobuttons",
+            "answers": [
+              { "value": "Choice 1" },
+              { "value": "Choice 2" },
+              { "value": "Choice 3" }
+            ]
+          },
+          {
+            "name": "Choose one or more",
+            "type": "checkboxes",
+            "answers": [
+              { "value": "Choice 1" },
+              { "value": "Choice 2" },
+              { "value": "Choice 3" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "name": "Standard Consultation",
+  "print_settings": {
+    "include_patient_address": true,
+    "include_patient_dob": null,
+    "include_patient_medicare": null,
+    "include_patient_occupation": null,
+    "include_patient_reference_number": null,
+    "title": null
+  },
+  "deleted_at": null,
+  "links": {
+    "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+  }
+}
 ```
 
 Create Treatment Note Template
@@ -84,6 +277,25 @@ curl https://api.cliniko.com/v1/treatment_note_templates \
 Headers { Location: http://api.cliniko.com/treatment_note_templates/1 }
 ```
 ```json
+{
+  "id": 1,
+  "created_at": "2017-06-12T16:03:42Z",
+  "updated_at": "2017-06-12T16:03:42Z",
+  "content": null,
+  "name": "My template",
+  "print_settings": {
+    "include_patient_address": true,
+    "include_patient_dob": null,
+    "include_patient_medicare": null,
+    "include_patient_occupation": null,
+    "include_patient_reference_number": null,
+    "title": null
+  },
+  "deleted_at": null,
+  "links": {
+    "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+  }
+}
 ```
 
 Update Treatment Note Template
@@ -103,6 +315,25 @@ curl https://api.cliniko.com/v1/treatment_note_templates/1 \
 ```
 **Example Response**
 ```json
+{
+  "id": 1,
+  "created_at": "2017-06-12T16:03:42Z",
+  "updated_at": "2017-06-29T05:32:51Z",
+  "content": null,
+  "name": "My template",
+  "print_settings": {
+    "include_patient_address": true,
+    "include_patient_dob": null,
+    "include_patient_medicare": null,
+    "include_patient_occupation": null,
+    "include_patient_reference_number": null,
+    "title": null
+  },
+  "deleted_at": null,
+  "links": {
+    "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+  }
+}
 ```
 
 Delete Treatment Note Template
