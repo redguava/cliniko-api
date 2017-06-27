@@ -375,7 +375,7 @@ Property | Type | Accepted Values | Notes
 ------------ | ------------- | ------------- | -------------
 name | string | A string of 255 or fewer characters | Name is required.
 type | string | `text`, `paragraph`, `checkboxes`, `radiobuttons` | Type is required.
-answer | string | A string | Not required. Only accepted for `paragraph` type questions. This will be used as the default answer for treatment notes built from this template. Empty values are not valid. If there is no default answer, this property should be omitted. Accepts basic HTML, see HTML docs for details.
+answer | string | A string | Not required. Only accepted for `paragraph` type questions. This will be used as the default answer for treatment notes built from this template. Empty values are not valid. If there is no default answer, this property should be omitted. Accepts basic HTML, see [HTML docs](#permitted-html-in-paragraph-answers "docs for HTML content") for details.
 answers | array | An array of answer objects | Not required. Only accepted for `checkboxes` and `radiobuttons` type questions. An empty array is not valid. If there are no answers, this property should be omitted.
 
 **Answer Object**
@@ -383,3 +383,7 @@ answers | array | An array of answer objects | Not required. Only accepted for `
 Property | Type | Accepted Values | Notes
 ------------ | ------------- | ------------- | -------------
 value | string | A string of 255 or fewer characters or `null` | Not required.
+
+Permitted HTML in paragraph answers
+----------------
+Basic HTML is supported in answers to paragraph questions. We sanitize these answers to ensure the HTML is safe and our editor can support the formatting. Currently, only `div` and `br` tags are supported. We will be opening up support for more tags in the future. Characters like `\n`, `\r`, and `\t` will be stripped out. The angle bracket characters (`<`, and `>`) should be sent as html encodings (ex: `<` should be sent as `&lt;`). Content inside unescaped angle brackets could be indentified as unsupported HTML and will be stripped.
