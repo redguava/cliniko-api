@@ -453,3 +453,36 @@ For any route that returns a set of treatment notes, you can filter them by:
 * ```updated_at``` (DateTime)
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
+
+Treatment Note Content Schema
+----------------
+The `content` property of a treatment note is a JSON object. The schema is validated and must conform to the following rules.
+
+**Content Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+sections | array | An array of section objects | Not required. An empty array is not valid. If there are no sections, this property should be omitted and `content` should be set to `null`.
+
+**Section Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+name | string | A string of 255 or fewer characters | Not required. If there is no name, this property should be omitted.
+questions | array | An array of question objects | Not required. An empty array is not valid. If there are no questions, this property should be omitted.
+
+**Question Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+name | string | A string of 255 or fewer characters | Name is required.
+type | string | `text`, `paragraph`, `checkboxes`, `radiobuttons` | Type is required.
+answer | string | A string | Not required. Only accepted for `text` and `paragraph` type questions. Empty values are not valid. If there is no answer, this property should be omitted. Accepts basic HTML, see HTML docs for details.
+answers | array | An array of answer objects | Not required. Only accepted for `checkboxes` and `radiobuttons` type questions. An empty array is not valid. If there are no answers, this property should be omitted.
+
+**Answer Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+value | string | A string of 255 or fewer characters or `null` | Not required.
+selected | boolean | true | Not required. Only accepts `true`. If the answer is not selected, this property should be omitted. For `radiobuttons` type questions, only one answer can be selected.
