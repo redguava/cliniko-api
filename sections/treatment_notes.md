@@ -57,7 +57,7 @@ curl https://api.cliniko.com/v1/treatment_notes \
                 "type": "radiobuttons",
                 "answers": [
                   { "value": "Choice 1" },
-                  { "value": "Choice 2", selected: true },
+                  { "value": "Choice 2", "selected": true },
                   { "value": "Choice 3" }
                 ]
               },
@@ -65,8 +65,8 @@ curl https://api.cliniko.com/v1/treatment_notes \
                 "name": "Choose one or more",
                 "type": "checkboxes",
                 "answers": [
-                  { "value": "Choice 1", selected: true },
-                  { "value": "Choice 2", selected: true },
+                  { "value": "Choice 1", "selected": true },
+                  { "value": "Choice 2", "selected": true },
                   { "value": "Choice 3" }
                 ]
               }
@@ -152,7 +152,7 @@ curl https://api.cliniko.com/v1/treatment_notes/deleted \
                 "type": "radiobuttons",
                 "answers": [
                   { "value": "Choice 1" },
-                  { "value": "Choice 2", selected: true },
+                  { "value": "Choice 2", "selected": true },
                   { "value": "Choice 3" }
                 ]
               },
@@ -160,8 +160,8 @@ curl https://api.cliniko.com/v1/treatment_notes/deleted \
                 "name": "Choose one or more",
                 "type": "checkboxes",
                 "answers": [
-                  { "value": "Choice 1", selected: true },
-                  { "value": "Choice 2", selected: true },
+                  { "value": "Choice 1", "selected": true },
+                  { "value": "Choice 2", "selected": true },
                   { "value": "Choice 3" }
                 ]
               }
@@ -245,7 +245,7 @@ curl https://api.cliniko.com/v1/treatment_notes/1 \
             "type": "radiobuttons",
             "answers": [
               { "value": "Choice 1" },
-              { "value": "Choice 2", selected: true },
+              { "value": "Choice 2", "selected": true },
               { "value": "Choice 3" }
             ]
           },
@@ -253,8 +253,8 @@ curl https://api.cliniko.com/v1/treatment_notes/1 \
             "name": "Choose one or more",
             "type": "checkboxes",
             "answers": [
-              { "value": "Choice 1", selected: true },
-              { "value": "Choice 2", selected: true },
+              { "value": "Choice 1", "selected": true },
+              { "value": "Choice 2", "selected": true },
               { "value": "Choice 3" }
             ]
           }
@@ -383,7 +383,7 @@ curl https://api.cliniko.com/v1/treatment_notes/1 \
             "type": "radiobuttons",
             "answers": [
               { "value": "Choice 1" },
-              { "value": "Choice 2", selected: true },
+              { "value": "Choice 2", "selected": true },
               { "value": "Choice 3" }
             ]
           },
@@ -391,8 +391,8 @@ curl https://api.cliniko.com/v1/treatment_notes/1 \
             "name": "Choose one or more",
             "type": "checkboxes",
             "answers": [
-              { "value": "Choice 1", selected: true },
-              { "value": "Choice 2", selected: true },
+              { "value": "Choice 1", "selected": true },
+              { "value": "Choice 2", "selected": true },
               { "value": "Choice 3" }
             ]
           }
