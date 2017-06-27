@@ -351,3 +351,35 @@ curl https://api.cliniko.com/v1/treatment_note_templates/1 \
 ```
 **Example Response**
 A status code of `204 no content` will be returned if successful
+
+Treatment Note Template Content Schema
+----------------
+The `content` property of a treatment note template is a JSON object. The schema is validated and must conform to the following rules.
+
+**Content Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+sections | array | An array of section objects | Not required. An empty array is not valid. If there are no sections, this property should be omitted and `content` should be set to `null`.
+
+**Section Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+name | string | A string of 255 or fewer characters | Not required. If there is no name, this property should be omitted.
+questions | array | An array of question objects | Not required. An empty array is not valid. If there are no questions, this property should be omitted.
+
+**Question Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+name | string | A string of 255 or fewer characters | Name is required.
+type | string | `text`, `paragraph`, `checkboxes`, `radiobuttons` | Type is required.
+answer | string | A string | Not required. Only accepted for `paragraph` type questions. This will be used as the default answer for treatment notes built from this template. Empty values are not valid. If there is no default answer, this property should be omitted. Accepts basic HTML, see HTML docs for details.
+answers | array | An array of answer objects | Not required. Only accepted for `checkboxes` and `radiobuttons` type questions. An empty array is not valid. If there are no answers, this property should be omitted.
+
+**Answer Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+value | string | A string of 255 or fewer characters or `null` | Not required.
