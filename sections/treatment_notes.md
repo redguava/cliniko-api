@@ -26,6 +26,83 @@ curl https://api.cliniko.com/v1/treatment_notes \
 
 **Example Response**
 ```json
+{
+  "treatment_notes": [
+    {
+      "id": 1,
+      "created_at": "2017-06-12T16:56:57Z",
+      "updated_at": "2017-06-12T16:56:57Z",
+      "content": {
+        "sections": [
+          {
+            "name": "Section 1",
+            "questions": [
+              {
+                "name": "Patient progress report",
+                "type": "paragraph",
+                "answer": "<div>Answers to paragraph questions support basic HTML!</div>"
+              },
+              {
+                "name": "Assessment",
+                "type": "text",
+                "answer": "Answers to text questions are single lines and do not support HTML"
+              }
+            ]
+          },
+          {
+            "name": "Section 2",
+            "questions": [
+              {
+                "name": "Choose just one",
+                "type": "radiobuttons",
+                "answers": [
+                  { "value": "Choice 1" },
+                  { "value": "Choice 2", selected: true },
+                  { "value": "Choice 3" }
+                ]
+              },
+              {
+                "name": "Choose one or more",
+                "type": "checkboxes",
+                "answers": [
+                  { "value": "Choice 1", selected: true },
+                  { "value": "Choice 2", selected: true },
+                  { "value": "Choice 3" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "draft": true,
+      "title": "Standard Consultation",
+      "deleted_at": null,
+      "author_name": "Natasha Hermiston",
+      "patient": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/patients/123"
+        }
+      },
+      "practitioner": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/practitioners/456"
+        }
+      },
+      "treatment_note_template": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/treatment_note_templates/789"
+        }
+      },
+      "links": {
+        "self": "https://api.cliniko.com/v1/treatment_notes/1"
+      }
+    }
+  ],
+  "total_entries": 1,
+  "links": {
+    "self": "https://api.cliniko.com/v1/treatment_notes?page=1"
+  }
+}
 ```
 
 Get Deleted Treatment Notes
@@ -44,6 +121,83 @@ curl https://api.cliniko.com/v1/treatment_notes/deleted \
 
 **Example Response**
 ```json
+{
+  "treatment_notes": [
+    {
+      "id": 1,
+      "created_at": "2017-06-12T16:56:57Z",
+      "updated_at": "2017-06-12T16:56:57Z",
+      "content": {
+        "sections": [
+          {
+            "name": "Section 1",
+            "questions": [
+              {
+                "name": "Patient progress report",
+                "type": "paragraph",
+                "answer": "<div>Answers to paragraph questions support basic HTML!</div>"
+              },
+              {
+                "name": "Assessment",
+                "type": "text",
+                "answer": "Answers to text questions are single lines and do not support HTML"
+              }
+            ]
+          },
+          {
+            "name": "Section 2",
+            "questions": [
+              {
+                "name": "Choose just one",
+                "type": "radiobuttons",
+                "answers": [
+                  { "value": "Choice 1" },
+                  { "value": "Choice 2", selected: true },
+                  { "value": "Choice 3" }
+                ]
+              },
+              {
+                "name": "Choose one or more",
+                "type": "checkboxes",
+                "answers": [
+                  { "value": "Choice 1", selected: true },
+                  { "value": "Choice 2", selected: true },
+                  { "value": "Choice 3" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "draft": true,
+      "title": "Standard Consultation",
+      "deleted_at": "2017-06-22T13:14:19Z",
+      "author_name": "Natasha Hermiston",
+      "patient": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/patients/123"
+        }
+      },
+      "practitioner": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/practitioners/456"
+        }
+      },
+      "treatment_note_template": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/treatment_note_templates/789"
+        }
+      },
+      "links": {
+        "self": "https://api.cliniko.com/v1/treatment_notes/1"
+      }
+    }
+  ],
+  "total_entries": 1,
+  "links": {
+    "self": "https://api.cliniko.com/v1/treatment_notes/deleted?page=1"
+  }
+}
 ```
 
 Get Treatment Note
@@ -62,6 +216,75 @@ curl https://api.cliniko.com/v1/treatment_notes/1 \
 
 **Example Response**
 ```json
+{
+  "id": 1,
+  "created_at": "2017-06-12T16:56:57Z",
+  "updated_at": "2017-06-12T16:56:57Z",
+  "content": {
+    "sections": [
+      {
+        "name": "Section 1",
+        "questions": [
+          {
+            "name": "Patient progress report",
+            "type": "paragraph",
+            "answer": "<div>Answers to paragraph questions support basic HTML!</div>"
+          },
+          {
+            "name": "Assessment",
+            "type": "text",
+            "answer": "Answers to text questions are single lines and do not support HTML"
+          }
+        ]
+      },
+      {
+        "name": "Section 2",
+        "questions": [
+          {
+            "name": "Choose just one",
+            "type": "radiobuttons",
+            "answers": [
+              { "value": "Choice 1" },
+              { "value": "Choice 2", selected: true },
+              { "value": "Choice 3" }
+            ]
+          },
+          {
+            "name": "Choose one or more",
+            "type": "checkboxes",
+            "answers": [
+              { "value": "Choice 1", selected: true },
+              { "value": "Choice 2", selected: true },
+              { "value": "Choice 3" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "draft": true,
+  "title": "Standard Consultation",
+  "deleted_at": null,
+  "author_name": "Natasha Hermiston",
+  "patient": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/123"
+    }
+  },
+  "practitioner": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/practitioners/456"
+    }
+  },
+  "treatment_note_template": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/treatment_note_templates/789"
+    }
+  },
+  "links": {
+    "self": "https://api.cliniko.com/v1/treatment_notes/1"
+  }
+}
 ```
 
 Create Treatment Note
@@ -76,7 +299,7 @@ curl https://api.cliniko.com/v1/treatment_notes \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "draft": true, "patient_id": 123, "treatment_note_template_id": 456 }' \
+  -d '{ "draft": true, "patient_id": 123, "practitioner_id": 456, "treatment_note_template_id": 789 }' \
   -X POST
 ```
 **Example Response**
@@ -84,6 +307,34 @@ curl https://api.cliniko.com/v1/treatment_notes \
 Headers { Location: http://api.cliniko.com/treatment_notes/1 }
 ```
 ```json
+{
+  "id": 1,
+  "created_at": "2017-06-12T16:56:57Z",
+  "updated_at": "2017-06-12T16:56:57Z",
+  "content": null,
+  "draft": true,
+  "title": "Standard Consultation",
+  "deleted_at": null,
+  "author_name": "Natasha Hermiston",
+  "patient": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/123"
+    }
+  },
+  "practitioner": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/practitioners/456"
+    }
+  },
+  "treatment_note_template": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/treatment_note_templates/789"
+    }
+  },
+  "links": {
+    "self": "https://api.cliniko.com/v1/treatment_notes/1"
+  }
+}
 ```
 
 Update Treatment Note
@@ -103,6 +354,75 @@ curl https://api.cliniko.com/v1/treatment_notes/1 \
 ```
 **Example Response**
 ```json
+{
+  "id": 1,
+  "created_at": "2017-06-12T16:56:57Z",
+  "updated_at": "2017-06-12T16:56:57Z",
+  "content": {
+    "sections": [
+      {
+        "name": "Section 1",
+        "questions": [
+          {
+            "name": "Patient progress report",
+            "type": "paragraph",
+            "answer": "<div>Answers to paragraph questions support basic HTML!</div>"
+          },
+          {
+            "name": "Assessment",
+            "type": "text",
+            "answer": "Answers to text questions are single lines and do not support HTML"
+          }
+        ]
+      },
+      {
+        "name": "Section 2",
+        "questions": [
+          {
+            "name": "Choose just one",
+            "type": "radiobuttons",
+            "answers": [
+              { "value": "Choice 1" },
+              { "value": "Choice 2", selected: true },
+              { "value": "Choice 3" }
+            ]
+          },
+          {
+            "name": "Choose one or more",
+            "type": "checkboxes",
+            "answers": [
+              { "value": "Choice 1", selected: true },
+              { "value": "Choice 2", selected: true },
+              { "value": "Choice 3" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "draft": false,
+  "title": "Standard Consultation",
+  "deleted_at": null,
+  "author_name": "Natasha Hermiston",
+  "patient": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/123"
+    }
+  },
+  "practitioner": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/practitioners/456"
+    }
+  },
+  "treatment_note_template": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/treatment_note_templates/789"
+    }
+  },
+  "links": {
+    "self": "https://api.cliniko.com/v1/treatment_notes/1"
+  }
+}
 ```
 
 Delete Treatment Note
