@@ -299,7 +299,7 @@ curl https://api.cliniko.com/v1/treatment_notes \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "draft": true, "patient_id": 123, "practitioner_id": 456, "treatment_note_template_id": 789 }' \
+  -d '{ "draft": true, "patient_id": 123, "practitioner_id": 456, "treatment_note_template_id": 789, "content": "{\"sections\": [{\"name\": \"Section 1\", \"questions\": [{\"name\": \"Question 1\", \"type\": \"text\", \"answer\": \"The answer is 42\"}]}]}" }' \
   -X POST
 ```
 **Example Response**
@@ -311,7 +311,20 @@ Headers { Location: http://api.cliniko.com/treatment_notes/1 }
   "id": 1,
   "created_at": "2017-06-12T16:56:57Z",
   "updated_at": "2017-06-12T16:56:57Z",
-  "content": null,
+  "content": {
+    "sections": [
+      {
+        "name": "Section 1",
+        "questions": [
+          {
+            "name": "Question 1,
+            "type": "text",
+            "answer": "The answer is not 42"
+          }
+        ]
+      }
+    ]
+  },
   "draft": true,
   "title": "Standard Consultation",
   "deleted_at": null,
@@ -349,7 +362,7 @@ curl https://api.cliniko.com/v1/treatment_notes/1 \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "draft": false }' \
+  -d '{ "draft": false, "content": "{\"sections\": [{\"name\": \"Section 1\", \"questions\": [{\"name\": \"Question 1\", \"type\": \"text\", \"answer\": \"The answer is not 42\"}]}]}" }' \
   -X PUT
 ```
 **Example Response**
@@ -364,37 +377,9 @@ curl https://api.cliniko.com/v1/treatment_notes/1 \
         "name": "Section 1",
         "questions": [
           {
-            "name": "Patient progress report",
-            "type": "paragraph",
-            "answer": "<div>Answers to paragraph questions support basic HTML!</div>"
-          },
-          {
-            "name": "Assessment",
+            "name": "Question 1,
             "type": "text",
-            "answer": "Answers to text questions are single lines and do not support HTML"
-          }
-        ]
-      },
-      {
-        "name": "Section 2",
-        "questions": [
-          {
-            "name": "Choose just one",
-            "type": "radiobuttons",
-            "answers": [
-              { "value": "Choice 1" },
-              { "value": "Choice 2", "selected": true },
-              { "value": "Choice 3" }
-            ]
-          },
-          {
-            "name": "Choose one or more",
-            "type": "checkboxes",
-            "answers": [
-              { "value": "Choice 1", "selected": true },
-              { "value": "Choice 2", "selected": true },
-              { "value": "Choice 3" }
-            ]
+            "answer": "The answer is not 42"
           }
         ]
       }
