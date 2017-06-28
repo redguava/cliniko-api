@@ -269,7 +269,7 @@ curl https://api.cliniko.com/v1/treatment_note_templates \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "name": "My template" }' \
+  -d '{ "name": "My template", "content": "{\"sections\": [{\"name\": \"Section 1\", \"questions\": [{\"name\": \"Question 1\", \"type\": \"text\"}]}]}" }' \
   -X POST
 ```
 **Example Response**
@@ -281,7 +281,19 @@ Headers { Location: http://api.cliniko.com/treatment_note_templates/1 }
   "id": 1,
   "created_at": "2017-06-12T16:03:42Z",
   "updated_at": "2017-06-12T16:03:42Z",
-  "content": null,
+  "content": {
+    "sections": [
+      {
+        "name": "Section 1",
+        "questions": [
+          {
+            "name": "Question 1",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
   "name": "My template",
   "print_settings": {
     "include_patient_address": true,
@@ -310,7 +322,7 @@ curl https://api.cliniko.com/v1/treatment_note_templates/1 \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "name": "My template" }' \
+  -d '{ "name": "My template", "content": "{\"sections\": [{\"name\": \"Section A\", \"questions\": [{\"name\": \"Question A\", \"type\": \"text\"}]}]}" }' \
   -X PUT
 ```
 **Example Response**
@@ -319,7 +331,19 @@ curl https://api.cliniko.com/v1/treatment_note_templates/1 \
   "id": 1,
   "created_at": "2017-06-12T16:03:42Z",
   "updated_at": "2017-06-29T05:32:51Z",
-  "content": null,
+  "content": {
+    "sections": [
+      {
+        "name": "Section A",
+        "questions": [
+          {
+            "name": "Question A",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
   "name": "My template",
   "print_settings": {
     "include_patient_address": true,
