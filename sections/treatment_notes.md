@@ -317,7 +317,7 @@ Headers { Location: http://api.cliniko.com/treatment_notes/1 }
         "name": "Section 1",
         "questions": [
           {
-            "name": "Question 1,
+            "name": "Question 1",
             "type": "text",
             "answer": "The answer is not 42"
           }
@@ -377,7 +377,7 @@ curl https://api.cliniko.com/v1/treatment_notes/1 \
         "name": "Section 1",
         "questions": [
           {
-            "name": "Question 1,
+            "name": "Question 1",
             "type": "text",
             "answer": "The answer is not 42"
           }
