@@ -7,7 +7,7 @@ Treatment Notes
 * [Get Treatment Note](#get-treatment-note "This will return a specified treatment note.")
 * [Create Treatment Note](#create-treatment-note "This will create a treatment note.")
 * [Update Treatment Note](#update-treatment-note "This will update a treatment note.")
-* [Delete Patient](#delete-treatment-note "This will delete a treatment note.")
+* [Delete Treatment Note](#delete-treatment-note "This will delete a treatment note.")
 
 Get Treatment Notes
 ----------------
