@@ -164,7 +164,7 @@ curl https://api.cliniko.com/v1/practitioner_reference_numbers/1 \
 **Example Response**
 A status code of `204 no content` will be returned if successful
 
-Filtering Appointments
+Filtering Practitioner Reference Numbers
 ----------------
 
 You can filter practitioner reference numbers by:
