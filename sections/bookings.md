@@ -14,7 +14,7 @@ Get Bookings
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/appointments/1 \
+curl https://api.cliniko.com/v1/bookings \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
