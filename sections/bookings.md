@@ -153,7 +153,7 @@ curl https://api.cliniko.com/v1/bookings \
   ],
   "total_entries": 3,
   "links": {
-    "self": "https://api.cliniko.com/v1/internal/bookings?page=1"
+    "self": "https://api.cliniko.com/v1/bookings?page=1"
   }
 }
 ```
