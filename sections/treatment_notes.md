@@ -299,7 +299,7 @@ curl https://api.cliniko.com/v1/treatment_notes \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "draft": true, "patient_id": 123, "practitioner_id": 456, "treatment_note_template_id": 789, "content": "{\"sections\": [{\"name\": \"Section 1\", \"questions\": [{\"name\": \"Question 1\", \"type\": \"text\", \"answer\": \"The answer is 42\"}]}]}" }' \
+  -d '{ "draft": true, "patient_id": 123, "treatment_note_template_id": 789, "content": "{\"sections\": [{\"name\": \"Section 1\", \"questions\": [{\"name\": \"Question 1\", \"type\": \"text\", \"answer\": \"The answer is 42\"}]}]}" }' \
   -X POST
 ```
 **Example Response**
