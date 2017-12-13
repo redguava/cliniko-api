@@ -230,4 +230,4 @@ For any route that returns a set of bookings, you can filter them by:
 * ```starts_at``` DateTime
 * ```updated_at``` DateTime
 
-See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
+See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters. Specifically, see String filters for filtering on a list (Array) of ```patient_ids```.
