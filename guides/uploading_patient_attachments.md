@@ -44,8 +44,8 @@ To do so, make a POST request to the patient attachments endpoint, with the pati
 `http://api.cliniko.com/v1/patient_attachments`
 ```json
 {
-  patient_id: "382",
-  upload_url: "https://cliniko-files-dev-john.s3.amazonaws.com/123/patients/456/attachments/temp/s0m3-w31rd-l0c4t10n-1na-t3mpd1r/the-name-of-the-file.txt"
+  "patient_id": "382",
+  "upload_url": "https://cliniko-files-dev-john.s3.amazonaws.com/123/patients/456/attachments/temp/s0m3-w31rd-l0c4t10n-1na-t3mpd1r/the-name-of-the-file.txt"
 }
 ```
 
