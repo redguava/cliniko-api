@@ -51,7 +51,9 @@ To do so, make a POST request to the patient attachments endpoint, with the pati
 
 A successful create will return a 201 and the payload will be the new attachment record. The format of that response is detailed in the section on the [patient attachment resource](url here when that page exists).
 
-At this point the record exists, but Cliniko will not yet have processed the file. This is indicated by the `processing_completed` attribute being `false`. A few other attributes like filename will be blank until processing is finished. The time to process a file depends upon the size of the file and the amount of other traffic in the queue.
+## Cliniko will process the file
+
+At this point the record exists, but Cliniko will not yet have processed the file. This is indicated by the `processing_completed` attribute being `false`. A few other attributes like filename will be blank until processing is finished. The time to process a file depends upon the size of the file and the amount of other traffic in the queue. When the processing is completed, the file will no longer exist at the temp location where you uploaded it. You will need to request the attachment record and follow the URL provided there to access the file again.
 
 ## Free trial accounts have limited file space
 
