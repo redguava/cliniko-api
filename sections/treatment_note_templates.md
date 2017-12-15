@@ -379,7 +379,7 @@ A status code of `204 no content` will be returned if successful
 Filtering Treatment Note Templates
 ----------------
 
-For any route that returns a set of treatment note teamplates, you can filter them by:
+For any route that returns a set of treatment note templates, you can filter them by:
 * ```created_at``` (DateTime)
 * ```id``` (Integer)
 * ```updated_at``` (DateTime)
