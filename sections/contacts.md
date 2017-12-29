@@ -129,7 +129,7 @@ Filtering Contacts
 For any route that returns a set contacts, you can filter them by:
 * ```created_at``` DateTime
 * ```id``` Integer
-* ```updated_at``` DateTime
 * ```type_code``` Integer
+* ```updated_at``` DateTime
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
