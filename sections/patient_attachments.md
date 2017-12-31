@@ -131,9 +131,9 @@ Headers { Location: http://api.cliniko.com/patient_attachments/1 }
   "id": 1,
   "created_at": "2017-12-31T15:32:58Z",
   "updated_at": "2017-12-31T15:32:58Z",
-  "content_type": "text/plain",
-  "filename": "the-name-of-the-file.txt",
-  "size": 14936,
+  "content_type": null,
+  "filename": null,
+  "size": null,
   "content": {
     "links": {
       "self": "https://api.cliniko.com/v1/patient_attachments/1/content"
