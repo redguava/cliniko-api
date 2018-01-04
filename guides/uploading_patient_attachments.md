@@ -57,4 +57,4 @@ At this point the record exists, but Cliniko will not yet have processed the fil
 
 ## Free trial accounts have limited file space
 
-Please note that free trial accounts are allowed only 10 files that must not total more than 1 MB. If you attempt to upload beyond those limits, you will receive an error.
+Please note that free trial accounts have a restricted amount of file storage. If you attempt to upload beyond those limits, you will receive an error.
