@@ -3,7 +3,7 @@
 ## Get a presigned POST to upload your file to s3
 
 Make a request for a presigned POST for the patient that you want to upload a file for.
-`http://api.cliniko.com/v1/patients/456/attachment_presigned_post`
+`https://api.cliniko.com/v1/patients/456/attachment_presigned_post`
 
 The response will give you the URL and parameters that you need to upload the file to s3.
 ```json
@@ -52,7 +52,7 @@ At this point, your file is in our s3 bucket in a temp directory, but Cliniko do
 
 To do so, make a POST request to the patient attachments endpoint, with the patient ID and s3 temp URL as parameters. The `upload_url` parameter is the `Location` value in the s3 XML response. Using the value as is from the XML response is important as the s3 filename may have been escaped special characters to make the URL friendly.
 
-`http://api.cliniko.com/v1/patient_attachments`
+`https://api.cliniko.com/v1/patient_attachments`
 ```json
 {
   "patient_id": "382",
