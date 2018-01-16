@@ -124,7 +124,7 @@ curl https://api.cliniko.com/v1/patient_attachments \
 ```
 **Example Response**
 ```
-Headers { Location: http://api.cliniko.com/patient_attachments/1 }
+Headers { Location: https://api.cliniko.com/patient_attachments/1 }
 ```
 ```json
 {
