@@ -382,6 +382,37 @@ curl https://api.cliniko.com/v1/attendees/1 \
 **Example Response**
 A status code of `204 no content` will be returned if successful
 
+Cancel Attendee
+----------------
+**Resources**
+* ```PATCH /attendees/:id/cancel``` cancel an attendee
+
+**Notes**
+
+The `cancellation_reason` information is mandatory. Only attendees of group appointments can be cancelled via this endpoint. Cancelling an individual appointment should be done via the [cancel endpoint for individual appointments](https://github.com/redguava/cliniko-api/blob/master/sections/individual_appointments.md#cancel-individual-appointment).
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/attendees/1/cancel \
+  -u API_KEY: \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -d '{ "cancellation_reason": 50, "cancellation_note": "A note" }' \
+  -X PATCH
+```
+
+**Example Response**
+A status code of `204 no content` will be returned if successful
+
+**Cancellation Reason Codes**
+* `10` Feeling better
+* `20` Condition worse
+* `30` Sick
+* `40` Away
+* `50` Other
+* `60` Work
+
 Filtering Attendees
 ----------------
 
