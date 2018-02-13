@@ -14,6 +14,8 @@ The Cliniko API is served over HTTPS to ensure data security and privacy.  HTTP 
 
 Ensure that the HTTP client is up-to-date and has the latest TLS, cipher suites and SNI available. It's recommended that the client uses the cipher offered by the Cliniko API. It's _not recommended_ to hard-code TLS versions or ciphers.
 
+From May 1, 2018, requests to the Cliniko API will require TLS 1.2. See the guide on [How do I test my API client?](https://github.com/redguava/cliniko-api/blob/master/guides/testing_api_client_tls.md) for more information.
+
 Base URL
 --------
 
