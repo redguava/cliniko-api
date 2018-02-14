@@ -50,6 +50,11 @@ curl https://api.cliniko.com/v1/appointment_types \
           "self": "https://api.cliniko.com/v1/appointment_types/1/practitioners"
         }
       },
+      "treatment_note_template": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+        }
+      },
       "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
     }
   ],
@@ -98,6 +103,11 @@ curl https://api.cliniko.com/v1/appointment_types/1 \
   "practitioners": {
     "links": {
       "self": "https://api.cliniko.com/v1/appointment_types/1/practitioners"
+    }
+  },
+  "treatment_note_template": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
     }
   },
   "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
