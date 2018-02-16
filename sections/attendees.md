@@ -8,6 +8,7 @@ Attendees
 * [Create Attendee](#create-attendee "This will create an attendee.")
 * [Update Attendee](#update-attendee "This will update an attendee.")
 * [Delete Attendee](#delete-attendee "This will delete an attendee.")
+* [Cancel Attendee](#cancel-attendee "This will cancel an attendee.")
 
 Get Attendees
 ----------------
