@@ -4,6 +4,9 @@ Contacts
 
 * [Get Contacts](#get-contacts "This will return all contacts.")
 * [Get Contact](#get-contact "This will return a specified contact.")
+* [Create Contact](#create-contact "This will create a contact.")
+* [Update Contact](#update-contact "This will update a contact.")
+* [Delete Contact](#delete-contact "This will delete a contact.")
 
 Get Contacts
 ----------------
@@ -122,6 +125,121 @@ curl https://api.cliniko.com/v1/contacts/1 \
   }
 }
 ```
+
+Create Contact
+----------------
+**Resources**
+* ```POST /contacts``` create a contact
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/contacts \
+  -u API_KEY: \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -d '{ "first_name": "John", "last_name": "Snow" }' \
+  -X POST
+```
+**Example Response**
+```
+Headers { Location: http://api.cliniko.com/contacts/1 }
+```
+```json
+{
+  "id": 12,
+  "created_at": "2018-02-12T17:58:18Z",
+  "updated_at": "2018-02-12T17:58:18Z",
+  "address_1": "",
+  "address_2": "",
+  "address_3": "",
+  "city": "",
+  "company_name": "",
+  "country_code": "AU",
+  "deleted_at": null,
+  "email": "",
+  "first_name": "John",
+  "last_name": "Snow",
+  "notes": "",
+  "occupation": "",
+  "phone_numbers": [],
+  "post_code": "",
+  "preferred_name": "",
+  "provider_number": "",
+  "state": "",
+  "title": "",
+  "country": "Australia",
+  "type": "Standard",
+  "type_code": 0,
+  "links": {
+    "self": "http://local.cliniko.test:3000/v1/contacts/12"
+  }
+}
+```
+
+Update Contact
+----------------
+**Resources**
+* ```PUT /contacts/:id``` update a contact
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/contacts/1 \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -d '{ "first_name": "John", "last_name": "Snow" }' \
+  -X PUT
+```
+**Example Response**
+```json
+{
+  "id": 12,
+  "created_at": "2018-02-12T17:58:18Z",
+  "updated_at": "2018-02-12T17:59:56Z",
+  "address_1": "",
+  "address_2": "",
+  "address_3": "",
+  "city": "",
+  "company_name": "",
+  "country_code": "AU",
+  "deleted_at": null,
+  "email": "",
+  "first_name": "John",
+  "last_name": "Snow",
+  "notes": "",
+  "occupation": "",
+  "phone_numbers": [],
+  "post_code": "",
+  "preferred_name": "",
+  "provider_number": "",
+  "state": "",
+  "title": "",
+  "country": "Australia",
+  "type": "Standard",
+  "type_code": 0,
+  "links": {
+    "self": "http://local.cliniko.test:3000/v1/contacts/12"
+  }
+}
+```
+
+Delete Contact
+----------------
+**Resources**
+* ```DELETE /contacts/:id``` delete a contact
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/contacts/1 \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -X DELETE
+```
+**Example Response**
+A status code of `204 no content` will be returned if successful
 
 Filtering Contacts
 ----------------
