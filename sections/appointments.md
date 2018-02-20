@@ -1,3 +1,5 @@
+## This has been deprecated. Have a look at [Individual Appointment](https://github.com/redguava/cliniko-api/blob/master/sections/individual_appointments.md) instead.
+
 Appointments
 ============
 * [Get Appointments](#get-appointments "This will return all appointments.")
