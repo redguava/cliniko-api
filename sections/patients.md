@@ -67,6 +67,11 @@ curl https://api.cliniko.com/v1/patients \
           "self": "https://api.cliniko.com/v1/concession_types/123"
         }
       },
+      "referring_doctor": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/contacts/123"
+        }
+      },
       "patient_phone_numbers": [
         {
           "phone_type": "Mobile",
@@ -148,6 +153,11 @@ curl https://api.cliniko.com/v1/patients/deleted \
       "concession_type": {
         "links": {
           "self": "https://api.cliniko.com/v1/concession_types/123"
+        }
+      },
+      "referring_doctor": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/contacts/123"
         }
       },
       "patient_phone_numbers": [
@@ -233,6 +243,11 @@ curl https://api.cliniko.com/v1/patients/archived \
           "self": "https://api.cliniko.com/v1/concession_types/123"
         }
       },
+      "referring_doctor": {
+        "links": {
+          "self": "https://api.cliniko.com/v1/contacts/123"
+        }
+      },
       "patient_phone_numbers": [
         {
           "phone_type": "Mobile",
@@ -312,6 +327,11 @@ curl https://api.cliniko.com/v1/patients/1 \
   "concession_type": {
     "links": {
       "self": "https://api.cliniko.com/v1/concession_types/123"
+    }
+  },
+  "referring_doctor": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/contacts/123"
     }
   },
   "patient_phone_numbers": [
