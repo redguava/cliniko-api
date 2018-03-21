@@ -50,13 +50,13 @@ Upon success, you will receive a 201 response and an XML response payload from s
 
 At this point, your file is in our s3 bucket in a temp directory, but Cliniko doesn't have a patient attachment record for it. To finish, you must create a new patient attachment record.
 
-To do so, make a POST request to the patient attachments endpoint, with the patient ID and s3 temp URL as parameters. The `upload_url` parameter is the `Location` value in the s3 XML response. Using the value as is from the XML response is important as the s3 filename may have been escaped special characters to make the URL friendly.
+To do so, make a POST request to the patient attachments endpoint, with the patient ID and s3 temp URL as parameters. The `upload_url` parameter is the combination of `url` value in the presigned post response + `Key` value in the s3 XML response.
 
 `https://api.cliniko.com/v1/patient_attachments`
 ```json
 {
   "patient_id": "382",
-  "upload_url": "https://cliniko-files-example-bucket.s3.amazonaws.com/123%2Fpatients%2F456%2Fattachments%2Ftemp%2Fs0m3-w31rd-l0c4t10n-1na-t3mpd1r%2Fthe-name-of-the-file.txt"
+  "upload_url": "https://cliniko-files-example-bucket.s3.amazonaws.com/123/patients/456/attachments/temp/s0m3-w31rd-l0c4t10n-1na-t3mpd1r/the-name-of-the-file.txt"
 }
 ```
 
