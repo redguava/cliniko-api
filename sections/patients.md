@@ -3,6 +3,8 @@ Patients
 > Patients are the people that book in for appointments.  There isn't much in Cliniko that doesn't revolve around patients.
 >
 > When you're working with patient information, make sure you abide by the relevant regulations for security and privacy.
+>
+> There is a field in the patient record **accepted_privacy_policy** that stores the patient's consent to the business' own privacy policy. Values can be `null` (no response), `true` (accepted) or `false` (rejected). Please consider how this may affect you storing information on this patient.
 
 * [Get Patients](#get-patients "This will return all patients.")
 * [Get Deleted Patients](#get-deleted-patients "This will return all deleted patients.")
@@ -34,6 +36,7 @@ curl https://api.cliniko.com/v1/patients \
 {
   "patients": [
     {
+      "accepted_privacy_policy": true,
       "address_1": "1 Smith Street",
       "address_2": "",
       "address_3": "",
@@ -122,6 +125,7 @@ curl https://api.cliniko.com/v1/patients/deleted \
 {
   "patients": [
     {
+      "accepted_privacy_policy": true,
       "address_1": "1 Smith Street",
       "address_2": "",
       "address_3": "",
@@ -210,6 +214,7 @@ curl https://api.cliniko.com/v1/patients/archived \
 {
   "patients": [
     {
+      "accepted_privacy_policy": true,
       "address_1": "1 Smith Street",
       "address_2": "",
       "address_3": "",
@@ -296,6 +301,7 @@ curl https://api.cliniko.com/v1/patients/1 \
 **Example Response**
 ```json
 {
+  "accepted_privacy_policy": true,
   "address_1": "1 Smith Street",
   "address_2": "",
   "address_3": "",
@@ -382,6 +388,7 @@ Headers { Location: http://api.cliniko.com/patients/1 }
 ```
 ```json
 {
+  "accepted_privacy_policy": true,
   "address_1": "1 Smith Street",
   "address_2": "",
   "address_3": "",
@@ -446,6 +453,7 @@ curl https://api.cliniko.com/v1/patients/1 \
 **Example Response**
 ```json
 {
+  "accepted_privacy_policy": true,
   "address_1": "1 Smith Street",
   "address_2": "",
   "address_3": "",
@@ -549,6 +557,7 @@ curl https://api.cliniko.com/v1/patients/1/unarchive \
 **Example Response**
 ```json
 {
+  "accepted_privacy_policy": true,
   "address_1": "1 Smith Street",
   "address_2": "",
   "address_3": "",
