@@ -228,6 +228,7 @@ API Resources
 * [Appointment Types](https://github.com/redguava/cliniko-api/blob/master/sections/appointment_types.md)
 * [Appointments (Individual)](https://github.com/redguava/cliniko-api/blob/master/sections/individual_appointments.md)
 * [Appointments (Group)](https://github.com/redguava/cliniko-api/blob/master/sections/group_appointments.md)
+* [Attendees](https://github.com/redguava/cliniko-api/blob/master/sections/attendees.md)
 * [Available Times](https://github.com/redguava/cliniko-api/blob/master/sections/available_times.md)
 * [Billable Items](https://github.com/redguava/cliniko-api/blob/master/sections/billable_items.md)
 * [Businesses](https://github.com/redguava/cliniko-api/blob/master/sections/businesses.md)
