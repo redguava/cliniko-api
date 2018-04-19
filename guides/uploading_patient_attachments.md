@@ -1,8 +1,8 @@
 # How to upload a patient attachment to Cliniko
 
-## Get a presigned POST to upload your file to s3
+## Get a presigned URL to upload your file to s3
 
-Make a request for a presigned POST for the patient that you want to upload a file for.
+Make a GET request for a presigned URL for the patient that you want to upload a file for.
 `https://api.cliniko.com/v1/patients/456/attachment_presigned_post`
 
 The response will give you the URL and parameters that you need to upload the file to s3.
