@@ -37,6 +37,7 @@ curl https://api.cliniko.com/v1/patients \
   "patients": [
     {
       "accepted_privacy_policy": true,
+      "accepted_sms_marketing": false,
       "address_1": "1 Smith Street",
       "address_2": "",
       "address_3": "",
@@ -126,6 +127,7 @@ curl https://api.cliniko.com/v1/patients/deleted \
   "patients": [
     {
       "accepted_privacy_policy": true,
+      "accepted_sms_marketing": false,
       "address_1": "1 Smith Street",
       "address_2": "",
       "address_3": "",
@@ -215,6 +217,7 @@ curl https://api.cliniko.com/v1/patients/archived \
   "patients": [
     {
       "accepted_privacy_policy": true,
+      "accepted_sms_marketing": false,
       "address_1": "1 Smith Street",
       "address_2": "",
       "address_3": "",
@@ -302,6 +305,7 @@ curl https://api.cliniko.com/v1/patients/1 \
 ```json
 {
   "accepted_privacy_policy": true,
+  "accepted_sms_marketing": false,
   "address_1": "1 Smith Street",
   "address_2": "",
   "address_3": "",
@@ -389,6 +393,7 @@ Headers { Location: http://api.cliniko.com/patients/1 }
 ```json
 {
   "accepted_privacy_policy": true,
+  "accepted_sms_marketing": false,
   "address_1": "1 Smith Street",
   "address_2": "",
   "address_3": "",
@@ -454,6 +459,7 @@ curl https://api.cliniko.com/v1/patients/1 \
 ```json
 {
   "accepted_privacy_policy": true,
+  "accepted_sms_marketing": false,
   "address_1": "1 Smith Street",
   "address_2": "",
   "address_3": "",
@@ -558,6 +564,7 @@ curl https://api.cliniko.com/v1/patients/1/unarchive \
 ```json
 {
   "accepted_privacy_policy": true,
+  "accepted_sms_marketing": false,
   "address_1": "1 Smith Street",
   "address_2": "",
   "address_3": "",
