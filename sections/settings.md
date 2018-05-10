@@ -25,6 +25,7 @@ curl https://api.cliniko.com/v1/settings \
     "patient": "client"
   },
   "account": {
+    "id": 123,
     "name": "Bins, Boehm and Baumbach",
     "country": "United States",
     "time_zone": "Eastern Time (US & Canada)",
@@ -96,6 +97,7 @@ curl https://api.cliniko.com/v1/settings/public \
     "patient": "client"
   },
   "account": {
+    "id": 123,
     "name": "Bins, Boehm and Baumbach",
     "country": "United States",
     "time_zone": "Eastern Time (US & Canada)",
