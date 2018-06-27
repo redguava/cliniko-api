@@ -49,28 +49,28 @@ curl https://api.cliniko.com/v1/attendees \
       "cancelled_at": null,
       "booking": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/bookings/1"
+          "self": "https://api.cliniko.com/v1/bookings/1"
         }
       },
       "patient": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/patients/82"
+          "self": "https://api.cliniko.com/v1/patients/82"
         }
       },
       "invoices": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/attendees/1/invoices"
+          "self": "https://api.cliniko.com/v1/attendees/1/invoices"
         }
       },
       "links": {
-        "self": "http://local.cliniko.dev:3000/v1/attendees/1"
+        "self": "https://api.cliniko.com/v1/attendees/1"
       }
     }
   ],
   "total_entries": 2037,
   "links": {
-    "self": "http://local.cliniko.dev:3000/v1/attendees?page=1",
-    "next": "http://local.cliniko.dev:3000/v1/attendees?page=2"
+    "self": "https://api.cliniko.com/v1/attendees?page=1",
+    "next": "https://api.cliniko.com/v1/attendees?page=2"
   }
 }
 ```
@@ -113,28 +113,28 @@ curl https://api.cliniko.com/v1/attendees/deleted \
       "cancelled_at": null,
       "booking": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/bookings/1"
+          "self": "https://api.cliniko.com/v1/bookings/1"
         }
       },
       "patient": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/patients/82"
+          "self": "https://api.cliniko.com/v1/patients/82"
         }
       },
       "invoices": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/attendees/1/invoices"
+          "self": "https://api.cliniko.com/v1/attendees/1/invoices"
         }
       },
       "links": {
-        "self": "http://local.cliniko.dev:3000/v1/attendees/1"
+        "self": "https://api.cliniko.com/v1/attendees/1"
       }
     }
   ],
   "total_entries": 143,
   "links": {
-    "self": "http://local.cliniko.dev:3000/v1/attendees/deleted?page=1",
-    "next": "http://local.cliniko.dev:3000/v1/attendees/deleted?page=2"
+    "self": "https://api.cliniko.com/v1/attendees/deleted?page=1",
+    "next": "https://api.cliniko.com/v1/attendees/deleted?page=2"
   }
 }
 ```
@@ -177,28 +177,28 @@ curl https://api.cliniko.com/v1/attendees/cancelled \
       "cancelled_at": null"2016-06-28T21:33:26Z",
       "booking": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/bookings/1"
+          "self": "https://api.cliniko.com/v1/bookings/1"
         }
       },
       "patient": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/patients/82"
+          "self": "https://api.cliniko.com/v1/patients/82"
         }
       },
       "invoices": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/attendees/1/invoices"
+          "self": "https://api.cliniko.com/v1/attendees/1/invoices"
         }
       },
       "links": {
-        "self": "http://local.cliniko.dev:3000/v1/attendees/1"
+        "self": "https://api.cliniko.com/v1/attendees/1"
       }
     }
   ],
   "total_entries": 2037,
   "links": {
-    "self": "http://local.cliniko.dev:3000/v1/attendees?page=1",
-    "next": "http://local.cliniko.dev:3000/v1/attendees?page=2"
+    "self": "https://api.cliniko.com/v1/attendees?page=1",
+    "next": "https://api.cliniko.com/v1/attendees?page=2"
   }
 }
 ```
@@ -237,21 +237,21 @@ curl https://api.cliniko.com/v1/attendees/1 \
   "cancelled_at": null,
   "booking": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/bookings/1"
+      "self": "https://api.cliniko.com/v1/bookings/1"
     }
   },
   "patient": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/patients/82"
+      "self": "https://api.cliniko.com/v1/patients/82"
     }
   },
   "invoices": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/attendees/1/invoices"
+      "self": "https://api.cliniko.com/v1/attendees/1/invoices"
     }
   },
   "links": {
-    "self": "http://local.cliniko.dev:3000/v1/attendees/1"
+    "self": "https://api.cliniko.com/v1/attendees/1"
   }
 }
 ```
@@ -294,21 +294,21 @@ Headers { Location: https://api.cliniko.com/attendees/1 }
   "cancelled_at": null,
   "booking": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/bookings/1"
+      "self": "https://api.cliniko.com/v1/bookings/1"
     }
   },
   "patient": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/patients/82"
+      "self": "https://api.cliniko.com/v1/patients/82"
     }
   },
   "invoices": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/attendees/1/invoices"
+      "self": "https://api.cliniko.com/v1/attendees/1/invoices"
     }
   },
   "links": {
-    "self": "http://local.cliniko.dev:3000/v1/attendees/1"
+    "self": "https://api.cliniko.com/v1/attendees/1"
   }
 }
 ```
@@ -348,21 +348,21 @@ curl https://api.cliniko.com/v1/attendees/1 \
   "cancelled_at": null,
   "booking": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/bookings/1"
+      "self": "https://api.cliniko.com/v1/bookings/1"
     }
   },
   "patient": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/patients/82"
+      "self": "https://api.cliniko.com/v1/patients/82"
     }
   },
   "invoices": {
     "links": {
-      "self": "http://local.cliniko.dev:3000/v1/attendees/1/invoices"
+      "self": "https://api.cliniko.com/v1/attendees/1/invoices"
     }
   },
   "links": {
-    "self": "http://local.cliniko.dev:3000/v1/attendees/1"
+    "self": "https://api.cliniko.com/v1/attendees/1"
   }
 }
 ```
