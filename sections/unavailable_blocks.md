@@ -194,10 +194,6 @@ Create Unavailable Block
 **Resources**
 * ```POST /unavailable_blocks``` create an unavailable block
 
-**Notes**
-
-If not provided, ends_at is automatically set based upon the duration of the appointment_type.
-
 **Example Request**
 ```shell
 curl https://api.cliniko.com/v1/unavailable_blocks \
@@ -248,10 +244,6 @@ Update Unavailable Block
 ----------------
 **Resources**
 * ```PUT /unavailable_blocks/:id``` update an unavailable block
-
-**Notes**
-
-If ends_at is specified and its value is null, it is automatically set based upon the duration of the appointment_type.
 
 **Example Request**
 ```shell
