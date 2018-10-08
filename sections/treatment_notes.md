@@ -289,6 +289,11 @@ curl https://api.cliniko.com/v1/treatment_notes/1 \
 
 Create Treatment Note
 ----------------
+When creating treatment notes, the treatment note _author_ will be the practitioner linked to the API key you're using.
+> Only users that are also practitioners may create treatment notes.
+
+In addition, you may link a treatment note to an appointment by adding the `booking_id` parameter - this should contain the `id` of a valid [individual](https://github.com/redguava/cliniko-api/blob/master/sections/individual_appointments.md) or [group appointment](https://github.com/redguava/cliniko-api/blob/master/sections/group_appointments.md).
+
 **Resources**
 * ```POST /treatment_notes``` create a treatment note
 
@@ -299,7 +304,7 @@ curl https://api.cliniko.com/v1/treatment_notes \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "draft": true, "patient_id": 123, "treatment_note_template_id": 789, "content": "{\"sections\": [{\"name\": \"Section 1\", \"questions\": [{\"name\": \"Question 1\", \"type\": \"text\", \"answer\": \"The answer is 42\"}]}]}" }' \
+  -d '{ "draft": true, "patient_id": 123, "booking_id": 987, "treatment_note_template_id": 789, "content": "{\"sections\": [{\"name\": \"Section 1\", \"questions\": [{\"name\": \"Question 1\", \"type\": \"text\", \"answer\": \"The answer is 42\"}]}]}" }' \
   -X POST
 ```
 **Example Response**
@@ -332,6 +337,11 @@ Headers { Location: http://api.cliniko.com/treatment_notes/1 }
   "patient": {
     "links": {
       "self": "https://api.cliniko.com/v1/patients/123"
+    }
+  },
+  "booking": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/bookings/987"
     }
   },
   "practitioner": {
