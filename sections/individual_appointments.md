@@ -572,6 +572,7 @@ Filtering Individual Appointments
 For any route that returns a set of individual appointments, you can filter them by:
 * ```appointment_type_id``` Integer
 * ```business_id``` Integer
+* ```cancelled_at``` DateTime
 * ```created_at``` DateTime
 * ```ends_at``` DateTime
 * ```id``` Integer
