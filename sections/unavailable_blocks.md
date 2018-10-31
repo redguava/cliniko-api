@@ -308,6 +308,7 @@ Filtering Unavailable Blocks
 ----------------
 
 For any route that returns a set of unavailable blocks, you can filter them by:
+* ```archived_at``` DateTime
 * ```business_id``` Integer
 * ```created_at``` DateTime
 * ```ends_at``` DateTime

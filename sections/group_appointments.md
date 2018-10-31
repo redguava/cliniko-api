@@ -380,6 +380,7 @@ Filtering Group Appointments
 
 For any route that returns a set of group appointments, you can filter them by:
 * ```appointment_type_id``` Integer
+* ```archived_at``` DateTime
 * ```business_id``` Integer
 * ```created_at``` DateTime
 * ```ends_at``` DateTime

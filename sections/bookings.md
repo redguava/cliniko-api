@@ -221,6 +221,7 @@ Filtering Bookings
 ----------------
 
 For any route that returns a set of bookings, you can filter them by:
+* ```archived_at``` DateTime
 * ```business_id``` Integer
 * ```cancelled_at``` DateTime
 * ```created_at``` DateTime
