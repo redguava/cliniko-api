@@ -128,6 +128,9 @@ curl https://api.cliniko.com/v1/contacts/1 \
 
 Create Contact
 ----------------
+When creating a contact, setting the contact's country must be done using the `country_code` parameter.
+This is the [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) country code.
+
 **Resources**
 * ```POST /contacts``` create a contact
 
@@ -138,7 +141,7 @@ curl https://api.cliniko.com/v1/contacts \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "first_name": "John", "last_name": "Snow" }' \
+  -d '{ "first_name": "John", "last_name": "Snow", "country_code": "AU" }' \
   -X POST
 ```
 **Example Response**
@@ -179,6 +182,10 @@ Headers { Location: http://api.cliniko.com/contacts/1 }
 
 Update Contact
 ----------------
+
+When updating a contact, changing the contact's country must be done using the `country_code` parameter.
+This is the [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) country code.
+
 **Resources**
 * ```PUT /contacts/:id``` update a contact
 
