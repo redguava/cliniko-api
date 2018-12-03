@@ -54,6 +54,7 @@ curl https://api.cliniko.com/v1/patients \
       "invoice_email": "super.insurance@example.com",
       "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
       "gender": "Male",
+      "gender_identity": null,
       "id": 1,
       "last_name": "Patientman",
       "medicare": "",
@@ -63,6 +64,7 @@ curl https://api.cliniko.com/v1/patients \
       "post_code": "3000",
       "referral_source": "",
       "reminder_type": "SMS & Email",
+      "sex": null,
       "state": "Victoria",
       "title": "Mr",
       "updated_at": "2013-03-26T14:00:00Z",
@@ -144,6 +146,7 @@ curl https://api.cliniko.com/v1/patients/deleted \
       "invoice_email": "super.insurance@example.com",
       "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
       "gender": "Male",
+      "gender_identity": null,
       "id": 1,
       "last_name": "Patientman",
       "medicare": "",
@@ -153,6 +156,7 @@ curl https://api.cliniko.com/v1/patients/deleted \
       "post_code": "3000",
       "referral_source": "",
       "reminder_type": "Email",
+      "sex": null,
       "state": "Victoria",
       "title": "Mr",
       "updated_at": "2013-03-26T14:00:00Z",
@@ -234,6 +238,7 @@ curl https://api.cliniko.com/v1/patients/archived \
       "invoice_email": "super.insurance@example.com",
       "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
       "gender": "Male",
+      "gender_identity": null,
       "id": 1,
       "last_name": "Patientman",
       "medicare": "",
@@ -243,6 +248,7 @@ curl https://api.cliniko.com/v1/patients/archived \
       "post_code": "3000",
       "referral_source": "",
       "reminder_type": "SMS",
+      "sex": null,
       "state": "Victoria",
       "title": "Mr",
       "updated_at": "2013-03-26T14:00:00Z",
@@ -322,6 +328,7 @@ curl https://api.cliniko.com/v1/patients/1 \
   "invoice_email": "super.insurance@example.com",
   "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
   "gender": "Male",
+  "gender_identity": null,
   "id": 1,
   "last_name": "Patientman",
   "medicare": "",
@@ -331,6 +338,7 @@ curl https://api.cliniko.com/v1/patients/1 \
   "post_code": "3000",
   "referral_source": "",
   "reminder_type": "None",
+  "sex": null,
   "state": "Victoria",
   "title": "Mr",
   "updated_at": "2013-03-26T14:00:00Z",
@@ -373,6 +381,10 @@ curl https://api.cliniko.com/v1/patients/1 \
 
 Create Patient
 ----------------
+> As of 2018-12-03, `gender` is now deprecated. Instead, the `/patients` API endpoint will now expose and accept the new `gender_identity` and `sex` properties.
+> The `/patients` endpoint will continue to return a patient's gender, but you may only use the new properties when *creating* or *updating* patients. Note that we are not serving the current value of `gender` in either of the new fields - these need to be updated separately, either through the Cliniko UI, or through the API.
+> Find more on why we've made this switch here: [Changes coming to patient gender and sex](https://groups.google.com/a/redguava.com.au/forum/#!topic/cliniko-api/H5fXFk_MH98)
+
 **Resources**
 * ```POST /patients``` create a patient
 
@@ -409,7 +421,8 @@ Headers { Location: http://api.cliniko.com/patients/1 }
   "invoice_default_to": "",
   "invoice_email": "",
   "invoice_extra_information": "",
-  "gender": "",
+  "gender": "Male",
+  "gender_identity": null,
   "id": 1,
   "last_name": "Snow",
   "medicare": "",
@@ -419,6 +432,7 @@ Headers { Location: http://api.cliniko.com/patients/1 }
   "post_code": "",
   "referral_source": "",
   "reminder_type": "SMS & Email",
+  "sex": null,
   "state": "",
   "title": "",
   "updated_at": "2013-03-26T14:00:00Z",
@@ -442,6 +456,10 @@ Headers { Location: http://api.cliniko.com/patients/1 }
 
 Update Patient
 ----------------
+> As of 2018-12-03, `gender` is now deprecated. Instead, the `/patients` API endpoint will now expose and accept the new `gender_identity` and `sex` properties.
+> The `/patients` endpoint will continue to return a patient's gender, but you may only use the new properties when *creating* or *updating* patients. Note that we are not serving the current value of `gender` in either of the new fields - these need to be updated separately, either through the Cliniko UI, or through the API.
+> Find more on why we've made this switch here: [Changes coming to patient gender and sex](https://groups.google.com/a/redguava.com.au/forum/#!topic/cliniko-api/H5fXFk_MH98)
+
 **Resources**
 * ```PUT /patients/:id``` update a patient
 
@@ -476,6 +494,7 @@ curl https://api.cliniko.com/v1/patients/1 \
   "invoice_email": "super.insurance@example.com",
   "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
   "gender": "Male",
+  "gender_identity": null,
   "id": 1,
   "last_name": "Snow",
   "medicare": "",
@@ -485,6 +504,7 @@ curl https://api.cliniko.com/v1/patients/1 \
   "post_code": "3000",
   "referral_source": "",
   "reminder_type": "SMS & Email",
+  "sex": null,
   "state": "Victoria",
   "title": "Mr",
   "updated_at": "2013-03-26T14:00:00Z",
@@ -581,6 +601,7 @@ curl https://api.cliniko.com/v1/patients/1/unarchive \
   "invoice_email": "super.insurance@example.com",
   "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
   "gender": "Male",
+  "gender_identity": null,
   "id": 1,
   "last_name": "Snow",
   "notes": "",
@@ -590,6 +611,7 @@ curl https://api.cliniko.com/v1/patients/1/unarchive \
   "post_code": "3000",
   "referral_source": "",
   "reminder_type": "SMS & Email",
+  "sex": null,
   "state": "Victoria",
   "title": "Mr",
   "updated_at": "2013-03-26T14:00:00Z",
