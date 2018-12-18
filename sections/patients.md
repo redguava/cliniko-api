@@ -258,6 +258,12 @@ curl https://api.cliniko.com/v1/patients/archived \
       "last_name": "Patientman",
       "medicare": "",
       "medicare_reference_number": "",
+      "merged_at": "2013-06-05T14:37:18Z",
+      "merged_with_patient": {
+        "links": {
+          "self": "https://api.cliniko.test/v1/patients/1001"
+        }
+      },
       "notes": "",
       "appointment_notes": "",
       "occupation": "",
