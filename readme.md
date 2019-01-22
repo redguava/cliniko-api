@@ -71,7 +71,7 @@ That's all!
 Rate limits
 ----------------
 
-API requests are rate limited to 120 per minute per user. Effective 17 September 2018, those limits will change to 60 per minute and 1000 per day, per user. After that, we intend to modify the rate limit to be per Cliniko account instead of user, but that will take some time and changes to how we handle API requests. We recommend you design your app to stagger requests to avoid hitting the rate limit.
+API requests are rate limited to 200 per minute per user. We recommend you design your app to stagger requests to avoid hitting the rate limit.
 
 Requests exceeding the rate limit will receive a response with a 429 status and an X-RateLimit-Reset header containing the time at which the limit will reset. The time is formatted as a UNIX timestamp of elapsed seconds since the start of the UNIX epoch in the UTC timezone.
 
