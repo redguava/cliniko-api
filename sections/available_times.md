@@ -90,13 +90,19 @@ These API endpoints that retrieve available times will respect these settings.  
 
     Day parts are morning (before Midday), afternoon (Midday to 5pm) and evening (5pm onwards).  
 
-    Possible settings are; 1, 2, 3, 4, 5 or unlimited.
-    
+    Possible settings are: 1, 2, 3, 4, 5 or unlimited.
+
 * **Minimum advance time required for online bookings**
 
     This is the minimum amount of time from now that a available time will be shown.
 
-    Possible settings are; Now, 1 Hour, 2 Hours, 4 Hours, Tomorrow or 2 Days.
+    Possible settings are: Now, 1 Hour, 2 Hours, 4 Hours, Tomorrow or 2 Days.
+    
+* **How far ahead bookings are offered**
+
+    This limits how far in the future available times are offered.
+
+    Possible settings are: 28 days, 84 days, 182 days or 365 days
     
 * **Business to be displayed in online bookings**
 
