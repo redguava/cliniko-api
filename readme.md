@@ -31,9 +31,30 @@ The Cliniko API uses HTTP Basic authentication. This is secure as all requests a
 
 Each Cliniko user will have their own API Key(s), this is used for authentication.  The API Key will have the same permissions as the user it is from.
 
-You should provide the Cliniko API Key as the basic auth username.  There is no need to provide a password.
+You should provide the Cliniko API Key as the basic auth username. There is no need to provide a password. This should be sent in the `Authorization` header. The psuedocode for how the `Authorization` header should be built is:
 
-If you just need an API key for testing, sign up for a free trial and go to the "My Info" link in the bottom left corner of the navigation within Cliniko.  You can create an API key there.  If you need your trial extended just let us know.
+```
+"Basic " + base64_encode(api_key + ':')
+```
+
+and results in a string like this:
+```
+Basic TVMwek16RXRheXRvY1RkM1ltaFNTR3NyV1dWTlJEVjBVVmhyWlVaSllqRnVhMDFhYkcwOg==
+```
+
+To get an API key for testing, sign up for a free trial and go to the "My Info" link in the bottom left corner of the navigation within Cliniko. Click the "Manage API keys" button, you can create an API key from that page. If you need your trial extended just let us know.
+
+Identifying your application
+--------------
+
+To identify your application, you need to send the `User-Agent` header. In the event of an issue, this allows us to easily track down your requests and contact you. This should be in the form:
+```
+APP_VENDOR_NAME (APP_VENDOR_EMAIL)
+```
+
+**APP_VENDOR_NAME** is the name of your application
+
+**APP_VENDOR_EMAIL** is a contact email address for you or your company
 
 Errors
 ------
@@ -51,7 +72,7 @@ Making a request
 
 All URLs start with `https://api.cliniko.com/v1`. **SSL only**. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.
 
-To make a request for all the appointments on a specific account, you'd append the appointments index path to the base url to form something like https://api.cliniko.com/v1/appointments. In curl, that looks like:
+To make a request for all the patients on a specific account, you'd append the patients index path to the base url like this: https://api.cliniko.com/v1/patients. In curl, that looks like:
 
 **Example Request**
 ```shell
@@ -63,8 +84,8 @@ curl https://api.cliniko.com/v1/appointments \
 *Note: curl uses the -u flag to pass basic auth credentials (adding a colon after the API key will prevent it from asking for a password).*
 
 **API_KEY** is the API Key provided by the Cliniko user
-**APP_VENDOR_NAME** is the name of your application that integrates with Cliniko
-**APP_VENDOR_EMAIL** is a contact email address for your company
+
+Make sure to send the `Accept` header with `application/json`.
 
 That's all!
 
