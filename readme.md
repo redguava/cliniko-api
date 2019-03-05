@@ -72,7 +72,7 @@ Making a request
 
 All URLs start with `https://api.cliniko.com/v1`. **SSL only**. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.
 
-To make a request for all the patients on a specific account, you'd append the appointments index path to the base url like this: https://api.cliniko.com/v1/patients. In curl, that looks like:
+To make a request for all the patients on a specific account, you'd append the patients index path to the base url like this: https://api.cliniko.com/v1/patients. In curl, that looks like:
 
 **Example Request**
 ```shell
