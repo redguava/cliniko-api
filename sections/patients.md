@@ -59,6 +59,7 @@ curl https://api.cliniko.com/v1/patients \
       "last_name": "Patientman",
       "medicare": "",
       "notes": "",
+      "appointment_notes": "",
       "occupation": "",
       "old_reference_id": "",
       "post_code": "3000",
@@ -151,6 +152,7 @@ curl https://api.cliniko.com/v1/patients/deleted \
       "last_name": "Patientman",
       "medicare": "",
       "notes": "",
+      "appointment_notes": "",
       "occupation": "",
       "old_reference_id": "",
       "post_code": "3000",
@@ -243,6 +245,7 @@ curl https://api.cliniko.com/v1/patients/archived \
       "last_name": "Patientman",
       "medicare": "",
       "notes": "",
+      "appointment_notes": "",
       "occupation": "",
       "old_reference_id": "",
       "post_code": "3000",
@@ -333,6 +336,7 @@ curl https://api.cliniko.com/v1/patients/1 \
   "last_name": "Patientman",
   "medicare": "",
   "notes": "",
+  "appointment_notes": "",
   "occupation": "",
   "old_reference_id": "",
   "post_code": "3000",
@@ -427,6 +431,7 @@ Headers { Location: http://api.cliniko.com/patients/1 }
   "last_name": "Snow",
   "medicare": "",
   "notes": "",
+  "appointment_notes": "",
   "occupation": "",
   "old_reference_id": "",
   "post_code": "",
@@ -470,7 +475,7 @@ curl https://api.cliniko.com/v1/patients/1 \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "first_name": "John", "last_name": "Snow" }' \
+  -d '{ "first_name": "John", "last_name": "Snow", "appointment_notes": "Go for fist bumps over handshakes." }' \
   -X PUT
 ```
 **Example Response**
@@ -499,6 +504,7 @@ curl https://api.cliniko.com/v1/patients/1 \
   "last_name": "Snow",
   "medicare": "",
   "notes": "",
+  "appointment_notes": "Go for fist bumps over handshakes.",
   "occupation": "",
   "old_reference_id": "",
   "post_code": "3000",
@@ -605,6 +611,7 @@ curl https://api.cliniko.com/v1/patients/1/unarchive \
   "id": 1,
   "last_name": "Snow",
   "notes": "",
+  "appointment_notes": "",
   "medicare": "",
   "occupation": "",
   "old_reference_id": "",
