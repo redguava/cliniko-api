@@ -328,7 +328,7 @@ above and use the integration.
 
 
 Get involved and help make our API better
------------------------------------------
+=========================================
 
 Please give us feedback on how we can make the API better.
 
