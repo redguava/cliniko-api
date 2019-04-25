@@ -1,3 +1,10 @@
+Custom patient buttons
+======================
+
+Cliniko offers an additional integration option for applications that handle
+patient data. This allows users to open these applications directly from Cliniko
+and potentially synchronize information on a given patient as needed.
+
 How it works for the user
 -------------------------
 

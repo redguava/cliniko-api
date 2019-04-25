@@ -284,8 +284,8 @@ API Resources
 Custom Patient Button
 ---------------------
 
-Cliniko offers an additional integration option for approved applications that
-handle patient data. See [this
+Cliniko offers an additional integration option for applications that handle
+patient data. See [this
 guide](https://github.com/redguava/cliniko-api/blob/master/guides/custom_patient_page.md)
 for more details.
 
