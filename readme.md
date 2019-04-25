@@ -289,12 +289,12 @@ handle patient data. Users can add these applications in a settings page under
 Settings > Our clinic > Integrations:
 
 ![Configuration
-panel](https://raw.githubusercontent.com/redguava/cliniko-api/assets/custom-patient-buttons-config.png)
+panel](assets/custom-patient-buttons-config.png?raw=true)
 
 This adds a new button to the Patient Actions bar for each individual patient:
 
 ![Patient actions with open
-dropdown](https://raw.githubusercontent.com/redguava/cliniko-api/assets/patient-actions-open.png)
+dropdown](assets/patient-actions-open.png?raw=true)
 
 Clicking on one of those buttons causes the user's browser to send a GET request
 to the corresponding URL, with a query string of `patient_id=<Cliniko ID of
