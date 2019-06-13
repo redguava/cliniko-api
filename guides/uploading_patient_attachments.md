@@ -56,7 +56,6 @@ To do so, make a POST request to the patient attachments endpoint, with the pati
 ```json
 {
   "description": "Custom description for this attachment",
-  "filename": "The name of the file.txt",
   "patient_id": 382,
   "upload_url": "https://cliniko-files-example-bucket.s3.amazonaws.com/123/patients/456/attachments/temp/s0m3-w31rd-l0c4t10n-1na-t3mpd1r/the-name-of-the-file.txt"
 }
