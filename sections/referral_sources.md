@@ -2,15 +2,15 @@
 
 > Referral source of a patient
 
--   [Get Referral Sources](#get-referral-sources 'This will return all referral sources.')
--   [Get Referral Source](#get-referral-source "This will return a patient's referral source.")
--   [Update Referral Source](#update-referral-source "This update a patient's referral source.")
+- [Get Referral Sources](#get-referral-sources 'This will return all referral sources.')
+- [Get Referral Source](#get-referral-source "This will return a patient's referral source.")
+- [Update Referral Source](#update-referral-source "This update a patient's referral source.")
 
 ## Get Referral Sources
 
 **Resources**
 
--   `GET /referral_sources` get all referral sources
+- `GET /referral_sources` get all referral sources
 
 **Example Request**
 
@@ -61,7 +61,7 @@ curl https://api.cliniko.com/v1/referral_sources \
 
 **Resources**
 
--   `GET /patients/:patient_id/referral_source` get a patient's referral source
+- `GET /patients/:patient_id/referral_source` get a patient's referral source
 
 Returns `404` if the patient has no referral source.
 
@@ -184,7 +184,7 @@ There are a few possible types of referral sources. Depending on the type, diffe
 
 **Resources**
 
--   `PUT /patients/:patient_id/referral_source` update a patient's referral source
+- `PUT /patients/:patient_id/referral_source` update a patient's referral source
 
 **Example Request**
 
