@@ -210,7 +210,7 @@ There are a few possible types of referral sources. Depending on the type, diffe
 }
 ```
 
-**Example Response (referred by a contact)**
+**Example Request (referred by a contact)**
 
 ```json
 {
@@ -220,7 +220,7 @@ There are a few possible types of referral sources. Depending on the type, diffe
 }
 ```
 
-**Example Response ("other" referral type)**
+**Example Request ("other" referral type)**
 
 ```json
 {
@@ -229,7 +229,7 @@ There are a few possible types of referral sources. Depending on the type, diffe
 }
 ```
 
-**Example Response (custom defined referral type)**
+**Example Request (custom defined referral type)**
 
 ```json
 {
