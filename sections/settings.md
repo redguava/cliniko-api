@@ -1,16 +1,16 @@
-Settings
-============
+# Settings
 
-* [Get Settings](#get-settings "This returns all settings.")
-* [Get Public Settings](#get-public-settings "This returns settings that are viewable by any user.")
+- [Get Settings](#get-settings 'This returns all settings.')
+- [Get Public Settings](#get-public-settings 'This returns settings that are viewable by any user.')
 
-Get Settings
-----------------
+## Get Settings
 
 **Resources**
-* ```GET /settings``` Get all settings. This route is only accessible to users with a role that can view settings.
+
+- `GET /settings` Get all settings. This route is only accessible to users with a role that can view settings.
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/settings \
   -u API_KEY: \
@@ -19,6 +19,7 @@ curl https://api.cliniko.com/v1/settings \
 ```
 
 **Example Response**
+
 ```json
 {
   "terminology": {
@@ -63,6 +64,7 @@ curl https://api.cliniko.com/v1/settings \
     "notify_practitioner_by_email": true,
     "notify_practitioner_by_sms": true,
     "policy": "be cool",
+    "practitioner_order": [1, 2, 3],
     "require_patient_address": false,
     "show_appointment_duration": true,
     "show_prices": false
@@ -76,13 +78,14 @@ curl https://api.cliniko.com/v1/settings \
 }
 ```
 
-Get Public Settings
-------------
+## Get Public Settings
 
 **Resources**
-* ```GET /settings/public``` Get only public settings. This route is accessible to any authenticated user.
+
+- `GET /settings/public` Get only public settings. This route is accessible to any authenticated user.
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/settings/public \
   -u API_KEY: \
@@ -91,6 +94,7 @@ curl https://api.cliniko.com/v1/settings/public \
 ```
 
 **Example Response**
+
 ```json
 {
   "terminology": {
@@ -122,6 +126,7 @@ curl https://api.cliniko.com/v1/settings/public \
     "notify_practitioner_by_email": true,
     "notify_practitioner_by_sms": true,
     "policy": "be cool",
+    "practitioner_order": [1, 2, 3],
     "require_patient_address": false,
     "show_appointment_duration": true,
     "show_prices": false
