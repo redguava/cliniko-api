@@ -1,29 +1,29 @@
-Patients
-============
-> Patients are the people that book in for appointments.  There isn't much in Cliniko that doesn't revolve around patients.
+# Patients
+
+> Patients are the people that book in for appointments. There isn't much in Cliniko that doesn't revolve around patients.
 >
 > When you're working with patient information, make sure you abide by the relevant regulations for security and privacy.
 >
 > There is a field in the patient record **accepted_privacy_policy** that stores the patient's consent to the business' own privacy policy. Values can be `null` (no response), `true` (accepted) or `false` (rejected). Please consider how this may affect you storing information on this patient.
 
-* [Get Patients](#get-patients "This will return all patients.")
-* [Get Deleted Patients](#get-deleted-patients "This will return all deleted patients.")
-* [Get Archived Patients](#get-archived-patients "This will return all archived patients.")
-* [Get Patient](#get-patient "This will return a specified patient.")
-* [Create Patient](#create-patient "This will create a patient.")
-* [Update Patient](#update-patient "This will update a patient.")
-* [Delete Patient](#delete-patient "This will delete a patient.")
-* [Archive Patient](#archive-patient "This will archive a patient.")
-* [Unarchive Patient](#unarchive-patient "This will unarchive a patient.")
+- [Get Patients](#get-patients 'This will return all patients.')
+- [Get Deleted Patients](#get-deleted-patients 'This will return all deleted patients.')
+- [Get Archived Patients](#get-archived-patients 'This will return all archived patients.')
+- [Get Patient](#get-patient 'This will return a specified patient.')
+- [Create Patient](#create-patient 'This will create a patient.')
+- [Update Patient](#update-patient 'This will update a patient.')
+- [Delete Patient](#delete-patient 'This will delete a patient.')
+- [Archive Patient](#archive-patient 'This will archive a patient.')
+- [Unarchive Patient](#unarchive-patient 'This will unarchive a patient.')
 
-Get Patients
-----------------
+## Get Patients
 
 **Resources**
-* ```GET /patients``` get all patients
 
+- `GET /patients` get all patients
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/patients \
   -u API_KEY: \
@@ -32,6 +32,7 @@ curl https://api.cliniko.com/v1/patients \
 ```
 
 **Example Response**
+
 ```json
 {
   "patients": [
@@ -58,6 +59,7 @@ curl https://api.cliniko.com/v1/patients \
       "id": 1,
       "last_name": "Patientman",
       "medicare": "",
+      "medicare_reference_number": "",
       "notes": "",
       "appointment_notes": "",
       "occupation": "",
@@ -91,7 +93,9 @@ curl https://api.cliniko.com/v1/patients \
         }
       ],
       "medical_alerts": {
-        "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+        "links": {
+          "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+        }
       },
       "invoices": {
         "links": {
@@ -103,21 +107,22 @@ curl https://api.cliniko.com/v1/patients \
           "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
         }
       },
-      "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+      "links": { "self": "https://api.cliniko.com/v1/patients/1" }
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/patients?page=1"}
+  "links": { "self": "https://api.cliniko.com/v1/patients?page=1" }
 }
 ```
 
-Get Deleted Patients
-----------------
+## Get Deleted Patients
 
 **Resources**
-* ```GET /patients/deleted``` get all deleted patients
+
+- `GET /patients/deleted` get all deleted patients
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/patients/deleted \
   -u API_KEY: \
@@ -126,6 +131,7 @@ curl https://api.cliniko.com/v1/patients/deleted \
 ```
 
 **Example Response**
+
 ```json
 {
   "patients": [
@@ -152,6 +158,7 @@ curl https://api.cliniko.com/v1/patients/deleted \
       "id": 1,
       "last_name": "Patientman",
       "medicare": "",
+      "medicare_reference_number": "",
       "notes": "",
       "appointment_notes": "",
       "occupation": "",
@@ -185,7 +192,9 @@ curl https://api.cliniko.com/v1/patients/deleted \
         }
       ],
       "medical_alerts": {
-        "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+        "links": {
+          "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+        }
       },
       "invoices": {
         "links": {
@@ -197,21 +206,22 @@ curl https://api.cliniko.com/v1/patients/deleted \
           "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
         }
       },
-      "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+      "links": { "self": "https://api.cliniko.com/v1/patients/1" }
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/patients/deleted?page=1"}
+  "links": { "self": "https://api.cliniko.com/v1/patients/deleted?page=1" }
 }
 ```
 
-Get Archived Patients
-----------------
+## Get Archived Patients
 
 **Resources**
-* ```GET /patients/archived``` get all archived patients
+
+- `GET /patients/archived` get all archived patients
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/patients/archived \
   -u API_KEY: \
@@ -220,6 +230,7 @@ curl https://api.cliniko.com/v1/patients/archived \
 ```
 
 **Example Response**
+
 ```json
 {
   "patients": [
@@ -246,6 +257,7 @@ curl https://api.cliniko.com/v1/patients/archived \
       "id": 1,
       "last_name": "Patientman",
       "medicare": "",
+      "medicare_reference_number": "",
       "notes": "",
       "appointment_notes": "",
       "occupation": "",
@@ -279,7 +291,9 @@ curl https://api.cliniko.com/v1/patients/archived \
         }
       ],
       "medical_alerts": {
-        "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+        "links": {
+          "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+        }
       },
       "invoices": {
         "links": {
@@ -291,21 +305,22 @@ curl https://api.cliniko.com/v1/patients/archived \
           "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
         }
       },
-      "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+      "links": { "self": "https://api.cliniko.com/v1/patients/1" }
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/patients/archived?page=1"}
+  "links": { "self": "https://api.cliniko.com/v1/patients/archived?page=1" }
 }
 ```
 
-Get Patient
-------------
+## Get Patient
 
 **Resources**
-* ```GET /patients/:id``` get a specified patient
+
+- `GET /patients/:id` get a specified patient
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/patients/1 \
   -u API_KEY: \
@@ -314,6 +329,7 @@ curl https://api.cliniko.com/v1/patients/1 \
 ```
 
 **Example Response**
+
 ```json
 {
   "accepted_privacy_policy": true,
@@ -338,6 +354,7 @@ curl https://api.cliniko.com/v1/patients/1 \
   "id": 1,
   "last_name": "Patientman",
   "medicare": "",
+  "medicare_reference_number": "",
   "notes": "",
   "appointment_notes": "",
   "occupation": "",
@@ -371,7 +388,9 @@ curl https://api.cliniko.com/v1/patients/1 \
     }
   ],
   "medical_alerts": {
-    "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+    }
   },
   "invoices": {
     "links": {
@@ -383,20 +402,22 @@ curl https://api.cliniko.com/v1/patients/1 \
       "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
     }
   },
-  "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+  "links": { "self": "https://api.cliniko.com/v1/patients/1" }
 }
 ```
 
-Create Patient
-----------------
+## Create Patient
+
 > As of 2018-12-03, `gender` is now deprecated. Instead, the `/patients` API endpoint will now expose and accept the new `gender_identity` and `sex` properties.
-> The `/patients` endpoint will continue to return a patient's gender, but you may only use the new properties when *creating* or *updating* patients. Note that we are not serving the current value of `gender` in either of the new fields - these need to be updated separately, either through the Cliniko UI, or through the API.
+> The `/patients` endpoint will continue to return a patient's gender, but you may only use the new properties when _creating_ or _updating_ patients. Note that we are not serving the current value of `gender` in either of the new fields - these need to be updated separately, either through the Cliniko UI, or through the API.
 > Find more on why we've made this switch here: [Changes coming to patient gender and sex](https://groups.google.com/a/redguava.com.au/forum/#!topic/cliniko-api/H5fXFk_MH98)
 
 **Resources**
-* ```POST /patients``` create a patient
+
+- `POST /patients` create a patient
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/patients \
   -u API_KEY: \
@@ -406,10 +427,13 @@ curl https://api.cliniko.com/v1/patients \
   -d '{ "first_name": "John", "last_name": "Snow" }' \
   -X POST
 ```
+
 **Example Response**
+
 ```
 Headers { Location: http://api.cliniko.com/patients/1 }
 ```
+
 ```json
 {
   "accepted_privacy_policy": true,
@@ -434,6 +458,7 @@ Headers { Location: http://api.cliniko.com/patients/1 }
   "id": 1,
   "last_name": "Snow",
   "medicare": "",
+  "medicare_reference_number": "",
   "notes": "",
   "appointment_notes": "",
   "occupation": "",
@@ -448,7 +473,9 @@ Headers { Location: http://api.cliniko.com/patients/1 }
   "updated_at": "2013-03-26T14:00:00Z",
   "patient_phone_numbers": [],
   "medical_alerts": {
-    "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+    }
   },
   "invoices": {
     "links": {
@@ -460,20 +487,22 @@ Headers { Location: http://api.cliniko.com/patients/1 }
       "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
     }
   },
-  "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+  "links": { "self": "https://api.cliniko.com/v1/patients/1" }
 }
 ```
 
-Update Patient
-----------------
+## Update Patient
+
 > As of 2018-12-03, `gender` is now deprecated. Instead, the `/patients` API endpoint will now expose and accept the new `gender_identity` and `sex` properties.
-> The `/patients` endpoint will continue to return a patient's gender, but you may only use the new properties when *creating* or *updating* patients. Note that we are not serving the current value of `gender` in either of the new fields - these need to be updated separately, either through the Cliniko UI, or through the API.
+> The `/patients` endpoint will continue to return a patient's gender, but you may only use the new properties when _creating_ or _updating_ patients. Note that we are not serving the current value of `gender` in either of the new fields - these need to be updated separately, either through the Cliniko UI, or through the API.
 > Find more on why we've made this switch here: [Changes coming to patient gender and sex](https://groups.google.com/a/redguava.com.au/forum/#!topic/cliniko-api/H5fXFk_MH98)
 
 **Resources**
-* ```PUT /patients/:id``` update a patient
+
+- `PUT /patients/:id` update a patient
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/patients/1 \
   -u API_KEY: \
@@ -483,7 +512,9 @@ curl https://api.cliniko.com/v1/patients/1 \
   -d '{ "first_name": "John", "last_name": "Snow", "appointment_notes": "Go for fist bumps over handshakes." }' \
   -X PUT
 ```
+
 **Example Response**
+
 ```json
 {
   "accepted_privacy_policy": true,
@@ -508,6 +539,7 @@ curl https://api.cliniko.com/v1/patients/1 \
   "id": 1,
   "last_name": "Snow",
   "medicare": "",
+  "medicare_reference_number": "",
   "notes": "",
   "appointment_notes": "Go for fist bumps over handshakes.",
   "occupation": "",
@@ -531,7 +563,9 @@ curl https://api.cliniko.com/v1/patients/1 \
     }
   ],
   "medical_alerts": {
-    "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+    }
   },
   "invoices": {
     "links": {
@@ -543,16 +577,18 @@ curl https://api.cliniko.com/v1/patients/1 \
       "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
     }
   },
-  "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+  "links": { "self": "https://api.cliniko.com/v1/patients/1" }
 }
 ```
 
-Delete Patient
-----------------
+## Delete Patient
+
 **Resources**
-* ```DELETE /patients/:id``` delete a patient
+
+- `DELETE /patients/:id` delete a patient
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/patients/1 \
   -u API_KEY: \
@@ -560,15 +596,18 @@ curl https://api.cliniko.com/v1/patients/1 \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
   -X DELETE
 ```
+
 **Example Response**
 A status code of `204 no content` will be returned if successful
 
-Archive Patient
-----------------
+## Archive Patient
+
 **Resources**
-* ```POST /patients/:id/archive``` archive a patient
+
+- `POST /patients/:id/archive` archive a patient
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/patients/1/archive \
   -u API_KEY: \
@@ -576,15 +615,18 @@ curl https://api.cliniko.com/v1/patients/1/archive \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
   -X POST
 ```
+
 **Example Response**
 A status code of `204 no content` will be returned if successful
 
-Unarchive Patient
-----------------
+## Unarchive Patient
+
 **Resources**
-* ```POST /patients/:id/unarchive``` unarchive a patient
+
+- `POST /patients/:id/unarchive` unarchive a patient
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/patients/1/unarchive \
   -u API_KEY: \
@@ -592,7 +634,9 @@ curl https://api.cliniko.com/v1/patients/1/unarchive \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
   -X POST
 ```
+
 **Example Response**
+
 ```json
 {
   "accepted_privacy_policy": true,
@@ -619,6 +663,7 @@ curl https://api.cliniko.com/v1/patients/1/unarchive \
   "notes": "",
   "appointment_notes": "",
   "medicare": "",
+  "medicare_reference_number": "",
   "occupation": "",
   "old_reference_id": "",
   "post_code": "3000",
@@ -640,7 +685,9 @@ curl https://api.cliniko.com/v1/patients/1/unarchive \
     }
   ],
   "medical_alerts": {
-    "links": {"self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"}
+    "links": {
+      "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+    }
   },
   "invoices": {
     "links": {
@@ -652,21 +699,21 @@ curl https://api.cliniko.com/v1/patients/1/unarchive \
       "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
     }
   },
-  "links": {"self": "https://api.cliniko.com/v1/patients/1"}
+  "links": { "self": "https://api.cliniko.com/v1/patients/1" }
 }
 ```
 
-Filtering Patients
-----------------
+## Filtering Patients
 
 For any route that returns a set of patients, you can filter them by:
-* ```created_at``` (DateTime)
-* ```date_of_birth``` (Date)
-* ```email``` (String)
-* ```first_name``` (String)
-* ```id``` (Integer)
-* ```last_name``` (String)
-* ```old_reference_id``` (String)
-* ```updated_at``` (DateTime)
+
+- `created_at` (DateTime)
+- `date_of_birth` (Date)
+- `email` (String)
+- `first_name` (String)
+- `id` (Integer)
+- `last_name` (String)
+- `old_reference_id` (String)
+- `updated_at` (DateTime)
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
