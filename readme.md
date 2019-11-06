@@ -56,6 +56,8 @@ APP_VENDOR_NAME (APP_VENDOR_EMAIL)
 
 **APP_VENDOR_EMAIL** is a contact email address for you or your company
 
+**If your application does not contain a User-Agent that contains the name and valid contact details, it may be blocked.**
+
 Errors
 ------
 
@@ -95,6 +97,8 @@ Rate limits
 API requests are rate limited to 200 per minute per user. We recommend you design your app to stagger requests to avoid hitting the rate limit.
 
 Requests exceeding the rate limit will receive a response with a 429 status and an X-RateLimit-Reset header containing the time at which the limit will reset. The time is formatted as a UNIX timestamp of elapsed seconds since the start of the UNIX epoch in the UTC timezone.
+
+Requests that exceed our fair use allocation may be blocked. If you require a higher rate limit, please contact us.
 
 Data Responses
 --------------
