@@ -10,10 +10,12 @@ The response will give you the URL and parameters that you need to upload the fi
 {
   "url": "https://cliniko-files-example-bucket.s3.amazonaws.com/",
   "fields": {
-    "AWSAccessKeyId": "TH1S1SN0TAR34LACC3SSK3Y",
     "key": "123/patients/456/attachments/temp/s0m3-w31rd-l0c4t10n-1na-t3mpd1r/${filename}",
     "policy": "TH1Sw1llB3aR34LLYl0ngSTR1NG0nlyUNDERST00DbyROBOT5",
-    "signature": "51gn3d+0n3/R0b0t2aN0th3r=",
+    "x-amz-credential": "TH1S1SN0TAR34LACC3SSK3Y",
+    "x-amz-signature": "51gn3d+0n3/R0b0t2aN0th3r=",
+    "x-amz-algorithm": "AWS4-HMAC-SHA256",
+    "x-amz-date": "TIMESTAMP",
     "success_action_status":"201",
     "acl":"private"
   }
@@ -26,10 +28,12 @@ Using the tool of your choice, make a POST request to the given URL with the fil
 
 ```
 curl https://cliniko-files-example-bucket.s3.amazonaws.com/ \
-  -F 'AWSAccessKeyId=TH1S1SN0TAR34LACC3SSK3Y' \
+  -F 'x-amz-credential=TH1S1SN0TAR34LACC3SSK3Y' \
   -F 'key=123/patients/456/attachments/temp/s0m3-w31rd-l0c4t10n-1na-t3mpd1r/${filename}' \
   -F 'policy=TH1Sw1llB3aR34LLYl0ngSTR1NG0nlyUNDERST00DbyROBOT5' \
-  -F 'signature=51gn3d+0n3/R0b0t2aN0th3r=' \
+  -F 'x-amz-signature=51gn3d+0n3/R0b0t2aN0th3r=' \
+  -F 'x-amz-algorithm=AWS4-HMAC-SHA256' \
+  -F 'x-amx-date=TIMESTAMP' \
   -F 'success_action_status=201' \
   -F 'acl=private' \
   -F 'file=@/home/user/files/test.pdf'
