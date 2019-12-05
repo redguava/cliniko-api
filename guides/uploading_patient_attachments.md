@@ -27,7 +27,7 @@ Make a GET request for a presigned URL for the patient that you want to upload a
 
 
 The response will give you the URL and parameters that you need to upload the
-file to s3, using version 2 of the signatur algorithm:
+file to s3, using version 2 of the signature algorithm:
 ```json
 {
   "url": "https://cliniko-files-example-bucket.s3.amazonaws.com/",
