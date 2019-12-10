@@ -1,20 +1,21 @@
-Contacts
-============
+# Contacts
+
 > Third party contacts.
 
-* [Get Contacts](#get-contacts "This will return all contacts.")
-* [Get Contact](#get-contact "This will return a specified contact.")
-* [Create Contact](#create-contact "This will create a contact.")
-* [Update Contact](#update-contact "This will update a contact.")
-* [Delete Contact](#delete-contact "This will delete a contact.")
+- [Get Contacts](#get-contacts 'This will return all contacts.')
+- [Get Contact](#get-contact 'This will return a specified contact.')
+- [Create Contact](#create-contact 'This will create a contact.')
+- [Update Contact](#update-contact 'This will update a contact.')
+- [Delete Contact](#delete-contact 'This will delete a contact.')
 
-Get Contacts
-----------------
+## Get Contacts
 
 **Resources**
-* ```GET /contacts``` get all contacts
+
+- `GET /contacts` get all contacts
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/contacts \
   -u API_KEY: \
@@ -23,6 +24,7 @@ curl https://api.cliniko.com/v1/contacts \
 ```
 
 **Example Response**
+
 ```json
 {
   "contacts": [
@@ -71,13 +73,14 @@ curl https://api.cliniko.com/v1/contacts \
 }
 ```
 
-Get Contact
-------------
+## Get Contact
 
 **Resources**
-* ```GET /contacts/:id``` get a specified contact
+
+- `GET /contacts/:id` get a specified contact
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/contacts/1 \
   -u API_KEY: \
@@ -86,6 +89,7 @@ curl https://api.cliniko.com/v1/contacts/1 \
 ```
 
 **Example Response**
+
 ```json
 {
   "id": 1,
@@ -97,6 +101,7 @@ curl https://api.cliniko.com/v1/contacts/1 \
   "city": "Lake Haliebury",
   "company_name": "",
   "deleted_at": null,
+  "doctor_type": null,
   "email": "geovany@example.net",
   "first_name": "Darrell",
   "last_name": "Bode",
@@ -126,15 +131,20 @@ curl https://api.cliniko.com/v1/contacts/1 \
 }
 ```
 
-Create Contact
-----------------
+## Create Contact
+
 When creating a contact, setting the contact's country must be done using the `country_code` parameter.
 This is the [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) country code.
 
+A contact's `doctor_type` may be the string value `general_practitioner` or `specialist`. To clear the value,
+set it to `null`.
+
 **Resources**
-* ```POST /contacts``` create a contact
+
+- `POST /contacts` create a contact
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/contacts \
   -u API_KEY: \
@@ -144,10 +154,13 @@ curl https://api.cliniko.com/v1/contacts \
   -d '{ "first_name": "John", "last_name": "Snow", "country_code": "AU" }' \
   -X POST
 ```
+
 **Example Response**
+
 ```
 Headers { Location: http://api.cliniko.com/contacts/1 }
 ```
+
 ```json
 {
   "id": 12,
@@ -160,6 +173,7 @@ Headers { Location: http://api.cliniko.com/contacts/1 }
   "company_name": "",
   "country_code": "AU",
   "deleted_at": null,
+  "doctor_type": null,
   "email": "",
   "first_name": "John",
   "last_name": "Snow",
@@ -180,16 +194,20 @@ Headers { Location: http://api.cliniko.com/contacts/1 }
 }
 ```
 
-Update Contact
-----------------
+## Update Contact
 
 When updating a contact, changing the contact's country must be done using the `country_code` parameter.
 This is the [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) country code.
 
+A contact's `doctor_type` may be the string value `general_practitioner` or `specialist`. To clear the value,
+set it to `null`.
+
 **Resources**
-* ```PUT /contacts/:id``` update a contact
+
+- `PUT /contacts/:id` update a contact
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/contacts/1 \
   -u API_KEY: \
@@ -199,7 +217,9 @@ curl https://api.cliniko.com/v1/contacts/1 \
   -d '{ "first_name": "John", "last_name": "Snow" }' \
   -X PUT
 ```
+
 **Example Response**
+
 ```json
 {
   "id": 12,
@@ -212,6 +232,7 @@ curl https://api.cliniko.com/v1/contacts/1 \
   "company_name": "",
   "country_code": "AU",
   "deleted_at": null,
+  "doctor_type": null,
   "email": "",
   "first_name": "John",
   "last_name": "Snow",
@@ -232,12 +253,14 @@ curl https://api.cliniko.com/v1/contacts/1 \
 }
 ```
 
-Delete Contact
-----------------
+## Delete Contact
+
 **Resources**
-* ```DELETE /contacts/:id``` delete a contact
+
+- `DELETE /contacts/:id` delete a contact
 
 **Example Request**
+
 ```shell
 curl https://api.cliniko.com/v1/contacts/1 \
   -u API_KEY: \
@@ -245,16 +268,17 @@ curl https://api.cliniko.com/v1/contacts/1 \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
   -X DELETE
 ```
+
 **Example Response**
 A status code of `204 no content` will be returned if successful
 
-Filtering Contacts
-----------------
+## Filtering Contacts
 
 For any route that returns a set contacts, you can filter them by:
-* ```created_at``` DateTime
-* ```id``` Integer
-* ```type_code``` Integer
-* ```updated_at``` DateTime
+
+- `created_at` DateTime
+- `id` Integer
+- `type_code` Integer
+- `updated_at` DateTime
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
