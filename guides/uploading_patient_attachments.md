@@ -94,7 +94,7 @@ curl https://cliniko-files-example-bucket.s3.amazonaws.com/ \
   -F 'policy=TH1Sw1llB3aR34LLYl0ngSTR1NG0nlyUNDERST00DbyROBOT5' \
   -F 'x-amz-signature=51gn3d+0n3/R0b0t2aN0th3r=' \
   -F 'x-amz-algorithm=AWS4-HMAC-SHA256' \
-  -F 'x-amx-date=TIMESTAMP' \
+  -F 'x-amz-date=TIMESTAMP' \
   -F 'success_action_status=201' \
   -F 'acl=private' \
   -F 'file=@/home/user/files/test.pdf'
