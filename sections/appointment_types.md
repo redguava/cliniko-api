@@ -4,6 +4,9 @@ Appointment Types
 
 * [Get Appointment Types](#get-appointment-types "This will return all appointment types.")
 * [Get Appointment Type](#get-appointment-type "This will return a specified appointment type.")
+* [Create Appointment Type](#create-appointment-type "This will create an appointment type.")
+* [Update Appointment Type](#update-appointment-type "This will update an appointment type.")
+* [Delete Appointment Type](#delete-appointment-type "This will delete an appointment type.")
 
 Get Appointment Types
 ----------------
@@ -113,6 +116,100 @@ curl https://api.cliniko.com/v1/appointment_types/1 \
   "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
 }
 ```
+
+Create Appointment Type
+----------------
+**Resources**
+* ```POST /appointment_types``` create an appointment type
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/appointment_types \
+  -u API_KEY: \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -d '{ "name": "Initial Consultation", "duration_in_minutes": 5, "color": "#FF0000", "max_attendees": 5 }' \
+  -X POST
+```
+
+**Example Response**
+```
+Headers { Location: http://api.cliniko.com/appointment_types/1 }
+```
+```json
+{
+  "id": 1,
+  "category": null,
+  "color": "#FF0000",
+  "created_at": "2013-03-26T14:00:00Z",
+  "duration_in_minutes": 5,
+  "name": "Initial Consultation",  
+  "description": null,
+  "max_attendees": 5,
+  "show_in_online_bookings": null,
+  "updated_at": "2013-03-26T14:00:00Z",
+  "practitioners": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/appointment_types/1/practitioners"
+    }
+  },
+  "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+}
+```
+
+Update Appointment Type
+----------------
+**Resources**
+* ```PUT /appointment_types/:id``` update an appointment type
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/appointment_types/1 \
+  -u API_KEY: \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -d '{ "name": "updated name" }' \
+  -X PUT
+```
+**Example Response**
+```json
+{
+  "id": 1,
+  "category": null,
+  "color": "#FF0000",
+  "created_at": "2013-03-26T14:00:00Z",
+  "duration_in_minutes": 5,
+  "name": "updated name",  
+  "description": null,
+  "max_attendees": 5,
+  "show_in_online_bookings": null,
+  "updated_at": "2013-03-26T14:00:00Z",
+  "practitioners": {
+    "links": {
+      "self": "https://api.cliniko.com/v1/appointment_types/1/practitioners"
+    }
+  },
+  "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+}
+```
+
+Delete Appointment Type
+----------------
+**Resources**
+* ```DELETE /appointment_types/:id``` delete an appointment type
+
+**Example Request**
+```shell
+curl https://api.cliniko.com/v1/appointment_types/1 \
+  -u API_KEY: \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
+  -X DELETE
+```
+**Example Response**
+A status code of `204 no content` will be returned if successful
 
 Filtering Appointment Types
 ----------------
