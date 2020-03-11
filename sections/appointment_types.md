@@ -32,7 +32,7 @@ curl https://api.cliniko.com/v1/appointment_types \
       "color": "#00FF00",
       "created_at": "2013-03-26T14:00:00Z",
       "duration_in_minutes": 60,
-      "id": 1,
+      "id": "1",
       "name": "Initial Consultation",
       "description": null,
       "max_attendees": 1,
@@ -83,7 +83,7 @@ curl https://api.cliniko.com/v1/appointment_types/1 \
 **Example Response**
 ```json
 {
-  "id": 1,
+  "id": "1",
   "category": "Osteopathy",
   "color": "#00FF00",
   "created_at": "2013-03-26T14:00:00Z",
@@ -139,7 +139,7 @@ Headers { Location: http://api.cliniko.com/appointment_types/1 }
 ```
 ```json
 {
-  "id": 1,
+  "id": "1",
   "category": null,
   "color": "#FF0000",
   "created_at": "2013-03-26T14:00:00Z",
@@ -176,7 +176,7 @@ curl https://api.cliniko.com/v1/appointment_types/1 \
 **Example Response**
 ```json
 {
-  "id": 1,
+  "id": "1",
   "category": null,
   "color": "#FF0000",
   "created_at": "2013-03-26T14:00:00Z",
