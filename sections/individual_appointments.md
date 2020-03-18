@@ -37,6 +37,7 @@ curl https://api.cliniko.com/v1/individual_appointments \
       "booking_ip_address": null,
       "cancellation_note": null,
       "cancellation_reason": null,
+      "cancellation_reason_description": "",
       "conflicts": {
         "links": {
           "self": "https://api.cliniko.com/v1/individual_appointments/1/conflicts"
@@ -120,6 +121,7 @@ curl https://api.cliniko.com/v1/individual_appointments/deleted \
       "booking_ip_address": null,
       "cancellation_note": null,
       "cancellation_reason": null,
+      "cancellation_reason_description": "",
       "conflicts": {
         "links": {
           "self": "https://api.cliniko.com/v1/individual_appointments/1/conflicts"
@@ -200,8 +202,9 @@ curl https://api.cliniko.com/v1/individual_appointments/cancelled \
       "created_at": "2016-06-28T21:33:26Z",
       "updated_at": "2016-07-22T15:10:08Z",
       "booking_ip_address": null,
-      "cancellation_note": 'Last minute cancellation',
+      "cancellation_note": "Last minute cancellation",
       "cancellation_reason": 50,
+      "cancellation_reason_description": "Other",
       "conflicts": {
         "links": {
           "self": "https://api.cliniko.com/v1/individual_appointments/1/conflicts"
@@ -283,6 +286,7 @@ curl https://api.cliniko.com/v1/individual_appointments/1 \
   "booking_ip_address": null,
   "cancellation_note": null,
   "cancellation_reason": null,
+  "cancellation_reason_description": "",
   "conflicts": {
     "links": {
       "self": "https://api.cliniko.com/v1/individual_appointments/1/conflicts"
@@ -388,6 +392,7 @@ Headers { Location: https://api.cliniko.com/individual_appointments/1 }
   "booking_ip_address": null,
   "cancellation_note": null,
   "cancellation_reason": null,
+  "cancellation_reason_description": "",
   "conflicts": {
     "links": {
       "self": "https://api.cliniko.com/v1/individual_appointments/1/conflicts"
@@ -467,6 +472,7 @@ curl https://api.cliniko.com/v1/individual_appointments/1 \
   "booking_ip_address": null,
   "cancellation_note": null,
   "cancellation_reason": null,
+  "cancellation_reason_description": "",
   "conflicts": {
     "links": {
       "self": "https://api.cliniko.com/v1/individual_appointments/1/conflicts"
@@ -561,6 +567,7 @@ A status code of `204 no content` will be returned if successful
 * `10` Feeling better
 * `20` Condition worse
 * `30` Sick
+* `31` COVID-19 related
 * `40` Away
 * `50` Other
 * `60` Work

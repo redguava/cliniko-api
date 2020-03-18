@@ -39,6 +39,7 @@ curl https://api.cliniko.com/v1/attendees \
       "booking_ip_address": null,
       "cancellation_note": null,
       "cancellation_reason": null,
+      "cancellation_reason_description": "",
       "email_reminder_sent": false,
       "invoice_status": null,
       "notes": null,
@@ -103,6 +104,7 @@ curl https://api.cliniko.com/v1/attendees/deleted \
       "booking_ip_address": null,
       "cancellation_note": null,
       "cancellation_reason": null,
+      "cancellation_reason_description": "",
       "email_reminder_sent": false,
       "invoice_status": null,
       "notes": null,
@@ -167,6 +169,7 @@ curl https://api.cliniko.com/v1/attendees/cancelled \
       "booking_ip_address": null,
       "cancellation_note": "Last minute cancellation",
       "cancellation_reason": 50,
+      "cancellation_reason_description": "Other",
       "email_reminder_sent": false,
       "invoice_status": null,
       "notes": null,
@@ -227,6 +230,7 @@ curl https://api.cliniko.com/v1/attendees/1 \
   "booking_ip_address": null,
   "cancellation_note": null,
   "cancellation_reason": null,
+  "cancellation_reason_description": "",
   "email_reminder_sent": false,
   "invoice_status": null,
   "notes": null,
@@ -284,6 +288,7 @@ Headers { Location: https://api.cliniko.com/attendees/1 }
   "booking_ip_address": null,
   "cancellation_note": null,
   "cancellation_reason": null,
+  "cancellation_reason_description": "",
   "email_reminder_sent": false,
   "invoice_status": null,
   "notes": null,
@@ -338,6 +343,7 @@ curl https://api.cliniko.com/v1/attendees/1 \
   "booking_ip_address": null,
   "cancellation_note": null,
   "cancellation_reason": null,
+  "cancellation_reason_description": "",
   "email_reminder_sent": false,
   "invoice_status": null,
   "notes": null,
@@ -410,6 +416,7 @@ A status code of `204 no content` will be returned if successful
 * `10` Feeling better
 * `20` Condition worse
 * `30` Sick
+* `31` COVID-19 related
 * `40` Away
 * `50` Other
 * `60` Work
