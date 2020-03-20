@@ -104,6 +104,7 @@ function requestClinikoPatient(patientId, accountId) {
     url: 'https://api.' + shardId + '.cliniko.com/v1/patients/' + patientId,
     method: 'GET',
     headers: {
+      authorization: base64(clinikoIntegration.apiKey + ':'),
       'user-agent': 'Your name (integrations@example.com)',
       accept: 'application/json',
       'content-type': 'application/json'
