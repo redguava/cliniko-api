@@ -293,6 +293,13 @@ patient data. See [this
 guide](https://github.com/redguava/cliniko-api/blob/master/guides/custom_patient_page.md)
 for more details.
 
+Telehealth links
+---------------------
+
+Telehealth in Cliniko includes the generation of appointment Telehealth links. To understand what these are and how to use them, see [this
+guide](https://github.com/redguava/cliniko-api/blob/master/guides/telehealth_links.md)
+for more details.
+
 Get involved and help make our API better
 -----------------------------------------
 
