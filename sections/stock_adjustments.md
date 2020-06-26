@@ -12,7 +12,7 @@ Get Stock Adjustments
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/stock_adjustments \
+curl https://api.au1.cliniko.com/v1/stock_adjustments \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -31,19 +31,19 @@ curl https://api.cliniko.com/v1/stock_adjustments \
       "updated_at": "2014-03-17T13:31:51Z",
       "user": {
         "links": {
-          "self": "https://api.cliniko.com/v1/users/1"
+          "self": "https://api.au1.cliniko.com/v1/users/1"
         }
       },
       "product": {
         "links": {
-          "self": "https://api.cliniko.com/v1/products/1"
+          "self": "https://api.au1.cliniko.com/v1/products/1"
         }
       },
-      "links": {"self": "https://api.cliniko.com/v1/stock_adjustments/1"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/stock_adjustments/1"}
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/stock_adjustments?page=1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/stock_adjustments?page=1"}
 }
 ```
 
@@ -55,7 +55,7 @@ Get Stock Adjustment
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/stock_adjustments/1 \
+curl https://api.au1.cliniko.com/v1/stock_adjustments/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -72,15 +72,15 @@ curl https://api.cliniko.com/v1/stock_adjustments/1 \
   "updated_at": "2014-03-17T13:31:51Z",
   "user": {
     "links": {
-      "self": "https://api.cliniko.com/v1/users/1"
+      "self": "https://api.au1.cliniko.com/v1/users/1"
     }
   },
   "product": {
     "links": {
-      "self": "https://api.cliniko.com/v1/products/1"
+      "self": "https://api.au1.cliniko.com/v1/products/1"
     }
   },
-  "links": {"self": "https://api.cliniko.com/v1/stock_adjustments/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/stock_adjustments/1"}
 }
 ```
 
@@ -98,11 +98,11 @@ Create Stock Adjustment
    * Increase types: `"Stock Purchase", "Returned", "Other"`
    * Decrease types: `"Damaged", "Out of Date", "Item Sold", "Other"`
 
-**IMPORTANT:** A negative value of the quantity param is only allowed when a decreasing adjustment type has been selected and vice versa. 
+**IMPORTANT:** A negative value of the quantity param is only allowed when a decreasing adjustment type has been selected and vice versa.
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/stock_adjustments \
+curl https://api.au1.cliniko.com/v1/stock_adjustments \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
@@ -112,7 +112,7 @@ curl https://api.cliniko.com/v1/stock_adjustments \
 ```
 **Example Response**
 ```
-Headers { Location: https://api.cliniko.com/stock_adjustments/2 }
+Headers { Location: https://api.au1.cliniko.com/stock_adjustments/2 }
 ```
 ```json
 {
@@ -124,15 +124,15 @@ Headers { Location: https://api.cliniko.com/stock_adjustments/2 }
   "updated_at": "2014-03-17T13:31:51Z",
   "user": {
     "links": {
-      "self": "https://api.cliniko.com/v1/users/1"
+      "self": "https://api.au1.cliniko.com/v1/users/1"
     }
   },
   "product": {
     "links": {
-      "self": "https://api.cliniko.com/v1/products/1"
+      "self": "https://api.au1.cliniko.com/v1/products/1"
     }
   },
-  "links": {"self": "https://api.cliniko.com/v1/stock_adjustments/2"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/stock_adjustments/2"}
 }
 ```
 

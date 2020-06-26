@@ -18,7 +18,7 @@ Get Practitioners
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/practitioners \
+curl https://api.au1.cliniko.com/v1/practitioners \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -40,29 +40,29 @@ curl https://api.cliniko.com/v1/practitioners \
       "label": "Randy Savage",
       "updated_at": "2013-03-26T14:00:00Z",
       "default_appointment_type": {
-        "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+        "links": {"self": "https://api.au1.cliniko.com/v1/appointment_types/1"}
       },
       "practitioner_reference_numbers": {
-        "links": {"self": "https://api.cliniko.com/v1/practitioners/1/practitioner_reference_numbers?page=1"}
+        "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/1/practitioner_reference_numbers?page=1"}
       },
       "user": {
-        "links": {"self": "https://api.cliniko.com/v1/users/1"}
+        "links": {"self": "https://api.au1.cliniko.com/v1/users/1"}
       },
       "appointments": {
         "links": {
-          "self": "https://api.cliniko.com/v1/practitioners/1/appointments?page=1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/1/appointments?page=1"
         }
       },
       "invoices": {
         "links": {
-          "self": "https://api.cliniko.com/v1/practitioners/1/invoices?page=1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/1/invoices?page=1"
         }
       },
-      "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/1"}
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/practitioners?page=1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/practitioners?page=1"}
 }
 ```
 
@@ -74,7 +74,7 @@ Get Practitioner
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/practitioners/1 \
+curl https://api.au1.cliniko.com/v1/practitioners/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -94,25 +94,25 @@ curl https://api.cliniko.com/v1/practitioners/1 \
   "label": "Randy Savage",
   "updated_at": "2013-03-26T14:00:00Z",
   "default_appointment_type": {
-    "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+    "links": {"self": "https://api.au1.cliniko.com/v1/appointment_types/1"}
   },
   "practitioner_reference_numbers": {
-        "links": {"self": "https://api.cliniko.com/v1/practitioners/1/practitioner_reference_numbers?page=1"}
+        "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/1/practitioner_reference_numbers?page=1"}
   },
   "user": {
-    "links": {"self": "https://api.cliniko.com/v1/users/1"}
+    "links": {"self": "https://api.au1.cliniko.com/v1/users/1"}
   },
   "appointments": {
     "links": {
-      "self": "https://api.cliniko.com/v1/practitioners/1/appointments?page=1"
+      "self": "https://api.au1.cliniko.com/v1/practitioners/1/appointments?page=1"
     }
   },
   "invoices": {
     "links": {
-      "self": "https://api.cliniko.com/v1/practitioners/1/invoices?page=1"
+      "self": "https://api.au1.cliniko.com/v1/practitioners/1/invoices?page=1"
     }
   },
-  "links": {"self": "https://api.cliniko.com/v1/practitioners/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/1"}
 }
 ```
 
@@ -126,7 +126,7 @@ Get Inactive Practitioners
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/practitioners/inactive \
+curl https://api.au1.cliniko.com/v1/practitioners/inactive \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -146,26 +146,26 @@ curl https://api.cliniko.com/v1/practitioners/inactive \
       "title": "Mr",
       "updated_at": "2013-03-27T14:00:00Z",
       "default_appointment_type": {
-        "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+        "links": {"self": "https://api.au1.cliniko.com/v1/appointment_types/1"}
       },
       "user": {
-        "links": {"self": "https://api.cliniko.com/v1/users/3"}
+        "links": {"self": "https://api.au1.cliniko.com/v1/users/3"}
       },
       "appointments": {
         "links": {
-          "self": "https://api.cliniko.com/v1/practitioners/1/appointments?page=1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/1/appointments?page=1"
         }
       },
       "invoices": {
         "links": {
-          "self": "https://api.cliniko.com/v1/practitioners/1/invoices?page=1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/1/invoices?page=1"
         }
       },
-      "links": {"self": "https://api.cliniko.com/v1/practitioners/3"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/3"}
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/practitioners/inactive?page=1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/inactive?page=1"}
 }
 ```
 

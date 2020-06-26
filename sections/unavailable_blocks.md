@@ -17,7 +17,7 @@ Get Unavailable Blocks
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/unavailable_blocks \
+curl https://api.au1.cliniko.com/v1/unavailable_blocks \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -33,7 +33,7 @@ curl https://api.cliniko.com/v1/unavailable_blocks \
       "updated_at": "2016-07-15T00:04:35Z",
       "conflicts": {
         "links": {
-          "self": "https://api.cliniko.com/v1/unavailable_blocks/1/conflicts"
+          "self": "https://api.au1.cliniko.com/v1/unavailable_blocks/1/conflicts"
         }
       },
       "notes": null,
@@ -44,22 +44,22 @@ curl https://api.cliniko.com/v1/unavailable_blocks \
       "ends_at": "2016-07-13T07:00:00Z",
       "business": {
         "links": {
-          "self": "https://api.cliniko.com/v1/businesses/1"
+          "self": "https://api.au1.cliniko.com/v1/businesses/1"
         }
       },
       "practitioner": {
         "links": {
-          "self": "https://api.cliniko.com/v1/practitioners/1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/1"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/unavailable_blocks/1"
+        "self": "https://api.au1.cliniko.com/v1/unavailable_blocks/1"
       }
     }
   ],
   "total_entries": 20,
   "links": {
-    "self": "https://api.cliniko.com/v1/unavailable_blocks?page=1",
+    "self": "https://api.au1.cliniko.com/v1/unavailable_blocks?page=1",
   }
 }
 ```
@@ -72,7 +72,7 @@ Get Deleted Unavailable Blocks
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/unavailable_blocks/deleted \
+curl https://api.au1.cliniko.com/v1/unavailable_blocks/deleted \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -88,7 +88,7 @@ curl https://api.cliniko.com/v1/unavailable_blocks/deleted \
       "updated_at": "2016-07-15T00:04:35Z",
       "conflicts": {
         "links": {
-          "self": "https://api.cliniko.com/v1/unavailable_blocks/1/conflicts"
+          "self": "https://api.au1.cliniko.com/v1/unavailable_blocks/1/conflicts"
         }
       },
       "notes": null,
@@ -99,22 +99,22 @@ curl https://api.cliniko.com/v1/unavailable_blocks/deleted \
       "ends_at": "2016-07-13T07:00:00Z",
       "business": {
         "links": {
-          "self": "https://api.cliniko.com/v1/businesses/1"
+          "self": "https://api.au1.cliniko.com/v1/businesses/1"
         }
       },
       "practitioner": {
         "links": {
-          "self": "https://api.cliniko.com/v1/practitioners/1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/1"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/unavailable_blocks/1"
+        "self": "https://api.au1.cliniko.com/v1/unavailable_blocks/1"
       }
     }
   ],
   "total_entries": 20,
   "links": {
-    "self": "https://api.cliniko.com/v1/unavailable_blocks?page=1",
+    "self": "https://api.au1.cliniko.com/v1/unavailable_blocks?page=1",
   }
 }
 ```
@@ -127,7 +127,7 @@ Get Unavailable Block
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/unavailable_blocks/1 \
+curl https://api.au1.cliniko.com/v1/unavailable_blocks/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -141,7 +141,7 @@ curl https://api.cliniko.com/v1/unavailable_blocks/1 \
   "updated_at": "2016-07-15T00:04:35Z",
   "conflicts": {
     "links": {
-      "self": "https://api.cliniko.com/v1/unavailable_blocks/1/conflicts"
+      "self": "https://api.au1.cliniko.com/v1/unavailable_blocks/1/conflicts"
     }
   },
   "notes": null,
@@ -152,16 +152,16 @@ curl https://api.cliniko.com/v1/unavailable_blocks/1 \
   "ends_at": "2016-07-13T07:00:00Z",
   "business": {
     "links": {
-      "self": "https://api.cliniko.com/v1/businesses/1"
+      "self": "https://api.au1.cliniko.com/v1/businesses/1"
     }
   },
   "practitioner": {
     "links": {
-      "self": "https://api.cliniko.com/v1/practitioners/1"
+      "self": "https://api.au1.cliniko.com/v1/practitioners/1"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/unavailable_blocks/1"
+    "self": "https://api.au1.cliniko.com/v1/unavailable_blocks/1"
   }
 }
 ```
@@ -174,7 +174,7 @@ Get Conflicts
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/unavailable_blocks/1/conflicts \
+curl https://api.au1.cliniko.com/v1/unavailable_blocks/1/conflicts \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -196,7 +196,7 @@ Create Unavailable Block
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/unavailable_blocks \
+curl https://api.au1.cliniko.com/v1/unavailable_blocks \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -206,7 +206,7 @@ curl https://api.cliniko.com/v1/unavailable_blocks \
 ```
 **Example Response**
 ```
-Headers { Location: https://api.cliniko.com/unavailable_blocks/1 }
+Headers { Location: https://api.au1.cliniko.com/unavailable_blocks/1 }
 ```
 ```json
 {
@@ -215,7 +215,7 @@ Headers { Location: https://api.cliniko.com/unavailable_blocks/1 }
   "updated_at": "2016-07-15T00:04:35Z",
   "conflicts": {
     "links": {
-      "self": "https://api.cliniko.com/v1/unavailable_blocks/1/conflicts"
+      "self": "https://api.au1.cliniko.com/v1/unavailable_blocks/1/conflicts"
     }
   },
   "notes": null,
@@ -226,16 +226,16 @@ Headers { Location: https://api.cliniko.com/unavailable_blocks/1 }
   "ends_at": "2016-07-13T07:00:00Z",
   "business": {
     "links": {
-      "self": "https://api.cliniko.com/v1/businesses/1"
+      "self": "https://api.au1.cliniko.com/v1/businesses/1"
     }
   },
   "practitioner": {
     "links": {
-      "self": "https://api.cliniko.com/v1/practitioners/1"
+      "self": "https://api.au1.cliniko.com/v1/practitioners/1"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/unavailable_blocks/1"
+    "self": "https://api.au1.cliniko.com/v1/unavailable_blocks/1"
   }
 }
 ```
@@ -247,7 +247,7 @@ Update Unavailable Block
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/unavailable_blocks/1 \
+curl https://api.au1.cliniko.com/v1/unavailable_blocks/1 \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -263,7 +263,7 @@ curl https://api.cliniko.com/v1/unavailable_blocks/1 \
   "updated_at": "2016-07-15T00:04:35Z",
   "conflicts": {
     "links": {
-      "self": "https://api.cliniko.com/v1/unavailable_blocks/1/conflicts"
+      "self": "https://api.au1.cliniko.com/v1/unavailable_blocks/1/conflicts"
     }
   },
   "notes": null,
@@ -274,16 +274,16 @@ curl https://api.cliniko.com/v1/unavailable_blocks/1 \
   "ends_at": "2016-07-13T07:30:00Z",
   "business": {
     "links": {
-      "self": "https://api.cliniko.com/v1/businesses/1"
+      "self": "https://api.au1.cliniko.com/v1/businesses/1"
     }
   },
   "practitioner": {
     "links": {
-      "self": "https://api.cliniko.com/v1/practitioners/1"
+      "self": "https://api.au1.cliniko.com/v1/practitioners/1"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/unavailable_blocks/1"
+    "self": "https://api.au1.cliniko.com/v1/unavailable_blocks/1"
   }
 }
 ```
@@ -295,7 +295,7 @@ Delete Unavailable Block
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/unavailable_blocks/1 \
+curl https://api.au1.cliniko.com/v1/unavailable_blocks/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \

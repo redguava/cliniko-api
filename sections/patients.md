@@ -25,7 +25,7 @@
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/patients \
+curl https://api.au1.cliniko.com/v1/patients \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -74,12 +74,12 @@ curl https://api.cliniko.com/v1/patients \
       "updated_at": "2013-03-26T14:00:00Z",
       "concession_type": {
         "links": {
-          "self": "https://api.cliniko.com/v1/concession_types/123"
+          "self": "https://api.au1.cliniko.com/v1/concession_types/123"
         }
       },
       "referring_doctor": {
         "links": {
-          "self": "https://api.cliniko.com/v1/contacts/123"
+          "self": "https://api.au1.cliniko.com/v1/contacts/123"
         }
       },
       "patient_phone_numbers": [
@@ -94,24 +94,24 @@ curl https://api.cliniko.com/v1/patients \
       ],
       "medical_alerts": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+          "self": "https://api.au1.cliniko.com/v1/patients/1/medical_alerts?page=1"
         }
       },
       "invoices": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+          "self": "https://api.au1.cliniko.com/v1/patients/1/invoices?page=1"
         }
       },
       "appointments": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+          "self": "https://api.au1.cliniko.com/v1/patients/1/appointments?page=1"
         }
       },
-      "links": { "self": "https://api.cliniko.com/v1/patients/1" }
+      "links": { "self": "https://api.au1.cliniko.com/v1/patients/1" }
     }
   ],
   "total_entries": 1,
-  "links": { "self": "https://api.cliniko.com/v1/patients?page=1" }
+  "links": { "self": "https://api.au1.cliniko.com/v1/patients?page=1" }
 }
 ```
 
@@ -124,7 +124,7 @@ curl https://api.cliniko.com/v1/patients \
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/patients/deleted \
+curl https://api.au1.cliniko.com/v1/patients/deleted \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -173,12 +173,12 @@ curl https://api.cliniko.com/v1/patients/deleted \
       "updated_at": "2013-03-26T14:00:00Z",
       "concession_type": {
         "links": {
-          "self": "https://api.cliniko.com/v1/concession_types/123"
+          "self": "https://api.au1.cliniko.com/v1/concession_types/123"
         }
       },
       "referring_doctor": {
         "links": {
-          "self": "https://api.cliniko.com/v1/contacts/123"
+          "self": "https://api.au1.cliniko.com/v1/contacts/123"
         }
       },
       "patient_phone_numbers": [
@@ -193,24 +193,24 @@ curl https://api.cliniko.com/v1/patients/deleted \
       ],
       "medical_alerts": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+          "self": "https://api.au1.cliniko.com/v1/patients/1/medical_alerts?page=1"
         }
       },
       "invoices": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+          "self": "https://api.au1.cliniko.com/v1/patients/1/invoices?page=1"
         }
       },
       "appointments": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+          "self": "https://api.au1.cliniko.com/v1/patients/1/appointments?page=1"
         }
       },
-      "links": { "self": "https://api.cliniko.com/v1/patients/1" }
+      "links": { "self": "https://api.au1.cliniko.com/v1/patients/1" }
     }
   ],
   "total_entries": 1,
-  "links": { "self": "https://api.cliniko.com/v1/patients/deleted?page=1" }
+  "links": { "self": "https://api.au1.cliniko.com/v1/patients/deleted?page=1" }
 }
 ```
 
@@ -223,7 +223,7 @@ curl https://api.cliniko.com/v1/patients/deleted \
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/patients/archived \
+curl https://api.au1.cliniko.com/v1/patients/archived \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -261,7 +261,7 @@ curl https://api.cliniko.com/v1/patients/archived \
       "merged_at": "2013-06-05T14:37:18Z",
       "merged_with_patient": {
         "links": {
-          "self": "https://api.cliniko.test/v1/patients/1001"
+          "self": "https://api.au1.cliniko.test/v1/patients/1001"
         }
       },
       "notes": "",
@@ -278,12 +278,12 @@ curl https://api.cliniko.com/v1/patients/archived \
       "updated_at": "2013-03-26T14:00:00Z",
       "concession_type": {
         "links": {
-          "self": "https://api.cliniko.com/v1/concession_types/123"
+          "self": "https://api.au1.cliniko.com/v1/concession_types/123"
         }
       },
       "referring_doctor": {
         "links": {
-          "self": "https://api.cliniko.com/v1/contacts/123"
+          "self": "https://api.au1.cliniko.com/v1/contacts/123"
         }
       },
       "patient_phone_numbers": [
@@ -298,24 +298,24 @@ curl https://api.cliniko.com/v1/patients/archived \
       ],
       "medical_alerts": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+          "self": "https://api.au1.cliniko.com/v1/patients/1/medical_alerts?page=1"
         }
       },
       "invoices": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+          "self": "https://api.au1.cliniko.com/v1/patients/1/invoices?page=1"
         }
       },
       "appointments": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+          "self": "https://api.au1.cliniko.com/v1/patients/1/appointments?page=1"
         }
       },
-      "links": { "self": "https://api.cliniko.com/v1/patients/1" }
+      "links": { "self": "https://api.au1.cliniko.com/v1/patients/1" }
     }
   ],
   "total_entries": 1,
-  "links": { "self": "https://api.cliniko.com/v1/patients/archived?page=1" }
+  "links": { "self": "https://api.au1.cliniko.com/v1/patients/archived?page=1" }
 }
 ```
 
@@ -328,7 +328,7 @@ curl https://api.cliniko.com/v1/patients/archived \
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/patients/1 \
+curl https://api.au1.cliniko.com/v1/patients/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -375,12 +375,12 @@ curl https://api.cliniko.com/v1/patients/1 \
   "updated_at": "2013-03-26T14:00:00Z",
   "concession_type": {
     "links": {
-      "self": "https://api.cliniko.com/v1/concession_types/123"
+      "self": "https://api.au1.cliniko.com/v1/concession_types/123"
     }
   },
   "referring_doctor": {
     "links": {
-      "self": "https://api.cliniko.com/v1/contacts/123"
+      "self": "https://api.au1.cliniko.com/v1/contacts/123"
     }
   },
   "patient_phone_numbers": [
@@ -395,20 +395,20 @@ curl https://api.cliniko.com/v1/patients/1 \
   ],
   "medical_alerts": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+      "self": "https://api.au1.cliniko.com/v1/patients/1/medical_alerts?page=1"
     }
   },
   "invoices": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+      "self": "https://api.au1.cliniko.com/v1/patients/1/invoices?page=1"
     }
   },
   "appointments": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+      "self": "https://api.au1.cliniko.com/v1/patients/1/appointments?page=1"
     }
   },
-  "links": { "self": "https://api.cliniko.com/v1/patients/1" }
+  "links": { "self": "https://api.au1.cliniko.com/v1/patients/1" }
 }
 ```
 
@@ -425,7 +425,7 @@ curl https://api.cliniko.com/v1/patients/1 \
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/patients \
+curl https://api.au1.cliniko.com/v1/patients \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -480,20 +480,20 @@ Headers { Location: http://api.cliniko.com/patients/1 }
   "patient_phone_numbers": [],
   "medical_alerts": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+      "self": "https://api.au1.cliniko.com/v1/patients/1/medical_alerts?page=1"
     }
   },
   "invoices": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+      "self": "https://api.au1.cliniko.com/v1/patients/1/invoices?page=1"
     }
   },
   "appointments": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+      "self": "https://api.au1.cliniko.com/v1/patients/1/appointments?page=1"
     }
   },
-  "links": { "self": "https://api.cliniko.com/v1/patients/1" }
+  "links": { "self": "https://api.au1.cliniko.com/v1/patients/1" }
 }
 ```
 
@@ -510,7 +510,7 @@ Headers { Location: http://api.cliniko.com/patients/1 }
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/patients/1 \
+curl https://api.au1.cliniko.com/v1/patients/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
@@ -570,20 +570,20 @@ curl https://api.cliniko.com/v1/patients/1 \
   ],
   "medical_alerts": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+      "self": "https://api.au1.cliniko.com/v1/patients/1/medical_alerts?page=1"
     }
   },
   "invoices": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+      "self": "https://api.au1.cliniko.com/v1/patients/1/invoices?page=1"
     }
   },
   "appointments": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+      "self": "https://api.au1.cliniko.com/v1/patients/1/appointments?page=1"
     }
   },
-  "links": { "self": "https://api.cliniko.com/v1/patients/1" }
+  "links": { "self": "https://api.au1.cliniko.com/v1/patients/1" }
 }
 ```
 
@@ -596,7 +596,7 @@ curl https://api.cliniko.com/v1/patients/1 \
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/patients/1 \
+curl https://api.au1.cliniko.com/v1/patients/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
@@ -615,7 +615,7 @@ A status code of `204 no content` will be returned if successful
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/patients/1/archive \
+curl https://api.au1.cliniko.com/v1/patients/1/archive \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
@@ -634,7 +634,7 @@ A status code of `204 no content` will be returned if successful
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/patients/1/unarchive \
+curl https://api.au1.cliniko.com/v1/patients/1/unarchive \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
@@ -692,20 +692,20 @@ curl https://api.cliniko.com/v1/patients/1/unarchive \
   ],
   "medical_alerts": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/1/medical_alerts?page=1"
+      "self": "https://api.au1.cliniko.com/v1/patients/1/medical_alerts?page=1"
     }
   },
   "invoices": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/1/invoices?page=1"
+      "self": "https://api.au1.cliniko.com/v1/patients/1/invoices?page=1"
     }
   },
   "appointments": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/1/appointments?page=1"
+      "self": "https://api.au1.cliniko.com/v1/patients/1/appointments?page=1"
     }
   },
-  "links": { "self": "https://api.cliniko.com/v1/patients/1" }
+  "links": { "self": "https://api.au1.cliniko.com/v1/patients/1" }
 }
 ```
 

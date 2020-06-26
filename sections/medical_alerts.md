@@ -16,7 +16,7 @@ Get Medical Alerts
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/medical_alerts \
+curl https://api.au1.cliniko.com/v1/medical_alerts \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -33,13 +33,13 @@ curl https://api.cliniko.com/v1/medical_alerts \
       "updated_at": "2013-03-27T10:03:57Z",
       "deleted_at": null,
       "patient": {
-        "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
+        "links": {"self": "https://api.au1.cliniko.com/v1/patients/12345"}
       },
-      "links": {"self": "https://api.cliniko.com/v1/medical_alerts/343589"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/medical_alerts/343589"}
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/medical_alerts?page=1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/medical_alerts?page=1"}
 }
 ```
 
@@ -52,7 +52,7 @@ Get Deleted Medical Alerts
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/medical_alerts/deleted \
+curl https://api.au1.cliniko.com/v1/medical_alerts/deleted \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -69,13 +69,13 @@ curl https://api.cliniko.com/v1/medical_alerts/deleted \
       "updated_at": "2013-03-27T10:03:57Z",
       "deleted_at": "2013-06-05T14:38:48Z",
       "patient": {
-        "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
+        "links": {"self": "https://api.au1.cliniko.com/v1/patients/12345"}
       },
-      "links": {"self": "https://api.cliniko.com/v1/medical_alerts/343589"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/medical_alerts/343589"}
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/medical_alerts/deleted?page=1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/medical_alerts/deleted?page=1"}
 }
 ```
 
@@ -87,7 +87,7 @@ Get Medical Alert
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/medical_alerts/1 \
+curl https://api.au1.cliniko.com/v1/medical_alerts/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -102,9 +102,9 @@ curl https://api.cliniko.com/v1/medical_alerts/1 \
   "updated_at": "2013-03-27T10:03:57Z",
   "deleted_at": null,
   "patient": {
-    "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
+    "links": {"self": "https://api.au1.cliniko.com/v1/patients/12345"}
   },
-  "links": {"self": "https://api.cliniko.com/v1/medical_alerts/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/medical_alerts/1"}
 }
 ```
 
@@ -115,7 +115,7 @@ Create Medical Alert
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/medical_alerts \
+curl https://api.au1.cliniko.com/v1/medical_alerts \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -135,9 +135,9 @@ Headers { Location: http://api.cliniko.com/medical_alerts/1 }
   "updated_at": "2013-03-27T10:03:57Z",
   "deleted_at": null,
   "patient": {
-    "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
+    "links": {"self": "https://api.au1.cliniko.com/v1/patients/12345"}
   },
-  "links": {"self": "https://api.cliniko.com/v1/medical_alerts/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/medical_alerts/1"}
 }
 ```
 
@@ -148,7 +148,7 @@ Update Medical Alert
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/medical_alerts/1 \
+curl https://api.au1.cliniko.com/v1/medical_alerts/1 \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -165,9 +165,9 @@ curl https://api.cliniko.com/v1/medical_alerts/1 \
   "updated_at": "2013-03-27T10:03:57Z",
   "deleted_at": null,
   "patient": {
-    "links": {"self": "https://api.cliniko.com/v1/patients/12345"}
+    "links": {"self": "https://api.au1.cliniko.com/v1/patients/12345"}
   },
-  "links": {"self": "https://api.cliniko.com/v1/medical_alerts/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/medical_alerts/1"}
 }
 ```
 
@@ -178,7 +178,7 @@ Delete Medical Alert
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/medical_alerts/1 \
+curl https://api.au1.cliniko.com/v1/medical_alerts/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \

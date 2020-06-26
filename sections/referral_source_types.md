@@ -13,7 +13,7 @@ Get Referral Source Types
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/referral_source_types \
+curl https://api.au1.cliniko.com/v1/referral_source_types \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -35,7 +35,7 @@ curl https://api.cliniko.com/v1/referral_source_types \
       },
       "referrer_type": "Patient",
       "subcategories": null,
-      "links": { "self": "https://api.cliniko.com/v1/referral_source_types/1" }
+      "links": { "self": "https://api.au1.cliniko.com/v1/referral_source_types/1" }
     },
     {
       "id": 2,
@@ -49,7 +49,7 @@ curl https://api.cliniko.com/v1/referral_source_types \
       },
       "referrer_type": "Contact",
       "subcategories": null,
-      "links": { "self": "https://api.cliniko.com/v1/referral_source_types/2" }
+      "links": { "self": "https://api.au1.cliniko.com/v1/referral_source_types/2" }
     },
     {
       "id": 3,
@@ -59,7 +59,7 @@ curl https://api.cliniko.com/v1/referral_source_types \
       "referrers": null,
       "referrer_type": null,
       "subcategories": null,
-      "links": { "self": "https://api.cliniko.com/v1/referral_source_types/3" }
+      "links": { "self": "https://api.au1.cliniko.com/v1/referral_source_types/3" }
     },
     {
       "id": 10,
@@ -74,12 +74,12 @@ curl https://api.cliniko.com/v1/referral_source_types \
         "friendster",
         "ask jeeves"
       ],
-      "links": { "self": "https://api.cliniko.com/v1/referral_source_types/10" }
+      "links": { "self": "https://api.au1.cliniko.com/v1/referral_source_types/10" }
     }
   ],
   "total_entries": 4,
-  "links": { "self": "https://api.cliniko.com/v1/referral_source_types?page=1" }
-}  
+  "links": { "self": "https://api.au1.cliniko.com/v1/referral_source_types?page=1" }
+}
 ```
 
 Get Referral Source Type
@@ -90,7 +90,7 @@ Get Referral Source Type
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/referral_source_types/10 \
+curl https://api.au1.cliniko.com/v1/referral_source_types/10 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -111,7 +111,7 @@ curl https://api.cliniko.com/v1/referral_source_types/10 \
     "friendster",
     "ask jeeves"
   ],
-  "links": { "self": "https://api.cliniko.com/v1/referral_source_types/10" }
+  "links": { "self": "https://api.au1.cliniko.com/v1/referral_source_types/10" }
 }
 ```
 

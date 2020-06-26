@@ -23,7 +23,7 @@ this guide to upgrade.
 ## Get a presigned URL to upload your file to S3
 
 Make a GET request for a presigned URL for the patient that you want to upload a file for.
-`https://api.cliniko.com/v1/patients/456/attachment_presigned_post`
+`https://api.au1.cliniko.com/v1/patients/456/attachment_presigned_post`
 
 
 The response will give you the URL and parameters that you need to upload the
@@ -44,7 +44,7 @@ file to s3, using version 2 of the signature algorithm:
 To obtain a response that uses version 4 of the signature algorithm, add a
 `signature_version=4` query parameter to the URL:
 
-`https://api.cliniko.com/v1/patients/456/attachment_presigned_post?signature_version=4`
+`https://api.au1.cliniko.com/v1/patients/456/attachment_presigned_post?signature_version=4`
 
 The response will then give you the URL and parameters you need to upload the
 file using the newer signature:
@@ -122,7 +122,7 @@ patient ID and s3 temp URL as parameters. The `upload_url` parameter is the
 combination of `url` value in the presigned post response + `Key` value in the
 s3 XML response.
 
-`https://api.cliniko.com/v1/patient_attachments`
+`https://api.au1.cliniko.com/v1/patient_attachments`
 ```json
 {
   "description": "Custom description for this attachment",

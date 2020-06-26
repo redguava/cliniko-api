@@ -14,7 +14,7 @@ Get Taxes
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/taxes \
+curl https://api.au1.cliniko.com/v1/taxes \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -30,11 +30,11 @@ curl https://api.cliniko.com/v1/taxes \
       "amount": "10.0",
       "created_at": "2014-01-29T09:54:54Z",
       "updated_at": "2014-01-29T09:54:54Z",
-      "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/taxes/1"}
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/taxes?page=1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/taxes?page=1"}
 }
 ```
 
@@ -46,7 +46,7 @@ Get Tax
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/taxes/1 \
+curl https://api.au1.cliniko.com/v1/taxes/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -60,7 +60,7 @@ curl https://api.cliniko.com/v1/taxes/1 \
   "amount": "10.0",
   "created_at": "2014-01-29T09:54:54Z",
   "updated_at": "2014-01-29T09:54:54Z",
-  "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/taxes/1"}
 }
 ```
 
@@ -71,7 +71,7 @@ Create Tax
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/taxes \
+curl https://api.au1.cliniko.com/v1/taxes \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
@@ -81,7 +81,7 @@ curl https://api.cliniko.com/v1/taxes \
 ```
 **Example Response**
 ```
-Headers { Location: https://api.cliniko.com/taxes/2 }
+Headers { Location: https://api.au1.cliniko.com/taxes/2 }
 ```
 ```json
 {
@@ -90,7 +90,7 @@ Headers { Location: https://api.cliniko.com/taxes/2 }
   "amount": "23.0",
   "created_at": "2014-03-03T09:54:54Z",
   "updated_at": "2014-03-03T09:54:54Z",
-  "links": {"self": "https://api.cliniko.com/v1/taxes/2"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/taxes/2"}
 }
 ```
 
@@ -101,7 +101,7 @@ Update Tax
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/taxes/2 \
+curl https://api.au1.cliniko.com/v1/taxes/2 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
@@ -117,7 +117,7 @@ curl https://api.cliniko.com/v1/taxes/2 \
   "amount": "22.0",
   "created_at": "2014-03-03T09:54:54Z",
   "updated_at": "2014-03-03T09:55:24Z",
-  "links": {"self": "https://api.cliniko.com/v1/taxes/2"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/taxes/2"}
 }
 ```
 
@@ -128,7 +128,7 @@ Delete Tax
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/taxes/2 \
+curl https://api.au1.cliniko.com/v1/taxes/2 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \

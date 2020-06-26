@@ -14,7 +14,7 @@ Get Practitioner Reference Numbers
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/practitioners/1/practitioner_reference_numbers \
+curl https://api.au1.cliniko.com/v1/practitioners/1/practitioner_reference_numbers \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -36,11 +36,11 @@ curl https://api.cliniko.com/v1/practitioners/1/practitioner_reference_numbers \
       "practitioner": {
         "links": {"self": "http://api.cliniko.dev:3000/v1/practitioners/1"}
       },
-      "links": {"self": "https://api.cliniko.com/v1/practitioner_reference_numbers/1"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/practitioner_reference_numbers/1"}
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/practitioners/1/practitioner_reference_numbers?page=1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/1/practitioner_reference_numbers?page=1"}
 }
 ```
 
@@ -52,7 +52,7 @@ Get Practitioner Reference Number
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/practitioner_reference_numbers/1 \
+curl https://api.au1.cliniko.com/v1/practitioner_reference_numbers/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -72,7 +72,7 @@ curl https://api.cliniko.com/v1/practitioner_reference_numbers/1 \
   "practitioner": {
     "links": {"self": "http://api.cliniko.dev:3000/v1/practitioners/1"}
   },
-  "links": {"self": "https://api.cliniko.com/v1/practitioner_reference_numbers/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/practitioner_reference_numbers/1"}
 }
 ```
 
@@ -84,7 +84,7 @@ Create Practitioner Reference Number
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/practitioner_reference_numbers \
+curl https://api.au1.cliniko.com/v1/practitioner_reference_numbers \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -109,7 +109,7 @@ Headers { Location: http://api.cliniko.com/practitioner_reference_numbers/2 }
   "practitioner": {
     "links": {"self": "http://api.cliniko.dev:3000/v1/practitioners/1"}
   },
-  "links": {"self": "https://api.cliniko.com/v1/practitioner_reference_numbers/2"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/practitioner_reference_numbers/2"}
 }
 ```
 
@@ -121,7 +121,7 @@ Update Practitioner Reference Number
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/practitioner_reference_numbers/2 \
+curl https://api.au1.cliniko.com/v1/practitioner_reference_numbers/2 \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -143,7 +143,7 @@ curl https://api.cliniko.com/v1/practitioner_reference_numbers/2 \
   "practitioner": {
     "links": {"self": "http://api.cliniko.dev:3000/v1/practitioners/1"}
   },
-  "links": {"self": "https://api.cliniko.com/v1/practitioner_reference_numbers/2"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/practitioner_reference_numbers/2"}
 }
 ```
 
@@ -155,7 +155,7 @@ Delete Practitioner Reference Number
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/practitioner_reference_numbers/1 \
+curl https://api.au1.cliniko.com/v1/practitioner_reference_numbers/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \

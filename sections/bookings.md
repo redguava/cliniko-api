@@ -14,7 +14,7 @@ Get Bookings
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/bookings \
+curl https://api.au1.cliniko.com/v1/bookings \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -30,7 +30,7 @@ curl https://api.cliniko.com/v1/bookings \
       "updated_at": "2017-11-29T20:30:07Z",
       "conflicts": {
         "links": {
-          "self": "https://api.cliniko.com/v1/group_appointments/1011/conflicts"
+          "self": "https://api.au1.cliniko.com/v1/group_appointments/1011/conflicts"
         }
       },
       "max_attendees": 2,
@@ -43,26 +43,26 @@ curl https://api.cliniko.com/v1/bookings \
       "ends_at": "2017-12-06T02:10:00Z",
       "appointment_type": {
         "links": {
-          "self": "https://api.cliniko.com/v1/appointment_types/5"
+          "self": "https://api.au1.cliniko.com/v1/appointment_types/5"
         }
       },
       "business": {
         "links": {
-          "self": "https://api.cliniko.com/v1/businesses/3"
+          "self": "https://api.au1.cliniko.com/v1/businesses/3"
         }
       },
       "practitioner": {
         "links": {
-          "self": "https://api.cliniko.com/v1/practitioners/1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/1"
         }
       },
       "attendees": {
         "links": {
-          "self": "https://api.cliniko.com/v1/group_appointments/1011/attendees"
+          "self": "https://api.au1.cliniko.com/v1/group_appointments/1011/attendees"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/bookings/1011"
+        "self": "https://api.au1.cliniko.com/v1/bookings/1011"
       }
     },
     {
@@ -71,7 +71,7 @@ curl https://api.cliniko.com/v1/bookings \
       "updated_at": "2017-11-29T20:27:53Z",
       "conflicts": {
         "links": {
-          "self": "https://api.cliniko.com/v1/unavailable_blocks/1010/conflicts"
+          "self": "https://api.au1.cliniko.com/v1/unavailable_blocks/1010/conflicts"
         }
       },
       "notes": null,
@@ -82,16 +82,16 @@ curl https://api.cliniko.com/v1/bookings \
       "ends_at": "2017-12-05T23:30:00Z",
       "business": {
         "links": {
-          "self": "https://api.cliniko.com/v1/businesses/3"
+          "self": "https://api.au1.cliniko.com/v1/businesses/3"
         }
       },
       "practitioner": {
         "links": {
-          "self": "https://api.cliniko.com/v1/practitioners/1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/1"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/bookings/1010"
+        "self": "https://api.au1.cliniko.com/v1/bookings/1010"
       }
     },
     {
@@ -103,7 +103,7 @@ curl https://api.cliniko.com/v1/bookings \
       "cancellation_reason": null,
       "conflicts": {
         "links": {
-          "self": "https://api.cliniko.com/v1/individual_appointments/1009/conflicts"
+          "self": "https://api.au1.cliniko.com/v1/individual_appointments/1009/conflicts"
         }
       },
       "did_not_arrive": false,
@@ -123,37 +123,37 @@ curl https://api.cliniko.com/v1/bookings \
       "cancelled_at": null,
       "appointment_type": {
         "links": {
-          "self": "https://api.cliniko.com/v1/appointment_types/1"
+          "self": "https://api.au1.cliniko.com/v1/appointment_types/1"
         }
       },
       "business": {
         "links": {
-          "self": "https://api.cliniko.com/v1/businesses/3"
+          "self": "https://api.au1.cliniko.com/v1/businesses/3"
         }
       },
       "practitioner": {
         "links": {
-          "self": "https://api.cliniko.com/v1/practitioners/1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/1"
         }
       },
       "patient": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/773"
+          "self": "https://api.au1.cliniko.com/v1/patients/773"
         }
       },
       "attendees": {
         "links": {
-          "self": "https://api.cliniko.com/v1/individual_appointments/1009/attendees"
+          "self": "https://api.au1.cliniko.com/v1/individual_appointments/1009/attendees"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/bookings/1009"
+        "self": "https://api.au1.cliniko.com/v1/bookings/1009"
       }
     }
   ],
   "total_entries": 3,
   "links": {
-    "self": "https://api.cliniko.com/v1/bookings?page=1"
+    "self": "https://api.au1.cliniko.com/v1/bookings?page=1"
   }
 }
 ```
@@ -166,7 +166,7 @@ Get Booking
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/bookings/1 \
+curl https://api.au1.cliniko.com/v1/bookings/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -180,7 +180,7 @@ curl https://api.cliniko.com/v1/bookings/1 \
   "updated_at": "2016-07-11T18:26:43Z",
   "conflicts": {
     "links": {
-      "self": "https://api.cliniko.com/v1/group_appointments/1/conflicts"
+      "self": "https://api.au1.cliniko.com/v1/group_appointments/1/conflicts"
     }
   },
   "max_attendees": 13,
@@ -193,26 +193,26 @@ curl https://api.cliniko.com/v1/bookings/1 \
   "ends_at": "2016-07-13T04:15:00Z",
   "appointment_type": {
     "links": {
-      "self": "https://api.cliniko.com/v1/appointment_types/7"
+      "self": "https://api.au1.cliniko.com/v1/appointment_types/7"
     }
   },
   "business": {
     "links": {
-      "self": "https://api.cliniko.com/v1/businesses/1"
+      "self": "https://api.au1.cliniko.com/v1/businesses/1"
     }
   },
   "practitioner": {
     "links": {
-      "self": "https://api.cliniko.com/v1/practitioners/1"
+      "self": "https://api.au1.cliniko.com/v1/practitioners/1"
     }
   },
   "attendees": {
     "links": {
-      "self": "https://api.cliniko.com/v1/group_appointments/1/attendees"
+      "self": "https://api.au1.cliniko.com/v1/group_appointments/1/attendees"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/bookings/1"
+    "self": "https://api.au1.cliniko.com/v1/bookings/1"
   }
 }
 ```

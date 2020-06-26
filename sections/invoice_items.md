@@ -13,7 +13,7 @@ Get Invoice Items
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/invoice_items \
+curl https://api.au1.cliniko.com/v1/invoice_items \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -42,22 +42,22 @@ curl https://api.cliniko.com/v1/invoice_items \
       "deleted_at": null,
       "billable_item": {
         "links": {
-          "self": "https://api.cliniko.com/v1/billable_items/1"
+          "self": "https://api.au1.cliniko.com/v1/billable_items/1"
         }
       },
       "invoice": {
         "links": {
-          "self": "https://api.cliniko.com/v1/invoices/1"
+          "self": "https://api.au1.cliniko.com/v1/invoices/1"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/invoice_items/1"
+        "self": "https://api.au1.cliniko.com/v1/invoice_items/1"
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/invoice_items?page=1"
+    "self": "https://api.au1.cliniko.com/v1/invoice_items?page=1"
   }
 }
 ```
@@ -71,7 +71,7 @@ Get Deleted Invoice Items
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/invoice_items/deleted \
+curl https://api.au1.cliniko.com/v1/invoice_items/deleted \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -100,22 +100,22 @@ curl https://api.cliniko.com/v1/invoice_items/deleted \
       "deleted_at": 2015-10-26T05:34:34Z,
       "billable_item": {
         "links": {
-          "self": "https://api.cliniko.com/v1/billable_items/1"
+          "self": "https://api.au1.cliniko.com/v1/billable_items/1"
         }
       },
       "invoice": {
         "links": {
-          "self": "https://api.cliniko.com/v1/invoices/1"
+          "self": "https://api.au1.cliniko.com/v1/invoices/1"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/invoice_items/1"
+        "self": "https://api.au1.cliniko.com/v1/invoice_items/1"
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/invoice_items/deleted?page=1"
+    "self": "https://api.au1.cliniko.com/v1/invoice_items/deleted?page=1"
   }
 }
 ```
@@ -129,7 +129,7 @@ Get Invoice Item
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/invoice_items/3 \
+curl https://api.au1.cliniko.com/v1/invoice_items/3 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -156,16 +156,16 @@ curl https://api.cliniko.com/v1/invoice_items/3 \
   "deleted_at": null,
   "product": {
     "links": {
-      "self": "https://api.cliniko.com/v1/products/1"
+      "self": "https://api.au1.cliniko.com/v1/products/1"
     }
   },
   "invoice": {
     "links": {
-      "self": "https://api.cliniko.com/v1/invoices/1"
+      "self": "https://api.au1.cliniko.com/v1/invoices/1"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/invoice_items/1"
+    "self": "https://api.au1.cliniko.com/v1/invoice_items/1"
   }
 }
 ```

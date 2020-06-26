@@ -12,7 +12,7 @@ Get Services
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/services \
+curl https://api.au1.cliniko.com/v1/services \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -26,30 +26,30 @@ curl https://api.cliniko.com/v1/services \
       "practitioners": [
         {
           "links": {
-            "self": "https://api.cliniko.com/v1/practitioners/1"
+            "self": "https://api.au1.cliniko.com/v1/practitioners/1"
           }
         },
         {
           "links": {
-            "self": "https://api.cliniko.com/v1/practitioners/2"
+            "self": "https://api.au1.cliniko.com/v1/practitioners/2"
           }
         }
       ],
       "appointment_type": {
         "links": {
-          "self": "https://api.cliniko.com/v1/appointment_types/456"
+          "self": "https://api.au1.cliniko.com/v1/appointment_types/456"
         }
       },
       "business": {
         "links": {
-          "self": "https://api.cliniko.com/v1/businesses/123"
+          "self": "https://api.au1.cliniko.com/v1/businesses/123"
         }
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/services?page=1"
+    "self": "https://api.au1.cliniko.com/v1/services?page=1"
   }
 }
 ```

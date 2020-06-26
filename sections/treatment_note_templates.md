@@ -18,7 +18,7 @@ Get Treatment Note Templates
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/treatment_note_templates \
+curl https://api.au1.cliniko.com/v1/treatment_note_templates \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -84,13 +84,13 @@ curl https://api.cliniko.com/v1/treatment_note_templates \
       },
       "deleted_at": null,
       "links": {
-        "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+        "self": "https://api.au1.cliniko.com/v1/treatment_note_templates/1"
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/treatment_note_templates?page=1"
+    "self": "https://api.au1.cliniko.com/v1/treatment_note_templates?page=1"
   }
 }
 ```
@@ -103,7 +103,7 @@ Get Deleted Treatment Note Templates
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/treatment_note_templates/deleted \
+curl https://api.au1.cliniko.com/v1/treatment_note_templates/deleted \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -169,13 +169,13 @@ curl https://api.cliniko.com/v1/treatment_note_templates/deleted \
       },
       "deleted_at": "2017-06-23T02:10:25Z",
       "links": {
-        "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+        "self": "https://api.au1.cliniko.com/v1/treatment_note_templates/1"
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/treatment_note_templates/deleted?page=1"
+    "self": "https://api.au1.cliniko.com/v1/treatment_note_templates/deleted?page=1"
   }
 }
 ```
@@ -188,7 +188,7 @@ Get Treatment Note Template
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/treatment_note_templates/1 \
+curl https://api.au1.cliniko.com/v1/treatment_note_templates/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -252,7 +252,7 @@ curl https://api.cliniko.com/v1/treatment_note_templates/1 \
   },
   "deleted_at": null,
   "links": {
-    "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+    "self": "https://api.au1.cliniko.com/v1/treatment_note_templates/1"
   }
 }
 ```
@@ -264,7 +264,7 @@ Create Treatment Note Template
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/treatment_note_templates \
+curl https://api.au1.cliniko.com/v1/treatment_note_templates \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -305,7 +305,7 @@ Headers { Location: http://api.cliniko.com/treatment_note_templates/1 }
   },
   "deleted_at": null,
   "links": {
-    "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+    "self": "https://api.au1.cliniko.com/v1/treatment_note_templates/1"
   }
 }
 ```
@@ -317,7 +317,7 @@ Update Treatment Note Template
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/treatment_note_templates/1 \
+curl https://api.au1.cliniko.com/v1/treatment_note_templates/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
@@ -355,7 +355,7 @@ curl https://api.cliniko.com/v1/treatment_note_templates/1 \
   },
   "deleted_at": null,
   "links": {
-    "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+    "self": "https://api.au1.cliniko.com/v1/treatment_note_templates/1"
   }
 }
 ```
@@ -367,7 +367,7 @@ Delete Treatment Note Template
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/treatment_note_templates/1 \
+curl https://api.au1.cliniko.com/v1/treatment_note_templates/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \

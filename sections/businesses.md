@@ -15,7 +15,7 @@ Get Businesses
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/businesses \
+curl https://api.au1.cliniko.com/v1/businesses \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -44,19 +44,19 @@ curl https://api.cliniko.com/v1/businesses \
       "website_address": "http://www.healthytimes.com",
       "practitioners": {
         "links": {
-          "self": "https://api.cliniko.com/v1/businesses/1/practitioners"
+          "self": "https://api.au1.cliniko.com/v1/businesses/1/practitioners"
         }
       },
       "appointments": {
         "links": {
-          "self": "https://api.cliniko.com/v1/businesses/1/appointments?page=1"
+          "self": "https://api.au1.cliniko.com/v1/businesses/1/appointments?page=1"
         }
       },
-      "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/businesses/1"}
     }
   ],
   "total_entires": 1,
-  "links": {"self": "https://api.cliniko.com/v1/businesses?page=1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/businesses?page=1"}
 }
 ```
 
@@ -68,7 +68,7 @@ Get Business
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/businesses/1 \
+curl https://api.au1.cliniko.com/v1/businesses/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -95,15 +95,15 @@ curl https://api.cliniko.com/v1/businesses/1 \
   "website_address": "http://www.healthytimes.com",
   "practitioners": {
     "links": {
-      "self": "https://api.cliniko.com/v1/businesses/1/practitioners"
+      "self": "https://api.au1.cliniko.com/v1/businesses/1/practitioners"
     }
   },
   "appointments": {
     "links": {
-      "self": "https://api.cliniko.com/v1/businesses/1/appointments?page=1"
+      "self": "https://api.au1.cliniko.com/v1/businesses/1/appointments?page=1"
     }
   },
-  "links": {"self": "https://api.cliniko.com/v1/businesses/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/businesses/1"}
 }
 ```
 

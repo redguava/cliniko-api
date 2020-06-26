@@ -17,7 +17,7 @@
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/contacts \
+curl https://api.au1.cliniko.com/v1/contacts \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -68,7 +68,7 @@ curl https://api.cliniko.com/v1/contacts \
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/contacts?page=1"
+    "self": "https://api.au1.cliniko.com/v1/contacts?page=1"
   }
 }
 ```
@@ -82,7 +82,7 @@ curl https://api.cliniko.com/v1/contacts \
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/contacts/1 \
+curl https://api.au1.cliniko.com/v1/contacts/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -146,7 +146,7 @@ set it to `null`.
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/contacts \
+curl https://api.au1.cliniko.com/v1/contacts \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -209,7 +209,7 @@ set it to `null`.
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/contacts/1 \
+curl https://api.au1.cliniko.com/v1/contacts/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
@@ -262,7 +262,7 @@ curl https://api.cliniko.com/v1/contacts/1 \
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/contacts/1 \
+curl https://api.au1.cliniko.com/v1/contacts/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \

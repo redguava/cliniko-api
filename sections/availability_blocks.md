@@ -12,7 +12,7 @@ Get Availability Blocks
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/availability_blocks \
+curl https://api.au1.cliniko.com/v1/availability_blocks \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -31,22 +31,22 @@ curl https://api.cliniko.com/v1/availability_blocks \
       "ends_at": "2016-08-14T21:45:00Z",
       "business": {
         "links": {
-          "self": "https://api.cliniko.com/v1/businesses/3"
+          "self": "https://api.au1.cliniko.com/v1/businesses/3"
         }
       },
       "practitioner": {
         "links": {
-          "self": "https://api.cliniko.com/v1/practitioners/1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/1"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/availability_blocks/1"
+        "self": "https://api.au1.cliniko.com/v1/availability_blocks/1"
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/availability_blocks?page=1"
+    "self": "https://api.au1.cliniko.com/v1/availability_blocks?page=1"
   }
 }
 ```
@@ -59,7 +59,7 @@ Get Availability Block
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/availability_blocks/1 \
+curl https://api.au1.cliniko.com/v1/availability_blocks/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -76,16 +76,16 @@ curl https://api.cliniko.com/v1/availability_blocks/1 \
   "ends_at": "2016-08-14T21:45:00Z",
   "business": {
     "links": {
-      "self": "https://api.cliniko.com/v1/businesses/3"
+      "self": "https://api.au1.cliniko.com/v1/businesses/3"
     }
   },
   "practitioner": {
     "links": {
-      "self": "https://api.cliniko.com/v1/practitioners/1"
+      "self": "https://api.au1.cliniko.com/v1/practitioners/1"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/availability_blocks/1"
+    "self": "https://api.au1.cliniko.com/v1/availability_blocks/1"
   }
 }
 ```
@@ -97,7 +97,7 @@ Create Availability Block
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/availability_blocks \
+curl https://api.au1.cliniko.com/v1/availability_blocks \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -107,7 +107,7 @@ curl https://api.cliniko.com/v1/availability_blocks \
 ```
 **Example Response**
 ```
-Headers { Location: https://api.cliniko.com/availability_blocks/10 }
+Headers { Location: https://api.au1.cliniko.com/availability_blocks/10 }
 ```
 ```json
 {
@@ -119,16 +119,16 @@ Headers { Location: https://api.cliniko.com/availability_blocks/10 }
   "ends_at": "2015-01-21T04:30:00Z",
   "business": {
     "links": {
-      "self": "https://api.cliniko.com/v1/businesses/1"
+      "self": "https://api.au1.cliniko.com/v1/businesses/1"
     }
   },
   "practitioner": {
     "links": {
-      "self": "https://api.cliniko.com/v1/practitioners/1"
+      "self": "https://api.au1.cliniko.com/v1/practitioners/1"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/availability_blocks/10"
+    "self": "https://api.au1.cliniko.com/v1/availability_blocks/10"
   }
 }
 ```

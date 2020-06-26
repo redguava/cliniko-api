@@ -13,7 +13,7 @@ Get Concession Types
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/concession_types \
+curl https://api.au1.cliniko.com/v1/concession_types \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -29,13 +29,13 @@ curl https://api.cliniko.com/v1/concession_types \
       "created_at": "2014-07-15T01:03:03Z",
       "updated_at": "2014-07-15T01:03:03Z",
       "links": {
-        "self": "https://api.cliniko.com/v1/concession_types/220"
+        "self": "https://api.au1.cliniko.com/v1/concession_types/220"
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/concession_types?page=1"
+    "self": "https://api.au1.cliniko.com/v1/concession_types?page=1"
   }
 }
 ```
@@ -48,7 +48,7 @@ Get Concession Type
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/concession_types/1 \
+curl https://api.au1.cliniko.com/v1/concession_types/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -62,7 +62,7 @@ curl https://api.cliniko.com/v1/concession_types/1 \
   "created_at": "2014-07-15T01:03:03Z",
   "updated_at": "2014-07-15T01:03:03Z",
   "links": {
-    "self": "https://api.cliniko.com/v1/concession_types/220"
+    "self": "https://api.au1.cliniko.com/v1/concession_types/220"
   }
 }
 ```
