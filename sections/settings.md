@@ -12,7 +12,7 @@
 **Example Request**
 
 ```shell
-curl https://api.au1.cliniko.com/v1/settings \
+curl https://api.us1.cliniko.com/v1/settings \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -87,7 +87,7 @@ curl https://api.au1.cliniko.com/v1/settings \
 **Example Request**
 
 ```shell
-curl https://api.au1.cliniko.com/v1/settings/public \
+curl https://api.us1.cliniko.com/v1/settings/public \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
