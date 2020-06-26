@@ -27,7 +27,7 @@ If your API key was generated some time ago and has no shard on it, your shard w
 https://api.{shard}.cliniko.com/v1
 ```
 
-> Examples in this guide use `au1` as the shard. Please ensure you use **the appropriate** shard for your requests.
+> Examples in this guide will typically use `au1` as the shard, unless the example requires otherwise. Please ensure you use **the appropriate** shard for your requests.
 
 Authentication
 --------------
