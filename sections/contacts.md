@@ -189,7 +189,7 @@ Headers { Location: http://api.cliniko.com/contacts/1 }
   "type": "Standard",
   "type_code": 0,
   "links": {
-    "self": "http://local.cliniko.test:3000/v1/contacts/12"
+    "self": "https://api.au1.cliniko.com/v1/contacts/12"
   }
 }
 ```
@@ -248,7 +248,7 @@ curl https://api.au1.cliniko.com/v1/contacts/1 \
   "type": "Standard",
   "type_code": 0,
   "links": {
-    "self": "http://local.cliniko.test:3000/v1/contacts/12"
+    "self": "https://api.au1.cliniko.com/v1/contacts/12"
   }
 }
 ```

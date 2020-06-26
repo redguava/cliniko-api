@@ -30,7 +30,7 @@ curl https://api.au1.cliniko.com/v1/referral_source_types \
       "name": "Client",
       "referrers": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/patients"
+          "self": "https://api.au1.cliniko.com/v1/patients"
         }
       },
       "referrer_type": "Patient",
@@ -44,7 +44,7 @@ curl https://api.au1.cliniko.com/v1/referral_source_types \
       "name": "Contact",
       "referrers": {
         "links": {
-          "self": "http://local.cliniko.dev:3000/v1/contacts"
+          "self": "https://api.au1.cliniko.com/v1/contacts"
         }
       },
       "referrer_type": "Contact",
