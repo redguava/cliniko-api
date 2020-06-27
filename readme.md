@@ -29,14 +29,14 @@ https://api.{shard}.cliniko.com/v1
 
 > Examples in this guide will typically use `au1` as the shard, unless the example requires otherwise. Please ensure you use **the appropriate** shard for your requests.
 
-The current available shards are:
+## Current regions and their shards
 
- Shard |
--------|
- `au1` |
- `au2` |
- `ca1` |
- `uk1` |
+ Region | Shard
+--------|--------
+ AU | `au1`
+ AU | `au2`
+ CA | `ca1`
+ UK | `uk1`
 
 It is **strongly** advisable that you validate the shard component:
 - being one of these shard values, or
@@ -87,7 +87,6 @@ General code rules apply:
 * 2xx range indicate success.
 * 4xx range indicate an error resulting from the provided information (eg. missing a required parameter)
 * 5xx range indicate an error with our Cliniko servers
-
 
 Making a request
 ----------------
