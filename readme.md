@@ -42,7 +42,7 @@ It is **strongly** advisable that you validate the shard component:
 - being one of these shard values, or
 - matches the regex /\w{2}\d{1,2}/i
 
-For more about the introduction of shards, and a code example of API keys with the shard attached may be used, [read the guide](guides/sharding.md)
+For more about the introduction of shards, and a code example of API keys with the shard attached may be used, [read the guide.](guides/sharding.md)
 
 Authentication
 --------------
