@@ -76,7 +76,7 @@ APP_VENDOR_NAME (APP_VENDOR_EMAIL)
 
 **APP_VENDOR_EMAIL** is a contact email address for you or your company
 
-**If your application does not contain a User-Agent that contains the name and valid contact details, it may be blocked.**
+**If your requests do not include a User-Agent that contains a name and valid contact email, future requests may be automatically blocked.**
 
 Errors
 ------
