@@ -74,10 +74,11 @@ function saveApiKey(apiKeyInput, accountId) {
     // If no shard ID supplied, default it in.
     apiKey = apiKeyParts[0];
     shardId = 'au1';
-  } else if (apiKeyParts.length === 2) {
-    // Otherwise, use the shard ID supplied to you.
-    // Maybe also validate it against the list of current shard regions?
+  } else if (apiKeyParts.length === 2 && /^\w{2}\d{1,2}$/.test(apiKeyParts[1])) {
+    // Otherwise, use the shard ID supplied to you, ensuring it matches known attributes
+    // e.g. two alpha chars followed by 1-2 digits
     apiKey = apiKeyParts[0];
+    // Maybe also validate it against the list of current shard regions?
     shardId = apiKeyParts[1];
   } else {
     throw new Error('Invalid API key');

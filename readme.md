@@ -16,8 +16,8 @@ Ensure that the HTTP client is up-to-date and has the latest TLS, cipher suites 
 
 From May 1, 2018, requests to the Cliniko API will require TLS 1.2. See the guide on [How do I test my API client?](https://github.com/redguava/cliniko-api/blob/master/guides/testing_api_client_tls.md) for more information.
 
-Base URL
---------
+Base URL & shards
+-----------------
 
 All URLs in this documenation will use the following base, where `{shard}` is the Cliniko shard the account resides in.
 You can determine which shard to use through the Cliniko API key. API keys have the shard appended to the end, e.g. `MS0xLWl4SzYYYYdtR3V2HNOTAREALKEYwvNHdeW0pd-au2` is in the shard `au2`.
@@ -28,6 +28,21 @@ https://api.{shard}.cliniko.com/v1
 ```
 
 > Examples in this guide will typically use `au1` as the shard, unless the example requires otherwise. Please ensure you use **the appropriate** shard for your requests.
+
+The current available shards are:
+
+ Shard |
+-------|
+ `au1` |
+ `au2` |
+ `ca1` |
+ `uk1` |
+
+It is **strongly** advisable that you validate the shard component:
+- being one of these shard values, or
+- matches the regex /\w{2}\d{1,2}/i
+
+For more about the introduction of shards, and a code example of API keys with the shard attached may be used, [read the guide](guides/sharding.md)
 
 Authentication
 --------------
