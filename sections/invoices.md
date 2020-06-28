@@ -25,7 +25,7 @@ See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-result
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/invoices \
+curl https://api.au1.cliniko.com/v1/invoices \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -54,32 +54,32 @@ curl https://api.cliniko.com/v1/invoices \
       "closed_at": null,
       "appointment": {
         "links": {
-          "self": "https://api.cliniko.com/v1/appointments/70644"
+          "self": "https://api.au1.cliniko.com/v1/appointments/70644"
         }
       },
       "business": {
         "links": {
-          "self": "https://api.cliniko.com/v1/businesses/26"
+          "self": "https://api.au1.cliniko.com/v1/businesses/26"
         }
       },
       "practitioner": {
         "links": {
-          "self": "https://api.cliniko.com/v1/practitioners/26"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/26"
         }
       },
       "patient": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/1593"
+          "self": "https://api.au1.cliniko.com/v1/patients/1593"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/invoices/108"
+        "self": "https://api.au1.cliniko.com/v1/invoices/108"
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/invoices?page=1"
+    "self": "https://api.au1.cliniko.com/v1/invoices?page=1"
   }
 }
 ```
@@ -104,7 +104,7 @@ See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-result
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/invoices/deleted \
+curl https://api.au1.cliniko.com/v1/invoices/deleted \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -133,32 +133,32 @@ curl https://api.cliniko.com/v1/invoices/deleted \
       "closed_at": null,
       "appointment": {
         "links": {
-          "self": "https://api.cliniko.com/v1/appointments/70644"
+          "self": "https://api.au1.cliniko.com/v1/appointments/70644"
         }
       },
       "business": {
         "links": {
-          "self": "https://api.cliniko.com/v1/businesses/26"
+          "self": "https://api.au1.cliniko.com/v1/businesses/26"
         }
       },
       "practitioner": {
         "links": {
-          "self": "https://api.cliniko.com/v1/practitioners/26"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/26"
         }
       },
       "patient": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/1593"
+          "self": "https://api.au1.cliniko.com/v1/patients/1593"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/invoices/108"
+        "self": "https://api.au1.cliniko.com/v1/invoices/108"
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/appointments/70644/invoices/deleted?page=1"
+    "self": "https://api.au1.cliniko.com/v1/appointments/70644/invoices/deleted?page=1"
   }
 }
 ```
@@ -172,7 +172,7 @@ Get Invoice
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/invoices/3 \
+curl https://api.au1.cliniko.com/v1/invoices/3 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -199,16 +199,16 @@ curl https://api.cliniko.com/v1/invoices/3 \
   "closed_at": "2014-12-18T10:47:08Z",
   "business": {
     "links": {
-      "self": "https://api.cliniko.com/v1/businesses/26"
+      "self": "https://api.au1.cliniko.com/v1/businesses/26"
     }
   },
   "patient": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/380"
+      "self": "https://api.au1.cliniko.com/v1/patients/380"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/invoices/3"
+    "self": "https://api.au1.cliniko.com/v1/invoices/3"
   }
 }
 ```

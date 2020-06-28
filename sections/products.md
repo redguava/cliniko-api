@@ -15,7 +15,7 @@ Get Products
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/products \
+curl https://api.au1.cliniko.com/v1/products \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -36,15 +36,15 @@ curl https://api.cliniko.com/v1/products \
       "serial_number": "123456",
       "price_ex_tax": "10.0",
       "tax": {
-        "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+        "links": {"self": "https://api.au1.cliniko.com/v1/taxes/1"}
       },
       "created_at": "2014-03-04T19:11:30Z",
       "updated_at": "2014-03-04T19:11:30Z",
-      "links": {"self": "https://api.cliniko.com/v1/products/1"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/products/1"}
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/products?page=1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/products?page=1"}
 }
 ```
 
@@ -56,7 +56,7 @@ Get Product
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/products/1 \
+curl https://api.au1.cliniko.com/v1/products/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -75,11 +75,11 @@ curl https://api.cliniko.com/v1/products/1 \
   "serial_number": "123456",
   "price_ex_tax": "10.0",
   "tax": {
-    "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+    "links": {"self": "https://api.au1.cliniko.com/v1/taxes/1"}
   },
   "created_at": "2014-03-04T19:11:30Z",
   "updated_at": "2014-03-04T19:11:30Z",
-  "links": {"self": "https://api.cliniko.com/v1/products/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/products/1"}
 }
 ```
 
@@ -90,7 +90,7 @@ Create Product
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/products \
+curl https://api.au1.cliniko.com/v1/products \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
@@ -113,11 +113,11 @@ Headers { Location: http://api.cliniko.com/products/2 }
   "serial_number": "123456",
   "price_ex_tax": "11.0",
   "tax": {
-    "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+    "links": {"self": "https://api.au1.cliniko.com/v1/taxes/1"}
   },
   "created_at": "2014-03-11T19:11:30Z",
   "updated_at": "2014-03-11T19:11:30Z",
-  "links": {"self": "https://api.cliniko.com/v1/products/2"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/products/2"}
 }
 ```
 
@@ -130,7 +130,7 @@ Update Product
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/products/1 \
+curl https://api.au1.cliniko.com/v1/products/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
@@ -150,11 +150,11 @@ curl https://api.cliniko.com/v1/products/1 \
   "serial_number": "123456",
   "price_ex_tax": "10.0",
   "tax": {
-    "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+    "links": {"self": "https://api.au1.cliniko.com/v1/taxes/1"}
   },
   "created_at": "2014-03-04T19:11:30Z",
   "updated_at": "2014-03-04T19:11:30Z",
-  "links": {"self": "https://api.cliniko.com/v1/products/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/products/1"}
 }
 ```
 
@@ -165,7 +165,7 @@ Delete Product
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/products/1 \
+curl https://api.au1.cliniko.com/v1/products/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \

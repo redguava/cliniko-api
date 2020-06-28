@@ -15,7 +15,7 @@
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/referral_sources \
+curl https://api.au1.cliniko.com/v1/referral_sources \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -28,11 +28,11 @@ curl https://api.cliniko.com/v1/referral_sources \
   "referral_sources": [
     {
       "links": {
-        "self": "https://api.cliniko.com/v1/patients/123/referral_source"
+        "self": "https://api.au1.cliniko.com/v1/patients/123/referral_source"
       },
       "referrer": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/456"
+          "self": "https://api.au1.cliniko.com/v1/patients/456"
         }
       },
       "referrer_type": "Patient",
@@ -40,19 +40,19 @@ curl https://api.cliniko.com/v1/referral_sources \
       "notes": "note written about this referral",
       "patient": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/123"
+          "self": "https://api.au1.cliniko.com/v1/patients/123"
         }
       },
       "referral_source_type": {
         "links": {
-          "self": "https://api.cliniko.com/v1/referral_source_types/1"
+          "self": "https://api.au1.cliniko.com/v1/referral_source_types/1"
         }
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/referral_sources?page=1"
+    "self": "https://api.au1.cliniko.com/v1/referral_sources?page=1"
   }
 }
 ```
@@ -68,7 +68,7 @@ Returns `404` if the patient has no referral source.
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/patients/123/referral_source \
+curl https://api.au1.cliniko.com/v1/patients/123/referral_source \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -81,11 +81,11 @@ There are a few possible types of referral sources. Depending on the type, diffe
 ```json
 {
   "links": {
-    "self": "https://api.cliniko.com/v1/patients/123/referral_source"
+    "self": "https://api.au1.cliniko.com/v1/patients/123/referral_source"
   },
   "referrer": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/456"
+      "self": "https://api.au1.cliniko.com/v1/patients/456"
     }
   },
   "referrer_type": "Patient",
@@ -93,12 +93,12 @@ There are a few possible types of referral sources. Depending on the type, diffe
   "notes": "note written about this referral",
   "patient": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/123"
+      "self": "https://api.au1.cliniko.com/v1/patients/123"
     }
   },
   "referral_source_type": {
     "links": {
-      "self": "https://api.cliniko.com/v1/referral_source_types/1"
+      "self": "https://api.au1.cliniko.com/v1/referral_source_types/1"
     }
   }
 }
@@ -109,11 +109,11 @@ There are a few possible types of referral sources. Depending on the type, diffe
 ```json
 {
   "links": {
-    "self": "https://api.cliniko.com/v1/patients/123/referral_source"
+    "self": "https://api.au1.cliniko.com/v1/patients/123/referral_source"
   },
   "referrer": {
     "links": {
-      "self": "https://api.cliniko.com/v1/contacts/456"
+      "self": "https://api.au1.cliniko.com/v1/contacts/456"
     }
   },
   "referrer_type": "Contact",
@@ -121,12 +121,12 @@ There are a few possible types of referral sources. Depending on the type, diffe
   "notes": "note written about this referral",
   "patient": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/123"
+      "self": "https://api.au1.cliniko.com/v1/patients/123"
     }
   },
   "referral_source_type": {
     "links": {
-      "self": "https://api.cliniko.com/v1/referral_source_types/2"
+      "self": "https://api.au1.cliniko.com/v1/referral_source_types/2"
     }
   }
 }
@@ -137,7 +137,7 @@ There are a few possible types of referral sources. Depending on the type, diffe
 ```json
 {
   "links": {
-    "self": "https://api.cliniko.com/v1/patients/123/referral_source"
+    "self": "https://api.au1.cliniko.com/v1/patients/123/referral_source"
   },
   "referrer": null,
   "referrer_type": null,
@@ -145,12 +145,12 @@ There are a few possible types of referral sources. Depending on the type, diffe
   "notes": "note written about this referral",
   "patient": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/123"
+      "self": "https://api.au1.cliniko.com/v1/patients/123"
     }
   },
   "referral_source_type": {
     "links": {
-      "self": "https://api.cliniko.com/v1/referral_source_types/3"
+      "self": "https://api.au1.cliniko.com/v1/referral_source_types/3"
     }
   }
 }
@@ -161,7 +161,7 @@ There are a few possible types of referral sources. Depending on the type, diffe
 ```json
 {
   "links": {
-    "self": "https://api.cliniko.com/v1/patients/123/referral_source"
+    "self": "https://api.au1.cliniko.com/v1/patients/123/referral_source"
   },
   "referrer": null,
   "referrer_type": null,
@@ -169,12 +169,12 @@ There are a few possible types of referral sources. Depending on the type, diffe
   "notes": "note written about this referral",
   "patient": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/123"
+      "self": "https://api.au1.cliniko.com/v1/patients/123"
     }
   },
   "referral_source_type": {
     "links": {
-      "self": "https://api.cliniko.com/v1/referral_source_types/4"
+      "self": "https://api.au1.cliniko.com/v1/referral_source_types/4"
     }
   }
 }
@@ -189,7 +189,7 @@ There are a few possible types of referral sources. Depending on the type, diffe
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/patients/123/referral_source \
+curl https://api.au1.cliniko.com/v1/patients/123/referral_source \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \

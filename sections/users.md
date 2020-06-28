@@ -13,7 +13,7 @@ Get Users
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/users \
+curl https://api.au1.cliniko.com/v1/users \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -34,11 +34,11 @@ curl https://api.cliniko.com/v1/users \
       "user_active": true,
       "created_at": "2014-01-29T09:54:54Z",
       "updated_at": "2014-04-29T00:00:56Z",
-      "links": {"self": "https://api.cliniko.com/v1/users/1"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/users/1"}
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/users?page=1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/users?page=1"}
 }
 ```
 
@@ -50,7 +50,7 @@ Get User
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/users/1 \
+curl https://api.au1.cliniko.com/v1/users/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -69,7 +69,7 @@ curl https://api.cliniko.com/v1/users/1 \
   "user_active": true,
   "created_at": "2014-01-29T09:54:54Z",
   "updated_at": "2014-04-29T00:00:56Z",
-  "links": {"self": "https://api.cliniko.com/v1/users/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/users/1"}
 }
 ```
 
@@ -82,7 +82,7 @@ Get Authenticated User
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/user \
+curl https://api.au1.cliniko.com/v1/user \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -101,7 +101,7 @@ curl https://api.cliniko.com/v1/user \
   "user_active": true,
   "created_at": "2014-01-29T09:54:54Z",
   "updated_at": "2014-04-29T00:00:56Z",
-  "links": {"self": "https://api.cliniko.com/v1/users/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/users/1"}
 }
 ```
 

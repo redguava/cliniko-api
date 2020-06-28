@@ -15,7 +15,7 @@ Get Daily Availabilities
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/businesses/3/daily_availabilities \
+curl https://api.au1.cliniko.com/v1/businesses/3/daily_availabilities \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -70,7 +70,7 @@ Get Daily Availability
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/daily_availabilities/15 \
+curl https://api.au1.cliniko.com/v1/daily_availabilities/15 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'

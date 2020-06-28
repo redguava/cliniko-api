@@ -12,7 +12,7 @@
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/settings \
+curl https://api.us1.cliniko.com/v1/settings \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -73,7 +73,7 @@ curl https://api.cliniko.com/v1/settings \
     "default_reminder_type": "SMS & Email"
   },
   "links": {
-    "self": "http://local.cliniko.dev:3000/v1/settings"
+    "self": "https://api.us1.cliniko.com/v1/settings/public"
   }
 }
 ```
@@ -87,7 +87,7 @@ curl https://api.cliniko.com/v1/settings \
 **Example Request**
 
 ```shell
-curl https://api.cliniko.com/v1/settings/public \
+curl https://api.us1.cliniko.com/v1/settings/public \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -135,7 +135,7 @@ curl https://api.cliniko.com/v1/settings/public \
     "default_reminder_type": "SMS & Email"
   },
   "links": {
-    "self": "http://local.cliniko.dev:3000/v1/settings/public"
+    "self": "https://api.us1.cliniko.com/v1/settings/public"
   }
 }
 ```

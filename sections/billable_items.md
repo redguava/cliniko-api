@@ -15,7 +15,7 @@ Get Billable Items
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/billable_items \
+curl https://api.au1.cliniko.com/v1/billable_items \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -32,15 +32,15 @@ curl https://api.cliniko.com/v1/billable_items \
       "name": "Initial Consultation",
       "price": "10.0",
       "tax": {
-        "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+        "links": {"self": "https://api.au1.cliniko.com/v1/taxes/1"}
       },
       "created_at": "2014-03-04T19:11:30Z",
       "updated_at": "2014-03-04T19:11:30Z",
-      "links": {"self": "https://api.cliniko.com/v1/billable_items/1"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/billable_items/1"}
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/billable_items?page=1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/billable_items?page=1"}
 }
 ```
 
@@ -52,7 +52,7 @@ Get Billable Item
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/billable_items/1 \
+curl https://api.au1.cliniko.com/v1/billable_items/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -67,11 +67,11 @@ curl https://api.cliniko.com/v1/billable_items/1 \
   "name": "Initial Consultation",
   "price": "10.0",
   "tax": {
-    "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+    "links": {"self": "https://api.au1.cliniko.com/v1/taxes/1"}
   },
   "created_at": "2014-03-04T19:11:30Z",
   "updated_at": "2014-03-04T19:11:30Z",
-  "links": {"self": "https://api.cliniko.com/v1/billable_items/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/billable_items/1"}
 }
 ```
 
@@ -82,7 +82,7 @@ Create Billable Item
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/billable_items \
+curl https://api.au1.cliniko.com/v1/billable_items \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
@@ -101,11 +101,11 @@ Headers { Location: http://api.cliniko.com/billable items/2 }
   "name": "Billable Item 2",
   "price": "11.0",
   "tax": {
-    "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+    "links": {"self": "https://api.au1.cliniko.com/v1/taxes/1"}
   },
   "created_at": "2014-03-04T19:11:30Z",
   "updated_at": "2014-03-04T19:11:30Z",
-  "links": {"self": "https://api.cliniko.com/v1/billable_items/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/billable_items/1"}
 }
 ```
 
@@ -116,7 +116,7 @@ Update Billable Item
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/billable_items/1 \
+curl https://api.au1.cliniko.com/v1/billable_items/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
@@ -132,11 +132,11 @@ curl https://api.cliniko.com/v1/billable_items/1 \
   "name": "Billable Item 1",
   "price": "11.0",
   "tax": {
-    "links": {"self": "https://api.cliniko.com/v1/taxes/1"}
+    "links": {"self": "https://api.au1.cliniko.com/v1/taxes/1"}
   },
   "created_at": "2014-03-04T19:11:30Z",
   "updated_at": "2014-03-04T19:11:30Z",
-  "links": {"self": "https://api.cliniko.com/v1/billable_items/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/billable_items/1"}
 }
 ```
 
@@ -147,7 +147,7 @@ Delete Billable Item
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/billable_items/1 \
+curl https://api.au1.cliniko.com/v1/billable_items/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \

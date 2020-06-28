@@ -44,13 +44,6 @@ _Existing API keys stored in your integration can be written as `{THE_API_KEY_VA
 
 The API key is passed in the Basic authorization header, just as you do now: `b64($API_KEY + ':')` and you may **include or exclude** the hyphenated shard ID. That is, if you make an API request using either `MS0xLWl4SzYY-uk1` or `MS0xLWl4SzYY`, the request will succeed. You just need to ensure you're sending the request to the correct shard (in this case, `uk1`).
 
-# Current regions and their shards
-
-A single region may have an unlimited number of shards. Each is identified by a 2 character code and the incremented shard number.
-
-- `au` currently has `au1`
-- `uk` will have `uk1`
-
 # Recap
 
 - users will be able to choose their Cliniko region at sign-up; a new user may choose _any_ region to have their account data hosted. It is possible for an Australian customer to choose the UK as their region, so even if you don't have customers in the UK, consider that it is possible you'll need to handle sharded requests once the UK shard is live.
@@ -74,10 +67,11 @@ function saveApiKey(apiKeyInput, accountId) {
     // If no shard ID supplied, default it in.
     apiKey = apiKeyParts[0];
     shardId = 'au1';
-  } else if (apiKeyParts.length === 2) {
-    // Otherwise, use the shard ID supplied to you.
-    // Maybe also validate it against the list of current shard regions?
+  } else if (apiKeyParts.length === 2 && /^\w{2}\d{1,2}$/.test(apiKeyParts[1])) {
+    // Otherwise, use the shard ID supplied to you, ensuring it matches known attributes
+    // e.g. two alpha chars followed by 1-2 digits
     apiKey = apiKeyParts[0];
+    // Maybe also validate it against the list of current shard regions?
     shardId = apiKeyParts[1];
   } else {
     throw new Error('Invalid API key');

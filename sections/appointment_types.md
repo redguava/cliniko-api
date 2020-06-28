@@ -17,7 +17,7 @@ Get Appointment Types
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/appointment_types \
+curl https://api.au1.cliniko.com/v1/appointment_types \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -40,29 +40,29 @@ curl https://api.cliniko.com/v1/appointment_types \
       "updated_at": "2013-03-26T14:00:00Z",
       "billable_item": {
         "links": {
-          "self": "https://api.cliniko.com/v1/billable_items/3"
+          "self": "https://api.au1.cliniko.com/v1/billable_items/3"
         }
       },
       "product": {
         "links": {
-          "self": "https://api.cliniko.com/v1/products/7"
+          "self": "https://api.au1.cliniko.com/v1/products/7"
         }
       },
       "practitioners": {
         "links": {
-          "self": "https://api.cliniko.com/v1/appointment_types/1/practitioners"
+          "self": "https://api.au1.cliniko.com/v1/appointment_types/1/practitioners"
         }
       },
       "treatment_note_template": {
         "links": {
-          "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+          "self": "https://api.au1.cliniko.com/v1/treatment_note_templates/1"
         }
       },
-      "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/appointment_types/1"}
     }
   ],
   "total_entries": 1,
-  "links": {"self": "https://api.cliniko.com/v1/appointment_types?page=1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/appointment_types?page=1"}
 }
 ```
 
@@ -74,7 +74,7 @@ Get Appointment Type
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/appointment_types/1 \
+curl https://api.au1.cliniko.com/v1/appointment_types/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -88,32 +88,32 @@ curl https://api.cliniko.com/v1/appointment_types/1 \
   "color": "#00FF00",
   "created_at": "2013-03-26T14:00:00Z",
   "duration_in_minutes": 60,
-  "name": "Initial Consultation",  
+  "name": "Initial Consultation",
   "description": null,
   "max_attendees": 1,
   "show_in_online_bookings": true,
   "updated_at": "2013-03-26T14:00:00Z",
   "billable_item": {
     "links": {
-      "self": "https://api.cliniko.com/v1/billable_items/3"
+      "self": "https://api.au1.cliniko.com/v1/billable_items/3"
     }
   },
   "product": {
     "links": {
-      "self": "https://api.cliniko.com/v1/products/7"
+      "self": "https://api.au1.cliniko.com/v1/products/7"
     }
   },
   "practitioners": {
     "links": {
-      "self": "https://api.cliniko.com/v1/appointment_types/1/practitioners"
+      "self": "https://api.au1.cliniko.com/v1/appointment_types/1/practitioners"
     }
   },
   "treatment_note_template": {
     "links": {
-      "self": "https://api.cliniko.com/v1/treatment_note_templates/1"
+      "self": "https://api.au1.cliniko.com/v1/treatment_note_templates/1"
     }
   },
-  "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/appointment_types/1"}
 }
 ```
 
@@ -124,7 +124,7 @@ Create Appointment Type
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/appointment_types \
+curl https://api.au1.cliniko.com/v1/appointment_types \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -144,17 +144,17 @@ Headers { Location: http://api.cliniko.com/appointment_types/1 }
   "color": "#FF0000",
   "created_at": "2013-03-26T14:00:00Z",
   "duration_in_minutes": 5,
-  "name": "Initial Consultation",  
+  "name": "Initial Consultation",
   "description": null,
   "max_attendees": 5,
   "show_in_online_bookings": null,
   "updated_at": "2013-03-26T14:00:00Z",
   "practitioners": {
     "links": {
-      "self": "https://api.cliniko.com/v1/appointment_types/1/practitioners"
+      "self": "https://api.au1.cliniko.com/v1/appointment_types/1/practitioners"
     }
   },
-  "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/appointment_types/1"}
 }
 ```
 
@@ -165,7 +165,7 @@ Update Appointment Type
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/appointment_types/1 \
+curl https://api.au1.cliniko.com/v1/appointment_types/1 \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -181,17 +181,17 @@ curl https://api.cliniko.com/v1/appointment_types/1 \
   "color": "#FF0000",
   "created_at": "2013-03-26T14:00:00Z",
   "duration_in_minutes": 5,
-  "name": "updated name",  
+  "name": "updated name",
   "description": null,
   "max_attendees": 5,
   "show_in_online_bookings": null,
   "updated_at": "2013-03-26T14:00:00Z",
   "practitioners": {
     "links": {
-      "self": "https://api.cliniko.com/v1/appointment_types/1/practitioners"
+      "self": "https://api.au1.cliniko.com/v1/appointment_types/1/practitioners"
     }
   },
-  "links": {"self": "https://api.cliniko.com/v1/appointment_types/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/appointment_types/1"}
 }
 ```
 
@@ -202,7 +202,7 @@ Delete Appointment Type
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/appointment_types/1 \
+curl https://api.au1.cliniko.com/v1/appointment_types/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \

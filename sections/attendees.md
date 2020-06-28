@@ -21,7 +21,7 @@ Get Attendees
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/attendees \
+curl https://api.au1.cliniko.com/v1/attendees \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -50,28 +50,28 @@ curl https://api.cliniko.com/v1/attendees \
       "cancelled_at": null,
       "booking": {
         "links": {
-          "self": "https://api.cliniko.com/v1/bookings/1"
+          "self": "https://api.au1.cliniko.com/v1/bookings/1"
         }
       },
       "patient": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/82"
+          "self": "https://api.au1.cliniko.com/v1/patients/82"
         }
       },
       "invoices": {
         "links": {
-          "self": "https://api.cliniko.com/v1/attendees/1/invoices"
+          "self": "https://api.au1.cliniko.com/v1/attendees/1/invoices"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/attendees/1"
+        "self": "https://api.au1.cliniko.com/v1/attendees/1"
       }
     }
   ],
   "total_entries": 2037,
   "links": {
-    "self": "https://api.cliniko.com/v1/attendees?page=1",
-    "next": "https://api.cliniko.com/v1/attendees?page=2"
+    "self": "https://api.au1.cliniko.com/v1/attendees?page=1",
+    "next": "https://api.au1.cliniko.com/v1/attendees?page=2"
   }
 }
 ```
@@ -86,7 +86,7 @@ Get Deleted Attendees
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/attendees/deleted \
+curl https://api.au1.cliniko.com/v1/attendees/deleted \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -115,28 +115,28 @@ curl https://api.cliniko.com/v1/attendees/deleted \
       "cancelled_at": null,
       "booking": {
         "links": {
-          "self": "https://api.cliniko.com/v1/bookings/1"
+          "self": "https://api.au1.cliniko.com/v1/bookings/1"
         }
       },
       "patient": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/82"
+          "self": "https://api.au1.cliniko.com/v1/patients/82"
         }
       },
       "invoices": {
         "links": {
-          "self": "https://api.cliniko.com/v1/attendees/1/invoices"
+          "self": "https://api.au1.cliniko.com/v1/attendees/1/invoices"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/attendees/1"
+        "self": "https://api.au1.cliniko.com/v1/attendees/1"
       }
     }
   ],
   "total_entries": 143,
   "links": {
-    "self": "https://api.cliniko.com/v1/attendees/deleted?page=1",
-    "next": "https://api.cliniko.com/v1/attendees/deleted?page=2"
+    "self": "https://api.au1.cliniko.com/v1/attendees/deleted?page=1",
+    "next": "https://api.au1.cliniko.com/v1/attendees/deleted?page=2"
   }
 }
 ```
@@ -151,7 +151,7 @@ Get Cancelled Attendees
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/attendees/cancelled \
+curl https://api.au1.cliniko.com/v1/attendees/cancelled \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -180,28 +180,28 @@ curl https://api.cliniko.com/v1/attendees/cancelled \
       "cancelled_at": null"2016-06-28T21:33:26Z",
       "booking": {
         "links": {
-          "self": "https://api.cliniko.com/v1/bookings/1"
+          "self": "https://api.au1.cliniko.com/v1/bookings/1"
         }
       },
       "patient": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/82"
+          "self": "https://api.au1.cliniko.com/v1/patients/82"
         }
       },
       "invoices": {
         "links": {
-          "self": "https://api.cliniko.com/v1/attendees/1/invoices"
+          "self": "https://api.au1.cliniko.com/v1/attendees/1/invoices"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/attendees/1"
+        "self": "https://api.au1.cliniko.com/v1/attendees/1"
       }
     }
   ],
   "total_entries": 2037,
   "links": {
-    "self": "https://api.cliniko.com/v1/attendees?page=1",
-    "next": "https://api.cliniko.com/v1/attendees?page=2"
+    "self": "https://api.au1.cliniko.com/v1/attendees?page=1",
+    "next": "https://api.au1.cliniko.com/v1/attendees?page=2"
   }
 }
 ```
@@ -214,7 +214,7 @@ Get Attendee
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/attendees/1 \
+curl https://api.au1.cliniko.com/v1/attendees/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -241,21 +241,21 @@ curl https://api.cliniko.com/v1/attendees/1 \
   "cancelled_at": null,
   "booking": {
     "links": {
-      "self": "https://api.cliniko.com/v1/bookings/1"
+      "self": "https://api.au1.cliniko.com/v1/bookings/1"
     }
   },
   "patient": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/82"
+      "self": "https://api.au1.cliniko.com/v1/patients/82"
     }
   },
   "invoices": {
     "links": {
-      "self": "https://api.cliniko.com/v1/attendees/1/invoices"
+      "self": "https://api.au1.cliniko.com/v1/attendees/1/invoices"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/attendees/1"
+    "self": "https://api.au1.cliniko.com/v1/attendees/1"
   }
 }
 ```
@@ -267,7 +267,7 @@ Create Attendee
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/attendees \
+curl https://api.au1.cliniko.com/v1/attendees \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -277,7 +277,7 @@ curl https://api.cliniko.com/v1/attendees \
 ```
 **Example Response**
 ```
-Headers { Location: https://api.cliniko.com/attendees/1 }
+Headers { Location: https://api.au1.cliniko.com/attendees/1 }
 ```
 ```json
 {
@@ -299,21 +299,21 @@ Headers { Location: https://api.cliniko.com/attendees/1 }
   "cancelled_at": null,
   "booking": {
     "links": {
-      "self": "https://api.cliniko.com/v1/bookings/1"
+      "self": "https://api.au1.cliniko.com/v1/bookings/1"
     }
   },
   "patient": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/82"
+      "self": "https://api.au1.cliniko.com/v1/patients/82"
     }
   },
   "invoices": {
     "links": {
-      "self": "https://api.cliniko.com/v1/attendees/1/invoices"
+      "self": "https://api.au1.cliniko.com/v1/attendees/1/invoices"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/attendees/1"
+    "self": "https://api.au1.cliniko.com/v1/attendees/1"
   }
 }
 ```
@@ -325,7 +325,7 @@ Update Attendee
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/attendees/1 \
+curl https://api.au1.cliniko.com/v1/attendees/1 \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
@@ -354,21 +354,21 @@ curl https://api.cliniko.com/v1/attendees/1 \
   "cancelled_at": null,
   "booking": {
     "links": {
-      "self": "https://api.cliniko.com/v1/bookings/1"
+      "self": "https://api.au1.cliniko.com/v1/bookings/1"
     }
   },
   "patient": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/82"
+      "self": "https://api.au1.cliniko.com/v1/patients/82"
     }
   },
   "invoices": {
     "links": {
-      "self": "https://api.cliniko.com/v1/attendees/1/invoices"
+      "self": "https://api.au1.cliniko.com/v1/attendees/1/invoices"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/attendees/1"
+    "self": "https://api.au1.cliniko.com/v1/attendees/1"
   }
 }
 ```
@@ -380,7 +380,7 @@ Delete Attendee
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/attendees/1 \
+curl https://api.au1.cliniko.com/v1/attendees/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
@@ -400,7 +400,7 @@ The `cancellation_reason` information is mandatory. Only attendees of group appo
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/attendees/1/cancel \
+curl https://api.au1.cliniko.com/v1/attendees/1/cancel \
   -u API_KEY: \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \

@@ -16,13 +16,33 @@ Ensure that the HTTP client is up-to-date and has the latest TLS, cipher suites 
 
 From May 1, 2018, requests to the Cliniko API will require TLS 1.2. See the guide on [How do I test my API client?](https://github.com/redguava/cliniko-api/blob/master/guides/testing_api_client_tls.md) for more information.
 
-Base URL
---------
+Base URL & shards
+-----------------
 
-All URLs in this documenation will use the following base
+All URLs in this documenation will use the following base, where `{shard}` is the Cliniko shard the account resides in.
+You can determine which shard to use through the Cliniko API key. API keys have the shard appended to the end, e.g. `MS0xLWl4SzYYYYdtR3V2HNOTAREALKEYwvNHdeW0pd-au2` is in the shard `au2`.
+If your API key was generated some time ago and has no shard on it, your shard will be `au1`.
+
 ```
-https://api.cliniko.com/v1
+https://api.{shard}.cliniko.com/v1
 ```
+
+> Examples in this guide will typically use `au1` as the shard, unless the example requires otherwise. Please ensure you use **the appropriate** shard for your requests.
+
+## Current regions and their shards
+
+ Region | Shard
+--------|--------
+ AU | `au1`
+ AU | `au2`
+ CA | `ca1`
+ UK | `uk1`
+
+It is **strongly** advisable that you validate the shard component:
+- being one of these shard values, or
+- matches the regex /\w{2}\d{1,2}/i
+
+For more about the introduction of shards, and a code example of API keys with the shard attached may be used, [read the guide.](guides/sharding.md)
 
 Authentication
 --------------
@@ -31,10 +51,10 @@ The Cliniko API uses HTTP Basic authentication. This is secure as all requests a
 
 Each Cliniko user will have their own API Key(s), this is used for authentication.  The API Key will have the same permissions as the user it is from.
 
-You should provide the Cliniko API Key as the basic auth username. There is no need to provide a password. This should be sent in the `Authorization` header. The psuedocode for how the `Authorization` header should be built is:
+You should provide the Cliniko API Key (either with or without the shard suffix) as the basic auth username. There is no need to provide a password. This should be sent in the `Authorization` header. The psuedocode for how the `Authorization` header should be built is:
 
 ```
-"Basic " + base64_encode(api_key + ':')
+"Basic " + base64_encode(api_key + ":")
 ```
 
 and results in a string like this:
@@ -56,7 +76,7 @@ APP_VENDOR_NAME (APP_VENDOR_EMAIL)
 
 **APP_VENDOR_EMAIL** is a contact email address for you or your company
 
-**If your application does not contain a User-Agent that contains the name and valid contact details, it may be blocked.**
+**If your requests do not include a User-Agent that contains a name and valid contact email, future requests may be automatically blocked.**
 
 Errors
 ------
@@ -68,17 +88,16 @@ General code rules apply:
 * 4xx range indicate an error resulting from the provided information (eg. missing a required parameter)
 * 5xx range indicate an error with our Cliniko servers
 
-
 Making a request
 ----------------
 
-All URLs start with `https://api.cliniko.com/v1`. **SSL only**. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.
+All URLs start with `https://api.{shard}.cliniko.com/v1`. **SSL only**. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.
 
-To make a request for all the patients on a specific account, you'd append the patients index path to the base url like this: https://api.cliniko.com/v1/patients. In curl, that looks like:
+To make a request for all the patients on a specific account in the `au1` shard, you'd append the patients index path to the base url like this: https://api.au1.cliniko.com/v1/patients. In curl, that looks like:
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/appointments \
+curl https://api.au1.cliniko.com/v1/appointments \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -125,9 +144,9 @@ The pagination info is included in the links object. It is recommended to follow
 },
 total_entries: 400,
 "links": {
-  "next": "https://api.cliniko.com/v1/appointments?page=4&per_page=100",
-  "self": "https://api.cliniko.com/v1/appointments?page=3&per_page=100",
-  "previous": "https://api.cliniko.com/v1/appointments?page=2&per_page=100"
+  "next": "https://api.au1.cliniko.com/v1/appointments?page=4&per_page=100",
+  "self": "https://api.au1.cliniko.com/v1/appointments?page=3&per_page=100",
+  "previous": "https://api.au1.cliniko.com/v1/appointments?page=2&per_page=100"
 }
 ```
 
@@ -189,20 +208,20 @@ The integer ```=``` operator also accepts a list of integers in the format: ```[
 
 To filter a resource, send a filter string as the `q` parameter:
 
-`https://api.cliniko.com/v1/appointments?q=appointment_start:>2014-03-04T20:37:17Z`
+`https://api.au1.cliniko.com/v1/appointments?q=appointment_start:>2014-03-04T20:37:17Z`
 
 To apply multiple filters, send multiple filter strings as an array with the `q[]` parameter:
 
-`https://api.cliniko.com/v1/appointments?q[]=appointment_start:>2014-03-04T20:37:17Z&q[]=appointment_start:<2014-04-04T20:37:17Z`
+`https://api.au1.cliniko.com/v1/appointments?q[]=appointment_start:>2014-03-04T20:37:17Z&q[]=appointment_start:<2014-04-04T20:37:17Z`
 
 The `q[]` method also works for a single filter string:
 
-`https://api.cliniko.com/v1/appointments?q[]=appointment_start:>2014-03-04T20:37:17Z`
+`https://api.au1.cliniko.com/v1/appointments?q[]=appointment_start:>2014-03-04T20:37:17Z`
 
 
 **Example Request (Greater than)**
 ```shell
-curl https://api.cliniko.com/v1/appointments?q=appointment_start:>2014-03-04T20:37:17Z \
+curl https://api.au1.cliniko.com/v1/appointments?q=appointment_start:>2014-03-04T20:37:17Z \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -210,7 +229,7 @@ curl https://api.cliniko.com/v1/appointments?q=appointment_start:>2014-03-04T20:
 
 **Example Request (Contains)**
 ```shell
-curl https://api.cliniko.com/v1/patients?q=last_name:~son \
+curl https://api.au1.cliniko.com/v1/patients?q=last_name:~son \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -218,7 +237,7 @@ curl https://api.cliniko.com/v1/patients?q=last_name:~son \
 
 **Example Request (Wildcard Search)**
 ```shell
-curl https://api.cliniko.com/v1/patients?q=last_name:~~ja%on% \
+curl https://api.au1.cliniko.com/v1/patients?q=last_name:~~ja%on% \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -226,7 +245,7 @@ curl https://api.cliniko.com/v1/patients?q=last_name:~~ja%on% \
 
 **Example Request (Multiple Filters)**
 ```shell
-curl https://api.cliniko.com/v1/patients?q%5B%5D=first_name:~bri&q%5B%5D=last_name:~son \
+curl https://api.au1.cliniko.com/v1/patients?q%5B%5D=first_name:~bri&q%5B%5D=last_name:~son \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'

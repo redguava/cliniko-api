@@ -16,7 +16,7 @@ Get Patient Attachments
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/patient_attachments \
+curl https://api.au1.cliniko.com/v1/patient_attachments \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -35,29 +35,29 @@ curl https://api.cliniko.com/v1/patient_attachments \
       "size": 14936,
       "content": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patient_attachments/1/content"
+          "self": "https://api.au1.cliniko.com/v1/patient_attachments/1/content"
         }
       },
       "description": null,
       "processing_completed": true,
       "patient": {
         "links": {
-          "self": "https://api.cliniko.com/v1/patients/123"
+          "self": "https://api.au1.cliniko.com/v1/patients/123"
         }
       },
       "user": {
         "links": {
-          "self": "https://api.cliniko.com/v1/users/456"
+          "self": "https://api.au1.cliniko.com/v1/users/456"
         }
       },
       "links": {
-        "self": "https://api.cliniko.com/v1/patient_attachments/1"
+        "self": "https://api.au1.cliniko.com/v1/patient_attachments/1"
       }
     }
   ],
   "total_entries": 1,
   "links": {
-    "self": "https://api.cliniko.com/v1/patient_attachments?page=1"
+    "self": "https://api.au1.cliniko.com/v1/patient_attachments?page=1"
   }
 }
 ```
@@ -70,7 +70,7 @@ Get Patient Attachment
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/patient_attachments/1 \
+curl https://api.au1.cliniko.com/v1/patient_attachments/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -87,23 +87,23 @@ curl https://api.cliniko.com/v1/patient_attachments/1 \
   "size": 14936,
   "content": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patient_attachments/1/content"
+      "self": "https://api.au1.cliniko.com/v1/patient_attachments/1/content"
     }
   },
   "description": null,
   "processing_completed": true,
   "patient": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/123"
+      "self": "https://api.au1.cliniko.com/v1/patients/123"
     }
   },
   "user": {
     "links": {
-      "self": "https://api.cliniko.com/v1/users/456"
+      "self": "https://api.au1.cliniko.com/v1/users/456"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/patient_attachments/1"
+    "self": "https://api.au1.cliniko.com/v1/patient_attachments/1"
   }
 }
 ```
@@ -115,7 +115,7 @@ Create Patient Attachment
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/patient_attachments \
+curl https://api.au1.cliniko.com/v1/patient_attachments \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
@@ -124,7 +124,7 @@ curl https://api.cliniko.com/v1/patient_attachments \
 ```
 **Example Response**
 ```
-Headers { Location: https://api.cliniko.com/patient_attachments/1 }
+Headers { Location: https://api.au1.cliniko.com/patient_attachments/1 }
 ```
 ```json
 {
@@ -136,23 +136,23 @@ Headers { Location: https://api.cliniko.com/patient_attachments/1 }
   "size": null,
   "content": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patient_attachments/1/content"
+      "self": "https://api.au1.cliniko.com/v1/patient_attachments/1/content"
     }
   },
   "description": null,
   "processing_completed": false,
   "patient": {
     "links": {
-      "self": "https://api.cliniko.com/v1/patients/123"
+      "self": "https://api.au1.cliniko.com/v1/patients/123"
     }
   },
   "user": {
     "links": {
-      "self": "https://api.cliniko.com/v1/users/456"
+      "self": "https://api.au1.cliniko.com/v1/users/456"
     }
   },
   "links": {
-    "self": "https://api.cliniko.com/v1/patient_attachments/1"
+    "self": "https://api.au1.cliniko.com/v1/patient_attachments/1"
   }
 }
 ```
@@ -164,7 +164,7 @@ Delete Patient Attachment
 
 **Example Request**
 ```shell
-curl https://api.cliniko.com/v1/patient_attachments/1 \
+curl https://api.au1.cliniko.com/v1/patient_attachments/1 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
