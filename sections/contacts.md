@@ -277,7 +277,10 @@ A status code of `204 no content` will be returned if successful
 For any route that returns a set contacts, you can filter them by:
 
 - `created_at` DateTime
+- `email` String
+- `first_name` String
 - `id` Integer
+- `last_name` String
 - `type_code` Integer
 - `updated_at` DateTime
 
