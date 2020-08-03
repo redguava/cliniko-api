@@ -134,6 +134,7 @@ curl https://api.au1.cliniko.com/v1/contacts/1 \
 ## Create Contact
 
 **Validation**
+
 When creating a contact, setting the contact's country must be done using the `country_code` parameter.
 This is the [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) country code.
 
@@ -203,6 +204,7 @@ Headers { Location: http://api.cliniko.com/contacts/1 }
 ## Update Contact
 
 **Validation**
+
 When updating a contact, changing the contact's country must be done using the `country_code` parameter.
 This is the [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) country code.
 

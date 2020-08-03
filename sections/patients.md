@@ -419,6 +419,7 @@ curl https://api.au1.cliniko.com/v1/patients/1 \
 > Find more on why we've made this switch here: [Changes coming to patient gender and sex](https://groups.google.com/a/redguava.com.au/forum/#!topic/cliniko-api/H5fXFk_MH98)
 
 **Validation**
+
 Patient records must have a `first_name` and `last_name`. `email`, if supplied, is validated using the following RegEx in Ruby:
 ```ruby
 /\A[A-Z0-9!#$%&'\*+-\/=?^_`{\|}~]+@[A-Z0-9.-]+\.[A-Z]{2,63}\z/i
@@ -510,6 +511,7 @@ Headers { Location: http://api.cliniko.com/patients/1 }
 > Find more on why we've made this switch here: [Changes coming to patient gender and sex](https://groups.google.com/a/redguava.com.au/forum/#!topic/cliniko-api/H5fXFk_MH98)
 
 **Validation**
+
 Patient records must have a `first_name` and `last_name`. `email`, if supplied, is validated using the following RegEx in Ruby:
 ```ruby
 /\A[A-Z0-9!#$%&'\*+-\/=?^_`{\|}~]+@[A-Z0-9.-]+\.[A-Z]{2,63}\z/i
