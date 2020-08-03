@@ -140,12 +140,9 @@ This is the [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 A contact's `doctor_type` may be the string value `general_practitioner` or `specialist`. To clear the value,
 set it to `null`.
 
-`email`, if supplied, is validated using the following RegEx:
+`email`, if supplied, is validated using the following RegEx in Ruby:
 ```ruby
 /\A[A-Z0-9!#$%&'\*+-\/=?^_`{\|}~]+@[A-Z0-9.-]+\.[A-Z]{2,63}\z/i
-```
-```js
-/^[A-Z0-9!#$%&'*+\-/=?^_`{|}~.]+@[A-Z0-9.-]+\.[A-Z]{2,63}$/i
 ```
 
 **Resources**
@@ -212,12 +209,9 @@ This is the [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 A contact's `doctor_type` may be the string value `general_practitioner` or `specialist`. To clear the value,
 set it to `null`.
 
-`email`, if supplied, is validated using the following RegEx:
+`email`, if supplied, is validated using the following RegEx in Ruby:
 ```ruby
 /\A[A-Z0-9!#$%&'\*+-\/=?^_`{\|}~]+@[A-Z0-9.-]+\.[A-Z]{2,63}\z/i
-```
-```js
-/^[A-Z0-9!#$%&'*+\-/=?^_`{|}~.]+@[A-Z0-9.-]+\.[A-Z]{2,63}$/i
 ```
 
 **Resources**
