@@ -418,6 +418,15 @@ curl https://api.au1.cliniko.com/v1/patients/1 \
 > The `/patients` endpoint will continue to return a patient's gender, but you may only use the new properties when _creating_ or _updating_ patients. Note that we are not serving the current value of `gender` in either of the new fields - these need to be updated separately, either through the Cliniko UI, or through the API.
 > Find more on why we've made this switch here: [Changes coming to patient gender and sex](https://groups.google.com/a/redguava.com.au/forum/#!topic/cliniko-api/H5fXFk_MH98)
 
+**Validation**
+Patient records must have a `first_name` and `last_name`. `email`, if supplied, is validated using the following RegEx:
+```ruby
+/\A[A-Z0-9!#$%&'\*+-\/=?^_`{\|}~]+@[A-Z0-9.-]+\.[A-Z]{2,63}\z/i
+```
+```js
+/^[A-Z0-9!#$%&'*+\-/=?^_`{|}~.]+@[A-Z0-9.-]+\.[A-Z]{2,63}$/i
+```
+
 **Resources**
 
 - `POST /patients` create a patient
@@ -502,6 +511,15 @@ Headers { Location: http://api.cliniko.com/patients/1 }
 > As of 2018-12-03, `gender` is now deprecated. Instead, the `/patients` API endpoint will now expose and accept the new `gender_identity` and `sex` properties.
 > The `/patients` endpoint will continue to return a patient's gender, but you may only use the new properties when _creating_ or _updating_ patients. Note that we are not serving the current value of `gender` in either of the new fields - these need to be updated separately, either through the Cliniko UI, or through the API.
 > Find more on why we've made this switch here: [Changes coming to patient gender and sex](https://groups.google.com/a/redguava.com.au/forum/#!topic/cliniko-api/H5fXFk_MH98)
+
+**Validation**
+Patient records must have a `first_name` and `last_name`. `email`, if supplied, is validated using the following RegEx:
+```ruby
+/\A[A-Z0-9!#$%&'\*+-\/=?^_`{\|}~]+@[A-Z0-9.-]+\.[A-Z]{2,63}\z/i
+```
+```js
+/^[A-Z0-9!#$%&'*+\-/=?^_`{|}~.]+@[A-Z0-9.-]+\.[A-Z]{2,63}$/i
+```
 
 **Resources**
 
