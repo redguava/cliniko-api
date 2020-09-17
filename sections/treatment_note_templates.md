@@ -401,6 +401,7 @@ sections | array | An array of section objects | Not required. An empty array is
 Property | Type | Accepted Values | Notes
 ------------ | ------------- | ------------- | -------------
 name | string | A string of 255 or fewer characters | Not required. If there is no name, this property should be omitted.
+description | string | A string of 10,000 or fewer characters | Not required. If there is no description, this property should be omitted.
 questions | array | An array of question objects | Not required. An empty array is not valid. If there are no questions, this property should be omitted.
 
 **Question Object**
