@@ -1,10 +1,22 @@
 # Patients
 
-> Patients are the people that book in for appointments. There isn't much in Cliniko that doesn't revolve around patients.
+> Patients are the people that book in for appointments. There isn't much in
+> Cliniko that doesn't revolve around patients.
 >
-> When you're working with patient information, make sure you abide by the relevant regulations for security and privacy.
+> When you're working with patient information, make sure you abide by the
+> relevant regulations for security and privacy.
 >
-> There is a field in the patient record **accepted_privacy_policy** that stores the patient's consent to the business' own privacy policy. Values can be `null` (no response), `true` (accepted) or `false` (rejected). Please consider how this may affect you storing information on this patient.
+> A couple of fields in the patient record deserve special consideration:
+>
+> - **accepted_privacy_policy** stores the patient's consent to the business'
+> own privacy policy. Values can be `null` (no response), `true` (accepted) or
+> `false` (rejected). Please consider how this may affect you storing
+> information on this patient.
+>
+> - **time_zone** will contain a valid IANA time zone identifier if the
+>   patient's time zone has been set, or `null` if it hasn't. It can be set via
+>   the API, in which case it accepts IANA time zone identifiers.
+>
 
 - [Get Patients](#get-patients 'This will return all patients.')
 - [Get Deleted Patients](#get-deleted-patients 'This will return all deleted patients.')
@@ -71,6 +83,7 @@ curl https://api.au1.cliniko.com/v1/patients \
       "sex": "Female to Male",
       "state": "Victoria",
       "title": "Mr",
+      "time_zone": "Australia/Melbourne",
       "updated_at": "2013-03-26T14:00:00Z",
       "concession_type": {
         "links": {
@@ -170,6 +183,7 @@ curl https://api.au1.cliniko.com/v1/patients/deleted \
       "sex": "Female to Male",
       "state": "Victoria",
       "title": "Mr",
+      "time_zone": "Australia/Melbourne",
       "updated_at": "2013-03-26T14:00:00Z",
       "concession_type": {
         "links": {
@@ -275,6 +289,7 @@ curl https://api.au1.cliniko.com/v1/patients/archived \
       "sex": "Female to Male",
       "state": "Victoria",
       "title": "Mr",
+      "time_zone": "Australia/Melbourne",
       "updated_at": "2013-03-26T14:00:00Z",
       "concession_type": {
         "links": {
@@ -372,6 +387,7 @@ curl https://api.au1.cliniko.com/v1/patients/1 \
   "sex": "Female to Male",
   "state": "Victoria",
   "title": "Mr",
+  "time_zone": "Australia/Melbourne",
   "updated_at": "2013-03-26T14:00:00Z",
   "concession_type": {
     "links": {
@@ -476,6 +492,7 @@ Headers { Location: http://api.cliniko.com/patients/1 }
   "sex": "Female to Male",
   "state": "",
   "title": "",
+  "time_zone": null,
   "updated_at": "2013-03-26T14:00:00Z",
   "patient_phone_numbers": [],
   "medical_alerts": {
@@ -557,6 +574,7 @@ curl https://api.au1.cliniko.com/v1/patients/1 \
   "sex": "Female to Male",
   "state": "Victoria",
   "title": "Mr",
+  "time_zone": "Australia/Melbourne",
   "updated_at": "2013-03-26T14:00:00Z",
   "patient_phone_numbers": [
     {
@@ -679,6 +697,7 @@ curl https://api.au1.cliniko.com/v1/patients/1/unarchive \
   "sex": "Female to Male",
   "state": "Victoria",
   "title": "Mr",
+  "time_zone": "Australia/Melbourne",
   "updated_at": "2013-03-26T14:00:00Z",
   "patient_phone_numbers": [
     {
