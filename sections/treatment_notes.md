@@ -304,7 +304,7 @@ curl https://api.au1.cliniko.com/v1/treatment_notes \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "draft": true, "patient_id": 123, "booking_id": 987, "treatment_note_template_id": 789, "content": "{\"sections\": [{\"name\": \"Section 1\", \"questions\": [{\"name\": \"Question 1\", \"type\": \"text\", \"answer\": \"The answer is 42\"}]}]}" }' \
+  -d '{ "draft": true, "patient_id": 123, "booking_id": 987, "treatment_note_template_id": 789, "content": {"sections": [{"name": "Section 1", "questions": [{"name": "Question 1", "type": "text", "answer": "The answer is 42"}]}]} }' \
   -X POST
 ```
 **Example Response**
@@ -372,7 +372,7 @@ curl https://api.au1.cliniko.com/v1/treatment_notes/1 \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "draft": false, "content": "{\"sections\": [{\"name\": \"Section 1\", \"questions\": [{\"name\": \"Question 1\", \"type\": \"text\", \"answer\": \"The answer is not 42\"}]}]}" }' \
+  -d '{ "draft": false, "content": {"sections": [{"name": "Section 1", "questions": [{"name": "Question 1", "type": "text", "answer": "The answer is not 42"}]}]} }' \
   -X PUT
 ```
 **Example Response**
