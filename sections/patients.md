@@ -535,25 +535,6 @@ curl https://api.au1.cliniko.com/v1/patients/1 \
 }
 ```
 
-## Delete Patient
-
-**Resources**
-
-- `DELETE /patients/:id` delete a patient
-
-**Example Request**
-
-```shell
-curl https://api.au1.cliniko.com/v1/patients/1 \
-  -u API_KEY: \
-  -H 'Accept: application/json' \
-  -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -X DELETE
-```
-
-**Example Response**
-A status code of `204 no content` will be returned if successful
-
 ## Archive Patient
 
 **Resources**
