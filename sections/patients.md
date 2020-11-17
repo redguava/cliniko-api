@@ -149,77 +149,7 @@ curl https://api.au1.cliniko.com/v1/patients/deleted \
 {
   "patients": [
     {
-      "accepted_privacy_policy": true,
-      "accepted_sms_marketing": false,
-      "address_1": "1 Smith Street",
-      "address_2": "",
-      "address_3": "",
-      "archived_at": "2013-06-05T14:37:18Z",
-      "city": "Melbourne",
-      "country": "Australia",
-      "created_at": "2013-03-26T14:00:00Z",
-      "date_of_birth": "2001-05-26",
       "deleted_at": "2013-06-05T14:38:48Z",
-      "email": "peter@example.com",
-      "emergency_contact": "",
-      "first_name": "Peter",
-      "invoice_default_to": "Super Insurance",
-      "invoice_email": "super.insurance@example.com",
-      "invoice_extra_information": "Insurance #123456\r\nClaim #123456",
-      "gender": "Male",
-      "gender_identity": "Transgender",
-      "id": 1,
-      "last_name": "Patientman",
-      "medicare": "",
-      "medicare_reference_number": "",
-      "notes": "",
-      "appointment_notes": "",
-      "occupation": "",
-      "old_reference_id": "",
-      "post_code": "3000",
-      "receives_confirmation_emails": true,
-      "referral_source": "",
-      "reminder_type": "Email",
-      "sex": "Female to Male",
-      "state": "Victoria",
-      "title": "Mr",
-      "time_zone": "Australia/Melbourne",
-      "updated_at": "2013-03-26T14:00:00Z",
-      "concession_type": {
-        "links": {
-          "self": "https://api.au1.cliniko.com/v1/concession_types/123"
-        }
-      },
-      "referring_doctor": {
-        "links": {
-          "self": "https://api.au1.cliniko.com/v1/contacts/123"
-        }
-      },
-      "patient_phone_numbers": [
-        {
-          "phone_type": "Mobile",
-          "number": "61444444444"
-        },
-        {
-          "phone_type": "Home",
-          "number": "61399999999"
-        }
-      ],
-      "medical_alerts": {
-        "links": {
-          "self": "https://api.au1.cliniko.com/v1/patients/1/medical_alerts?page=1"
-        }
-      },
-      "invoices": {
-        "links": {
-          "self": "https://api.au1.cliniko.com/v1/patients/1/invoices?page=1"
-        }
-      },
-      "appointments": {
-        "links": {
-          "self": "https://api.au1.cliniko.com/v1/patients/1/appointments?page=1"
-        }
-      },
       "links": { "self": "https://api.au1.cliniko.com/v1/patients/1" }
     }
   ],
