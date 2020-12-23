@@ -33,7 +33,7 @@ curl https://api.au1.cliniko.com/v1/practitioners \
       "designation": "Osteopath",
       "description": null,
       "first_name": "Randy",
-      "id": 1,
+      "id": "514810972972521916",
       "last_name": "Savage",
       "show_in_online_bookings": true,
       "title": "Mr",
@@ -43,25 +43,25 @@ curl https://api.au1.cliniko.com/v1/practitioners \
         "links": {"self": "https://api.au1.cliniko.com/v1/appointment_types/1"}
       },
       "practitioner_reference_numbers": {
-        "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/1/practitioner_reference_numbers?page=1"}
+        "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/514810972972521916/practitioner_reference_numbers?page=1"}
       },
       "user": {
         "links": {"self": "https://api.au1.cliniko.com/v1/users/1"}
       },
       "appointments": {
         "links": {
-          "self": "https://api.au1.cliniko.com/v1/practitioners/1/appointments?page=1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/514810972972521916/appointments?page=1"
         }
       },
       "invoices": {
         "links": {
-          "self": "https://api.au1.cliniko.com/v1/practitioners/1/invoices?page=1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/514810972972521916/invoices?page=1"
         }
       },
-      "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/1"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/514810972972521916"}
     }
   ],
-  "total_entries": 1,
+  "total_entries": "514810972972521916",
   "links": {"self": "https://api.au1.cliniko.com/v1/practitioners?page=1"}
 }
 ```
@@ -74,7 +74,7 @@ Get Practitioner
 
 **Example Request**
 ```shell
-curl https://api.au1.cliniko.com/v1/practitioners/1 \
+curl https://api.au1.cliniko.com/v1/practitioners/514810972972521916 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -87,7 +87,7 @@ curl https://api.au1.cliniko.com/v1/practitioners/1 \
   "designation": "Osteopath",
   "description": null,
   "first_name": "Randy",
-  "id": 1,
+  "id": "514810972972521916",
   "last_name": "Savage",
   "show_in_online_bookings": true,
   "title": "Mr",
@@ -97,22 +97,22 @@ curl https://api.au1.cliniko.com/v1/practitioners/1 \
     "links": {"self": "https://api.au1.cliniko.com/v1/appointment_types/1"}
   },
   "practitioner_reference_numbers": {
-        "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/1/practitioner_reference_numbers?page=1"}
+        "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/514810972972521916/practitioner_reference_numbers?page=1"}
   },
   "user": {
     "links": {"self": "https://api.au1.cliniko.com/v1/users/1"}
   },
   "appointments": {
     "links": {
-      "self": "https://api.au1.cliniko.com/v1/practitioners/1/appointments?page=1"
+      "self": "https://api.au1.cliniko.com/v1/practitioners/514810972972521916/appointments?page=1"
     }
   },
   "invoices": {
     "links": {
-      "self": "https://api.au1.cliniko.com/v1/practitioners/1/invoices?page=1"
+      "self": "https://api.au1.cliniko.com/v1/practitioners/514810972972521916/invoices?page=1"
     }
   },
-  "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/514810972972521916"}
 }
 ```
 
@@ -153,12 +153,12 @@ curl https://api.au1.cliniko.com/v1/practitioners/inactive \
       },
       "appointments": {
         "links": {
-          "self": "https://api.au1.cliniko.com/v1/practitioners/1/appointments?page=1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/514810972972521916/appointments?page=1"
         }
       },
       "invoices": {
         "links": {
-          "self": "https://api.au1.cliniko.com/v1/practitioners/1/invoices?page=1"
+          "self": "https://api.au1.cliniko.com/v1/practitioners/514810972972521916/invoices?page=1"
         }
       },
       "links": {"self": "https://api.au1.cliniko.com/v1/practitioners/3"}
@@ -174,7 +174,7 @@ Filtering Practitioners
 
 For any route that returns a set of practitioners, you can filter them by:
 * ```created_at``` DateTime
-* ```id``` Integer
+* ```id``` String
 * ```updated_at``` DateTime
 * ```user_id``` Integer
 
