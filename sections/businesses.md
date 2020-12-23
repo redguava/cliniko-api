@@ -36,7 +36,7 @@ curl https://api.au1.cliniko.com/v1/businesses \
       "country": "Australia",
       "country_code": "AU",
       "created_at": "2013-03-26T14:00:00Z",
-      "id": 1,
+      "id": "514810976554457178",
       "post_code" : "3000",
       "show_in_online_bookings": true,
       "state": "Victoria",
@@ -44,15 +44,15 @@ curl https://api.au1.cliniko.com/v1/businesses \
       "website_address": "http://www.healthytimes.com",
       "practitioners": {
         "links": {
-          "self": "https://api.au1.cliniko.com/v1/businesses/1/practitioners"
+          "self": "https://api.au1.cliniko.com/v1/businesses/514810976554457178/practitioners"
         }
       },
       "appointments": {
         "links": {
-          "self": "https://api.au1.cliniko.com/v1/businesses/1/appointments?page=1"
+          "self": "https://api.au1.cliniko.com/v1/businesses/514810976554457178/appointments?page=1"
         }
       },
-      "links": {"self": "https://api.au1.cliniko.com/v1/businesses/1"}
+      "links": {"self": "https://api.au1.cliniko.com/v1/businesses/514810976554457178"}
     }
   ],
   "total_entires": 1,
@@ -68,7 +68,7 @@ Get Business
 
 **Example Request**
 ```shell
-curl https://api.au1.cliniko.com/v1/businesses/1 \
+curl https://api.au1.cliniko.com/v1/businesses/514810976554457178 \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
@@ -87,7 +87,7 @@ curl https://api.au1.cliniko.com/v1/businesses/1 \
   "country": "Australia",
   "country_code": "AU",
   "created_at": "2013-03-26T14:00:00Z",
-  "id": 1,
+  "id": "514810976554457178",
   "post_code" : "3000",
   "show_in_online_bookings": true,
   "state": "Victoria",
@@ -95,15 +95,15 @@ curl https://api.au1.cliniko.com/v1/businesses/1 \
   "website_address": "http://www.healthytimes.com",
   "practitioners": {
     "links": {
-      "self": "https://api.au1.cliniko.com/v1/businesses/1/practitioners"
+      "self": "https://api.au1.cliniko.com/v1/businesses/514810976554457178/practitioners"
     }
   },
   "appointments": {
     "links": {
-      "self": "https://api.au1.cliniko.com/v1/businesses/1/appointments?page=1"
+      "self": "https://api.au1.cliniko.com/v1/businesses/514810976554457178/appointments?page=1"
     }
   },
-  "links": {"self": "https://api.au1.cliniko.com/v1/businesses/1"}
+  "links": {"self": "https://api.au1.cliniko.com/v1/businesses/514810976554457178"}
 }
 ```
 
@@ -112,7 +112,7 @@ Filtering Businesses
 
 You can filter businesses by:
 * ```created_at``` DateTime
-* ```id``` integer
+* ```id``` String
 * ```updated_at``` DateTime
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
