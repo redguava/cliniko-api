@@ -269,6 +269,7 @@ curl https://api.au1.cliniko.com/v1/patients/archived \
 **Resources**
 
 - `GET /patients/:id` get a specified patient
+- `GET /patients/:id,id,id...` get multiple specified patients 
 
 **Example Request**
 
