@@ -47,9 +47,9 @@ For more about the introduction of shards, and a code example of API keys with t
 Authentication
 --------------
 
-The Cliniko API uses HTTP Basic authentication. This is secure as all requests are via SSL.
+The Cliniko API uses HTTP Basic authentication. This is secure, as all requests are via SSL.
 
-Each Cliniko user will have their own API Key(s), this is used for authentication.  The API Key will have the same permissions as the user it is from.
+Each Cliniko user will have their own API Key(s) - these are used for authentication. The API Key will have the same permissions as the user it belongs to.
 
 You should provide the Cliniko API Key (either with or without the shard suffix) as the basic auth username. There is no need to provide a password. This should be sent in the `Authorization` header. The psuedocode for how the `Authorization` header should be built is:
 
@@ -57,12 +57,17 @@ You should provide the Cliniko API Key (either with or without the shard suffix)
 "Basic " + base64_encode(api_key + ":")
 ```
 
-and results in a string like this:
+For example, if your API key is `MxJrZXkiOiI1Njd1amJmZTQ1NyJ9-au2`, then you would generate your Authorization header like so, using the API Key as the username:
 ```
-Basic TVMwek16RXRheXRvY1RkM1ltaFNTR3NyV1dWTlJEVjBVVmhyWlVaSllqRnVhMDFhYkcwOg==
+"Basic " + base64_encode("MxJrZXkiOiI1Njd1amJmZTQ1NyJ9-au2" + ":")
 ```
 
-To get an API key for testing, sign up for a free trial and go to the "My Info" link in the bottom left corner of the navigation within Cliniko. Click the "Manage API keys" button, you can create an API key from that page. If you need your trial extended just let us know.
+resulting in your Authorization header value:
+```
+Basic TXhKclpYa2lPaUkxTmpkMWFtSm1aVFExTnlKOS1hdTI6
+```
+
+To obtain an API key for testing, sign up for a free trial and go to the "My Info" link in the bottom left corner of the navigation within Cliniko. Click the "Manage API keys" button, you can create an API key from that page. If you need your trial extended just let us know.
 
 Identifying your application
 --------------
@@ -73,8 +78,10 @@ APP_VENDOR_NAME (APP_VENDOR_EMAIL)
 ```
 
 **APP_VENDOR_NAME** is the name of your application
-
 **APP_VENDOR_EMAIL** is a contact email address for you or your company
+
+As an example, a valid `User-Agent` value would be something like:
+_Really helpful app (devs@helpfulapp.com)_
 
 **If your requests do not include a User-Agent that contains a name and valid contact email, future requests may be automatically blocked.**
 
