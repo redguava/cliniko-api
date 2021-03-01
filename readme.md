@@ -298,6 +298,8 @@ API Resources
 * [Invoice Items](https://github.com/redguava/cliniko-api/blob/master/sections/invoice_items.md)
 * [Medical Alerts](https://github.com/redguava/cliniko-api/blob/master/sections/medical_alerts.md)
 * [Patients](https://github.com/redguava/cliniko-api/blob/master/sections/patients.md)
+* [Patient Form Templates](https://github.com/redguava/cliniko-api/blob/master/sections/patient_form_templates.md)
+* [Patient Forms](https://github.com/redguava/cliniko-api/blob/master/sections/patient_forms.md)
 * [Practitioners](https://github.com/redguava/cliniko-api/blob/master/sections/practitioners.md)
 * [Practitioner Reference Numbers](https://github.com/redguava/cliniko-api/blob/master/sections/practitioner_reference_numbers.md)
 * [Products](https://github.com/redguava/cliniko-api/blob/master/sections/products.md)
