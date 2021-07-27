@@ -85,7 +85,7 @@ Get Patient Case
 ------------
 
 **Resources**
-* ```GET /patient-cases/:id``` get a specified patient case
+* ```GET /patient-cases/:id``` get a specific patient case
 
 **Example Request**
 ```shell
@@ -304,3 +304,24 @@ You can filter patient cases by:
 * ```updated_at``` DateTime
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
+
+## Permitted properties
+When creating or updating Patient Cases, the following properties are permitted.
+
+| Name                          | Type          | Required? | Description     |
+|------------------------------ | ------------- | --------- | --------------- |
+| `attendee_ids`                | Array[BigInt] |           | A list of the attende IDs this case is linked to. |
+| `closed`                      | Boolean       |           | |
+| `contact_id`                  | BigInt        |           | Contact (doctor only) linked to this case. |
+| `expiry_date`                 | Date          |           | |
+| `include_cancelled_attendees` | Boolean       |           | |
+| `include_dna_attendees`       | Boolean       |           | |
+| `issue_date`                  | Date          |           | |
+| `max_invoiceable_amount`      | Money         |           | A money amount, up to 2 decimal places. |
+| `max_sessions`                | Integer       |           | |
+| `name`                        | String        | **yes**   | |
+| `notes`                       | String        |           | |
+| `patient_attachment_ids`      | Array[BigInt] |           | A list of the patient attachments this case is linked to (note that patient attachments must already exist). |
+| `patient_id`                  | BigInt        | **yes**   | Patient linked to this case. |
+| `referral`                    | Boolean       |           | |
+| `referral_type`               | Enum          |           | One of [`medicare`]. |
