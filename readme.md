@@ -35,8 +35,10 @@ https://api.{shard}.cliniko.com/v1
 --------|--------
  AU | `au1`
  AU | `au2`
+ AU | `au3`
  CA | `ca1`
  UK | `uk1`
+ EU | `eu1`
 
 It is **strongly** advisable that you validate the shard component:
 - being one of these shard values, or
