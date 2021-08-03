@@ -299,6 +299,7 @@ Filtering Patient Cases
 
 You can filter patient cases by:
 * ```created_at``` DateTime
+* ```expiry_date``` Date
 * ```id``` Integer
 * ```patient_id``` Integer
 * ```updated_at``` DateTime
