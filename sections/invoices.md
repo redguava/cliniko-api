@@ -228,4 +228,13 @@ For any route that returns a set of invoices, you can filter them by:
 * ```status``` Integer
 * ```updated_at``` DateTime
 
+Invoices support the following _integer_ statuses and may be used when filtering by `status`:
+
+| Status | Description   |
+|------- | ------------- |
+| `10`   | Open          |
+| `20`   | Paid          |
+| `30`   | Closed        |
+| `40`   | Open (credit) |
+
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
