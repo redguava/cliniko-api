@@ -24,7 +24,6 @@
 - [Get Patient](#get-patient 'This will return a specified patient.')
 - [Create Patient](#create-patient 'This will create a patient.')
 - [Update Patient](#update-patient 'This will update a patient.')
-- [Delete Patient](#delete-patient 'This will delete a patient.')
 - [Archive Patient](#archive-patient 'This will archive a patient.')
 - [Unarchive Patient](#unarchive-patient 'This will unarchive a patient.')
 
