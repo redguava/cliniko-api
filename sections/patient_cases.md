@@ -11,7 +11,7 @@ Get Patient Cases
 ----------------
 
 **Resources**
-* ```GET /patient-cases``` get all patient cases
+* ```GET /patient_cases``` get all patient cases
 
 **Example Request**
 ```shell
@@ -85,7 +85,7 @@ Get Patient Case
 ------------
 
 **Resources**
-* ```GET /patient-cases/:id``` get a specific patient case
+* ```GET /patient_cases/:id``` get a specific patient case
 
 **Example Request**
 ```shell
@@ -152,7 +152,7 @@ curl https://api.au1.cliniko.com/v1/patient_cases/566562806174843905 \
 Create Patient Case
 ----------------
 **Resources**
-* ```POST /patient-cases``` create a patient case
+* ```POST /patient_cases``` create a patient case
 
 **Example Request**
 ```shell
@@ -165,7 +165,7 @@ curl https://api.au1.cliniko.com/v1/patient_cases \
 ```
 **Example Response**
 ```
-Headers { Location: http://api.cliniko.com/patient-cases/2 }
+Headers { Location: http://api.cliniko.com/patient_cases/2 }
 ```
 ```json
 {
@@ -218,7 +218,7 @@ Headers { Location: http://api.cliniko.com/patient-cases/2 }
 Update Patient Case
 ----------------
 **Resources**
-* ```PUT /patient-cases/:id``` update a patient case
+* ```PUT /patient_cases/:id``` update a patient case
 
 **Example Request**
 ```shell
@@ -281,7 +281,7 @@ curl https://api.au1.cliniko.com/v1/patient_cases/1 \
 Archive Patient Case
 ----------------
 **Resources**
-* ```POST /patient-cases/:id/archive``` archive a patient case
+* ```POST /patient_cases/:id/archive``` archive a patient case
 
 **Example Request**
 ```shell
@@ -311,7 +311,7 @@ When creating or updating Patient Cases, the following properties are permitted.
 
 | Name                          | Type          | Required? | Description     |
 |------------------------------ | ------------- | --------- | --------------- |
-| `attendee_ids`                | Array[BigInt] |           | A list of the attende IDs this case is linked to. |
+| `attendee_ids`                | BigInt[]      |           | A list of the attende IDs this case is linked to. |
 | `closed`                      | Boolean       |           | |
 | `contact_id`                  | BigInt        |           | Contact (doctor only) linked to this case. |
 | `expiry_date`                 | Date          |           | |
@@ -322,7 +322,7 @@ When creating or updating Patient Cases, the following properties are permitted.
 | `max_sessions`                | Integer       |           | |
 | `name`                        | String        | **yes**   | |
 | `notes`                       | String        |           | |
-| `patient_attachment_ids`      | Array[BigInt] |           | A list of the patient attachments this case is linked to (note that patient attachments must already exist). |
+| `patient_attachment_ids`      | BigInt[]      |           | A list of the patient attachments this case is linked to (note that patient attachments must already exist). |
 | `patient_id`                  | BigInt        | **yes**   | Patient linked to this case. |
 | `referral`                    | Boolean       |           | |
 | `referral_type`               | Enum          |           | One of [`medicare`]. |
