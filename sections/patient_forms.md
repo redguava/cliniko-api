@@ -237,7 +237,7 @@ curl https://api.au1.cliniko.com/v1/patient_forms \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "patient_id": "479516700664923158", "patient_form_template_id": "507944033264337974" }' \
+  -d '{ "patient_id": "479516700664923158", "patient_form_template_id": "507944033264337974", "attendee_id": "543342507652548177" }' \
   -X POST
 ```
 **Example Response**
@@ -302,6 +302,16 @@ Headers { Location: https://api.au1.cliniko.com/v1/patient_forms/564393784322819
     ]
   },
   "signatures": null,
+  "attendee": {
+    "links": {
+      "self": "https://api.au1.cliniko.com/v1/attendees/543342507652548177"
+    }
+  },
+  "booking": {
+    "links": {
+      "self": "https://api.au1.cliniko.com/v1/bookings/543342507031791275"
+    }
+  },
   "patient": {
     "links": {
       "self": "https://api.au1.cliniko.com/v1/patients/479516700664923158"
