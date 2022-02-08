@@ -41,3 +41,25 @@ Once your patient integration endpoint is ready, please get in contact with us
 so we can add its URL to our list of approved applications! Once that's done you
 should be able to publish this URL to your users so they can add it to the
 config panel shown above and use the integration.
+
+### Registering a wildcard URL
+
+If you have multiple endpoints that you wish to receieve requests on you may
+register a URL with a wildcard first level subdomain.
+
+This wildcard subdomain will match any sequence of alphanumeric characters you
+require. Dashes `-` may be included but other special characters are not allowed.
+
+For example, register the domain:
+
+`*.example.com/patients`
+
+And have your customer add:
+
+`https://au.example.com/patients` or `https://staging-au1.example.com/patients`
+
+Or any other subdomain.
+
+Note that the wildcard is only valid one level deep. The following will fail:
+
+`https://fr.eu.example.com/patients`
