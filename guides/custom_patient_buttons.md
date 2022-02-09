@@ -44,8 +44,8 @@ config panel shown above and use the integration.
 
 ### Registering a wildcard URL
 
-If you have multiple endpoints that you wish to receieve requests on you may
-register a URL with a wildcard first level subdomain.
+If you have multiple endpoints that you wish to receive requests on, you may
+register a URL with a wildcard first-level subdomain.
 
 This wildcard subdomain will match any sequence of alphanumeric characters you
 require. Dashes `-` may be included but other special characters are not allowed.
