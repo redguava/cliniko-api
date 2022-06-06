@@ -118,7 +118,7 @@ curl https://api.au1.cliniko.com/v1/communications \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "confidential": false, "direction_code": 2, "from": "Russell Boyle", "patient_id": "1", "to": "Jay Leno", "type_code": 3, "content": "Test memo" }' \
+  -d '{ "category_code": 12, "confidential": false, "direction_code": 2, "from": "Russell Boyle", "patient_id": "1", "to": "Jay Leno", "type_code": 3, "content": "Test memo" }' \
   -X POST
 ```
 
