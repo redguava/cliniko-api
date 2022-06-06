@@ -293,6 +293,7 @@ API Resources
 * [Billable Items](https://github.com/redguava/cliniko-api/blob/master/sections/billable_items.md)
 * [Businesses](https://github.com/redguava/cliniko-api/blob/master/sections/businesses.md)
 * [Concession Types](https://github.com/redguava/cliniko-api/blob/master/sections/concession_types.md)
+* [Communications](https://github.com/redguava/cliniko-api/blob/master/sections/communications.md)
 * [Contacts](https://github.com/redguava/cliniko-api/blob/master/sections/contacts.md)
 * [Daily Availabilities](https://github.com/redguava/cliniko-api/blob/master/sections/daily_availabilities.md)
 * [Files](https://github.com/redguava/cliniko-api/blob/master/sections/patient_attachments.md)
