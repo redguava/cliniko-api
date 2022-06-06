@@ -227,17 +227,27 @@ You can filter communications by:
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
 
 ## Category Code Mapping
-| Category Code | Category                                  |
-| ------------- | ----------------------------------------- |
-| 4             | Appointment confirmation email            |
-| 1             | Appointment reminder                      |
-| 15            | Bulk emails                               |
-| 3, 9, 14      | Invoices, account statements and payments |
-| 5             | Letters                                   |
-| 12            | Memos                                     |
-| 2, 6          | Practitioner and account notifications    |
-| 7             | SMS messages                              |
-| 8, 13         | SMS reply                                 |
+| Category Code | Category                              |
+| ------------- | ------------------------------------- |
+| 1             | Appointment reminder                  |
+| 2             | SMS forwarding                        |
+| 3             | Invoice                               |
+| 4             | Appointment confirmation email        |
+| 5             | Letters                               |
+| 6             | Practitioner appointment notification |
+| 7             | SMS messages                          |
+| 8             | SMS patient reply                     |
+| 9             | Account statements                    |
+| 10            | Cancelled appointment notification    |
+| 11            | Auth code                             |
+| 12            | Memos                                 |
+| 13            | Practitioner reply                    |
+| 14            | Payments                              |
+| 15            | Bulk emails                           |
+| 16            | Appointment cancellation              |
+| 17            | Patient form                          |
+| 18            | Upcoming appointments                 |
+| 19            | Completed patient form                |
 
 ## Permitted Memo Communication Properties
 When creating or updating memo communications, the following properties are permitted.
