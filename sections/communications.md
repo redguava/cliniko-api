@@ -263,15 +263,16 @@ See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-result
 ## Permitted Memo Communication Properties
 When creating or updating memo communications, the following properties are permitted.
 
-| Name             | Type    | Required?[^2] | Description                                                                        |
-| ---------------- | ------- | ------------- | ---------------------------------------------------------------------------------- |
-| `confidential`   | Boolean | **yes**       |                                                                                    |
-| `content`        | String  | **yes**       |                                                                                    |
-| `direction_code` | Integer | **yes**       | Message direction:<br />1 - outbound<br />2 - inbound                              |
-| `from`           | String  | **yes**       | Message source name (i.e. patient name)                                            |
-| `patient_id`     | BigInt  | **yes**       |                                                                                    |
-| `to`             | String  | **yes**       | Message recipient name (i.e. practitioner name)                                    |
-| `type_code`      | Integer | **yes**       | Communication type:<br />1 - SMS<br />2 - email<br />3 - phone call<br />4 - other |
+| Name             | Type    | Required?[^2] | Description                                                                                  |
+| ---------------- | ------- | ------------- | -------------------------------------------------------------------------------------------- |
+| `category_code`  | Integer | **no**        | Defaults to `12` (memo); a `category_code` other than memo's cannot be set                   |
+| `confidential`   | Boolean | **yes**       |                                                                                              |
+| `content`        | String  | **yes**       |                                                                                              |
+| `direction_code` | Integer | **yes**       | Message direction:<br />1 - outbound<br />2 - inbound                                        |
+| `from`           | String  | **yes**       | Message source name (i.e. patient name)                                                      |
+| `patient_id`     | BigInt  | **yes**       |                                                                                              |
+| `to`             | String  | **yes**       | Message recipient name (i.e. practitioner name)                                              |
+| `type_code`      | Integer | **yes**       | Communication type:<br />1 - SMS<br />2 - email<br />3 - phone call<br />4 - other           |
 
 [^1]: see Category Code Mapping for the valid category codes
 [^2]: required on create
