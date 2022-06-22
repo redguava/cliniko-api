@@ -4,6 +4,8 @@ Invoice Items
 * [Get Deleted Invoice Items](#get-deleted-invoice-items "This will return all deleted invoice items.")
 * [Get Invoice Item](#get-invoice-item "This will return a specified invoice item.")
 
+**DEPRECATION NOTICE**: The `tax_amount` attribute is deprecated. We recommend using `tax_rate` instead in your application.
+
 Get Invoice Items
 ----------------
 
@@ -36,6 +38,7 @@ curl https://api.au1.cliniko.com/v1/invoice_items \
       "quantity": 1,
       "tax_amount": "10.0",
       "tax_name": "GST",
+      "tax_rate": "10.0",
       "unit_price": "100.0",
       "total_including_tax": "90.0",
       "code": "2020",
@@ -94,10 +97,11 @@ curl https://api.au1.cliniko.com/v1/invoice_items/deleted \
       "quantity": 1,
       "tax_amount": "10.0",
       "tax_name": "GST",
+      "tax_rate": "10.0",
       "unit_price": "100.0",
       "total_including_tax": "90.0",
       "code": "2020",
-      "deleted_at": 2015-10-26T05:34:34Z,
+      "deleted_at": "2015-10-26T05:34:34Z",
       "billable_item": {
         "links": {
           "self": "https://api.au1.cliniko.com/v1/billable_items/1"
@@ -150,6 +154,7 @@ curl https://api.au1.cliniko.com/v1/invoice_items/3 \
   "quantity": 1,
   "tax_amount": "10.0",
   "tax_name": "GST",
+  "tax_rate": "10.0",
   "unit_price": "100.0",
   "total_including_tax": "90.0",
   "code": "2020",
