@@ -106,7 +106,7 @@ To make a request for all the patients on a specific account in the `au1` shard,
 
 **Example Request**
 ```shell
-curl https://api.au1.cliniko.com/v1/appointments \
+curl https://api.au1.cliniko.com/v1/patients \
   -u API_KEY: \
   -H 'Accept: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)'
