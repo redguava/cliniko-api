@@ -440,11 +440,13 @@ Filtering Treatment Notes
 ----------------
 
 For any route that returns a set of treatment notes, you can filter them by:
+* ```attendee_id``` (String)
+* ```booking_id``` (String)
 * ```created_at``` (DateTime)
-* ```id``` (Integer)
-* ```patient_id``` (Integer)
-* ```practitioner_id``` (Integer)
-* ```treatment_note_template_id``` (Integer)
+* ```id``` (String)
+* ```patient_id``` (String)
+* ```practitioner_id``` (String)
+* ```treatment_note_template_id``` (String)
 * ```updated_at``` (DateTime)
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
