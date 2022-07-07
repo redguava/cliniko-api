@@ -16,6 +16,8 @@ Ensure that the HTTP client is up-to-date and has the latest TLS, cipher suites 
 
 From May 1, 2018, requests to the Cliniko API will require TLS 1.2. See the guide on [How do I test my API client?](https://github.com/redguava/cliniko-api/blob/master/guides/testing_api_client_tls.md) for more information.
 
+**An API Key from Cliniko will allow access to sensitive information. Handle the key securely like you would a password.**
+
 Base URL & shards
 -----------------
 
@@ -70,6 +72,8 @@ Basic TXhKclpYa2lPaUkxTmpkMWFtSm1aVFExTnlKOS1hdTI6
 ```
 
 To obtain an API key for testing, sign up for a free trial and go to the "My Info" link in the bottom left corner of the navigation within Cliniko. Click the "Manage API keys" button, you can create an API key from that page. If you need your trial extended just let us know.
+
+**An API Key from Cliniko will allow access to sensitive information. Handle the key securely like you would a password.**
 
 Identifying your application
 --------------
@@ -332,12 +336,13 @@ Telehealth in Cliniko includes the generation of appointment Telehealth links. T
 guide](https://github.com/redguava/cliniko-api/blob/master/guides/telehealth_links.md)
 for more details.
 
-Get involved and help make our API better
+Stay up to date and get involved
 -----------------------------------------
 
-Please give us feedback on how we can make the API better.
+Join [Cliniko API Developers Group](https://groups.google.com/a/redguava.com.au/d/forum/cliniko-api) to stay updated with any changes and exchange information with Cliniko API Developers and others using the API.
 
-*  Join [Cliniko API Developers Group](https://groups.google.com/a/redguava.com.au/d/forum/cliniko-api) to stay updated with any changes and exchange information with Cliniko API Developers.
-*  For feature requests or bugs please use GitHub issues. You can also fork this project and send a pull request with any improvements.
+For feature requests or bugs please use GitHub issues. You can also fork this project and send a pull request with any improvements.
 
-Want to talk to us? Send an email through to support@cliniko.com and we'll make sure it gets to the developers.
+Need to talk to us privately? Send an email through to support@cliniko.com and we'll make sure it gets to the developers.
+
+**Do not send any real Cliniko API Key to the Google Group, or via email. Doing so may result in your application being blocked for security concerns.**
