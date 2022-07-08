@@ -23,18 +23,22 @@ curl https://api.au1.cliniko.com/v1/taxes \
 **Example Response**
 ```json
 {
+  "links": {
+    "self": "https://api.au1.cliniko.com/v1/taxes?page=1"
+  },
   "taxes": [
     {
-      "id": 1,
-      "name": "GST",
       "amount": "10.0",
       "created_at": "2014-01-29T09:54:54Z",
-      "updated_at": "2014-01-29T09:54:54Z",
-      "links": {"self": "https://api.au1.cliniko.com/v1/taxes/1"}
+      "id": 1,
+      "links": {
+        "self": "https://api.au1.cliniko.com/v1/taxes/1"
+      },
+      "name": "GST",
+      "updated_at": "2014-01-29T09:54:54Z"
     }
   ],
-  "total_entries": 1,
-  "links": {"self": "https://api.au1.cliniko.com/v1/taxes?page=1"}
+  "total_entries": 1
 }
 ```
 
@@ -55,12 +59,14 @@ curl https://api.au1.cliniko.com/v1/taxes/1 \
 **Example Response**
 ```json
 {
-  "id": 1,
-  "name": "GST",
   "amount": "10.0",
   "created_at": "2014-01-29T09:54:54Z",
-  "updated_at": "2014-01-29T09:54:54Z",
-  "links": {"self": "https://api.au1.cliniko.com/v1/taxes/1"}
+  "id": 1,
+  "links": {
+    "self": "https://api.au1.cliniko.com/v1/taxes/1"
+  },
+  "name": "GST",
+  "updated_at": "2014-01-29T09:54:54Z"
 }
 ```
 
@@ -85,12 +91,14 @@ Headers { Location: https://api.au1.cliniko.com/taxes/2 }
 ```
 ```json
 {
-  "id": 2,
-  "name": "VAT",
   "amount": "23.0",
   "created_at": "2014-03-03T09:54:54Z",
-  "updated_at": "2014-03-03T09:54:54Z",
-  "links": {"self": "https://api.au1.cliniko.com/v1/taxes/2"}
+  "id": 2,
+  "links": {
+    "self": "https://api.au1.cliniko.com/v1/taxes/2"
+  },
+  "name": "VAT",
+  "updated_at": "2014-03-03T09:54:54Z"
 }
 ```
 
@@ -112,12 +120,14 @@ curl https://api.au1.cliniko.com/v1/taxes/2 \
 **Example Response**
 ```json
 {
-  "id": 2,
-  "name": "VAT",
   "amount": "22.0",
   "created_at": "2014-03-03T09:54:54Z",
-  "updated_at": "2014-03-03T09:55:24Z",
-  "links": {"self": "https://api.au1.cliniko.com/v1/taxes/2"}
+  "id": 2,
+  "links": {
+    "self": "https://api.au1.cliniko.com/v1/taxes/2"
+  },
+  "name": "VAT",
+  "updated_at": "2014-03-03T09:55:24Z"
 }
 ```
 
