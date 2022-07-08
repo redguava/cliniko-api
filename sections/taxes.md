@@ -6,6 +6,8 @@ Taxes
 * [Update Tax](#update-tax "This will update a tax.")
 * [Delete Tax](#delete-tax "This will delete a tax.")
 
+**DEPRECATION NOTICE**: The `amount` attribute is deprecated. We recommend using `rate` instead in your application.
+
 Get Taxes
 ----------------
 
@@ -35,6 +37,7 @@ curl https://api.au1.cliniko.com/v1/taxes \
         "self": "https://api.au1.cliniko.com/v1/taxes/1"
       },
       "name": "GST",
+      "rate": "10.0",
       "updated_at": "2014-01-29T09:54:54Z"
     }
   ],
@@ -66,6 +69,7 @@ curl https://api.au1.cliniko.com/v1/taxes/1 \
     "self": "https://api.au1.cliniko.com/v1/taxes/1"
   },
   "name": "GST",
+  "rate": "10.0",
   "updated_at": "2014-01-29T09:54:54Z"
 }
 ```
@@ -82,7 +86,7 @@ curl https://api.au1.cliniko.com/v1/taxes \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'User-Agent: APP_VENDOR_NAME (APP_VENDOR_EMAIL)' \
-  -d '{ "name": "VAT", "amount": 23 }' \
+  -d '{ "name": "VAT", "rate": 23 }' \
   -X POST
 ```
 **Example Response**
@@ -98,6 +102,7 @@ Headers { Location: https://api.au1.cliniko.com/taxes/2 }
     "self": "https://api.au1.cliniko.com/v1/taxes/2"
   },
   "name": "VAT",
+  "rate": "23.0",
   "updated_at": "2014-03-03T09:54:54Z"
 }
 ```
@@ -127,6 +132,7 @@ curl https://api.au1.cliniko.com/v1/taxes/2 \
     "self": "https://api.au1.cliniko.com/v1/taxes/2"
   },
   "name": "VAT",
+  "rate": "22.0",
   "updated_at": "2014-03-03T09:55:24Z"
 }
 ```
