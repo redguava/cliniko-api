@@ -32,7 +32,7 @@ curl https://api.au1.cliniko.com/v1/taxes \
     {
       "amount": "10.0",
       "created_at": "2014-01-29T09:54:54Z",
-      "id": 1,
+      "id": "1",
       "links": {
         "self": "https://api.au1.cliniko.com/v1/taxes/1"
       },
@@ -64,7 +64,7 @@ curl https://api.au1.cliniko.com/v1/taxes/1 \
 {
   "amount": "10.0",
   "created_at": "2014-01-29T09:54:54Z",
-  "id": 1,
+  "id": "1",
   "links": {
     "self": "https://api.au1.cliniko.com/v1/taxes/1"
   },
@@ -97,7 +97,7 @@ Headers { Location: https://api.au1.cliniko.com/taxes/2 }
 {
   "amount": "23.0",
   "created_at": "2014-03-03T09:54:54Z",
-  "id": 2,
+  "id": "2",
   "links": {
     "self": "https://api.au1.cliniko.com/v1/taxes/2"
   },
@@ -127,7 +127,7 @@ curl https://api.au1.cliniko.com/v1/taxes/2 \
 {
   "amount": "22.0",
   "created_at": "2014-03-03T09:54:54Z",
-  "id": 2,
+  "id": "2",
   "links": {
     "self": "https://api.au1.cliniko.com/v1/taxes/2"
   },
@@ -158,7 +158,7 @@ Filtering Taxes
 
 You can filter taxes by:
 * ```created_at``` DateTime
-* ```id``` Integer
+* ```id``` BigInt
 * ```updated_at``` DateTime
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
