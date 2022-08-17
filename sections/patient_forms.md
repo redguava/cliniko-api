@@ -483,7 +483,7 @@ other | object | An other object | Not required. Only accepted for `checkboxes` 
 Property | Type | Accepted Values | Notes
 ------------ | ------------- | ------------- | -------------
 value | string | A string of 255 or fewer characters or `null` | Not required.
-selected | boolean | true | Not required. Only accepts `true`. If the answer is not selected, this property should be omitted. For `radiobuttons` type questions, only one answer can be selected, or none if `other` is `enabled` and `selected` on the question.
+selected | boolean | true | Not required. Only accepts `true`. If the answer is not selected, this property should be omitted. For `radiobuttons` type questions, a maximum of one answer can be selected, unless `other` is `selected` on the question, in which case no answers must be selected.
 
 **Other Object**
 
