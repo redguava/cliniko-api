@@ -412,12 +412,19 @@ name | string | A string of 255 or fewer characters | Name is required.
 type | string | `text`, `paragraph`, `checkboxes`, `radiobuttons`, `date` | Type is required.
 answer | string | A string | Not required. Only accepted for `paragraph` type questions. This will be used as the default answer for treatment notes built from this template. Empty values are not valid. If there is no default answer, this property should be omitted. Accepts basic HTML, see [HTML docs](#permitted-html-in-paragraph-answers "docs for HTML content") for details.
 answers | array | An array of answer objects | Not required. Only accepted for `checkboxes` and `radiobuttons` type questions. An empty array is not valid. If there are no answers, this property should be omitted.
+other | object | An other object | Not required. Only accepted for `checkboxes` and `radiobuttons` type questions.
 
 **Answer Object**
 
 Property | Type | Accepted Values | Notes
 ------------ | ------------- | ------------- | -------------
 value | string | A string of 255 or fewer characters or `null` | Not required.
+
+**Other Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+enabled | boolean | `true` or `false` | Not required.
 
 Permitted HTML in paragraph answers
 ----------------

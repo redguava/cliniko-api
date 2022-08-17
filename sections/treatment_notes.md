@@ -477,13 +477,22 @@ name | string | A string of 255 or fewer characters | Name is required.
 type | string | `text`, `paragraph`, `checkboxes`, `radiobuttons`, `date` | Type is required.
 answer | string | A string | Not required. Only accepted for `text`, `paragraph` and `date` type questions. Empty values are not valid. If there is no answer, this property should be omitted. Accepts basic HTML, see [HTML docs](#permitted-html-in-paragraph-answers "docs for HTML content") for details. When provided for a `date` type question, the accepted format is `YYYY-MM-DD`.
 answers | array | An array of answer objects | Not required. Only accepted for `checkboxes` and `radiobuttons` type questions. An empty array is not valid. If there are no answers, this property should be omitted.
+other | object | An other object | Not required. Only accepted for `checkboxes` and `radiobuttons` type questions.
 
 **Answer Object**
 
 Property | Type | Accepted Values | Notes
 ------------ | ------------- | ------------- | -------------
 value | string | A string of 255 or fewer characters or `null` | Not required.
-selected | boolean | true | Not required. Only accepts `true`. If the answer is not selected, this property should be omitted. For `radiobuttons` type questions, only one answer can be selected.
+selected | boolean | true | Not required. Only accepts `true`. If the answer is not selected, this property should be omitted. For `radiobuttons` type questions, only one answer can be selected, or none if `other` is `enabled` and `selected` on the question.
+
+**Other Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+enabled | boolean | `true` or `false` | Not required.
+selected | boolean | `true` or `false` | Not required. Only accepted if `enabled` is `true`
+value | string | A string of 255 or fewer characters | Not required. Only accepted if `selected` is `true`
 
 Permitted HTML in paragraph answers
 ----------------

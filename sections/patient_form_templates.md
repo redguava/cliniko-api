@@ -292,9 +292,16 @@ name | string | A string of 255 or fewer characters | Name is required.
 type | string | `text`, `paragraph`, `checkboxes`, `radiobuttons`, `signature`, `date` | Type is required.
 required | boolean | `true`, `false` | A `null` value is not valid. If question is not required, this property should be either omitted or have a value of `false`.
 answers | array | An array of answer objects | Not required. Only accepted for `checkboxes` and `radiobuttons` type questions. An empty array is not valid. If there are no answers, this property should be omitted.
+other | object | An other object | Not required. Only accepted for `checkboxes` and `radiobuttons` type questions.
 
 **Answer Object**
 
 Property | Type | Accepted Values | Notes
 ------------ | ------------- | ------------- | -------------
 value | string | A string of 255 or fewer characters or `null` | Not required.
+
+**Other Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+enabled | boolean | `true` or `false` | Not required.
