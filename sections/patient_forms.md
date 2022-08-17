@@ -470,19 +470,28 @@ questions | array | An array of question objects | Not required. An empty array 
 Property | Type | Accepted Values | Notes
 ------------ | ------------- | ------------- | -------------
 name | string | A string of 255 or fewer characters | Name is required.
-type | string | `text`, `paragraph`, `checkboxes`, `radiobuttons`. `signature` | Type is required.
+type | string | `text`, `paragraph`, `checkboxes`, `radiobuttons`, `signature`, `date` | Type is required.
 required | boolean | `true`, `false` | A `null` value is not valid. If question is not required, this property should be either omitted or have a value of `false`.
-answer | string | A of 255 or fewer characters | Only accepted for `text` and `paragraph` type. This will be required if the `required` property is `true`, and the patient form has been completed.
+answer | string | A of 255 or fewer characters | Only accepted for `text`, `paragraph` and `date` type questions. This will be required if the `required` property is `true`, and the patient form has been completed. When provided for a `date` type question, the accepted format is `YYYY-MM-DD`.
 answers | array | An array of answer objects | Only accepted for `checkboxes` and `radiobuttons` type questions. An empty array is not valid. If there are no answers, this property should be omitted. At least one answer must be `selected` if the `required` property is `true` and the patient form has been completed.
 signature | string | A [data URI](https://en.wikipedia.org/wiki/Data_URI_scheme) representing an SVG image, with a maximum dimension of 500x500px. | Only accepted for `signature` type questions. The image will be saved as a `Signature` resource, and this property will be replaced by a `signature_id` property in the response. This property or the `signature_id` property will be required if the `required` property is `true`, and the patient form has been completed.
 signature_id | integer | An id of a previously submitted `signature` | Only accepted for `signature` type questions. This property or the `signature` property will be required if the `required` property is `true`, and the patient form has been completed.
+other | object | An other object | Not required. Only accepted for `checkboxes` and `radiobuttons` type questions.
 
 **Answer Object**
 
 Property | Type | Accepted Values | Notes
 ------------ | ------------- | ------------- | -------------
 value | string | A string of 255 or fewer characters or `null` | Not required.
-selected | boolean | true | Not required. Only accepts `true`. If the answer is not selected, this property should be omitted. For `radiobuttons` type questions, only one answer can be selected.
+selected | boolean | true | Not required. Only accepts `true`. If the answer is not selected, this property should be omitted. For `radiobuttons` type questions, a maximum of one answer can be selected, unless `other` is `selected` on the question, in which case no answers must be selected.
+
+**Other Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+enabled | boolean | `true` or `false` | Not required.
+selected | boolean | `true` or `false` | Not required. Only accepted if `enabled` is `true`
+value | string | A string of 255 or fewer characters | Not required. Only accepted if `selected` is `true`
 
 Permitted HTML in paragraph answers
 ----------------
