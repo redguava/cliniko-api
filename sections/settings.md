@@ -69,6 +69,39 @@ curl https://api.us1.cliniko.com/v1/settings \
     "show_appointment_duration": true,
     "show_prices": false
   },
+  "patient_custom_fields_definition": {
+    "sections": [
+      {
+        "name": "Insurance coverage",
+        "token": "ef4c43ec-105d-489c-88cc-0f3c5f67dc70",
+        "fields": [
+          {
+            "name": "Provider",
+            "type": "radiobuttons",
+            "other": {
+              "enabled": true
+            },
+            "token": "b16839e0-26a4-48d6-83d6-36658e357c81",
+            "options": [
+              {
+                "name": "Great Insurance",
+                "token": "944e2fe0-6730-42fd-b9a2-519f35ceb46a"
+              },
+              {
+                "name": "Super Insurance",
+                "token": "d656a93c-a0b6-43ea-ab50-06fd1a00ea44"
+              }
+            ]
+          },
+          {
+            "name": "Policy number" ,
+            "type": "text",
+            "token": "fdb9c8a0-2984-4d96-8dc1-fbe703a8afdb"
+          }
+        ]
+      }
+    ]
+  },
   "reminders": {
     "default_reminder_type": "SMS & Email"
   },
@@ -130,6 +163,39 @@ curl https://api.us1.cliniko.com/v1/settings/public \
     "require_patient_address": false,
     "show_appointment_duration": true,
     "show_prices": false
+  },
+  "patient_custom_fields_definition": {
+    "sections": [
+      {
+        "name": "Insurance coverage",
+        "token": "ef4c43ec-105d-489c-88cc-0f3c5f67dc70",
+        "fields": [
+          {
+            "name": "Provider",
+            "type": "radiobuttons",
+            "other": {
+              "enabled": true
+            },
+            "token": "b16839e0-26a4-48d6-83d6-36658e357c81",
+            "options": [
+              {
+                "name": "Great Insurance",
+                "token": "944e2fe0-6730-42fd-b9a2-519f35ceb46a"
+              },
+              {
+                "name": "Super Insurance",
+                "token": "d656a93c-a0b6-43ea-ab50-06fd1a00ea44"
+              }
+            ]
+          },
+          {
+            "name": "Policy number" ,
+            "type": "text",
+            "token": "fdb9c8a0-2984-4d96-8dc1-fbe703a8afdb"
+          }
+        ]
+      }
+    ]
   },
   "reminders": {
     "default_reminder_type": "SMS & Email"
