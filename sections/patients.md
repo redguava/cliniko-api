@@ -758,7 +758,7 @@ See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-result
 
 ## Patient Custom Fields Schema
 
-The `custom_fields` property of a patient is a JSON object. The schema is validated and must conform to the following rules.
+The `custom_fields` property of a patient is a JSON object. The schema is validated and must conform to the following rules. The data provided must also conform to the definition specified in the `patient_custom_fields_definition` attribute on the [Settings](https://github.com/redguava/cliniko-api/blob/master/sections/settings.md) resource.
 
 **Custom Fields Object**
 
