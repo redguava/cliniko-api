@@ -58,6 +58,41 @@ curl https://api.au1.cliniko.com/v1/patients \
       "city": "Melbourne",
       "country": "Australia",
       "created_at": "2013-03-26T14:00:00Z",
+      "custom_fields": {
+        "sections": [
+          {
+            "name": "Insurance coverage",
+            "token": "ef4c43ec-105d-489c-88cc-0f3c5f67dc70",
+            "fields": [
+              {
+                "name": "Provider",
+                "type": "radiobuttons",
+                "other": {
+                  "enabled": true
+                },
+                "token": "b16839e0-26a4-48d6-83d6-36658e357c81",
+                "options": [
+                  {
+                    "name": "Great Insurance",
+                    "token": "944e2fe0-6730-42fd-b9a2-519f35ceb46a"
+                  },
+                  {
+                    "name": "Super Insurance",
+                    "token": "d656a93c-a0b6-43ea-ab50-06fd1a00ea44",
+                    "selected": true
+                  }
+                ]
+              },
+              {
+                "name": "Policy number" ,
+                "type": "text",
+                "token": "fdb9c8a0-2984-4d96-8dc1-fbe703a8afdb",
+                "value": "ABC-12345"
+              }
+            ]
+          }
+        ]
+      },
       "dva_card_number": "",
       "date_of_birth": "2001-05-26",
       "deleted_at": "",
@@ -193,6 +228,7 @@ curl https://api.au1.cliniko.com/v1/patients/archived \
       "city": "Melbourne",
       "country": "Australia",
       "created_at": "2013-03-26T14:00:00Z",
+      "custom_fields": null,
       "date_of_birth": "2001-05-26",
       "deleted_at": "",
       "dva_card_number": "",
@@ -302,6 +338,41 @@ curl https://api.au1.cliniko.com/v1/patients/1 \
   "city": "Melbourne",
   "country": "Australia",
   "created_at": "2013-03-26T14:00:00Z",
+  "custom_fields": {
+    "sections": [
+      {
+        "name": "Insurance coverage",
+        "token": "ef4c43ec-105d-489c-88cc-0f3c5f67dc70",
+        "fields": [
+          {
+            "name": "Provider",
+            "type": "radiobuttons",
+            "other": {
+              "enabled": true
+            },
+            "token": "b16839e0-26a4-48d6-83d6-36658e357c81",
+            "options": [
+              {
+                "name": "Great Insurance",
+                "token": "944e2fe0-6730-42fd-b9a2-519f35ceb46a"
+              },
+              {
+                "name": "Super Insurance",
+                "token": "d656a93c-a0b6-43ea-ab50-06fd1a00ea44",
+                "selected": true
+              }
+            ]
+          },
+          {
+            "name": "Policy number" ,
+            "type": "text",
+            "token": "fdb9c8a0-2984-4d96-8dc1-fbe703a8afdb",
+            "value": "ABC-12345"
+          }
+        ]
+      }
+    ]
+  },
   "date_of_birth": "2001-05-26",
   "deleted_at": "",
   "email": "peter@example.com",
@@ -411,6 +482,7 @@ Headers { Location: http://api.cliniko.com/patients/1 }
   "city": "",
   "country": "",
   "created_at": "2013-03-26T14:00:00Z",
+  "custom_fields": null,
   "date_of_birth": "",
   "deleted_at": "",
   "dva_card_number": "",
@@ -498,6 +570,7 @@ curl https://api.au1.cliniko.com/v1/patients/1 \
   "city": "Melbourne",
   "country": "Australia",
   "created_at": "2013-03-26T14:00:00Z",
+  "custom_fields": null,
   "date_of_birth": "2001-05-26",
   "deleted_at": "",
   "dva_card_number": "",  
@@ -607,6 +680,7 @@ curl https://api.au1.cliniko.com/v1/patients/1/unarchive \
   "city": "Melbourne",
   "country": "Australia",
   "created_at": "2013-03-26T14:00:00Z",
+  "custom_fields": null,
   "date_of_birth": "2001-05-26",
   "deleted_at": "",
   "dva_card_number": "",  
@@ -681,3 +755,52 @@ For any route that returns a set of patients, you can filter them by:
 - `updated_at` (DateTime)
 
 See [Filtering Results](https://github.com/redguava/cliniko-api#filtering-results) for details on how to apply filters.
+
+## Patient Custom Fields Schema
+
+The `custom_fields` property of a patient is a JSON object. The schema is validated and must conform to the following rules. The data provided must also conform to the definition specified in the `patient_custom_fields_definition` attribute on the [Settings](https://github.com/redguava/cliniko-api/blob/master/sections/settings.md) resource. This means that only sections, fields, and options that are defined in the account's settings will be accepted.
+
+**Custom Fields Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+sections | array | An array of section objects | Not required.
+
+**Section Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+name | string | A string of 255 or fewer characters | Disregarded when creating/updating.
+token | string | A UUID string | Required, and must match the token of a defined section in the account's custom patient fields settings.
+archived | boolean | `true` or `false` | Disregarded when creating/updating.
+fields | array | An array of field objects | Not required.
+
+**Field Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+name | string | A string of 255 or fewer characters | Disregarded when creating/updating.
+type | string | `text`, `paragraph`, `checkboxes`, `radiobuttons`, `date` | Disregarded when creating/updating.
+token | string | A UUID string | Required, and must match the token of a defined field in the account's custom patient fields settings.
+archived | boolean | `true` or `false` | Disregarded when creating/updating.
+value | string | A string | Not required. Only accepted for `text`, `paragraph` and `date` type questions. Empty values are not valid. If there is no value, the field should be omitted entirely. When provided for a `date` type question, the accepted format is `YYYY-MM-DD`.
+options | array | An array of option objects | Not required. Only accepted for `checkboxes` and `radiobuttons` type questions.
+other | object | An other object | Not required. Only accepted for `checkboxes` and `radiobuttons` type questions.
+
+**Option Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+name | string | A string of 255 or fewer characters | Disregarded when creating/updating.
+token | string | A UUID string | Required, and must match the token of a defined option in the account's custom patient fields settings.
+archived | boolean | `true` or `false` | Disregarded when creating/updating.
+selected | boolean | true | Not required. For `radiobuttons` type questions, a maximum of one answer can be selected, unless `other` is `selected` on the question, in which case no answers must be selected.
+
+**Other Object**
+
+Property | Type | Accepted Values | Notes
+------------ | ------------- | ------------- | -------------
+enabled | boolean | `true` or `false` | Disregarded when creating/updating.
+archived | boolean | `true` or `false` | Disregarded when creating/updating.
+selected | boolean | `true` or `false` | Not required. Only accepted if `enabled` is `true`
+value | string | A string of 255 or fewer characters | Not required. Only accepted if `selected` is `true`
