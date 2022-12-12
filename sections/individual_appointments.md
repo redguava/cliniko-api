@@ -31,7 +31,7 @@ curl https://api.au1.cliniko.com/v1/individual_appointments \
 {
   "individual_appointments": [
     {
-      "id": 1,
+      "id": 2,
       "created_at": "2016-06-28T21:33:26Z",
       "updated_at": "2016-07-22T15:10:08Z",
       "booking_ip_address": null,
